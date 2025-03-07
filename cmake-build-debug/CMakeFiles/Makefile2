@@ -351,7 +351,7 @@ CMakeFiles/catmario.dir/all: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/gl
 
 # Build rule for subdir invocation for target.
 CMakeFiles/catmario.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 78
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/catmario.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/catmario.dir/rule
@@ -410,7 +410,7 @@ _deps/ptsd-build/CMakeFiles/PTSD.dir/all: _deps/ptsd-build/lib/glew/build/cmake/
 
 # Build rule for subdir invocation for target.
 _deps/ptsd-build/CMakeFiles/PTSD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 75
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 76
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/PTSD.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/ptsd-build/CMakeFiles/PTSD.dir/rule
@@ -445,7 +445,7 @@ _deps/ptsd-build/CMakeFiles/Example.dir/all: _deps/ptsd-build/lib/glew/build/cma
 
 # Build rule for subdir invocation for target.
 _deps/ptsd-build/CMakeFiles/Example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 78
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/Example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/ptsd-build/CMakeFiles/Example.dir/rule
@@ -481,7 +481,7 @@ _deps/ptsd-build/CMakeFiles/Tests.dir/all: _deps/ptsd-build/lib/glew/build/cmake
 
 # Build rule for subdir invocation for target.
 _deps/ptsd-build/CMakeFiles/Tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 81
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 82
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/Tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/ptsd-build/CMakeFiles/Tests.dir/rule
@@ -517,7 +517,7 @@ _deps/ptsd-build/CMakeFiles/AudioTest.dir/all: _deps/ptsd-build/lib/glew/build/c
 
 # Build rule for subdir invocation for target.
 _deps/ptsd-build/CMakeFiles/AudioTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 79
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 80
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/AudioTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/ptsd-build/CMakeFiles/AudioTest.dir/rule
@@ -616,12 +616,12 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/clean:
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/all: _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build.make _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=58,59,60,61 "Built target SDL2_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=58,59,60 "Built target SDL2_test"
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2_test.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2_test.dir/rule
@@ -751,12 +751,12 @@ _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/all: _deps/sdl2-build/CMakeFiles/SD
 _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/all: _deps/sdl2_ttf-build/external/freetype/CMakeFiles/freetype.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num= "Built target SDL2_ttf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=61 "Built target SDL2_ttf"
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/rule
@@ -785,7 +785,7 @@ _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/all: _deps/sdl2_ttf-build/external/fr
 
 # Build rule for subdir invocation for target.
 _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 61
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/rule
@@ -814,7 +814,7 @@ _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/all: _deps/sdl2_ttf-build/external/
 
 # Build rule for subdir invocation for target.
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/rule

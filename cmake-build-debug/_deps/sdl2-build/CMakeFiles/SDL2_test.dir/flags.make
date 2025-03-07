@@ -6,7 +6,7 @@ C_DEFINES =
 
 C_INCLUDES = -I/Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include -I/Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug
 
-C_FLAGSarm64 =  -idirafter "/Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos"  -Wall -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -D_THREAD_SAFE  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=26 -DSDL_BUILD_MICRO_VERSION=5 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+C_FLAGSarm64 =  -idirafter "/Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos"  -Wall -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -D_THREAD_SAFE  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=26 -DSDL_BUILD_MICRO_VERSION=5 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fPIC -fcolor-diagnostics
 
-C_FLAGS =  -idirafter "/Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos"  -Wall -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -D_THREAD_SAFE  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=26 -DSDL_BUILD_MICRO_VERSION=5 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+C_FLAGS =  -idirafter "/Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos"  -Wall -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -D_THREAD_SAFE  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=26 -DSDL_BUILD_MICRO_VERSION=5 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fPIC -fcolor-diagnostics
 

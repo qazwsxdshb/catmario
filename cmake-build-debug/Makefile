@@ -763,6 +763,30 @@ src/PhaseManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/catmario.dir/build.make CMakeFiles/catmario.dir/src/PhaseManager.cpp.s
 .PHONY : src/PhaseManager.cpp.s
 
+src/ZeroUpdate.o: src/ZeroUpdate.cpp.o
+.PHONY : src/ZeroUpdate.o
+
+# target to build an object file
+src/ZeroUpdate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catmario.dir/build.make CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o
+.PHONY : src/ZeroUpdate.cpp.o
+
+src/ZeroUpdate.i: src/ZeroUpdate.cpp.i
+.PHONY : src/ZeroUpdate.i
+
+# target to preprocess a source file
+src/ZeroUpdate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catmario.dir/build.make CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.i
+.PHONY : src/ZeroUpdate.cpp.i
+
+src/ZeroUpdate.s: src/ZeroUpdate.cpp.s
+.PHONY : src/ZeroUpdate.s
+
+# target to generate assembly for a file
+src/ZeroUpdate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/catmario.dir/build.make CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.s
+.PHONY : src/ZeroUpdate.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -855,6 +879,9 @@ help:
 	@echo "... src/PhaseManager.o"
 	@echo "... src/PhaseManager.i"
 	@echo "... src/PhaseManager.s"
+	@echo "... src/ZeroUpdate.o"
+	@echo "... src/ZeroUpdate.i"
+	@echo "... src/ZeroUpdate.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

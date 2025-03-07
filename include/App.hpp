@@ -13,6 +13,7 @@ class App {
 public:
     enum class State {
         ZERO,
+        ZEROUPDATE,
         START,
         UPDATE,
         END,
@@ -21,6 +22,8 @@ public:
     State GetCurrentState() const { return m_CurrentState; }
 
     void Zero();
+
+    void ZeroUpdate();
 
     void Start();
 
@@ -46,7 +49,7 @@ private:
 
     Util::Renderer m_Root;
     std::shared_ptr<Character> m_player;
-
+    std::vector<std::shared_ptr<Character>> tmp;
 //    std::vector<std::shared_ptr<Character>> m_Doors;
 //    std::shared_ptr<AnimatedCharacter> m_Bee;
     std::shared_ptr<PhaseResourceManger> m_PRM;

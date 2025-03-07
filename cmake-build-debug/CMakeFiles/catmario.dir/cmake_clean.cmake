@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/catmario.dir/src/Character.cpp.o.d"
   "CMakeFiles/catmario.dir/src/PhaseManager.cpp.o"
   "CMakeFiles/catmario.dir/src/PhaseManager.cpp.o.d"
+  "CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o"
+  "CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o.d"
   "CMakeFiles/catmario.dir/src/main.cpp.o"
   "CMakeFiles/catmario.dir/src/main.cpp.o.d"
   "catmario"

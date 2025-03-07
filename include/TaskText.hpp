@@ -25,7 +25,8 @@ private:
         return std::string(sv1) + "\n" + std::string(sv2);
     }
 
-    static constexpr std::string_view s_PhaseTasks[6] = {
+    static constexpr std::string_view s_PhaseTasks[7] = {
+            "",
             "Levels 1-1",
             "Make the giraffe move into the red area using the keyboard!",
             "Make the chest disappear when the giraffe touches it!",

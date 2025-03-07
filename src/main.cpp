@@ -12,6 +12,10 @@ int main(int, char**) {
                 app.Zero();
             break;
 
+            case App::State::ZEROUPDATE:
+                app.ZeroUpdate();
+            break;
+
             case App::State::START:
                 app.Start();
                 break;
