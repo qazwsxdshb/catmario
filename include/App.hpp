@@ -3,6 +3,12 @@
 
 #include "pch.hpp" // IWYU pragma: export
 
+#include "Util/Renderer.hpp"
+#include "Character.hpp"
+#include "Util/Text.hpp"
+#include "PhaseResourceManger.hpp"
+#include "AnimatedCharacter.hpp"
+
 class App {
 public:
     enum class State {
@@ -23,7 +29,24 @@ private:
     void ValidTask();
 
 private:
+    enum class Phase {
+        start,
+        grassland1,
+        grassland2,
+    };
+
+
     State m_CurrentState = State::START;
+    Phase m_Phase = Phase::CHANGE_CHARACTER_IMAGE;
+
+    Util::Renderer m_Root;
+
+//    std::shared_ptr<Character> m_Giraffe;
+//    std::vector<std::shared_ptr<Character>> m_Doors;
+//    std::shared_ptr<AnimatedCharacter> m_Bee;
+//    std::shared_ptr<PhaseResourceManger> m_PRM;
+
+    bool m_EnterDown = false;
 };
 
 #endif
