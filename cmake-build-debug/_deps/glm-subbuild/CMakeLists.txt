@@ -20,8 +20,8 @@ project(glm-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(glm-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/g-truc/glm/releases/download/0.9.9.8/glm-0.9.9.8.zip" "URL_HASH" "MD5=69895110052f0d711c9c54fbf385f6f5"
-                    SOURCE_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/glm"
-                    BINARY_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-build"
+                    SOURCE_DIR          "/Users/easn/catmario/PTSD/lib/glm"
+                    BINARY_DIR          "/Users/easn/catmario/cmake-build-debug/_deps/glm-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

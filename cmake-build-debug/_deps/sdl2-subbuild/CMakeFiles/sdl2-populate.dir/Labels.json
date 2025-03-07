@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate-complete.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate-complete.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-build.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-build.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-configure.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-configure.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-download.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-download.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-install.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-install.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-mkdir.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-mkdir.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-patch.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-patch.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-test.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-test.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-update.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-update.rule"
 		}
 	],
 	"target" : 

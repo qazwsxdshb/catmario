@@ -54,10 +54,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/CheckOBJC
+CMAKE_SOURCE_DIR = /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/CheckOBJC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/CheckOBJC
+CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/CheckOBJC
 
 #=============================================================================
 # Directory level rules for the build root directory

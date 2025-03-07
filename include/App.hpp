@@ -12,12 +12,15 @@
 class App {
 public:
     enum class State {
+        ZERO,
         START,
         UPDATE,
         END,
     };
 
     State GetCurrentState() const { return m_CurrentState; }
+
+    void Zero();
 
     void Start();
 
@@ -30,21 +33,23 @@ private:
 
 private:
     enum class Phase {
+        zero,
         start,
         grassland1,
         grassland2,
     };
 
 
-    State m_CurrentState = State::START;
-    Phase m_Phase = Phase::CHANGE_CHARACTER_IMAGE;
+    State m_CurrentState = State::ZERO;
+    Phase m_Phase = Phase::zero;
+
 
     Util::Renderer m_Root;
+    std::shared_ptr<Character> m_player;
 
-//    std::shared_ptr<Character> m_Giraffe;
 //    std::vector<std::shared_ptr<Character>> m_Doors;
 //    std::shared_ptr<AnimatedCharacter> m_Bee;
-//    std::shared_ptr<PhaseResourceManger> m_PRM;
+    std::shared_ptr<PhaseResourceManger> m_PRM;
 
     bool m_EnterDown = false;
 };

@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/glew-populate"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/glew-populate"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/glew-populate.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/glew-populate.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/glew-populate-complete.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/glew-populate-complete.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-build.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-build.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-configure.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-configure.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-download.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-download.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-install.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-install.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-mkdir.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-mkdir.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-patch.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-patch.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-test.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-test.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-update.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/glew-populate-update.rule"
 		}
 	],
 	"target" : 

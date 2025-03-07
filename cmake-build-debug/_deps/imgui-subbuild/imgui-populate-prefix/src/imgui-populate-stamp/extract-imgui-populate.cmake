@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip" ABSOLUTE)
-get_filename_component(directory "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/imgui" ABSOLUTE)
+get_filename_component(filename "/Users/easn/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip" ABSOLUTE)
+get_filename_component(directory "/Users/easn/catmario/PTSD/lib/imgui" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
+CMAKE_SOURCE_DIR = /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
+CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
 
 # Utility rule file for sdl2_image-populate.
 
@@ -77,57 +77,57 @@ CMakeFiles/sdl2_image-populate-complete: sdl2_image-populate-prefix/src/sdl2_ima
 CMakeFiles/sdl2_image-populate-complete: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-build
 CMakeFiles/sdl2_image-populate-complete: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-install
 CMakeFiles/sdl2_image-populate-complete: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'sdl2_image-populate'"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E make_directory /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles/sdl2_image-populate-complete
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'sdl2_image-populate'"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E make_directory /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles/sdl2_image-populate-complete
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-done
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-build: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'sdl2_image-populate'"
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'sdl2_image-populate'"
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-build
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-configure: sdl2_image-populate-prefix/tmp/sdl2_image-populate-cfgcmd.txt
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-configure: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'sdl2_image-populate'"
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'sdl2_image-populate'"
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-configure
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-download: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/download-sdl2_image-populate.cmake
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-download: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-urlinfo.txt
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-download: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'sdl2_image-populate'"
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/download-sdl2_image-populate.cmake
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/verify-sdl2_image-populate.cmake
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/extract-sdl2_image-populate.cmake
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'sdl2_image-populate'"
+	cd /Users/easn/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/download-sdl2_image-populate.cmake
+	cd /Users/easn/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/verify-sdl2_image-populate.cmake
+	cd /Users/easn/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/extract-sdl2_image-populate.cmake
+	cd /Users/easn/catmario/PTSD/lib && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-download
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-install: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'sdl2_image-populate'"
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'sdl2_image-populate'"
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-install
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'sdl2_image-populate'"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -Dcfgdir= -P /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/tmp/sdl2_image-populate-mkdirs.cmake
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'sdl2_image-populate'"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -Dcfgdir= -P /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/tmp/sdl2_image-populate-mkdirs.cmake
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-mkdir
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-patch: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-patch-info.txt
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-patch: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'sdl2_image-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'sdl2_image-populate'"
 	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-patch
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-patch
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-test: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'sdl2_image-populate'"
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'sdl2_image-populate'"
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-test
 
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-update: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-update-info.txt
 sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-update: sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'sdl2_image-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'sdl2_image-populate'"
 	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-update
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/sdl2_image-populate-stamp/sdl2_image-populate-update
 
 sdl2_image-populate: CMakeFiles/sdl2_image-populate
 sdl2_image-populate: CMakeFiles/sdl2_image-populate-complete
@@ -151,6 +151,6 @@ CMakeFiles/sdl2_image-populate.dir/clean:
 .PHONY : CMakeFiles/sdl2_image-populate.dir/clean
 
 CMakeFiles/sdl2_image-populate.dir/depend:
-	cd /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles/sdl2_image-populate.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles/sdl2_image-populate.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/sdl2_image-populate.dir/depend
 

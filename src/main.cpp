@@ -8,6 +8,10 @@ int main(int, char**) {
 
     while (!context->GetExit()) {
         switch (app.GetCurrentState()) {
+            case App::State::ZERO:
+                app.Zero();
+            break;
+
             case App::State::START:
                 app.Start();
                 break;

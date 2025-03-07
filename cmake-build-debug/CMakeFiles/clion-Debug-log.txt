@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /Users/easn/Library/CloudStorage/OneDrive-個人/catmario -B /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /Users/easn/catmario -B /Users/easn/catmario/cmake-build-debug
 -- The C compiler identification is AppleClang 16.0.0.16000026
 -- The CXX compiler identification is AppleClang 16.0.0.16000026
 -- Detecting C compiler ABI info
@@ -14,18 +14,18 @@
 -- Populating ptsd
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/ptsd-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/ptsd-subbuild
 [ 11%] Creating directories for 'ptsd-populate'
 [ 22%] Performing download step (download, verify and extract) for 'ptsd-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/v0.2.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/v0.2.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/ntut-open-source-club/practical-tools-for-simple-design/archive/refs/tags/v0.2.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/v0.2.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/v0.2.zip'
+     dst='/Users/easn/catmario/PTSD'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -43,11 +43,11 @@
 -- Populating sdl2
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild
 [ 11%] Creating directories for 'sdl2-populate'
 [ 22%] Performing download step (download, verify and extract) for 'sdl2-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.26.5.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.26.5.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/libsdl-org/SDL/releases/download/release-2.26.5/SDL2-2.26.5.zip'
@@ -67,12 +67,15 @@
 -- [download 13% complete]
 -- [download 14% complete]
 -- [download 15% complete]
--- [download 17% complete]
+-- [download 16% complete]
+-- [download 18% complete]
 -- [download 19% complete]
 -- [download 20% complete]
 -- [download 21% complete]
 -- [download 22% complete]
+-- [download 23% complete]
 -- [download 24% complete]
+-- [download 25% complete]
 -- [download 26% complete]
 -- [download 27% complete]
 -- [download 28% complete]
@@ -80,47 +83,30 @@
 -- [download 30% complete]
 -- [download 31% complete]
 -- [download 32% complete]
--- [download 33% complete]
--- [download 35% complete]
+-- [download 34% complete]
 -- [download 36% complete]
 -- [download 37% complete]
 -- [download 39% complete]
--- [download 40% complete]
 -- [download 41% complete]
--- [download 42% complete]
 -- [download 43% complete]
--- [download 44% complete]
 -- [download 45% complete]
--- [download 46% complete]
 -- [download 47% complete]
--- [download 48% complete]
 -- [download 49% complete]
--- [download 50% complete]
 -- [download 51% complete]
 -- [download 52% complete]
 -- [download 53% complete]
--- [download 54% complete]
 -- [download 55% complete]
 -- [download 56% complete]
 -- [download 57% complete]
--- [download 58% complete]
 -- [download 59% complete]
--- [download 60% complete]
 -- [download 61% complete]
--- [download 62% complete]
 -- [download 63% complete]
--- [download 64% complete]
 -- [download 65% complete]
--- [download 66% complete]
 -- [download 67% complete]
--- [download 68% complete]
 -- [download 69% complete]
--- [download 70% complete]
 -- [download 71% complete]
--- [download 72% complete]
 -- [download 73% complete]
 -- [download 74% complete]
--- [download 75% complete]
 -- [download 76% complete]
 -- [download 77% complete]
 -- [download 78% complete]
@@ -132,26 +118,19 @@
 -- [download 84% complete]
 -- [download 85% complete]
 -- [download 86% complete]
--- [download 87% complete]
 -- [download 88% complete]
--- [download 89% complete]
 -- [download 90% complete]
--- [download 91% complete]
 -- [download 92% complete]
--- [download 93% complete]
 -- [download 94% complete]
--- [download 95% complete]
 -- [download 96% complete]
--- [download 97% complete]
 -- [download 98% complete]
--- [download 99% complete]
 -- [download 100% complete]
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.26.5.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.26.5.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.26.5.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.26.5.zip'
+     dst='/Users/easn/catmario/PTSD/lib/sdl2'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -175,7 +154,7 @@ CMake Deprecation Warning at PTSD/lib/sdl2/CMakeLists.txt:5 (cmake_minimum_requi
 
 -- Found PkgConfig: /usr/local/bin/pkg-config (found version "2.3.0")
 -- Looking for a OBJC compiler
--- Looking for a OBJC compiler - /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Looking for a OBJC compiler - /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 -- Looking for __GLIBC__
 -- Looking for __GLIBC__ - not found
 -- Performing Test HAVE_GCC_WALL
@@ -652,7 +631,7 @@ CMake Deprecation Warning at PTSD/lib/sdl2/CMakeLists.txt:3147 (cmake_minimum_re
 --  CMAKE_C_FLAGS_DEBUG:   -g
 --  CMAKE_CXX_FLAGS_DEBUG: -g
 -- 
---  CFLAGS:         -idirafter "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2/src/video/khronos"
+--  CFLAGS:         -idirafter "/Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos"
 --  EXTRA_CFLAGS:   -Wall -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -D_THREAD_SAFE
 --  EXTRA_LDFLAGS: -Wl,-framework,CoreVideo;-Wl,-framework,Cocoa;-Wl,-framework,IOKit;-Wl,-framework,ForceFeedback;-Wl,-framework,Carbon;-Wl,-framework,CoreAudio;-Wl,-framework,AudioToolbox;-Wl,-framework,AVFoundation;-Wl,-framework,Foundation;-Wl,-weak_framework,GameController;-Wl,-weak_framework,Metal;-Wl,-weak_framework,QuartzCore;-Wl,-weak_framework,CoreHaptics -Wl,-compatibility_version,2601.0.0;-Wl,-current_version,2601.5.0
 --  EXTRA_LIBS:    m;iconv
@@ -668,16 +647,137 @@ CMake Deprecation Warning at PTSD/lib/sdl2/CMakeLists.txt:3147 (cmake_minimum_re
 -- Populating sdl2_image
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
 [ 11%] Creating directories for 'sdl2_image-populate'
 [ 22%] Performing download step (download, verify and extract) for 'sdl2_image-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/libsdl-org/SDL_image/releases/download/release-2.6.3/SDL2_image-2.6.3.zip'
 -- [download 0% complete]
 -- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 37% complete]
+-- [download 38% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 49% complete]
+-- [download 51% complete]
+-- [download 52% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 58% complete]
+-- [download 59% complete]
+-- [download 60% complete]
+-- [download 61% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 66% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 70% complete]
+-- [download 72% complete]
+-- [download 73% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 77% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 81% complete]
+-- [download 82% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 96% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- verifying file...
+       file='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip'
+-- Downloading... done
+-- extracting...
+     src='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip'
+     dst='/Users/easn/catmario/PTSD/lib/sdl2_image'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'sdl2_image-populate'
+[ 44%] No patch step for 'sdl2_image-populate'
+[ 55%] No configure step for 'sdl2_image-populate'
+[ 66%] No build step for 'sdl2_image-populate'
+[ 77%] No install step for 'sdl2_image-populate'
+[ 88%] No test step for 'sdl2_image-populate'
+[100%] Completed 'sdl2_image-populate'
+[100%] Built target sdl2_image-populate
+-- Configuring SDL2_image 2.6.3
+-- Could NOT find SDL2main (missing: SDL2_MAIN_LIBRARY) 
+-- Populating sdl2_ttf
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild
+[ 11%] Creating directories for 'sdl2_ttf-populate'
+[ 22%] Performing download step (download, verify and extract) for 'sdl2_ttf-populate'
+-- Downloading...
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild/sdl2_ttf-populate-prefix/src/SDL2_ttf-2.20.2.zip'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.20.2/SDL2_ttf-2.20.2.zip'
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
 -- [download 3% complete]
 -- [download 4% complete]
 -- [download 5% complete]
@@ -777,142 +877,11 @@ CMake Deprecation Warning at PTSD/lib/sdl2/CMakeLists.txt:3147 (cmake_minimum_re
 -- [download 99% complete]
 -- [download 100% complete]
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild/sdl2_ttf-populate-prefix/src/SDL2_ttf-2.20.2.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2_image'
--- extracting... [tar xfz]
--- extracting... [analysis]
--- extracting... [rename]
--- extracting... [clean up]
--- extracting... done
-[ 33%] No update step for 'sdl2_image-populate'
-[ 44%] No patch step for 'sdl2_image-populate'
-[ 55%] No configure step for 'sdl2_image-populate'
-[ 66%] No build step for 'sdl2_image-populate'
-[ 77%] No install step for 'sdl2_image-populate'
-[ 88%] No test step for 'sdl2_image-populate'
-[100%] Completed 'sdl2_image-populate'
-[100%] Built target sdl2_image-populate
--- Configuring SDL2_image 2.6.3
--- Could NOT find SDL2main (missing: SDL2_MAIN_LIBRARY) 
--- Populating sdl2_ttf
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild
-[ 11%] Creating directories for 'sdl2_ttf-populate'
-[ 22%] Performing download step (download, verify and extract) for 'sdl2_ttf-populate'
--- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild/sdl2_ttf-populate-prefix/src/SDL2_ttf-2.20.2.zip'
-   timeout='none'
-   inactivity timeout='none'
--- Using src='https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.20.2/SDL2_ttf-2.20.2.zip'
--- [download 0% complete]
--- [download 1% complete]
--- [download 2% complete]
--- [download 3% complete]
--- [download 4% complete]
--- [download 5% complete]
--- [download 6% complete]
--- [download 7% complete]
--- [download 8% complete]
--- [download 9% complete]
--- [download 10% complete]
--- [download 11% complete]
--- [download 12% complete]
--- [download 13% complete]
--- [download 14% complete]
--- [download 15% complete]
--- [download 16% complete]
--- [download 17% complete]
--- [download 18% complete]
--- [download 20% complete]
--- [download 21% complete]
--- [download 22% complete]
--- [download 23% complete]
--- [download 25% complete]
--- [download 26% complete]
--- [download 27% complete]
--- [download 28% complete]
--- [download 29% complete]
--- [download 30% complete]
--- [download 31% complete]
--- [download 32% complete]
--- [download 33% complete]
--- [download 34% complete]
--- [download 35% complete]
--- [download 36% complete]
--- [download 37% complete]
--- [download 38% complete]
--- [download 39% complete]
--- [download 40% complete]
--- [download 41% complete]
--- [download 42% complete]
--- [download 43% complete]
--- [download 44% complete]
--- [download 45% complete]
--- [download 46% complete]
--- [download 47% complete]
--- [download 48% complete]
--- [download 49% complete]
--- [download 50% complete]
--- [download 51% complete]
--- [download 52% complete]
--- [download 53% complete]
--- [download 54% complete]
--- [download 55% complete]
--- [download 56% complete]
--- [download 57% complete]
--- [download 58% complete]
--- [download 59% complete]
--- [download 60% complete]
--- [download 61% complete]
--- [download 62% complete]
--- [download 63% complete]
--- [download 64% complete]
--- [download 65% complete]
--- [download 66% complete]
--- [download 67% complete]
--- [download 68% complete]
--- [download 69% complete]
--- [download 70% complete]
--- [download 71% complete]
--- [download 72% complete]
--- [download 73% complete]
--- [download 74% complete]
--- [download 75% complete]
--- [download 76% complete]
--- [download 77% complete]
--- [download 78% complete]
--- [download 79% complete]
--- [download 80% complete]
--- [download 81% complete]
--- [download 82% complete]
--- [download 83% complete]
--- [download 84% complete]
--- [download 85% complete]
--- [download 86% complete]
--- [download 87% complete]
--- [download 88% complete]
--- [download 89% complete]
--- [download 90% complete]
--- [download 91% complete]
--- [download 92% complete]
--- [download 93% complete]
--- [download 94% complete]
--- [download 95% complete]
--- [download 96% complete]
--- [download 97% complete]
--- [download 98% complete]
--- [download 99% complete]
--- [download 100% complete]
--- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild/sdl2_ttf-populate-prefix/src/SDL2_ttf-2.20.2.zip'
--- Downloading... done
--- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild/sdl2_ttf-populate-prefix/src/SDL2_ttf-2.20.2.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2_ttf'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-subbuild/sdl2_ttf-populate-prefix/src/SDL2_ttf-2.20.2.zip'
+     dst='/Users/easn/catmario/PTSD/lib/sdl2_ttf'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -943,11 +912,11 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- Populating sdl2_mixer
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild
 [ 11%] Creating directories for 'sdl2_mixer-populate'
 [ 22%] Performing download step (download, verify and extract) for 'sdl2_mixer-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/libsdl-org/SDL_mixer/releases/download/release-2.6.3/SDL2_mixer-2.6.3.zip'
@@ -970,9 +939,9 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- [download 16% complete]
 -- [download 17% complete]
 -- [download 18% complete]
+-- [download 19% complete]
 -- [download 20% complete]
 -- [download 21% complete]
--- [download 22% complete]
 -- [download 23% complete]
 -- [download 24% complete]
 -- [download 25% complete]
@@ -980,25 +949,21 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- [download 27% complete]
 -- [download 28% complete]
 -- [download 29% complete]
--- [download 30% complete]
 -- [download 31% complete]
+-- [download 32% complete]
 -- [download 33% complete]
--- [download 34% complete]
 -- [download 35% complete]
 -- [download 36% complete]
 -- [download 37% complete]
 -- [download 38% complete]
--- [download 39% complete]
 -- [download 40% complete]
 -- [download 41% complete]
--- [download 42% complete]
 -- [download 43% complete]
 -- [download 44% complete]
 -- [download 45% complete]
--- [download 46% complete]
 -- [download 47% complete]
+-- [download 48% complete]
 -- [download 49% complete]
--- [download 50% complete]
 -- [download 51% complete]
 -- [download 52% complete]
 -- [download 53% complete]
@@ -1009,11 +974,9 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- [download 58% complete]
 -- [download 59% complete]
 -- [download 60% complete]
--- [download 61% complete]
 -- [download 62% complete]
 -- [download 63% complete]
 -- [download 64% complete]
--- [download 65% complete]
 -- [download 66% complete]
 -- [download 67% complete]
 -- [download 68% complete]
@@ -1024,13 +987,12 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- [download 73% complete]
 -- [download 74% complete]
 -- [download 75% complete]
--- [download 76% complete]
 -- [download 77% complete]
 -- [download 78% complete]
 -- [download 79% complete]
--- [download 80% complete]
 -- [download 81% complete]
 -- [download 82% complete]
+-- [download 83% complete]
 -- [download 84% complete]
 -- [download 85% complete]
 -- [download 86% complete]
@@ -1049,11 +1011,11 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- [download 99% complete]
 -- [download 100% complete]
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2_mixer'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip'
+     dst='/Users/easn/catmario/PTSD/lib/sdl2_mixer'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -1073,20 +1035,20 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- Populating spdlog
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/spdlog-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/spdlog-subbuild
 [ 11%] Creating directories for 'spdlog-populate'
 [ 22%] Performing download step (download, verify and extract) for 'spdlog-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/gabime/spdlog/archive/refs/tags/v1.10.0.zip'
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/spdlog'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip'
+     dst='/Users/easn/catmario/PTSD/lib/spdlog'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -1108,11 +1070,11 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- Populating glm
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild
 [ 11%] Creating directories for 'glm-populate'
 [ 22%] Performing download step (download, verify and extract) for 'glm-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/g-truc/glm/releases/download/0.9.9.8/glm-0.9.9.8.zip'
@@ -1130,74 +1092,53 @@ CMake Deprecation Warning at PTSD/lib/sdl2_ttf/external/freetype/CMakeLists.txt:
 -- [download 11% complete]
 -- [download 12% complete]
 -- [download 13% complete]
+-- [download 14% complete]
 -- [download 15% complete]
 -- [download 16% complete]
+-- [download 17% complete]
 -- [download 18% complete]
 -- [download 19% complete]
 -- [download 20% complete]
--- [download 21% complete]
 -- [download 22% complete]
--- [download 23% complete]
--- [download 24% complete]
 -- [download 25% complete]
 -- [download 26% complete]
 -- [download 27% complete]
--- [download 29% complete]
+-- [download 28% complete]
 -- [download 30% complete]
 -- [download 31% complete]
--- [download 32% complete]
--- [download 33% complete]
--- [download 34% complete]
+-- [download 35% complete]
 -- [download 36% complete]
--- [download 38% complete]
 -- [download 39% complete]
--- [download 41% complete]
 -- [download 42% complete]
--- [download 44% complete]
 -- [download 45% complete]
--- [download 46% complete]
+-- [download 47% complete]
 -- [download 48% complete]
--- [download 49% complete]
 -- [download 50% complete]
--- [download 51% complete]
 -- [download 52% complete]
--- [download 53% complete]
--- [download 56% complete]
--- [download 59% complete]
--- [download 62% complete]
+-- [download 55% complete]
+-- [download 58% complete]
+-- [download 61% complete]
+-- [download 63% complete]
 -- [download 66% complete]
--- [download 69% complete]
--- [download 72% complete]
+-- [download 68% complete]
+-- [download 71% complete]
 -- [download 74% complete]
--- [download 75% complete]
 -- [download 77% complete]
--- [download 78% complete]
--- [download 79% complete]
--- [download 80% complete]
 -- [download 81% complete]
--- [download 82% complete]
 -- [download 84% complete]
--- [download 85% complete]
--- [download 86% complete]
 -- [download 87% complete]
--- [download 89% complete]
 -- [download 90% complete]
--- [download 91% complete]
--- [download 92% complete]
 -- [download 93% complete]
--- [download 94% complete]
--- [download 95% complete]
 -- [download 96% complete]
--- [download 97% complete]
 -- [download 98% complete]
 -- [download 99% complete]
 -- [download 100% complete]
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/glm'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
+     dst='/Users/easn/catmario/PTSD/lib/glm'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -1230,66 +1171,65 @@ CMake Deprecation Warning at PTSD/lib/glm/CMakeLists.txt:2 (cmake_policy):
 -- Populating googletest
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/googletest-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/googletest-subbuild
 [ 11%] Creating directories for 'googletest-populate'
 [ 22%] Performing download step (download, verify and extract) for 'googletest-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.13.0.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.13.0.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/google/googletest/archive/refs/tags/v1.13.0.zip'
 -- [download 1% complete]
+-- [download 2% complete]
 -- [download 3% complete]
 -- [download 4% complete]
 -- [download 5% complete]
 -- [download 7% complete]
 -- [download 8% complete]
--- [download 9% complete]
 -- [download 10% complete]
 -- [download 11% complete]
 -- [download 12% complete]
+-- [download 13% complete]
 -- [download 14% complete]
--- [download 15% complete]
 -- [download 16% complete]
+-- [download 17% complete]
 -- [download 18% complete]
 -- [download 19% complete]
 -- [download 20% complete]
--- [download 21% complete]
 -- [download 22% complete]
 -- [download 23% complete]
+-- [download 24% complete]
 -- [download 25% complete]
 -- [download 26% complete]
--- [download 27% complete]
+-- [download 28% complete]
 -- [download 29% complete]
 -- [download 30% complete]
--- [download 31% complete]
+-- [download 32% complete]
 -- [download 33% complete]
--- [download 34% complete]
+-- [download 35% complete]
 -- [download 36% complete]
 -- [download 37% complete]
 -- [download 38% complete]
--- [download 40% complete]
+-- [download 39% complete]
 -- [download 41% complete]
 -- [download 42% complete]
 -- [download 44% complete]
 -- [download 45% complete]
 -- [download 46% complete]
--- [download 47% complete]
 -- [download 48% complete]
--- [download 50% complete]
+-- [download 49% complete]
 -- [download 51% complete]
 -- [download 52% complete]
--- [download 53% complete]
 -- [download 54% complete]
+-- [download 55% complete]
 -- [download 56% complete]
--- [download 58% complete]
+-- [download 57% complete]
 -- [download 59% complete]
 -- [download 60% complete]
 -- [download 61% complete]
--- [download 62% complete]
 -- [download 63% complete]
 -- [download 64% complete]
--- [download 66% complete]
+-- [download 65% complete]
 -- [download 67% complete]
 -- [download 69% complete]
 -- [download 70% complete]
@@ -1299,7 +1239,7 @@ CMake Deprecation Warning at PTSD/lib/glm/CMakeLists.txt:2 (cmake_policy):
 -- [download 75% complete]
 -- [download 77% complete]
 -- [download 78% complete]
--- [download 80% complete]
+-- [download 79% complete]
 -- [download 81% complete]
 -- [download 82% complete]
 -- [download 84% complete]
@@ -1310,17 +1250,17 @@ CMake Deprecation Warning at PTSD/lib/glm/CMakeLists.txt:2 (cmake_policy):
 -- [download 90% complete]
 -- [download 92% complete]
 -- [download 93% complete]
--- [download 95% complete]
+-- [download 94% complete]
 -- [download 96% complete]
 -- [download 97% complete]
 -- [download 99% complete]
 -- [download 100% complete]
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.13.0.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.13.0.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.13.0.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/googletest'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.13.0.zip'
+     dst='/Users/easn/catmario/PTSD/lib/googletest'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -1349,11 +1289,11 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Populating glew
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild
 [ 11%] Creating directories for 'glew-populate'
 [ 22%] Performing download step (download, verify and extract) for 'glew-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-2.2.0.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-2.2.0.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/nigels-com/glew/releases/download/glew-2.2.0/glew-2.2.0.zip'
@@ -1368,48 +1308,48 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- [download 10% complete]
 -- [download 11% complete]
 -- [download 12% complete]
+-- [download 14% complete]
 -- [download 15% complete]
--- [download 16% complete]
 -- [download 17% complete]
 -- [download 18% complete]
 -- [download 20% complete]
 -- [download 21% complete]
 -- [download 22% complete]
--- [download 23% complete]
--- [download 24% complete]
+-- [download 25% complete]
 -- [download 26% complete]
 -- [download 27% complete]
--- [download 28% complete]
--- [download 29% complete]
 -- [download 31% complete]
--- [download 32% complete]
 -- [download 33% complete]
 -- [download 34% complete]
--- [download 36% complete]
 -- [download 38% complete]
 -- [download 39% complete]
+-- [download 41% complete]
 -- [download 42% complete]
--- [download 43% complete]
+-- [download 44% complete]
 -- [download 45% complete]
 -- [download 47% complete]
--- [download 48% complete]
--- [download 49% complete]
 -- [download 50% complete]
+-- [download 54% complete]
 -- [download 56% complete]
--- [download 58% complete]
--- [download 59% complete]
 -- [download 60% complete]
--- [download 61% complete]
 -- [download 63% complete]
--- [download 76% complete]
+-- [download 68% complete]
+-- [download 71% complete]
+-- [download 75% complete]
+-- [download 77% complete]
+-- [download 80% complete]
+-- [download 82% complete]
+-- [download 85% complete]
 -- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
 -- [download 100% complete]
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-2.2.0.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-2.2.0.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-2.2.0.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/glew'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-2.2.0.zip'
+     dst='/Users/easn/catmario/PTSD/lib/glew'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -1445,120 +1385,20 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Populating imgui
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/imgui-subbuild
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug/_deps/imgui-subbuild
 [ 11%] Creating directories for 'imgui-populate'
 [ 22%] Performing download step (download, verify and extract) for 'imgui-populate'
 -- Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://github.com/ocornut/imgui/archive/refs/tags/v1.90.4-docking.zip'
--- [download 1% complete]
--- [download 2% complete]
--- [download 3% complete]
--- [download 4% complete]
--- [download 5% complete]
--- [download 6% complete]
--- [download 7% complete]
--- [download 8% complete]
--- [download 9% complete]
--- [download 10% complete]
--- [download 11% complete]
--- [download 12% complete]
--- [download 13% complete]
--- [download 14% complete]
--- [download 15% complete]
--- [download 16% complete]
--- [download 17% complete]
--- [download 18% complete]
--- [download 19% complete]
--- [download 20% complete]
--- [download 21% complete]
--- [download 22% complete]
--- [download 23% complete]
--- [download 24% complete]
--- [download 25% complete]
--- [download 26% complete]
--- [download 27% complete]
--- [download 28% complete]
--- [download 29% complete]
--- [download 30% complete]
--- [download 31% complete]
--- [download 32% complete]
--- [download 33% complete]
--- [download 34% complete]
--- [download 35% complete]
--- [download 36% complete]
--- [download 37% complete]
--- [download 38% complete]
--- [download 39% complete]
--- [download 40% complete]
--- [download 41% complete]
--- [download 42% complete]
--- [download 43% complete]
--- [download 44% complete]
--- [download 45% complete]
--- [download 46% complete]
--- [download 47% complete]
--- [download 48% complete]
--- [download 49% complete]
--- [download 50% complete]
--- [download 51% complete]
--- [download 52% complete]
--- [download 53% complete]
--- [download 54% complete]
--- [download 55% complete]
--- [download 56% complete]
--- [download 57% complete]
--- [download 58% complete]
--- [download 59% complete]
--- [download 60% complete]
--- [download 61% complete]
--- [download 62% complete]
--- [download 63% complete]
--- [download 64% complete]
--- [download 65% complete]
--- [download 66% complete]
--- [download 67% complete]
--- [download 68% complete]
--- [download 69% complete]
--- [download 70% complete]
--- [download 71% complete]
--- [download 72% complete]
--- [download 73% complete]
--- [download 74% complete]
--- [download 75% complete]
--- [download 76% complete]
--- [download 77% complete]
--- [download 78% complete]
--- [download 79% complete]
--- [download 80% complete]
--- [download 81% complete]
--- [download 82% complete]
--- [download 83% complete]
--- [download 84% complete]
--- [download 85% complete]
--- [download 86% complete]
--- [download 87% complete]
--- [download 88% complete]
--- [download 89% complete]
--- [download 90% complete]
--- [download 91% complete]
--- [download 92% complete]
--- [download 93% complete]
--- [download 94% complete]
--- [download 95% complete]
--- [download 96% complete]
--- [download 97% complete]
--- [download 98% complete]
--- [download 99% complete]
--- [download 100% complete]
 -- verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip'
+       file='/Users/easn/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip'
 -- Downloading... done
 -- extracting...
-     src='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip'
-     dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/imgui'
+     src='/Users/easn/catmario/cmake-build-debug/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.90.4-docking.zip'
+     dst='/Users/easn/catmario/PTSD/lib/imgui'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -1572,10 +1412,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 [ 88%] No test step for 'imgui-populate'
 [100%] Completed 'imgui-populate'
 [100%] Built target imgui-populate
-CMake Error at CMakeLists.txt:25 (include):
-  include could not find requested file:
-
-    files.cmake
-
-
--- Configuring incomplete, errors occurred!
+-- Configuring done (46.1s)
+-- Generating done (0.2s)
+-- Build files have been written to: /Users/easn/catmario/cmake-build-debug

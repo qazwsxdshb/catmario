@@ -18,7 +18,7 @@ public:
 
 private:
     inline std::string ImagePath(const int phase) {
-        return GA_RESOURCE_DIR"/Image/Background/phase" + std::to_string(phase) + ".png";
+        return GA_RESOURCE_DIR"/res/Background" + std::to_string(phase) + ".png";
     }
 };
 

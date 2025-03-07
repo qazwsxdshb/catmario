@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(VERBOSE "verifying file...
-       file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'")
+       file='/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'")
 
-  file("MD5" "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip" actual_value)
+  file("MD5" "/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "69895110052f0d711c9c54fbf385f6f5")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(VERBOSE "MD5 hash of
-    /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip
+    /Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip
   does not match expected value
     expected: '69895110052f0d711c9c54fbf385f6f5'
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
+if(EXISTS "/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(VERBOSE "File already exists and hash match (skip download):
-  file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
+  file='/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
   MD5='69895110052f0d711c9c54fbf385f6f5'"
       )
       return()
     else()
       message(VERBOSE "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
+      file(REMOVE "/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
     endif()
   else()
     message(VERBOSE "File already exists but no hash specified (use URL_HASH):
-  file='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
+  file='/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
+    file(REMOVE "/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(VERBOSE "Downloading...
-   dst='/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
+   dst='/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -119,7 +119,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip"
+        "${url}" "/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -136,7 +136,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
+          file(REMOVE "/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip")
         else()
           message(VERBOSE "Downloading... done")
           return()

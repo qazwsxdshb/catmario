@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip" ABSOLUTE)
-get_filename_component(directory "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/glm" ABSOLUTE)
+get_filename_component(filename "/Users/easn/catmario/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.8.zip" ABSOLUTE)
+get_filename_component(directory "/Users/easn/catmario/PTSD/lib/glm" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

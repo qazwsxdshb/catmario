@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip" ABSOLUTE)
-get_filename_component(directory "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/spdlog" ABSOLUTE)
+get_filename_component(filename "/Users/easn/catmario/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/v1.10.0.zip" ABSOLUTE)
+get_filename_component(directory "/Users/easn/catmario/PTSD/lib/spdlog" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
+CMAKE_SOURCE_DIR = /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
+CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

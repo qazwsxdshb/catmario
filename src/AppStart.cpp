@@ -1,14 +1,24 @@
 #include "App.hpp"
 
 #include "Util/Logger.hpp"
+#include "Util/Input.hpp"
+
 
 void App::Start() {
     LOG_TRACE("Start");
 
-//    m_Giraffe = std::make_shared<Character>(GA_RESOURCE_DIR"/Image/Character/gray.png");
-//    m_Giraffe->SetPosition({-112.5f, -140.5f});
-//    m_Giraffe->SetZIndex(50);
-//    m_Root.AddChild(m_Giraffe);
+    m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player.png");
+    m_player->SetPosition({-112.5f, -140.5f});
+    m_player->SetZIndex(50);
+    m_Root.AddChild(m_player);
+
+
+    // glm::vec2 pos=Util::Input::GetCursorPosition();
+    // // if(0<pos.x && pos.x<100 && 0<pos.y && pos.y<100){
+    // if(Util::Input::IsKeyPressed(Util::Keycode::K)){
+    //     m_CurrentState = State::START;
+    // }
+    // m_CurrentState = State::UPDATE;
 //
 //
 //    std::vector<std::string> beeImages;

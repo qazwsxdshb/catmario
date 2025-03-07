@@ -20,8 +20,8 @@ project(imgui-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(imgui-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/ocornut/imgui/archive/refs/tags/v1.90.4-docking.zip" "URL_HASH" "MD5=384084df566474aec3729df4ea30b937"
-                    SOURCE_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/imgui"
-                    BINARY_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/imgui-build"
+                    SOURCE_DIR          "/Users/easn/catmario/PTSD/lib/imgui"
+                    BINARY_DIR          "/Users/easn/catmario/cmake-build-debug/_deps/imgui-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

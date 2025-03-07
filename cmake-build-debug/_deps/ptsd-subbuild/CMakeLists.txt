@@ -20,8 +20,8 @@ project(ptsd-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(ptsd-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/ntut-open-source-club/practical-tools-for-simple-design/archive/refs/tags/v0.2.zip"
-                    SOURCE_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD"
-                    BINARY_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/ptsd-build"
+                    SOURCE_DIR          "/Users/easn/catmario/PTSD"
+                    BINARY_DIR          "/Users/easn/catmario/cmake-build-debug/_deps/ptsd-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

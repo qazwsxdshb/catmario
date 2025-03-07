@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip" ABSOLUTE)
-get_filename_component(directory "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2_image" ABSOLUTE)
+get_filename_component(filename "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-subbuild/sdl2_image-populate-prefix/src/SDL2_image-2.6.3.zip" ABSOLUTE)
+get_filename_component(directory "/Users/easn/catmario/PTSD/lib/sdl2_image" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/download-glew-populate.cmake;COMMAND;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/verify-glew-populate.cmake;COMMAND;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/extract-glew-populate.cmake
-source_dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/glew
-work_dir=/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib
+command=/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/download-glew-populate.cmake;COMMAND;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/verify-glew-populate.cmake;COMMAND;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/catmario/cmake-build-debug/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/extract-glew-populate.cmake
+source_dir=/Users/easn/catmario/PTSD/lib/glew
+work_dir=/Users/easn/catmario/PTSD/lib
 url(s)=https://github.com/nigels-com/glew/releases/download/glew-2.2.0/glew-2.2.0.zip
 hash=MD5=970535b75b1b69ebd018a0fa05af63d1
       no_extract=

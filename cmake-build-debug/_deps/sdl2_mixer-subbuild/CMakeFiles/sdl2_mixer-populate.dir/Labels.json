@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/CMakeFiles/sdl2_mixer-populate"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/CMakeFiles/sdl2_mixer-populate"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/CMakeFiles/sdl2_mixer-populate.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/CMakeFiles/sdl2_mixer-populate.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/CMakeFiles/sdl2_mixer-populate-complete.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/CMakeFiles/sdl2_mixer-populate-complete.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-build.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-build.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-configure.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-configure.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-download.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-download.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-install.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-install.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-mkdir.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-mkdir.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-patch.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-patch.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-test.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-test.rule"
 		},
 		{
-			"file" : "/Users/easn/Library/CloudStorage/OneDrive-\u500b\u4eba/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-update.rule"
+			"file" : "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-update.rule"
 		}
 	],
 	"target" : 

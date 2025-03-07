@@ -20,8 +20,8 @@ project(glew-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(glew-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/nigels-com/glew/releases/download/glew-2.2.0/glew-2.2.0.zip" "URL_HASH" "MD5=970535b75b1b69ebd018a0fa05af63d1"
-                    SOURCE_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/glew"
-                    BINARY_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/glew-build"
+                    SOURCE_DIR          "/Users/easn/catmario/PTSD/lib/glew"
+                    BINARY_DIR          "/Users/easn/catmario/cmake-build-debug/_deps/glew-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

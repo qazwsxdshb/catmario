@@ -20,8 +20,8 @@ project(sdl2_mixer-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(sdl2_mixer-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/libsdl-org/SDL_mixer/releases/download/release-2.6.3/SDL2_mixer-2.6.3.zip" "URL_HASH" "MD5=fb3e71ef072ff8dd793cec3ed384f9a0"
-                    SOURCE_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2_mixer"
-                    BINARY_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_mixer-build"
+                    SOURCE_DIR          "/Users/easn/catmario/PTSD/lib/sdl2_mixer"
+                    BINARY_DIR          "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

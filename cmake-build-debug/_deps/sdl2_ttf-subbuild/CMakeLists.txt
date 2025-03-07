@@ -20,8 +20,8 @@ project(sdl2_ttf-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(sdl2_ttf-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.20.2/SDL2_ttf-2.20.2.zip" "URL_HASH" "MD5=7258258fdb2a4adb0072d337f94305f9"
-                    SOURCE_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2_ttf"
-                    BINARY_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_ttf-build"
+                    SOURCE_DIR          "/Users/easn/catmario/PTSD/lib/sdl2_ttf"
+                    BINARY_DIR          "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -20,8 +20,8 @@ project(sdl2_image-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(sdl2_image-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/libsdl-org/SDL_image/releases/download/release-2.6.3/SDL2_image-2.6.3.zip" "URL_HASH" "MD5=ecedb5078bbd31e7d1552e2b1443d2f6"
-                    SOURCE_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/PTSD/lib/sdl2_image"
-                    BINARY_DIR          "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/sdl2_image-build"
+                    SOURCE_DIR          "/Users/easn/catmario/PTSD/lib/sdl2_image"
+                    BINARY_DIR          "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_image-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

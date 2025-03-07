@@ -1,5 +1,5 @@
-if(EXISTS "/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/ptsd-build/Tests[1]_tests.cmake")
-  include("/Users/easn/Library/CloudStorage/OneDrive-個人/catmario/cmake-build-debug/_deps/ptsd-build/Tests[1]_tests.cmake")
+if(EXISTS "/Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/Tests[1]_tests.cmake")
+  include("/Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/Tests[1]_tests.cmake")
 else()
   add_test(Tests_NOT_BUILT Tests_NOT_BUILT)
 endif()
