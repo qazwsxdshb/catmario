@@ -1,8 +1,8 @@
-if (NOT EXISTS "/Users/easn/catmario/cmake-build-debug/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/Users/easn/catmario/cmake-build-debug/install_manifest.txt\"")
-endif(NOT EXISTS "/Users/easn/catmario/cmake-build-debug/install_manifest.txt")
+if (NOT EXISTS "/Users/easn/code/catmario/cmake-build-debug/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/Users/easn/code/catmario/cmake-build-debug/install_manifest.txt\"")
+endif(NOT EXISTS "/Users/easn/code/catmario/cmake-build-debug/install_manifest.txt")
 
-file(READ "/Users/easn/catmario/cmake-build-debug/install_manifest.txt" files)
+file(READ "/Users/easn/code/catmario/cmake-build-debug/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach (file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

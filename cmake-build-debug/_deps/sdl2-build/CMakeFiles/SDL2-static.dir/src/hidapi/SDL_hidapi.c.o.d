@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/SDL_hidapi.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/SDL_hidapi.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,15 +173,15 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_loadso.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/SDL_hidapi_c.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_loadso.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/SDL_hidapi_c.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_assert.h \
@@ -410,11 +410,11 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/usb/USBSpec.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/usb/AppleUSBDefinitions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/usb/IOUSBHostFamilyDefinitions.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/../core/linux/SDL_udev.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/../core/linux/../../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/mac/hid.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/mac/../../SDL_internal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/../core/linux/SDL_udev.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/../core/linux/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/mac/hid.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/mac/../../SDL_internal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDElement.h \
@@ -430,4 +430,4 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/pthread/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/time.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_timeval64.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/hidapi/mac/../hidapi/hidapi.h
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/hidapi/mac/../hidapi/hidapi.h

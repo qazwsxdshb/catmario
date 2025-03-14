@@ -1,4 +1,4 @@
-# Install script for directory: /Users/easn/catmario/PTSD/lib/sdl2_ttf
+# Install script for directory: /Users/easn/code/catmario/PTSD/lib/sdl2_ttf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/catmario.dir/depend.make
@@ -70,144 +70,144 @@ include CMakeFiles/catmario.dir/progress.make
 include CMakeFiles/catmario.dir/flags.make
 
 CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o: /Users/easn/catmario/src/AnimatedCharacter.cpp
+CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o: /Users/easn/code/catmario/src/AnimatedCharacter.cpp
 CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o -MF CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o.d -o CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o -c /Users/easn/catmario/src/AnimatedCharacter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o -MF CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o.d -o CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.o -c /Users/easn/code/catmario/src/AnimatedCharacter.cpp
 
 CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/AnimatedCharacter.cpp > CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/AnimatedCharacter.cpp > CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.i
 
 CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/AnimatedCharacter.cpp -o CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/AnimatedCharacter.cpp -o CMakeFiles/catmario.dir/src/AnimatedCharacter.cpp.s
 
 CMakeFiles/catmario.dir/src/AppEnd.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/AppEnd.cpp.o: /Users/easn/catmario/src/AppEnd.cpp
+CMakeFiles/catmario.dir/src/AppEnd.cpp.o: /Users/easn/code/catmario/src/AppEnd.cpp
 CMakeFiles/catmario.dir/src/AppEnd.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/catmario.dir/src/AppEnd.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppEnd.cpp.o -MF CMakeFiles/catmario.dir/src/AppEnd.cpp.o.d -o CMakeFiles/catmario.dir/src/AppEnd.cpp.o -c /Users/easn/catmario/src/AppEnd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/catmario.dir/src/AppEnd.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppEnd.cpp.o -MF CMakeFiles/catmario.dir/src/AppEnd.cpp.o.d -o CMakeFiles/catmario.dir/src/AppEnd.cpp.o -c /Users/easn/code/catmario/src/AppEnd.cpp
 
 CMakeFiles/catmario.dir/src/AppEnd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/AppEnd.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/AppEnd.cpp > CMakeFiles/catmario.dir/src/AppEnd.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/AppEnd.cpp > CMakeFiles/catmario.dir/src/AppEnd.cpp.i
 
 CMakeFiles/catmario.dir/src/AppEnd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/AppEnd.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/AppEnd.cpp -o CMakeFiles/catmario.dir/src/AppEnd.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/AppEnd.cpp -o CMakeFiles/catmario.dir/src/AppEnd.cpp.s
 
 CMakeFiles/catmario.dir/src/AppStart.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/AppStart.cpp.o: /Users/easn/catmario/src/AppStart.cpp
+CMakeFiles/catmario.dir/src/AppStart.cpp.o: /Users/easn/code/catmario/src/AppStart.cpp
 CMakeFiles/catmario.dir/src/AppStart.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/catmario.dir/src/AppStart.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppStart.cpp.o -MF CMakeFiles/catmario.dir/src/AppStart.cpp.o.d -o CMakeFiles/catmario.dir/src/AppStart.cpp.o -c /Users/easn/catmario/src/AppStart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/catmario.dir/src/AppStart.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppStart.cpp.o -MF CMakeFiles/catmario.dir/src/AppStart.cpp.o.d -o CMakeFiles/catmario.dir/src/AppStart.cpp.o -c /Users/easn/code/catmario/src/AppStart.cpp
 
 CMakeFiles/catmario.dir/src/AppStart.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/AppStart.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/AppStart.cpp > CMakeFiles/catmario.dir/src/AppStart.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/AppStart.cpp > CMakeFiles/catmario.dir/src/AppStart.cpp.i
 
 CMakeFiles/catmario.dir/src/AppStart.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/AppStart.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/AppStart.cpp -o CMakeFiles/catmario.dir/src/AppStart.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/AppStart.cpp -o CMakeFiles/catmario.dir/src/AppStart.cpp.s
 
 CMakeFiles/catmario.dir/src/AppUpdate.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/AppUpdate.cpp.o: /Users/easn/catmario/src/AppUpdate.cpp
+CMakeFiles/catmario.dir/src/AppUpdate.cpp.o: /Users/easn/code/catmario/src/AppUpdate.cpp
 CMakeFiles/catmario.dir/src/AppUpdate.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/catmario.dir/src/AppUpdate.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppUpdate.cpp.o -MF CMakeFiles/catmario.dir/src/AppUpdate.cpp.o.d -o CMakeFiles/catmario.dir/src/AppUpdate.cpp.o -c /Users/easn/catmario/src/AppUpdate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/catmario.dir/src/AppUpdate.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppUpdate.cpp.o -MF CMakeFiles/catmario.dir/src/AppUpdate.cpp.o.d -o CMakeFiles/catmario.dir/src/AppUpdate.cpp.o -c /Users/easn/code/catmario/src/AppUpdate.cpp
 
 CMakeFiles/catmario.dir/src/AppUpdate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/AppUpdate.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/AppUpdate.cpp > CMakeFiles/catmario.dir/src/AppUpdate.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/AppUpdate.cpp > CMakeFiles/catmario.dir/src/AppUpdate.cpp.i
 
 CMakeFiles/catmario.dir/src/AppUpdate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/AppUpdate.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/AppUpdate.cpp -o CMakeFiles/catmario.dir/src/AppUpdate.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/AppUpdate.cpp -o CMakeFiles/catmario.dir/src/AppUpdate.cpp.s
 
 CMakeFiles/catmario.dir/src/AppUtil.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/AppUtil.cpp.o: /Users/easn/catmario/src/AppUtil.cpp
+CMakeFiles/catmario.dir/src/AppUtil.cpp.o: /Users/easn/code/catmario/src/AppUtil.cpp
 CMakeFiles/catmario.dir/src/AppUtil.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/catmario.dir/src/AppUtil.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppUtil.cpp.o -MF CMakeFiles/catmario.dir/src/AppUtil.cpp.o.d -o CMakeFiles/catmario.dir/src/AppUtil.cpp.o -c /Users/easn/catmario/src/AppUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/catmario.dir/src/AppUtil.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppUtil.cpp.o -MF CMakeFiles/catmario.dir/src/AppUtil.cpp.o.d -o CMakeFiles/catmario.dir/src/AppUtil.cpp.o -c /Users/easn/code/catmario/src/AppUtil.cpp
 
 CMakeFiles/catmario.dir/src/AppUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/AppUtil.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/AppUtil.cpp > CMakeFiles/catmario.dir/src/AppUtil.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/AppUtil.cpp > CMakeFiles/catmario.dir/src/AppUtil.cpp.i
 
 CMakeFiles/catmario.dir/src/AppUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/AppUtil.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/AppUtil.cpp -o CMakeFiles/catmario.dir/src/AppUtil.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/AppUtil.cpp -o CMakeFiles/catmario.dir/src/AppUtil.cpp.s
 
 CMakeFiles/catmario.dir/src/AppZero.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/AppZero.cpp.o: /Users/easn/catmario/src/AppZero.cpp
+CMakeFiles/catmario.dir/src/AppZero.cpp.o: /Users/easn/code/catmario/src/AppZero.cpp
 CMakeFiles/catmario.dir/src/AppZero.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/catmario.dir/src/AppZero.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppZero.cpp.o -MF CMakeFiles/catmario.dir/src/AppZero.cpp.o.d -o CMakeFiles/catmario.dir/src/AppZero.cpp.o -c /Users/easn/catmario/src/AppZero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/catmario.dir/src/AppZero.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/AppZero.cpp.o -MF CMakeFiles/catmario.dir/src/AppZero.cpp.o.d -o CMakeFiles/catmario.dir/src/AppZero.cpp.o -c /Users/easn/code/catmario/src/AppZero.cpp
 
 CMakeFiles/catmario.dir/src/AppZero.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/AppZero.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/AppZero.cpp > CMakeFiles/catmario.dir/src/AppZero.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/AppZero.cpp > CMakeFiles/catmario.dir/src/AppZero.cpp.i
 
 CMakeFiles/catmario.dir/src/AppZero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/AppZero.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/AppZero.cpp -o CMakeFiles/catmario.dir/src/AppZero.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/AppZero.cpp -o CMakeFiles/catmario.dir/src/AppZero.cpp.s
 
 CMakeFiles/catmario.dir/src/Character.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/Character.cpp.o: /Users/easn/catmario/src/Character.cpp
+CMakeFiles/catmario.dir/src/Character.cpp.o: /Users/easn/code/catmario/src/Character.cpp
 CMakeFiles/catmario.dir/src/Character.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/catmario.dir/src/Character.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/Character.cpp.o -MF CMakeFiles/catmario.dir/src/Character.cpp.o.d -o CMakeFiles/catmario.dir/src/Character.cpp.o -c /Users/easn/catmario/src/Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/catmario.dir/src/Character.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/Character.cpp.o -MF CMakeFiles/catmario.dir/src/Character.cpp.o.d -o CMakeFiles/catmario.dir/src/Character.cpp.o -c /Users/easn/code/catmario/src/Character.cpp
 
 CMakeFiles/catmario.dir/src/Character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/Character.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/Character.cpp > CMakeFiles/catmario.dir/src/Character.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/Character.cpp > CMakeFiles/catmario.dir/src/Character.cpp.i
 
 CMakeFiles/catmario.dir/src/Character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/Character.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/Character.cpp -o CMakeFiles/catmario.dir/src/Character.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/Character.cpp -o CMakeFiles/catmario.dir/src/Character.cpp.s
 
 CMakeFiles/catmario.dir/src/PhaseManager.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/PhaseManager.cpp.o: /Users/easn/catmario/src/PhaseManager.cpp
+CMakeFiles/catmario.dir/src/PhaseManager.cpp.o: /Users/easn/code/catmario/src/PhaseManager.cpp
 CMakeFiles/catmario.dir/src/PhaseManager.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/catmario.dir/src/PhaseManager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/PhaseManager.cpp.o -MF CMakeFiles/catmario.dir/src/PhaseManager.cpp.o.d -o CMakeFiles/catmario.dir/src/PhaseManager.cpp.o -c /Users/easn/catmario/src/PhaseManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/catmario.dir/src/PhaseManager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/PhaseManager.cpp.o -MF CMakeFiles/catmario.dir/src/PhaseManager.cpp.o.d -o CMakeFiles/catmario.dir/src/PhaseManager.cpp.o -c /Users/easn/code/catmario/src/PhaseManager.cpp
 
 CMakeFiles/catmario.dir/src/PhaseManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/PhaseManager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/PhaseManager.cpp > CMakeFiles/catmario.dir/src/PhaseManager.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/PhaseManager.cpp > CMakeFiles/catmario.dir/src/PhaseManager.cpp.i
 
 CMakeFiles/catmario.dir/src/PhaseManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/PhaseManager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/PhaseManager.cpp -o CMakeFiles/catmario.dir/src/PhaseManager.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/PhaseManager.cpp -o CMakeFiles/catmario.dir/src/PhaseManager.cpp.s
 
 CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o: /Users/easn/catmario/src/ZeroUpdate.cpp
+CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o: /Users/easn/code/catmario/src/ZeroUpdate.cpp
 CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o -MF CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o.d -o CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o -c /Users/easn/catmario/src/ZeroUpdate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o -MF CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o.d -o CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o -c /Users/easn/code/catmario/src/ZeroUpdate.cpp
 
 CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/ZeroUpdate.cpp > CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/ZeroUpdate.cpp > CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.i
 
 CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/ZeroUpdate.cpp -o CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/ZeroUpdate.cpp -o CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.s
 
 CMakeFiles/catmario.dir/src/main.cpp.o: CMakeFiles/catmario.dir/flags.make
-CMakeFiles/catmario.dir/src/main.cpp.o: /Users/easn/catmario/src/main.cpp
+CMakeFiles/catmario.dir/src/main.cpp.o: /Users/easn/code/catmario/src/main.cpp
 CMakeFiles/catmario.dir/src/main.cpp.o: CMakeFiles/catmario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/catmario.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/main.cpp.o -MF CMakeFiles/catmario.dir/src/main.cpp.o.d -o CMakeFiles/catmario.dir/src/main.cpp.o -c /Users/easn/catmario/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/catmario.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/catmario.dir/src/main.cpp.o -MF CMakeFiles/catmario.dir/src/main.cpp.o.d -o CMakeFiles/catmario.dir/src/main.cpp.o -c /Users/easn/code/catmario/src/main.cpp
 
 CMakeFiles/catmario.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/catmario.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/src/main.cpp > CMakeFiles/catmario.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/src/main.cpp > CMakeFiles/catmario.dir/src/main.cpp.i
 
 CMakeFiles/catmario.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/catmario.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/src/main.cpp -o CMakeFiles/catmario.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/src/main.cpp -o CMakeFiles/catmario.dir/src/main.cpp.s
 
 # Object files for target catmario
 catmario_OBJECTS = \
@@ -247,7 +247,7 @@ catmario: _deps/sdl2-build/libSDL2d.a
 catmario: _deps/spdlog-build/libspdlogd.a
 catmario: _deps/ptsd-build/libImGui.a
 catmario: CMakeFiles/catmario.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable catmario"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable catmario"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/catmario.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -259,6 +259,6 @@ CMakeFiles/catmario.dir/clean:
 .PHONY : CMakeFiles/catmario.dir/clean
 
 CMakeFiles/catmario.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/CMakeFiles/catmario.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/CMakeFiles/catmario.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/catmario.dir/depend
 

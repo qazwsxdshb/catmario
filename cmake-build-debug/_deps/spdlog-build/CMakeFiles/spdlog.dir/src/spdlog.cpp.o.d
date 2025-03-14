@@ -1,10 +1,10 @@
 _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: \
-  /Users/easn/catmario/PTSD/lib/spdlog/src/spdlog.cpp \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/spdlog-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/spdlog.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/common.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/tweakme.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/null_mutex.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/src/spdlog.cpp \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/spdlog-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/spdlog.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/common.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/tweakme.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/null_mutex.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/atomic \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \
@@ -949,28 +949,28 @@ _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/fmt/fmt.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/core.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/format.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/registry.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/logger.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/backtracer.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg_buffer.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/circular_q.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/fmt.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/core.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/registry.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/logger.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/backtracer.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg_buffer.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/circular_q.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/version.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/synchronous_factory.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/pattern_formatter.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/os.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/formatter.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/common-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/backtracer-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/registry-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/periodic_worker.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/version.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/synchronous_factory.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/pattern_formatter.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/os.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/formatter.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/common-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/backtracer-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/registry-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/periodic_worker.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/condition_variable \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__stop_token/stop_callback.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__stop_token/intrusive_shared_ptr.h \
@@ -1012,10 +1012,10 @@ _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/this_thread.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/ansicolor_sink.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/console_globals.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/sink.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/os-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/ansicolor_sink.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/console_globals.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/sink.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/os-inl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/stat.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_filesec_t.h \
@@ -1029,11 +1029,11 @@ _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_select.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_uuid_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/gethostuuid.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/pattern_formatter-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/fmt_helper.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg_buffer-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/logger-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/sink-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink.h
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/pattern_formatter-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/fmt_helper.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg_buffer-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/logger-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/sink-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink.h

@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_shaders_gles2.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_shaders_gles2.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,19 +173,19 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_shaders_gle
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2platform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/KHR/khrplatform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2ext.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_shaders_gles2.h
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/KHR/khrplatform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2ext.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_shaders_gles2.h

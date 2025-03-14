@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/easn/catmario/PTSD/lib/sdl2_ttf/showfont.c" "_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o" "gcc" "_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o.d"
+  "/Users/easn/code/catmario/PTSD/lib/sdl2_ttf/showfont.c" "_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o" "gcc" "_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

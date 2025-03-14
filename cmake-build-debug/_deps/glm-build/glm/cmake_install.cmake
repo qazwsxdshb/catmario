@@ -1,4 +1,4 @@
-# Install script for directory: /Users/easn/catmario/PTSD/lib/glm/glm
+# Install script for directory: /Users/easn/code/catmario/PTSD/lib/glm/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

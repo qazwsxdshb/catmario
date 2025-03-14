@@ -1,6 +1,6 @@
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o: \
-  /Users/easn/catmario/PTSD/lib/glew/src/glew.c \
-  /Users/easn/catmario/PTSD/lib/glew/build/cmake/../../include/GL/glew.h \
+  /Users/easn/code/catmario/PTSD/lib/glew/src/glew.c \
+  /Users/easn/code/catmario/PTSD/lib/glew/build/cmake/../../include/GL/glew.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_header_macro.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \

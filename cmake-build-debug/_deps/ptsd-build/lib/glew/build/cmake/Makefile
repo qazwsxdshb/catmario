@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/catmario/cmake-build-debug/CPackSourceConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/code/catmario/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake//CMakeFiles/progress.marks
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake//CMakeFiles/progress.marks
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/clean
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/rule
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ glew: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/rule
 
 # fast build rule for target.
 glew/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build
 .PHONY : glew/fast
 
 # Convenience name for target.
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/rule
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/rule
 
 # Convenience name for target.
@@ -206,12 +206,12 @@ glew_s: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/rule
 
 # fast build rule for target.
 glew_s/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build
 .PHONY : glew_s/fast
 
 # Convenience name for target.
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/rule
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/rule
 
 # Convenience name for target.
@@ -220,12 +220,12 @@ glewinfo: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/rule
 
 # fast build rule for target.
 glewinfo/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build
 .PHONY : glewinfo/fast
 
 # Convenience name for target.
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/rule
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/rule
 
 # Convenience name for target.
@@ -234,7 +234,7 @@ visualinfo: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/rule
 
 # fast build rule for target.
 visualinfo/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build
 .PHONY : visualinfo/fast
 
 __/__/src/glew.o: __/__/src/glew.c.o
@@ -242,8 +242,8 @@ __/__/src/glew.o: __/__/src/glew.c.o
 
 # target to build an object file
 __/__/src/glew.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.o
 .PHONY : __/__/src/glew.c.o
 
 __/__/src/glew.i: __/__/src/glew.c.i
@@ -251,8 +251,8 @@ __/__/src/glew.i: __/__/src/glew.c.i
 
 # target to preprocess a source file
 __/__/src/glew.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.i
 .PHONY : __/__/src/glew.c.i
 
 __/__/src/glew.s: __/__/src/glew.c.s
@@ -260,8 +260,8 @@ __/__/src/glew.s: __/__/src/glew.c.s
 
 # target to generate assembly for a file
 __/__/src/glew.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.s
 .PHONY : __/__/src/glew.c.s
 
 __/__/src/glewinfo.o: __/__/src/glewinfo.c.o
@@ -269,7 +269,7 @@ __/__/src/glewinfo.o: __/__/src/glewinfo.c.o
 
 # target to build an object file
 __/__/src/glewinfo.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.o
 .PHONY : __/__/src/glewinfo.c.o
 
 __/__/src/glewinfo.i: __/__/src/glewinfo.c.i
@@ -277,7 +277,7 @@ __/__/src/glewinfo.i: __/__/src/glewinfo.c.i
 
 # target to preprocess a source file
 __/__/src/glewinfo.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.i
 .PHONY : __/__/src/glewinfo.c.i
 
 __/__/src/glewinfo.s: __/__/src/glewinfo.c.s
@@ -285,7 +285,7 @@ __/__/src/glewinfo.s: __/__/src/glewinfo.c.s
 
 # target to generate assembly for a file
 __/__/src/glewinfo.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.s
 .PHONY : __/__/src/glewinfo.c.s
 
 __/__/src/visualinfo.o: __/__/src/visualinfo.c.o
@@ -293,7 +293,7 @@ __/__/src/visualinfo.o: __/__/src/visualinfo.c.o
 
 # target to build an object file
 __/__/src/visualinfo.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o
 .PHONY : __/__/src/visualinfo.c.o
 
 __/__/src/visualinfo.i: __/__/src/visualinfo.c.i
@@ -301,7 +301,7 @@ __/__/src/visualinfo.i: __/__/src/visualinfo.c.i
 
 # target to preprocess a source file
 __/__/src/visualinfo.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.i
 .PHONY : __/__/src/visualinfo.c.i
 
 __/__/src/visualinfo.s: __/__/src/visualinfo.c.s
@@ -309,7 +309,7 @@ __/__/src/visualinfo.s: __/__/src/visualinfo.c.s
 
 # target to generate assembly for a file
 __/__/src/visualinfo.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.s
 .PHONY : __/__/src/visualinfo.c.s
 
 # Help Target
@@ -350,6 +350,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

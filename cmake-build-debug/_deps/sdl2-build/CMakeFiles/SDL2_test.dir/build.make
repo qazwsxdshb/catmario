@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/sdl2-build/CMakeFiles/SDL2_test.dir/depend.make
@@ -70,228 +70,228 @@ include _deps/sdl2-build/CMakeFiles/SDL2_test.dir/progress.make
 include _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_assert.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_common.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_compare.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_crc32.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_font.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_fuzzer.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_harness.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlit.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageBlitBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imageFace.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitives.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_imagePrimitivesBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_log.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_md5.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_memory.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c
+_deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/test/SDL_test_random.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s
 
 # Object files for target SDL2_test
 SDL2_test_OBJECTS = \
@@ -333,19 +333,19 @@ _deps/sdl2-build/libSDL2_test.a: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/t
 _deps/sdl2-build/libSDL2_test.a: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o
 _deps/sdl2-build/libSDL2_test.a: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build.make
 _deps/sdl2-build/libSDL2_test.a: _deps/sdl2-build/CMakeFiles/SDL2_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C static library libSDL2_test.a"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean_target.cmake
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C static library libSDL2_test.a"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean_target.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build: _deps/sdl2-build/libSDL2_test.a
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2_test.dir/build
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean.cmake
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2_test.dir/clean
 
 _deps/sdl2-build/CMakeFiles/SDL2_test.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD/lib/sdl2 /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD/lib/sdl2 /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2_test.dir/depend
 

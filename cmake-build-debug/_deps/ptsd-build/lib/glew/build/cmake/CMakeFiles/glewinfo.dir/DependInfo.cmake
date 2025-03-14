@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/easn/catmario/PTSD/lib/glew/src/glewinfo.c" "_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.o" "gcc" "_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.o.d"
+  "/Users/easn/code/catmario/PTSD/lib/glew/src/glewinfo.c" "_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.o" "gcc" "_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glewinfo.dir/__/__/src/glewinfo.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

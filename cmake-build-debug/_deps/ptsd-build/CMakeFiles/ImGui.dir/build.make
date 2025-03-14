@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/ptsd-build/CMakeFiles/ImGui.dir/depend.make
@@ -70,102 +70,102 @@ include _deps/ptsd-build/CMakeFiles/ImGui.dir/progress.make
 include _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
-_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp
+_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o -c /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o -c /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp > CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp > CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.i
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.s
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
-_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp
+_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
-_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o: /Users/easn/catmario/PTSD/lib/imgui/imgui.cpp
+_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o: /Users/easn/code/catmario/PTSD/lib/imgui/imgui.cpp
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o -c /Users/easn/catmario/PTSD/lib/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o -c /Users/easn/code/catmario/PTSD/lib/imgui/imgui.cpp
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/lib/imgui/imgui.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/imgui/imgui.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.i
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/lib/imgui/imgui.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/imgui/imgui.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.s
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
-_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o: /Users/easn/catmario/PTSD/lib/imgui/imgui_demo.cpp
+_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o: /Users/easn/code/catmario/PTSD/lib/imgui/imgui_demo.cpp
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o -c /Users/easn/catmario/PTSD/lib/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o -c /Users/easn/code/catmario/PTSD/lib/imgui/imgui_demo.cpp
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/lib/imgui/imgui_demo.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/imgui/imgui_demo.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.i
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/lib/imgui/imgui_demo.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/imgui/imgui_demo.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.s
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
-_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o: /Users/easn/catmario/PTSD/lib/imgui/imgui_draw.cpp
+_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o: /Users/easn/code/catmario/PTSD/lib/imgui/imgui_draw.cpp
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o -c /Users/easn/catmario/PTSD/lib/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o -c /Users/easn/code/catmario/PTSD/lib/imgui/imgui_draw.cpp
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/lib/imgui/imgui_draw.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/imgui/imgui_draw.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.i
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/lib/imgui/imgui_draw.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/imgui/imgui_draw.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.s
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
-_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o: /Users/easn/catmario/PTSD/lib/imgui/imgui_tables.cpp
+_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o: /Users/easn/code/catmario/PTSD/lib/imgui/imgui_tables.cpp
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o -c /Users/easn/catmario/PTSD/lib/imgui/imgui_tables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o -c /Users/easn/code/catmario/PTSD/lib/imgui/imgui_tables.cpp
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/lib/imgui/imgui_tables.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/imgui/imgui_tables.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.i
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/lib/imgui/imgui_tables.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/imgui/imgui_tables.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.s
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/flags.make
-_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o: /Users/easn/catmario/PTSD/lib/imgui/imgui_widgets.cpp
+_deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o: /Users/easn/code/catmario/PTSD/lib/imgui/imgui_widgets.cpp
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o: _deps/ptsd-build/CMakeFiles/ImGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o -c /Users/easn/catmario/PTSD/lib/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o -MF CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o -c /Users/easn/code/catmario/PTSD/lib/imgui/imgui_widgets.cpp
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/lib/imgui/imgui_widgets.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/imgui/imgui_widgets.cpp > CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.i
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/lib/imgui/imgui_widgets.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/imgui/imgui_widgets.cpp -o CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.s
 
 # Object files for target ImGui
 ImGui_OBJECTS = \
@@ -189,19 +189,19 @@ _deps/ptsd-build/libImGui.a: _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/img
 _deps/ptsd-build/libImGui.a: _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o
 _deps/ptsd-build/libImGui.a: _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make
 _deps/ptsd-build/libImGui.a: _deps/ptsd-build/CMakeFiles/ImGui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libImGui.a"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -P CMakeFiles/ImGui.dir/cmake_clean_target.cmake
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ImGui.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libImGui.a"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -P CMakeFiles/ImGui.dir/cmake_clean_target.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ImGui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/ptsd-build/CMakeFiles/ImGui.dir/build: _deps/ptsd-build/libImGui.a
 .PHONY : _deps/ptsd-build/CMakeFiles/ImGui.dir/build
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -P CMakeFiles/ImGui.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -P CMakeFiles/ImGui.dir/cmake_clean.cmake
 .PHONY : _deps/ptsd-build/CMakeFiles/ImGui.dir/clean
 
 _deps/ptsd-build/CMakeFiles/ImGui.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/CMakeFiles/ImGui.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/CMakeFiles/ImGui.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/ptsd-build/CMakeFiles/ImGui.dir/depend
 

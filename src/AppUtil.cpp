@@ -9,8 +9,6 @@
  * @note See README.md for the task details.
  */
 void App::ValidTask() {
-    bool isBeeLooping;
-    bool isBeePlaying;
     LOG_DEBUG("Validating the task {}", static_cast<int>(m_Phase));
     switch (m_Phase) {
         case Phase::zero:

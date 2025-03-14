@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/easn/catmario/PTSD/lib/sdl2_ttf/SDL_ttf.c" "_deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.o" "gcc" "_deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.o.d"
+  "/Users/easn/code/catmario/PTSD/lib/sdl2_ttf/SDL_ttf.c" "_deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.o" "gcc" "_deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

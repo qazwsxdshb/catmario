@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/progress
 include _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/flags.make
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/flags.make
-_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o: /Users/easn/catmario/PTSD/lib/glew/src/visualinfo.c
+_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o: /Users/easn/code/catmario/PTSD/lib/glew/src/visualinfo.c
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o -MF CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o.d -o CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o -c /Users/easn/catmario/PTSD/lib/glew/src/visualinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o -MF CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o.d -o CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.o -c /Users/easn/code/catmario/PTSD/lib/glew/src/visualinfo.c
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/glew/src/visualinfo.c > CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/glew/src/visualinfo.c > CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.i
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/glew/src/visualinfo.c -o CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/glew/src/visualinfo.c -o CMakeFiles/visualinfo.dir/__/__/src/visualinfo.c.s
 
 # Object files for target visualinfo
 visualinfo_OBJECTS = \
@@ -94,18 +94,18 @@ bin/visualinfo: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/
 bin/visualinfo: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build.make
 bin/visualinfo: lib/libGLEWd.a
 bin/visualinfo: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../../../../../bin/visualinfo"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/visualinfo.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../../../../../bin/visualinfo"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/visualinfo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build: bin/visualinfo
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/build
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/visualinfo.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/visualinfo.dir/cmake_clean.cmake
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/clean
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD/lib/glew/build/cmake /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD/lib/glew/build/cmake /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/visualinfo.dir/depend
 

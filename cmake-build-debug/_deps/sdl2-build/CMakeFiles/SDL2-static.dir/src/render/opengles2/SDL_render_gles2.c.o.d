@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_render_gles2.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_render_gles2.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_render_gles2.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,54 +173,54 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_render_gles
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/SDL_sysvideo.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/../SDL_internal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/SDL_vulkan_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vk_platform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan_core.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan_macos.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan_metal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2platform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/KHR/khrplatform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2ext.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../SDL_sysrender.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_render.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../SDL_yuv_sw_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/SDL_blit.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/SDL_sysvideo.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/../SDL_internal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/SDL_vulkan_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vk_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan_core.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan_macos.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/./khronos/vulkan/vulkan_metal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/KHR/khrplatform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/khronos/GLES2/gl2ext.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../SDL_sysrender.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_render.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../SDL_yuv_sw_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/../../video/SDL_blit.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_neon.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_bf16.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_shaders_gles2.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_gles2funcs.h
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_shaders_gles2.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/render/opengles2/SDL_gles2funcs.h

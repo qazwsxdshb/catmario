@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/easn/catmario/PTSD/lib/sdl2_image/showimage.c" "_deps/sdl2_image-build/CMakeFiles/showimage.dir/showimage.c.o" "gcc" "_deps/sdl2_image-build/CMakeFiles/showimage.dir/showimage.c.o.d"
+  "/Users/easn/code/catmario/PTSD/lib/sdl2_image/showimage.c" "_deps/sdl2_image-build/CMakeFiles/showimage.dir/showimage.c.o" "gcc" "_deps/sdl2_image-build/CMakeFiles/showimage.dir/showimage.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/progress.make
 include _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/flags.make
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/flags.make
-_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: /Users/easn/catmario/PTSD/lib/glew/src/glew.c
+_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: /Users/easn/code/catmario/PTSD/lib/glew/src/glew.c
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o -MF CMakeFiles/glew.dir/__/__/src/glew.c.o.d -o CMakeFiles/glew.dir/__/__/src/glew.c.o -c /Users/easn/catmario/PTSD/lib/glew/src/glew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o -MF CMakeFiles/glew.dir/__/__/src/glew.c.o.d -o CMakeFiles/glew.dir/__/__/src/glew.c.o -c /Users/easn/code/catmario/PTSD/lib/glew/src/glew.c
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glew.dir/__/__/src/glew.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/glew/src/glew.c > CMakeFiles/glew.dir/__/__/src/glew.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/glew/src/glew.c > CMakeFiles/glew.dir/__/__/src/glew.c.i
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glew.dir/__/__/src/glew.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/glew/src/glew.c -o CMakeFiles/glew.dir/__/__/src/glew.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/glew/src/glew.c -o CMakeFiles/glew.dir/__/__/src/glew.c.s
 
 # Object files for target glew
 glew_OBJECTS = \
@@ -93,9 +93,9 @@ glew_EXTERNAL_OBJECTS =
 lib/libGLEWd.2.2.0.dylib: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.o
 lib/libGLEWd.2.2.0.dylib: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build.make
 lib/libGLEWd.2.2.0.dylib: _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library ../../../../../../lib/libGLEWd.dylib"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../../../../lib/libGLEWd.2.2.0.dylib ../../../../../../lib/libGLEWd.2.2.dylib ../../../../../../lib/libGLEWd.dylib
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library ../../../../../../lib/libGLEWd.dylib"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../../../../lib/libGLEWd.2.2.0.dylib ../../../../../../lib/libGLEWd.2.2.dylib ../../../../../../lib/libGLEWd.dylib
 
 lib/libGLEWd.2.2.dylib: lib/libGLEWd.2.2.0.dylib
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/libGLEWd.2.2.dylib
@@ -108,10 +108,10 @@ _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build: lib/libGLEWd.dy
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/build
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean.cmake
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/clean
 
 _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD/lib/glew/build/cmake /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD/lib/glew/build/cmake /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/ptsd-build/lib/glew/build/cmake/CMakeFiles/glew.dir/depend
 

@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/catmario/cmake-build-debug/CPackSourceConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/code/catmario/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles /Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-build//CMakeFiles/progress.marks
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_mixer-build//CMakeFiles/progress.marks
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/clean
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/rule
 .PHONY : _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ SDL2_mixer: _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/rule
 
 # fast build rule for target.
 SDL2_mixer/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build
 .PHONY : SDL2_mixer/fast
 
 # Convenience name for target.
 _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/rule
 .PHONY : _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/rule
 
 # Convenience name for target.
@@ -206,12 +206,12 @@ playmus: _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/rule
 
 # fast build rule for target.
 playmus/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build
 .PHONY : playmus/fast
 
 # Convenience name for target.
 _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/rule
 .PHONY : _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ playwave: _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/rule
 
 # fast build rule for target.
 playwave/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build
 .PHONY : playwave/fast
 
 playmus.o: playmus.c.o
@@ -228,7 +228,7 @@ playmus.o: playmus.c.o
 
 # target to build an object file
 playmus.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/playmus.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/playmus.c.o
 .PHONY : playmus.c.o
 
 playmus.i: playmus.c.i
@@ -236,7 +236,7 @@ playmus.i: playmus.c.i
 
 # target to preprocess a source file
 playmus.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/playmus.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/playmus.c.i
 .PHONY : playmus.c.i
 
 playmus.s: playmus.c.s
@@ -244,7 +244,7 @@ playmus.s: playmus.c.s
 
 # target to generate assembly for a file
 playmus.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/playmus.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playmus.dir/playmus.c.s
 .PHONY : playmus.c.s
 
 playwave.o: playwave.c.o
@@ -252,7 +252,7 @@ playwave.o: playwave.c.o
 
 # target to build an object file
 playwave.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/playwave.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/playwave.c.o
 .PHONY : playwave.c.o
 
 playwave.i: playwave.c.i
@@ -260,7 +260,7 @@ playwave.i: playwave.c.i
 
 # target to preprocess a source file
 playwave.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/playwave.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/playwave.c.i
 .PHONY : playwave.c.i
 
 playwave.s: playwave.c.s
@@ -268,7 +268,7 @@ playwave.s: playwave.c.s
 
 # target to generate assembly for a file
 playwave.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/playwave.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/playwave.dir/playwave.c.s
 .PHONY : playwave.c.s
 
 src/codecs/load_aiff.o: src/codecs/load_aiff.c.o
@@ -276,7 +276,7 @@ src/codecs/load_aiff.o: src/codecs/load_aiff.c.o
 
 # target to build an object file
 src/codecs/load_aiff.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_aiff.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_aiff.c.o
 .PHONY : src/codecs/load_aiff.c.o
 
 src/codecs/load_aiff.i: src/codecs/load_aiff.c.i
@@ -284,7 +284,7 @@ src/codecs/load_aiff.i: src/codecs/load_aiff.c.i
 
 # target to preprocess a source file
 src/codecs/load_aiff.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_aiff.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_aiff.c.i
 .PHONY : src/codecs/load_aiff.c.i
 
 src/codecs/load_aiff.s: src/codecs/load_aiff.c.s
@@ -292,7 +292,7 @@ src/codecs/load_aiff.s: src/codecs/load_aiff.c.s
 
 # target to generate assembly for a file
 src/codecs/load_aiff.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_aiff.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_aiff.c.s
 .PHONY : src/codecs/load_aiff.c.s
 
 src/codecs/load_voc.o: src/codecs/load_voc.c.o
@@ -300,7 +300,7 @@ src/codecs/load_voc.o: src/codecs/load_voc.c.o
 
 # target to build an object file
 src/codecs/load_voc.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_voc.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_voc.c.o
 .PHONY : src/codecs/load_voc.c.o
 
 src/codecs/load_voc.i: src/codecs/load_voc.c.i
@@ -308,7 +308,7 @@ src/codecs/load_voc.i: src/codecs/load_voc.c.i
 
 # target to preprocess a source file
 src/codecs/load_voc.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_voc.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_voc.c.i
 .PHONY : src/codecs/load_voc.c.i
 
 src/codecs/load_voc.s: src/codecs/load_voc.c.s
@@ -316,7 +316,7 @@ src/codecs/load_voc.s: src/codecs/load_voc.c.s
 
 # target to generate assembly for a file
 src/codecs/load_voc.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_voc.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/load_voc.c.s
 .PHONY : src/codecs/load_voc.c.s
 
 src/codecs/mp3utils.o: src/codecs/mp3utils.c.o
@@ -324,7 +324,7 @@ src/codecs/mp3utils.o: src/codecs/mp3utils.c.o
 
 # target to build an object file
 src/codecs/mp3utils.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/mp3utils.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/mp3utils.c.o
 .PHONY : src/codecs/mp3utils.c.o
 
 src/codecs/mp3utils.i: src/codecs/mp3utils.c.i
@@ -332,7 +332,7 @@ src/codecs/mp3utils.i: src/codecs/mp3utils.c.i
 
 # target to preprocess a source file
 src/codecs/mp3utils.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/mp3utils.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/mp3utils.c.i
 .PHONY : src/codecs/mp3utils.c.i
 
 src/codecs/mp3utils.s: src/codecs/mp3utils.c.s
@@ -340,7 +340,7 @@ src/codecs/mp3utils.s: src/codecs/mp3utils.c.s
 
 # target to generate assembly for a file
 src/codecs/mp3utils.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/mp3utils.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/mp3utils.c.s
 .PHONY : src/codecs/mp3utils.c.s
 
 src/codecs/music_cmd.o: src/codecs/music_cmd.c.o
@@ -348,7 +348,7 @@ src/codecs/music_cmd.o: src/codecs/music_cmd.c.o
 
 # target to build an object file
 src/codecs/music_cmd.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_cmd.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_cmd.c.o
 .PHONY : src/codecs/music_cmd.c.o
 
 src/codecs/music_cmd.i: src/codecs/music_cmd.c.i
@@ -356,7 +356,7 @@ src/codecs/music_cmd.i: src/codecs/music_cmd.c.i
 
 # target to preprocess a source file
 src/codecs/music_cmd.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_cmd.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_cmd.c.i
 .PHONY : src/codecs/music_cmd.c.i
 
 src/codecs/music_cmd.s: src/codecs/music_cmd.c.s
@@ -364,7 +364,7 @@ src/codecs/music_cmd.s: src/codecs/music_cmd.c.s
 
 # target to generate assembly for a file
 src/codecs/music_cmd.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_cmd.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_cmd.c.s
 .PHONY : src/codecs/music_cmd.c.s
 
 src/codecs/music_drflac.o: src/codecs/music_drflac.c.o
@@ -372,7 +372,7 @@ src/codecs/music_drflac.o: src/codecs/music_drflac.c.o
 
 # target to build an object file
 src/codecs/music_drflac.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.o
 .PHONY : src/codecs/music_drflac.c.o
 
 src/codecs/music_drflac.i: src/codecs/music_drflac.c.i
@@ -380,7 +380,7 @@ src/codecs/music_drflac.i: src/codecs/music_drflac.c.i
 
 # target to preprocess a source file
 src/codecs/music_drflac.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.i
 .PHONY : src/codecs/music_drflac.c.i
 
 src/codecs/music_drflac.s: src/codecs/music_drflac.c.s
@@ -388,7 +388,7 @@ src/codecs/music_drflac.s: src/codecs/music_drflac.c.s
 
 # target to generate assembly for a file
 src/codecs/music_drflac.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.s
 .PHONY : src/codecs/music_drflac.c.s
 
 src/codecs/music_drmp3.o: src/codecs/music_drmp3.c.o
@@ -396,7 +396,7 @@ src/codecs/music_drmp3.o: src/codecs/music_drmp3.c.o
 
 # target to build an object file
 src/codecs/music_drmp3.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drmp3.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drmp3.c.o
 .PHONY : src/codecs/music_drmp3.c.o
 
 src/codecs/music_drmp3.i: src/codecs/music_drmp3.c.i
@@ -404,7 +404,7 @@ src/codecs/music_drmp3.i: src/codecs/music_drmp3.c.i
 
 # target to preprocess a source file
 src/codecs/music_drmp3.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drmp3.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drmp3.c.i
 .PHONY : src/codecs/music_drmp3.c.i
 
 src/codecs/music_drmp3.s: src/codecs/music_drmp3.c.s
@@ -412,7 +412,7 @@ src/codecs/music_drmp3.s: src/codecs/music_drmp3.c.s
 
 # target to generate assembly for a file
 src/codecs/music_drmp3.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drmp3.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_drmp3.c.s
 .PHONY : src/codecs/music_drmp3.c.s
 
 src/codecs/music_flac.o: src/codecs/music_flac.c.o
@@ -420,7 +420,7 @@ src/codecs/music_flac.o: src/codecs/music_flac.c.o
 
 # target to build an object file
 src/codecs/music_flac.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_flac.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_flac.c.o
 .PHONY : src/codecs/music_flac.c.o
 
 src/codecs/music_flac.i: src/codecs/music_flac.c.i
@@ -428,7 +428,7 @@ src/codecs/music_flac.i: src/codecs/music_flac.c.i
 
 # target to preprocess a source file
 src/codecs/music_flac.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_flac.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_flac.c.i
 .PHONY : src/codecs/music_flac.c.i
 
 src/codecs/music_flac.s: src/codecs/music_flac.c.s
@@ -436,7 +436,7 @@ src/codecs/music_flac.s: src/codecs/music_flac.c.s
 
 # target to generate assembly for a file
 src/codecs/music_flac.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_flac.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_flac.c.s
 .PHONY : src/codecs/music_flac.c.s
 
 src/codecs/music_fluidsynth.o: src/codecs/music_fluidsynth.c.o
@@ -444,7 +444,7 @@ src/codecs/music_fluidsynth.o: src/codecs/music_fluidsynth.c.o
 
 # target to build an object file
 src/codecs/music_fluidsynth.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.o
 .PHONY : src/codecs/music_fluidsynth.c.o
 
 src/codecs/music_fluidsynth.i: src/codecs/music_fluidsynth.c.i
@@ -452,7 +452,7 @@ src/codecs/music_fluidsynth.i: src/codecs/music_fluidsynth.c.i
 
 # target to preprocess a source file
 src/codecs/music_fluidsynth.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.i
 .PHONY : src/codecs/music_fluidsynth.c.i
 
 src/codecs/music_fluidsynth.s: src/codecs/music_fluidsynth.c.s
@@ -460,7 +460,7 @@ src/codecs/music_fluidsynth.s: src/codecs/music_fluidsynth.c.s
 
 # target to generate assembly for a file
 src/codecs/music_fluidsynth.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.s
 .PHONY : src/codecs/music_fluidsynth.c.s
 
 src/codecs/music_modplug.o: src/codecs/music_modplug.c.o
@@ -468,7 +468,7 @@ src/codecs/music_modplug.o: src/codecs/music_modplug.c.o
 
 # target to build an object file
 src/codecs/music_modplug.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.o
 .PHONY : src/codecs/music_modplug.c.o
 
 src/codecs/music_modplug.i: src/codecs/music_modplug.c.i
@@ -476,7 +476,7 @@ src/codecs/music_modplug.i: src/codecs/music_modplug.c.i
 
 # target to preprocess a source file
 src/codecs/music_modplug.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.i
 .PHONY : src/codecs/music_modplug.c.i
 
 src/codecs/music_modplug.s: src/codecs/music_modplug.c.s
@@ -484,7 +484,7 @@ src/codecs/music_modplug.s: src/codecs/music_modplug.c.s
 
 # target to generate assembly for a file
 src/codecs/music_modplug.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.s
 .PHONY : src/codecs/music_modplug.c.s
 
 src/codecs/music_mpg123.o: src/codecs/music_mpg123.c.o
@@ -492,7 +492,7 @@ src/codecs/music_mpg123.o: src/codecs/music_mpg123.c.o
 
 # target to build an object file
 src/codecs/music_mpg123.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_mpg123.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_mpg123.c.o
 .PHONY : src/codecs/music_mpg123.c.o
 
 src/codecs/music_mpg123.i: src/codecs/music_mpg123.c.i
@@ -500,7 +500,7 @@ src/codecs/music_mpg123.i: src/codecs/music_mpg123.c.i
 
 # target to preprocess a source file
 src/codecs/music_mpg123.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_mpg123.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_mpg123.c.i
 .PHONY : src/codecs/music_mpg123.c.i
 
 src/codecs/music_mpg123.s: src/codecs/music_mpg123.c.s
@@ -508,7 +508,7 @@ src/codecs/music_mpg123.s: src/codecs/music_mpg123.c.s
 
 # target to generate assembly for a file
 src/codecs/music_mpg123.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_mpg123.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_mpg123.c.s
 .PHONY : src/codecs/music_mpg123.c.s
 
 src/codecs/music_nativemidi.o: src/codecs/music_nativemidi.c.o
@@ -516,7 +516,7 @@ src/codecs/music_nativemidi.o: src/codecs/music_nativemidi.c.o
 
 # target to build an object file
 src/codecs/music_nativemidi.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_nativemidi.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_nativemidi.c.o
 .PHONY : src/codecs/music_nativemidi.c.o
 
 src/codecs/music_nativemidi.i: src/codecs/music_nativemidi.c.i
@@ -524,7 +524,7 @@ src/codecs/music_nativemidi.i: src/codecs/music_nativemidi.c.i
 
 # target to preprocess a source file
 src/codecs/music_nativemidi.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_nativemidi.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_nativemidi.c.i
 .PHONY : src/codecs/music_nativemidi.c.i
 
 src/codecs/music_nativemidi.s: src/codecs/music_nativemidi.c.s
@@ -532,7 +532,7 @@ src/codecs/music_nativemidi.s: src/codecs/music_nativemidi.c.s
 
 # target to generate assembly for a file
 src/codecs/music_nativemidi.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_nativemidi.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_nativemidi.c.s
 .PHONY : src/codecs/music_nativemidi.c.s
 
 src/codecs/music_ogg.o: src/codecs/music_ogg.c.o
@@ -540,7 +540,7 @@ src/codecs/music_ogg.o: src/codecs/music_ogg.c.o
 
 # target to build an object file
 src/codecs/music_ogg.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg.c.o
 .PHONY : src/codecs/music_ogg.c.o
 
 src/codecs/music_ogg.i: src/codecs/music_ogg.c.i
@@ -548,7 +548,7 @@ src/codecs/music_ogg.i: src/codecs/music_ogg.c.i
 
 # target to preprocess a source file
 src/codecs/music_ogg.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg.c.i
 .PHONY : src/codecs/music_ogg.c.i
 
 src/codecs/music_ogg.s: src/codecs/music_ogg.c.s
@@ -556,7 +556,7 @@ src/codecs/music_ogg.s: src/codecs/music_ogg.c.s
 
 # target to generate assembly for a file
 src/codecs/music_ogg.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg.c.s
 .PHONY : src/codecs/music_ogg.c.s
 
 src/codecs/music_ogg_stb.o: src/codecs/music_ogg_stb.c.o
@@ -564,7 +564,7 @@ src/codecs/music_ogg_stb.o: src/codecs/music_ogg_stb.c.o
 
 # target to build an object file
 src/codecs/music_ogg_stb.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg_stb.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg_stb.c.o
 .PHONY : src/codecs/music_ogg_stb.c.o
 
 src/codecs/music_ogg_stb.i: src/codecs/music_ogg_stb.c.i
@@ -572,7 +572,7 @@ src/codecs/music_ogg_stb.i: src/codecs/music_ogg_stb.c.i
 
 # target to preprocess a source file
 src/codecs/music_ogg_stb.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg_stb.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg_stb.c.i
 .PHONY : src/codecs/music_ogg_stb.c.i
 
 src/codecs/music_ogg_stb.s: src/codecs/music_ogg_stb.c.s
@@ -580,7 +580,7 @@ src/codecs/music_ogg_stb.s: src/codecs/music_ogg_stb.c.s
 
 # target to generate assembly for a file
 src/codecs/music_ogg_stb.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg_stb.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg_stb.c.s
 .PHONY : src/codecs/music_ogg_stb.c.s
 
 src/codecs/music_opus.o: src/codecs/music_opus.c.o
@@ -588,7 +588,7 @@ src/codecs/music_opus.o: src/codecs/music_opus.c.o
 
 # target to build an object file
 src/codecs/music_opus.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_opus.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_opus.c.o
 .PHONY : src/codecs/music_opus.c.o
 
 src/codecs/music_opus.i: src/codecs/music_opus.c.i
@@ -596,7 +596,7 @@ src/codecs/music_opus.i: src/codecs/music_opus.c.i
 
 # target to preprocess a source file
 src/codecs/music_opus.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_opus.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_opus.c.i
 .PHONY : src/codecs/music_opus.c.i
 
 src/codecs/music_opus.s: src/codecs/music_opus.c.s
@@ -604,7 +604,7 @@ src/codecs/music_opus.s: src/codecs/music_opus.c.s
 
 # target to generate assembly for a file
 src/codecs/music_opus.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_opus.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_opus.c.s
 .PHONY : src/codecs/music_opus.c.s
 
 src/codecs/music_timidity.o: src/codecs/music_timidity.c.o
@@ -612,7 +612,7 @@ src/codecs/music_timidity.o: src/codecs/music_timidity.c.o
 
 # target to build an object file
 src/codecs/music_timidity.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_timidity.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_timidity.c.o
 .PHONY : src/codecs/music_timidity.c.o
 
 src/codecs/music_timidity.i: src/codecs/music_timidity.c.i
@@ -620,7 +620,7 @@ src/codecs/music_timidity.i: src/codecs/music_timidity.c.i
 
 # target to preprocess a source file
 src/codecs/music_timidity.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_timidity.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_timidity.c.i
 .PHONY : src/codecs/music_timidity.c.i
 
 src/codecs/music_timidity.s: src/codecs/music_timidity.c.s
@@ -628,7 +628,7 @@ src/codecs/music_timidity.s: src/codecs/music_timidity.c.s
 
 # target to generate assembly for a file
 src/codecs/music_timidity.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_timidity.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_timidity.c.s
 .PHONY : src/codecs/music_timidity.c.s
 
 src/codecs/music_wav.o: src/codecs/music_wav.c.o
@@ -636,7 +636,7 @@ src/codecs/music_wav.o: src/codecs/music_wav.c.o
 
 # target to build an object file
 src/codecs/music_wav.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_wav.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_wav.c.o
 .PHONY : src/codecs/music_wav.c.o
 
 src/codecs/music_wav.i: src/codecs/music_wav.c.i
@@ -644,7 +644,7 @@ src/codecs/music_wav.i: src/codecs/music_wav.c.i
 
 # target to preprocess a source file
 src/codecs/music_wav.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_wav.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_wav.c.i
 .PHONY : src/codecs/music_wav.c.i
 
 src/codecs/music_wav.s: src/codecs/music_wav.c.s
@@ -652,7 +652,7 @@ src/codecs/music_wav.s: src/codecs/music_wav.c.s
 
 # target to generate assembly for a file
 src/codecs/music_wav.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_wav.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_wav.c.s
 .PHONY : src/codecs/music_wav.c.s
 
 src/codecs/music_xmp.o: src/codecs/music_xmp.c.o
@@ -660,7 +660,7 @@ src/codecs/music_xmp.o: src/codecs/music_xmp.c.o
 
 # target to build an object file
 src/codecs/music_xmp.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_xmp.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_xmp.c.o
 .PHONY : src/codecs/music_xmp.c.o
 
 src/codecs/music_xmp.i: src/codecs/music_xmp.c.i
@@ -668,7 +668,7 @@ src/codecs/music_xmp.i: src/codecs/music_xmp.c.i
 
 # target to preprocess a source file
 src/codecs/music_xmp.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_xmp.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_xmp.c.i
 .PHONY : src/codecs/music_xmp.c.i
 
 src/codecs/music_xmp.s: src/codecs/music_xmp.c.s
@@ -676,7 +676,7 @@ src/codecs/music_xmp.s: src/codecs/music_xmp.c.s
 
 # target to generate assembly for a file
 src/codecs/music_xmp.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_xmp.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/codecs/music_xmp.c.s
 .PHONY : src/codecs/music_xmp.c.s
 
 src/effect_position.o: src/effect_position.c.o
@@ -684,7 +684,7 @@ src/effect_position.o: src/effect_position.c.o
 
 # target to build an object file
 src/effect_position.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_position.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_position.c.o
 .PHONY : src/effect_position.c.o
 
 src/effect_position.i: src/effect_position.c.i
@@ -692,7 +692,7 @@ src/effect_position.i: src/effect_position.c.i
 
 # target to preprocess a source file
 src/effect_position.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_position.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_position.c.i
 .PHONY : src/effect_position.c.i
 
 src/effect_position.s: src/effect_position.c.s
@@ -700,7 +700,7 @@ src/effect_position.s: src/effect_position.c.s
 
 # target to generate assembly for a file
 src/effect_position.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_position.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_position.c.s
 .PHONY : src/effect_position.c.s
 
 src/effect_stereoreverse.o: src/effect_stereoreverse.c.o
@@ -708,7 +708,7 @@ src/effect_stereoreverse.o: src/effect_stereoreverse.c.o
 
 # target to build an object file
 src/effect_stereoreverse.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_stereoreverse.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_stereoreverse.c.o
 .PHONY : src/effect_stereoreverse.c.o
 
 src/effect_stereoreverse.i: src/effect_stereoreverse.c.i
@@ -716,7 +716,7 @@ src/effect_stereoreverse.i: src/effect_stereoreverse.c.i
 
 # target to preprocess a source file
 src/effect_stereoreverse.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_stereoreverse.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_stereoreverse.c.i
 .PHONY : src/effect_stereoreverse.c.i
 
 src/effect_stereoreverse.s: src/effect_stereoreverse.c.s
@@ -724,7 +724,7 @@ src/effect_stereoreverse.s: src/effect_stereoreverse.c.s
 
 # target to generate assembly for a file
 src/effect_stereoreverse.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_stereoreverse.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effect_stereoreverse.c.s
 .PHONY : src/effect_stereoreverse.c.s
 
 src/effects_internal.o: src/effects_internal.c.o
@@ -732,7 +732,7 @@ src/effects_internal.o: src/effects_internal.c.o
 
 # target to build an object file
 src/effects_internal.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effects_internal.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effects_internal.c.o
 .PHONY : src/effects_internal.c.o
 
 src/effects_internal.i: src/effects_internal.c.i
@@ -740,7 +740,7 @@ src/effects_internal.i: src/effects_internal.c.i
 
 # target to preprocess a source file
 src/effects_internal.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effects_internal.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effects_internal.c.i
 .PHONY : src/effects_internal.c.i
 
 src/effects_internal.s: src/effects_internal.c.s
@@ -748,7 +748,7 @@ src/effects_internal.s: src/effects_internal.c.s
 
 # target to generate assembly for a file
 src/effects_internal.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effects_internal.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/effects_internal.c.s
 .PHONY : src/effects_internal.c.s
 
 src/mixer.o: src/mixer.c.o
@@ -756,7 +756,7 @@ src/mixer.o: src/mixer.c.o
 
 # target to build an object file
 src/mixer.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/mixer.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/mixer.c.o
 .PHONY : src/mixer.c.o
 
 src/mixer.i: src/mixer.c.i
@@ -764,7 +764,7 @@ src/mixer.i: src/mixer.c.i
 
 # target to preprocess a source file
 src/mixer.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/mixer.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/mixer.c.i
 .PHONY : src/mixer.c.i
 
 src/mixer.s: src/mixer.c.s
@@ -772,7 +772,7 @@ src/mixer.s: src/mixer.c.s
 
 # target to generate assembly for a file
 src/mixer.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/mixer.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/mixer.c.s
 .PHONY : src/mixer.c.s
 
 src/music.o: src/music.c.o
@@ -780,7 +780,7 @@ src/music.o: src/music.c.o
 
 # target to build an object file
 src/music.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/music.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/music.c.o
 .PHONY : src/music.c.o
 
 src/music.i: src/music.c.i
@@ -788,7 +788,7 @@ src/music.i: src/music.c.i
 
 # target to preprocess a source file
 src/music.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/music.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/music.c.i
 .PHONY : src/music.c.i
 
 src/music.s: src/music.c.s
@@ -796,7 +796,7 @@ src/music.s: src/music.c.s
 
 # target to generate assembly for a file
 src/music.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/music.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/music.c.s
 .PHONY : src/music.c.s
 
 src/utils.o: src/utils.c.o
@@ -804,7 +804,7 @@ src/utils.o: src/utils.c.o
 
 # target to build an object file
 src/utils.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/utils.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/utils.c.o
 .PHONY : src/utils.c.o
 
 src/utils.i: src/utils.c.i
@@ -812,7 +812,7 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/utils.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -820,7 +820,7 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/utils.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/build.make _deps/sdl2_mixer-build/CMakeFiles/SDL2_mixer.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 # Help Target
@@ -926,6 +926,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

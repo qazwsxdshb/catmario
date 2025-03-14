@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/joystick/virtual/SDL_virtualjoystick.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/virtual/SDL_virtualjoystick.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/virtual/../../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/virtual/../../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/virtual/SDL_virtualjoystick.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/virtual/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/virtual/../../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/virtual/../../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/virtual/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,14 +173,14 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/joystick/virtual/SDL_virtualjoys
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/virtual/SDL_virtualjoystick_c.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/virtual/../SDL_sysjoystick.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/virtual/../SDL_joystick_c.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/virtual/SDL_virtualjoystick_c.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/virtual/../SDL_sysjoystick.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/virtual/../SDL_joystick_c.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h

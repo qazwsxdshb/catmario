@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = -DGLEW_NO_GLU
 
-CXX_INCLUDES = -I/Users/easn/catmario/PTSD/lib/imgui -I/Users/easn/catmario/PTSD/lib/imgui/backends -I/Users/easn/catmario/PTSD/lib/sdl2/include
+CXX_INCLUDES = -I/Users/easn/code/catmario/PTSD/lib/imgui -I/Users/easn/code/catmario/PTSD/lib/imgui/backends -I/Users/easn/code/catmario/PTSD/lib/sdl2/include
 
 CXX_FLAGSarm64 = -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fPIC -fcolor-diagnostics
 

@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/SDL.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/SDL.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/./SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/./dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/SDL.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/./SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/./dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/./dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/./dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,7 +173,7 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/SDL.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/unistd.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_posix_vdisable.h \
@@ -181,80 +181,80 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/SDL.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_select.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_uuid_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/gethostuuid.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/core/linux/SDL_dbus.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/core/linux/../../SDL_internal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_main.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_audio.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_clipboard.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/core/linux/SDL_dbus.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/core/linux/../../SDL_internal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_main.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_audio.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_clipboard.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_neon.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_bf16.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_filesystem.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_haptic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_loadso.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_power.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_render.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_system.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_version.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_locale.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_misc.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_bits.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_revision.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/SDL_assert_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/SDL_log_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_events_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/SDL_sysvideo.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/SDL_vulkan_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vk_platform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan_core.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan_macos.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan_metal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_clipboardevents_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_displayevents_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_dropevents_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_gesture_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_keyboard_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_mouse_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_touch_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/../../include/SDL_touch.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/events/SDL_windowevents_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/SDL_haptic_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/SDL_joystick_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/sensor/SDL_sensor_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/timer/SDL_timer_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/timer/../SDL_internal.h
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_filesystem.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_haptic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_loadso.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_power.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_render.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_system.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_version.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_locale.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_misc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_bits.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_revision.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/SDL_assert_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/SDL_log_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_events_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/SDL_sysvideo.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/SDL_vulkan_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vk_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan_core.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan_macos.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../video/./khronos/vulkan/vulkan_metal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_clipboardevents_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_displayevents_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_dropevents_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_gesture_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_keyboard_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_mouse_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_touch_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/../../include/SDL_touch.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/events/SDL_windowevents_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/SDL_haptic_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/SDL_joystick_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/sensor/SDL_sensor_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/timer/SDL_timer_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/timer/../SDL_internal.h

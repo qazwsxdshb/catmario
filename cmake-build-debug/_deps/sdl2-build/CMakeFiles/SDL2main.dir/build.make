@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/sdl2-build/CMakeFiles/SDL2main.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/sdl2-build/CMakeFiles/SDL2main.dir/progress.make
 include _deps/sdl2-build/CMakeFiles/SDL2main.dir/flags.make
 
 _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o: _deps/sdl2-build/CMakeFiles/SDL2main.dir/flags.make
-_deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o: /Users/easn/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c
+_deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c
 _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o: _deps/sdl2-build/CMakeFiles/SDL2main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -MF CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o.d -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -c /Users/easn/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -MF CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o.d -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c
 
 _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c > CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c > CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i
 
 _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2/src/main/dummy/SDL_dummy_main.c -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s
 
 # Object files for target SDL2main
 SDL2main_OBJECTS = \
@@ -93,19 +93,19 @@ SDL2main_EXTERNAL_OBJECTS =
 _deps/sdl2-build/libSDL2maind.a: _deps/sdl2-build/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o
 _deps/sdl2-build/libSDL2maind.a: _deps/sdl2-build/CMakeFiles/SDL2main.dir/build.make
 _deps/sdl2-build/libSDL2maind.a: _deps/sdl2-build/CMakeFiles/SDL2main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libSDL2maind.a"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean_target.cmake
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libSDL2maind.a"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean_target.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/sdl2-build/CMakeFiles/SDL2main.dir/build: _deps/sdl2-build/libSDL2maind.a
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2main.dir/build
 
 _deps/sdl2-build/CMakeFiles/SDL2main.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean.cmake
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2main.dir/clean
 
 _deps/sdl2-build/CMakeFiles/SDL2main.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD/lib/sdl2 /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD/lib/sdl2 /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/sdl2-build/CMakeFiles/SDL2main.dir/depend
 

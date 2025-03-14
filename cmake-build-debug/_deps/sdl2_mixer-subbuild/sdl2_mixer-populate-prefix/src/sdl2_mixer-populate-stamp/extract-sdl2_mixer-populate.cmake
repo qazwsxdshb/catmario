@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/easn/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip" ABSOLUTE)
-get_filename_component(directory "/Users/easn/catmario/PTSD/lib/sdl2_mixer" ABSOLUTE)
+get_filename_component(filename "/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate-prefix/src/SDL2_mixer-2.6.3.zip" ABSOLUTE)
+get_filename_component(directory "/Users/easn/code/catmario/PTSD/lib/sdl2_mixer" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/progress.make
 include _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/flags.make
 
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o: _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/flags.make
-_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o: /Users/easn/catmario/PTSD/lib/sdl2_ttf/showfont.c
+_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o: /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/showfont.c
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o: _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o -MF CMakeFiles/showfont.dir/showfont.c.o.d -o CMakeFiles/showfont.dir/showfont.c.o -c /Users/easn/catmario/PTSD/lib/sdl2_ttf/showfont.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o -MF CMakeFiles/showfont.dir/showfont.c.o.d -o CMakeFiles/showfont.dir/showfont.c.o -c /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/showfont.c
 
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/showfont.dir/showfont.c.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/catmario/PTSD/lib/sdl2_ttf/showfont.c > CMakeFiles/showfont.dir/showfont.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/showfont.c > CMakeFiles/showfont.dir/showfont.c.i
 
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/showfont.dir/showfont.c.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/catmario/PTSD/lib/sdl2_ttf/showfont.c -o CMakeFiles/showfont.dir/showfont.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/showfont.c -o CMakeFiles/showfont.dir/showfont.c.s
 
 # Object files for target showfont
 showfont_OBJECTS = \
@@ -97,18 +97,18 @@ _deps/sdl2_ttf-build/showfont: _deps/sdl2-build/libSDL2maind.a
 _deps/sdl2_ttf-build/showfont: _deps/sdl2-build/libSDL2d.a
 _deps/sdl2_ttf-build/showfont: _deps/sdl2_ttf-build/external/freetype/libfreetyped.a
 _deps/sdl2_ttf-build/showfont: _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable showfont"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/showfont.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable showfont"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/showfont.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build: _deps/sdl2_ttf-build/showfont
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build
 
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build && $(CMAKE_COMMAND) -P CMakeFiles/showfont.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build && $(CMAKE_COMMAND) -P CMakeFiles/showfont.dir/cmake_clean.cmake
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/clean
 
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD/lib/sdl2_ttf /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD/lib/sdl2_ttf /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build/CMakeFiles/showfont.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/depend
 

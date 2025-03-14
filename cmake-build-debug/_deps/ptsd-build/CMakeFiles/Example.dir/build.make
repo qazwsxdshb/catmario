@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/ptsd-build/CMakeFiles/Example.dir/depend.make
@@ -70,74 +70,74 @@ include _deps/ptsd-build/CMakeFiles/Example.dir/progress.make
 include _deps/ptsd-build/CMakeFiles/Example.dir/flags.make
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/flags.make
-_deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o: /Users/easn/catmario/PTSD/example/src/App.cpp
+_deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o: /Users/easn/code/catmario/PTSD/example/src/App.cpp
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o -MF CMakeFiles/Example.dir/example/src/App.cpp.o.d -o CMakeFiles/Example.dir/example/src/App.cpp.o -c /Users/easn/catmario/PTSD/example/src/App.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o -MF CMakeFiles/Example.dir/example/src/App.cpp.o.d -o CMakeFiles/Example.dir/example/src/App.cpp.o -c /Users/easn/code/catmario/PTSD/example/src/App.cpp
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Example.dir/example/src/App.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/example/src/App.cpp > CMakeFiles/Example.dir/example/src/App.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/example/src/App.cpp > CMakeFiles/Example.dir/example/src/App.cpp.i
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Example.dir/example/src/App.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/example/src/App.cpp -o CMakeFiles/Example.dir/example/src/App.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/example/src/App.cpp -o CMakeFiles/Example.dir/example/src/App.cpp.s
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/flags.make
-_deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o: /Users/easn/catmario/PTSD/example/src/Giraffe.cpp
+_deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o: /Users/easn/code/catmario/PTSD/example/src/Giraffe.cpp
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o -MF CMakeFiles/Example.dir/example/src/Giraffe.cpp.o.d -o CMakeFiles/Example.dir/example/src/Giraffe.cpp.o -c /Users/easn/catmario/PTSD/example/src/Giraffe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o -MF CMakeFiles/Example.dir/example/src/Giraffe.cpp.o.d -o CMakeFiles/Example.dir/example/src/Giraffe.cpp.o -c /Users/easn/code/catmario/PTSD/example/src/Giraffe.cpp
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Example.dir/example/src/Giraffe.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/example/src/Giraffe.cpp > CMakeFiles/Example.dir/example/src/Giraffe.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/example/src/Giraffe.cpp > CMakeFiles/Example.dir/example/src/Giraffe.cpp.i
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Example.dir/example/src/Giraffe.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/example/src/Giraffe.cpp -o CMakeFiles/Example.dir/example/src/Giraffe.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/example/src/Giraffe.cpp -o CMakeFiles/Example.dir/example/src/Giraffe.cpp.s
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/flags.make
-_deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o: /Users/easn/catmario/PTSD/example/src/GiraffeText.cpp
+_deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o: /Users/easn/code/catmario/PTSD/example/src/GiraffeText.cpp
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o -MF CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o.d -o CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o -c /Users/easn/catmario/PTSD/example/src/GiraffeText.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o -MF CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o.d -o CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o -c /Users/easn/code/catmario/PTSD/example/src/GiraffeText.cpp
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Example.dir/example/src/GiraffeText.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/example/src/GiraffeText.cpp > CMakeFiles/Example.dir/example/src/GiraffeText.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/example/src/GiraffeText.cpp > CMakeFiles/Example.dir/example/src/GiraffeText.cpp.i
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Example.dir/example/src/GiraffeText.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/example/src/GiraffeText.cpp -o CMakeFiles/Example.dir/example/src/GiraffeText.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/example/src/GiraffeText.cpp -o CMakeFiles/Example.dir/example/src/GiraffeText.cpp.s
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/flags.make
-_deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o: /Users/easn/catmario/PTSD/example/src/Cat.cpp
+_deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o: /Users/easn/code/catmario/PTSD/example/src/Cat.cpp
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o -MF CMakeFiles/Example.dir/example/src/Cat.cpp.o.d -o CMakeFiles/Example.dir/example/src/Cat.cpp.o -c /Users/easn/catmario/PTSD/example/src/Cat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o -MF CMakeFiles/Example.dir/example/src/Cat.cpp.o.d -o CMakeFiles/Example.dir/example/src/Cat.cpp.o -c /Users/easn/code/catmario/PTSD/example/src/Cat.cpp
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Example.dir/example/src/Cat.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/example/src/Cat.cpp > CMakeFiles/Example.dir/example/src/Cat.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/example/src/Cat.cpp > CMakeFiles/Example.dir/example/src/Cat.cpp.i
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Example.dir/example/src/Cat.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/example/src/Cat.cpp -o CMakeFiles/Example.dir/example/src/Cat.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/example/src/Cat.cpp -o CMakeFiles/Example.dir/example/src/Cat.cpp.s
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/flags.make
-_deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o: /Users/easn/catmario/PTSD/example/src/main.cpp
+_deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o: /Users/easn/code/catmario/PTSD/example/src/main.cpp
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o: _deps/ptsd-build/CMakeFiles/Example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o -MF CMakeFiles/Example.dir/example/src/main.cpp.o.d -o CMakeFiles/Example.dir/example/src/main.cpp.o -c /Users/easn/catmario/PTSD/example/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o -MF CMakeFiles/Example.dir/example/src/main.cpp.o.d -o CMakeFiles/Example.dir/example/src/main.cpp.o -c /Users/easn/code/catmario/PTSD/example/src/main.cpp
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Example.dir/example/src/main.cpp.i"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/catmario/PTSD/example/src/main.cpp > CMakeFiles/Example.dir/example/src/main.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/easn/code/catmario/PTSD/example/src/main.cpp > CMakeFiles/Example.dir/example/src/main.cpp.i
 
 _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Example.dir/example/src/main.cpp.s"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/catmario/PTSD/example/src/main.cpp -o CMakeFiles/Example.dir/example/src/main.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/easn/code/catmario/PTSD/example/src/main.cpp -o CMakeFiles/Example.dir/example/src/main.cpp.s
 
 # Object files for target Example
 Example_OBJECTS = \
@@ -167,18 +167,18 @@ _deps/ptsd-build/Example: _deps/sdl2-build/libSDL2d.a
 _deps/ptsd-build/Example: _deps/spdlog-build/libspdlogd.a
 _deps/ptsd-build/Example: _deps/ptsd-build/libImGui.a
 _deps/ptsd-build/Example: _deps/ptsd-build/CMakeFiles/Example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Example"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Example"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/ptsd-build/CMakeFiles/Example.dir/build: _deps/ptsd-build/Example
 .PHONY : _deps/ptsd-build/CMakeFiles/Example.dir/build
 
 _deps/ptsd-build/CMakeFiles/Example.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -P CMakeFiles/Example.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && $(CMAKE_COMMAND) -P CMakeFiles/Example.dir/cmake_clean.cmake
 .PHONY : _deps/ptsd-build/CMakeFiles/Example.dir/clean
 
 _deps/ptsd-build/CMakeFiles/Example.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build/CMakeFiles/Example.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/CMakeFiles/Example.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/ptsd-build/CMakeFiles/Example.dir/depend
 

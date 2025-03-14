@@ -1,7 +1,7 @@
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o: \
-  /Users/easn/catmario/PTSD/lib/imgui/imgui_tables.cpp \
-  /Users/easn/catmario/PTSD/lib/imgui/imgui.h \
-  /Users/easn/catmario/PTSD/lib/imgui/imconfig.h \
+  /Users/easn/code/catmario/PTSD/lib/imgui/imgui_tables.cpp \
+  /Users/easn/code/catmario/PTSD/lib/imgui/imgui.h \
+  /Users/easn/code/catmario/PTSD/lib/imgui/imconfig.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__config_site \
@@ -106,7 +106,7 @@ _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h \
-  /Users/easn/catmario/PTSD/lib/imgui/imgui_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/imgui/imgui_internal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h \
@@ -281,4 +281,4 @@ _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/arm/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/arm/_limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/syslimits.h \
-  /Users/easn/catmario/PTSD/lib/imgui/imstb_textedit.h
+  /Users/easn/code/catmario/PTSD/lib/imgui/imstb_textedit.h

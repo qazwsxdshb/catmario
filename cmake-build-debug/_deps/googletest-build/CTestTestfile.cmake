@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/easn/catmario/PTSD/lib/googletest
-# Build directory: /Users/easn/catmario/cmake-build-debug/_deps/googletest-build
+# Source directory: /Users/easn/code/catmario/PTSD/lib/googletest
+# Build directory: /Users/easn/code/catmario/cmake-build-debug/_deps/googletest-build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

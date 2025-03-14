@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/haptic/darwin/SDL_syshaptic.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/SDL_syshaptic.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/SDL_syshaptic.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,20 +173,20 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/haptic/darwin/SDL_syshaptic.c.o:
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_haptic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../SDL_syshaptic.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/SDL_sysjoystick.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/SDL_joystick_c.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/darwin/SDL_iokitjoystick_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/darwin/../../SDL_internal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_haptic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../SDL_syshaptic.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/SDL_sysjoystick.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/SDL_joystick_c.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/darwin/SDL_iokitjoystick_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/../../joystick/darwin/../../SDL_internal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/assert.h \
@@ -389,7 +389,7 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/haptic/darwin/SDL_syshaptic.c.o:
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDTransaction.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/ForceFeedback.framework/Headers/ForceFeedback.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/ForceFeedback.framework/Headers/ForceFeedbackConstants.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/haptic/darwin/SDL_syshaptic_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/haptic/darwin/SDL_syshaptic_c.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOKitLib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/mach/mach_init.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/mach/mach_traps.h \

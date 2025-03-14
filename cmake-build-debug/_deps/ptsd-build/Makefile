@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/catmario/cmake-build-debug/CPackSourceConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/code/catmario/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles /Users/easn/catmario/cmake-build-debug/_deps/ptsd-build//CMakeFiles/progress.marks
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build//CMakeFiles/progress.marks
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/clean
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/ptsd-build/CMakeFiles/ImGui.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/ImGui.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/ImGui.dir/rule
 .PHONY : _deps/ptsd-build/CMakeFiles/ImGui.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ ImGui: _deps/ptsd-build/CMakeFiles/ImGui.dir/rule
 
 # fast build rule for target.
 ImGui/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/build
 .PHONY : ImGui/fast
 
 # Convenience name for target.
 _deps/ptsd-build/CMakeFiles/PTSD.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/PTSD.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/PTSD.dir/rule
 .PHONY : _deps/ptsd-build/CMakeFiles/PTSD.dir/rule
 
 # Convenience name for target.
@@ -206,12 +206,12 @@ PTSD: _deps/ptsd-build/CMakeFiles/PTSD.dir/rule
 
 # fast build rule for target.
 PTSD/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/build
 .PHONY : PTSD/fast
 
 # Convenience name for target.
 _deps/ptsd-build/CMakeFiles/Example.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/Example.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/Example.dir/rule
 .PHONY : _deps/ptsd-build/CMakeFiles/Example.dir/rule
 
 # Convenience name for target.
@@ -220,12 +220,12 @@ Example: _deps/ptsd-build/CMakeFiles/Example.dir/rule
 
 # fast build rule for target.
 Example/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/build
 .PHONY : Example/fast
 
 # Convenience name for target.
 _deps/ptsd-build/CMakeFiles/Tests.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/Tests.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/Tests.dir/rule
 .PHONY : _deps/ptsd-build/CMakeFiles/Tests.dir/rule
 
 # Convenience name for target.
@@ -234,12 +234,12 @@ Tests: _deps/ptsd-build/CMakeFiles/Tests.dir/rule
 
 # fast build rule for target.
 Tests/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/build
 .PHONY : Tests/fast
 
 # Convenience name for target.
 _deps/ptsd-build/CMakeFiles/AudioTest.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/AudioTest.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ptsd-build/CMakeFiles/AudioTest.dir/rule
 .PHONY : _deps/ptsd-build/CMakeFiles/AudioTest.dir/rule
 
 # Convenience name for target.
@@ -248,7 +248,7 @@ AudioTest: _deps/ptsd-build/CMakeFiles/AudioTest.dir/rule
 
 # fast build rule for target.
 AudioTest/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/build
 .PHONY : AudioTest/fast
 
 example/src/App.o: example/src/App.cpp.o
@@ -256,7 +256,7 @@ example/src/App.o: example/src/App.cpp.o
 
 # target to build an object file
 example/src/App.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.o
 .PHONY : example/src/App.cpp.o
 
 example/src/App.i: example/src/App.cpp.i
@@ -264,7 +264,7 @@ example/src/App.i: example/src/App.cpp.i
 
 # target to preprocess a source file
 example/src/App.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.i
 .PHONY : example/src/App.cpp.i
 
 example/src/App.s: example/src/App.cpp.s
@@ -272,7 +272,7 @@ example/src/App.s: example/src/App.cpp.s
 
 # target to generate assembly for a file
 example/src/App.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/App.cpp.s
 .PHONY : example/src/App.cpp.s
 
 example/src/Cat.o: example/src/Cat.cpp.o
@@ -280,7 +280,7 @@ example/src/Cat.o: example/src/Cat.cpp.o
 
 # target to build an object file
 example/src/Cat.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.o
 .PHONY : example/src/Cat.cpp.o
 
 example/src/Cat.i: example/src/Cat.cpp.i
@@ -288,7 +288,7 @@ example/src/Cat.i: example/src/Cat.cpp.i
 
 # target to preprocess a source file
 example/src/Cat.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.i
 .PHONY : example/src/Cat.cpp.i
 
 example/src/Cat.s: example/src/Cat.cpp.s
@@ -296,7 +296,7 @@ example/src/Cat.s: example/src/Cat.cpp.s
 
 # target to generate assembly for a file
 example/src/Cat.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Cat.cpp.s
 .PHONY : example/src/Cat.cpp.s
 
 example/src/Giraffe.o: example/src/Giraffe.cpp.o
@@ -304,7 +304,7 @@ example/src/Giraffe.o: example/src/Giraffe.cpp.o
 
 # target to build an object file
 example/src/Giraffe.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.o
 .PHONY : example/src/Giraffe.cpp.o
 
 example/src/Giraffe.i: example/src/Giraffe.cpp.i
@@ -312,7 +312,7 @@ example/src/Giraffe.i: example/src/Giraffe.cpp.i
 
 # target to preprocess a source file
 example/src/Giraffe.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.i
 .PHONY : example/src/Giraffe.cpp.i
 
 example/src/Giraffe.s: example/src/Giraffe.cpp.s
@@ -320,7 +320,7 @@ example/src/Giraffe.s: example/src/Giraffe.cpp.s
 
 # target to generate assembly for a file
 example/src/Giraffe.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/Giraffe.cpp.s
 .PHONY : example/src/Giraffe.cpp.s
 
 example/src/GiraffeText.o: example/src/GiraffeText.cpp.o
@@ -328,7 +328,7 @@ example/src/GiraffeText.o: example/src/GiraffeText.cpp.o
 
 # target to build an object file
 example/src/GiraffeText.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.o
 .PHONY : example/src/GiraffeText.cpp.o
 
 example/src/GiraffeText.i: example/src/GiraffeText.cpp.i
@@ -336,7 +336,7 @@ example/src/GiraffeText.i: example/src/GiraffeText.cpp.i
 
 # target to preprocess a source file
 example/src/GiraffeText.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.i
 .PHONY : example/src/GiraffeText.cpp.i
 
 example/src/GiraffeText.s: example/src/GiraffeText.cpp.s
@@ -344,7 +344,7 @@ example/src/GiraffeText.s: example/src/GiraffeText.cpp.s
 
 # target to generate assembly for a file
 example/src/GiraffeText.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/GiraffeText.cpp.s
 .PHONY : example/src/GiraffeText.cpp.s
 
 example/src/main.o: example/src/main.cpp.o
@@ -352,7 +352,7 @@ example/src/main.o: example/src/main.cpp.o
 
 # target to build an object file
 example/src/main.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.o
 .PHONY : example/src/main.cpp.o
 
 example/src/main.i: example/src/main.cpp.i
@@ -360,7 +360,7 @@ example/src/main.i: example/src/main.cpp.i
 
 # target to preprocess a source file
 example/src/main.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.i
 .PHONY : example/src/main.cpp.i
 
 example/src/main.s: example/src/main.cpp.s
@@ -368,7 +368,7 @@ example/src/main.s: example/src/main.cpp.s
 
 # target to generate assembly for a file
 example/src/main.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Example.dir/build.make _deps/ptsd-build/CMakeFiles/Example.dir/example/src/main.cpp.s
 .PHONY : example/src/main.cpp.s
 
 lib/imgui/backends/imgui_impl_opengl3.o: lib/imgui/backends/imgui_impl_opengl3.cpp.o
@@ -376,7 +376,7 @@ lib/imgui/backends/imgui_impl_opengl3.o: lib/imgui/backends/imgui_impl_opengl3.c
 
 # target to build an object file
 lib/imgui/backends/imgui_impl_opengl3.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o
 .PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.o
 
 lib/imgui/backends/imgui_impl_opengl3.i: lib/imgui/backends/imgui_impl_opengl3.cpp.i
@@ -384,7 +384,7 @@ lib/imgui/backends/imgui_impl_opengl3.i: lib/imgui/backends/imgui_impl_opengl3.c
 
 # target to preprocess a source file
 lib/imgui/backends/imgui_impl_opengl3.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
 .PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.i
 
 lib/imgui/backends/imgui_impl_opengl3.s: lib/imgui/backends/imgui_impl_opengl3.cpp.s
@@ -392,7 +392,7 @@ lib/imgui/backends/imgui_impl_opengl3.s: lib/imgui/backends/imgui_impl_opengl3.c
 
 # target to generate assembly for a file
 lib/imgui/backends/imgui_impl_opengl3.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
 .PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.s
 
 lib/imgui/backends/imgui_impl_sdl2.o: lib/imgui/backends/imgui_impl_sdl2.cpp.o
@@ -400,7 +400,7 @@ lib/imgui/backends/imgui_impl_sdl2.o: lib/imgui/backends/imgui_impl_sdl2.cpp.o
 
 # target to build an object file
 lib/imgui/backends/imgui_impl_sdl2.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o
 .PHONY : lib/imgui/backends/imgui_impl_sdl2.cpp.o
 
 lib/imgui/backends/imgui_impl_sdl2.i: lib/imgui/backends/imgui_impl_sdl2.cpp.i
@@ -408,7 +408,7 @@ lib/imgui/backends/imgui_impl_sdl2.i: lib/imgui/backends/imgui_impl_sdl2.cpp.i
 
 # target to preprocess a source file
 lib/imgui/backends/imgui_impl_sdl2.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.i
 .PHONY : lib/imgui/backends/imgui_impl_sdl2.cpp.i
 
 lib/imgui/backends/imgui_impl_sdl2.s: lib/imgui/backends/imgui_impl_sdl2.cpp.s
@@ -416,7 +416,7 @@ lib/imgui/backends/imgui_impl_sdl2.s: lib/imgui/backends/imgui_impl_sdl2.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/backends/imgui_impl_sdl2.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.s
 .PHONY : lib/imgui/backends/imgui_impl_sdl2.cpp.s
 
 lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
@@ -424,7 +424,7 @@ lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
 
 # target to build an object file
 lib/imgui/imgui.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.o
 .PHONY : lib/imgui/imgui.cpp.o
 
 lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
@@ -432,7 +432,7 @@ lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.i
 .PHONY : lib/imgui/imgui.cpp.i
 
 lib/imgui/imgui.s: lib/imgui/imgui.cpp.s
@@ -440,7 +440,7 @@ lib/imgui/imgui.s: lib/imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui.cpp.s
 .PHONY : lib/imgui/imgui.cpp.s
 
 lib/imgui/imgui_demo.o: lib/imgui/imgui_demo.cpp.o
@@ -448,7 +448,7 @@ lib/imgui/imgui_demo.o: lib/imgui/imgui_demo.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_demo.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.o
 .PHONY : lib/imgui/imgui_demo.cpp.o
 
 lib/imgui/imgui_demo.i: lib/imgui/imgui_demo.cpp.i
@@ -456,7 +456,7 @@ lib/imgui/imgui_demo.i: lib/imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_demo.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.i
 .PHONY : lib/imgui/imgui_demo.cpp.i
 
 lib/imgui/imgui_demo.s: lib/imgui/imgui_demo.cpp.s
@@ -464,7 +464,7 @@ lib/imgui/imgui_demo.s: lib/imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_demo.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_demo.cpp.s
 .PHONY : lib/imgui/imgui_demo.cpp.s
 
 lib/imgui/imgui_draw.o: lib/imgui/imgui_draw.cpp.o
@@ -472,7 +472,7 @@ lib/imgui/imgui_draw.o: lib/imgui/imgui_draw.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_draw.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.o
 .PHONY : lib/imgui/imgui_draw.cpp.o
 
 lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
@@ -480,7 +480,7 @@ lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_draw.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.i
 .PHONY : lib/imgui/imgui_draw.cpp.i
 
 lib/imgui/imgui_draw.s: lib/imgui/imgui_draw.cpp.s
@@ -488,7 +488,7 @@ lib/imgui/imgui_draw.s: lib/imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_draw.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_draw.cpp.s
 .PHONY : lib/imgui/imgui_draw.cpp.s
 
 lib/imgui/imgui_tables.o: lib/imgui/imgui_tables.cpp.o
@@ -496,7 +496,7 @@ lib/imgui/imgui_tables.o: lib/imgui/imgui_tables.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_tables.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.o
 .PHONY : lib/imgui/imgui_tables.cpp.o
 
 lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
@@ -504,7 +504,7 @@ lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_tables.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.i
 .PHONY : lib/imgui/imgui_tables.cpp.i
 
 lib/imgui/imgui_tables.s: lib/imgui/imgui_tables.cpp.s
@@ -512,7 +512,7 @@ lib/imgui/imgui_tables.s: lib/imgui/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_tables.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_tables.cpp.s
 .PHONY : lib/imgui/imgui_tables.cpp.s
 
 lib/imgui/imgui_widgets.o: lib/imgui/imgui_widgets.cpp.o
@@ -520,7 +520,7 @@ lib/imgui/imgui_widgets.o: lib/imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 lib/imgui/imgui_widgets.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.o
 .PHONY : lib/imgui/imgui_widgets.cpp.o
 
 lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
@@ -528,7 +528,7 @@ lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 lib/imgui/imgui_widgets.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.i
 .PHONY : lib/imgui/imgui_widgets.cpp.i
 
 lib/imgui/imgui_widgets.s: lib/imgui/imgui_widgets.cpp.s
@@ -536,7 +536,7 @@ lib/imgui/imgui_widgets.s: lib/imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 lib/imgui/imgui_widgets.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/ImGui.dir/build.make _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/imgui_widgets.cpp.s
 .PHONY : lib/imgui/imgui_widgets.cpp.s
 
 src/Core/Context.o: src/Core/Context.cpp.o
@@ -544,9 +544,9 @@ src/Core/Context.o: src/Core/Context.cpp.o
 
 # target to build an object file
 src/Core/Context.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Context.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Context.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Context.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Context.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Context.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Context.cpp.o
 .PHONY : src/Core/Context.cpp.o
 
 src/Core/Context.i: src/Core/Context.cpp.i
@@ -554,9 +554,9 @@ src/Core/Context.i: src/Core/Context.cpp.i
 
 # target to preprocess a source file
 src/Core/Context.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Context.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Context.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Context.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Context.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Context.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Context.cpp.i
 .PHONY : src/Core/Context.cpp.i
 
 src/Core/Context.s: src/Core/Context.cpp.s
@@ -564,9 +564,9 @@ src/Core/Context.s: src/Core/Context.cpp.s
 
 # target to generate assembly for a file
 src/Core/Context.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Context.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Context.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Context.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Context.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Context.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Context.cpp.s
 .PHONY : src/Core/Context.cpp.s
 
 src/Core/DebugMessageCallback.o: src/Core/DebugMessageCallback.cpp.o
@@ -574,9 +574,9 @@ src/Core/DebugMessageCallback.o: src/Core/DebugMessageCallback.cpp.o
 
 # target to build an object file
 src/Core/DebugMessageCallback.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/DebugMessageCallback.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/DebugMessageCallback.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/DebugMessageCallback.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/DebugMessageCallback.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/DebugMessageCallback.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/DebugMessageCallback.cpp.o
 .PHONY : src/Core/DebugMessageCallback.cpp.o
 
 src/Core/DebugMessageCallback.i: src/Core/DebugMessageCallback.cpp.i
@@ -584,9 +584,9 @@ src/Core/DebugMessageCallback.i: src/Core/DebugMessageCallback.cpp.i
 
 # target to preprocess a source file
 src/Core/DebugMessageCallback.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/DebugMessageCallback.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/DebugMessageCallback.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/DebugMessageCallback.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/DebugMessageCallback.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/DebugMessageCallback.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/DebugMessageCallback.cpp.i
 .PHONY : src/Core/DebugMessageCallback.cpp.i
 
 src/Core/DebugMessageCallback.s: src/Core/DebugMessageCallback.cpp.s
@@ -594,9 +594,9 @@ src/Core/DebugMessageCallback.s: src/Core/DebugMessageCallback.cpp.s
 
 # target to generate assembly for a file
 src/Core/DebugMessageCallback.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/DebugMessageCallback.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/DebugMessageCallback.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/DebugMessageCallback.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/DebugMessageCallback.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/DebugMessageCallback.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/DebugMessageCallback.cpp.s
 .PHONY : src/Core/DebugMessageCallback.cpp.s
 
 src/Core/IndexBuffer.o: src/Core/IndexBuffer.cpp.o
@@ -604,9 +604,9 @@ src/Core/IndexBuffer.o: src/Core/IndexBuffer.cpp.o
 
 # target to build an object file
 src/Core/IndexBuffer.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/IndexBuffer.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/IndexBuffer.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/IndexBuffer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/IndexBuffer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/IndexBuffer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/IndexBuffer.cpp.o
 .PHONY : src/Core/IndexBuffer.cpp.o
 
 src/Core/IndexBuffer.i: src/Core/IndexBuffer.cpp.i
@@ -614,9 +614,9 @@ src/Core/IndexBuffer.i: src/Core/IndexBuffer.cpp.i
 
 # target to preprocess a source file
 src/Core/IndexBuffer.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/IndexBuffer.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/IndexBuffer.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/IndexBuffer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/IndexBuffer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/IndexBuffer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/IndexBuffer.cpp.i
 .PHONY : src/Core/IndexBuffer.cpp.i
 
 src/Core/IndexBuffer.s: src/Core/IndexBuffer.cpp.s
@@ -624,9 +624,9 @@ src/Core/IndexBuffer.s: src/Core/IndexBuffer.cpp.s
 
 # target to generate assembly for a file
 src/Core/IndexBuffer.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/IndexBuffer.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/IndexBuffer.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/IndexBuffer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/IndexBuffer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/IndexBuffer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/IndexBuffer.cpp.s
 .PHONY : src/Core/IndexBuffer.cpp.s
 
 src/Core/Program.o: src/Core/Program.cpp.o
@@ -634,9 +634,9 @@ src/Core/Program.o: src/Core/Program.cpp.o
 
 # target to build an object file
 src/Core/Program.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Program.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Program.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Program.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Program.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Program.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Program.cpp.o
 .PHONY : src/Core/Program.cpp.o
 
 src/Core/Program.i: src/Core/Program.cpp.i
@@ -644,9 +644,9 @@ src/Core/Program.i: src/Core/Program.cpp.i
 
 # target to preprocess a source file
 src/Core/Program.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Program.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Program.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Program.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Program.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Program.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Program.cpp.i
 .PHONY : src/Core/Program.cpp.i
 
 src/Core/Program.s: src/Core/Program.cpp.s
@@ -654,9 +654,9 @@ src/Core/Program.s: src/Core/Program.cpp.s
 
 # target to generate assembly for a file
 src/Core/Program.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Program.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Program.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Program.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Program.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Program.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Program.cpp.s
 .PHONY : src/Core/Program.cpp.s
 
 src/Core/Shader.o: src/Core/Shader.cpp.o
@@ -664,9 +664,9 @@ src/Core/Shader.o: src/Core/Shader.cpp.o
 
 # target to build an object file
 src/Core/Shader.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Shader.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Shader.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Shader.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Shader.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Shader.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Shader.cpp.o
 .PHONY : src/Core/Shader.cpp.o
 
 src/Core/Shader.i: src/Core/Shader.cpp.i
@@ -674,9 +674,9 @@ src/Core/Shader.i: src/Core/Shader.cpp.i
 
 # target to preprocess a source file
 src/Core/Shader.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Shader.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Shader.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Shader.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Shader.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Shader.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Shader.cpp.i
 .PHONY : src/Core/Shader.cpp.i
 
 src/Core/Shader.s: src/Core/Shader.cpp.s
@@ -684,9 +684,9 @@ src/Core/Shader.s: src/Core/Shader.cpp.s
 
 # target to generate assembly for a file
 src/Core/Shader.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Shader.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Shader.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Shader.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Shader.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Shader.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Shader.cpp.s
 .PHONY : src/Core/Shader.cpp.s
 
 src/Core/Texture.o: src/Core/Texture.cpp.o
@@ -694,9 +694,9 @@ src/Core/Texture.o: src/Core/Texture.cpp.o
 
 # target to build an object file
 src/Core/Texture.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Texture.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Texture.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Texture.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Texture.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Texture.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Texture.cpp.o
 .PHONY : src/Core/Texture.cpp.o
 
 src/Core/Texture.i: src/Core/Texture.cpp.i
@@ -704,9 +704,9 @@ src/Core/Texture.i: src/Core/Texture.cpp.i
 
 # target to preprocess a source file
 src/Core/Texture.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Texture.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Texture.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Texture.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Texture.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Texture.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Texture.cpp.i
 .PHONY : src/Core/Texture.cpp.i
 
 src/Core/Texture.s: src/Core/Texture.cpp.s
@@ -714,9 +714,9 @@ src/Core/Texture.s: src/Core/Texture.cpp.s
 
 # target to generate assembly for a file
 src/Core/Texture.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Texture.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Texture.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Texture.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/Texture.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/Texture.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/Texture.cpp.s
 .PHONY : src/Core/Texture.cpp.s
 
 src/Core/TextureUtils.o: src/Core/TextureUtils.cpp.o
@@ -724,9 +724,9 @@ src/Core/TextureUtils.o: src/Core/TextureUtils.cpp.o
 
 # target to build an object file
 src/Core/TextureUtils.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/TextureUtils.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/TextureUtils.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/TextureUtils.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/TextureUtils.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/TextureUtils.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/TextureUtils.cpp.o
 .PHONY : src/Core/TextureUtils.cpp.o
 
 src/Core/TextureUtils.i: src/Core/TextureUtils.cpp.i
@@ -734,9 +734,9 @@ src/Core/TextureUtils.i: src/Core/TextureUtils.cpp.i
 
 # target to preprocess a source file
 src/Core/TextureUtils.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/TextureUtils.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/TextureUtils.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/TextureUtils.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/TextureUtils.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/TextureUtils.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/TextureUtils.cpp.i
 .PHONY : src/Core/TextureUtils.cpp.i
 
 src/Core/TextureUtils.s: src/Core/TextureUtils.cpp.s
@@ -744,9 +744,9 @@ src/Core/TextureUtils.s: src/Core/TextureUtils.cpp.s
 
 # target to generate assembly for a file
 src/Core/TextureUtils.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/TextureUtils.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/TextureUtils.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/TextureUtils.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/TextureUtils.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/TextureUtils.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/TextureUtils.cpp.s
 .PHONY : src/Core/TextureUtils.cpp.s
 
 src/Core/VertexArray.o: src/Core/VertexArray.cpp.o
@@ -754,9 +754,9 @@ src/Core/VertexArray.o: src/Core/VertexArray.cpp.o
 
 # target to build an object file
 src/Core/VertexArray.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexArray.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexArray.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexArray.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexArray.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexArray.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexArray.cpp.o
 .PHONY : src/Core/VertexArray.cpp.o
 
 src/Core/VertexArray.i: src/Core/VertexArray.cpp.i
@@ -764,9 +764,9 @@ src/Core/VertexArray.i: src/Core/VertexArray.cpp.i
 
 # target to preprocess a source file
 src/Core/VertexArray.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexArray.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexArray.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexArray.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexArray.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexArray.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexArray.cpp.i
 .PHONY : src/Core/VertexArray.cpp.i
 
 src/Core/VertexArray.s: src/Core/VertexArray.cpp.s
@@ -774,9 +774,9 @@ src/Core/VertexArray.s: src/Core/VertexArray.cpp.s
 
 # target to generate assembly for a file
 src/Core/VertexArray.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexArray.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexArray.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexArray.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexArray.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexArray.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexArray.cpp.s
 .PHONY : src/Core/VertexArray.cpp.s
 
 src/Core/VertexBuffer.o: src/Core/VertexBuffer.cpp.o
@@ -784,9 +784,9 @@ src/Core/VertexBuffer.o: src/Core/VertexBuffer.cpp.o
 
 # target to build an object file
 src/Core/VertexBuffer.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexBuffer.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexBuffer.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexBuffer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexBuffer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexBuffer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexBuffer.cpp.o
 .PHONY : src/Core/VertexBuffer.cpp.o
 
 src/Core/VertexBuffer.i: src/Core/VertexBuffer.cpp.i
@@ -794,9 +794,9 @@ src/Core/VertexBuffer.i: src/Core/VertexBuffer.cpp.i
 
 # target to preprocess a source file
 src/Core/VertexBuffer.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexBuffer.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexBuffer.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexBuffer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexBuffer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexBuffer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexBuffer.cpp.i
 .PHONY : src/Core/VertexBuffer.cpp.i
 
 src/Core/VertexBuffer.s: src/Core/VertexBuffer.cpp.s
@@ -804,9 +804,9 @@ src/Core/VertexBuffer.s: src/Core/VertexBuffer.cpp.s
 
 # target to generate assembly for a file
 src/Core/VertexBuffer.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexBuffer.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexBuffer.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexBuffer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Core/VertexBuffer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Core/VertexBuffer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Core/VertexBuffer.cpp.s
 .PHONY : src/Core/VertexBuffer.cpp.s
 
 src/Util/Animation.o: src/Util/Animation.cpp.o
@@ -814,9 +814,9 @@ src/Util/Animation.o: src/Util/Animation.cpp.o
 
 # target to build an object file
 src/Util/Animation.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Animation.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Animation.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Animation.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Animation.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Animation.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Animation.cpp.o
 .PHONY : src/Util/Animation.cpp.o
 
 src/Util/Animation.i: src/Util/Animation.cpp.i
@@ -824,9 +824,9 @@ src/Util/Animation.i: src/Util/Animation.cpp.i
 
 # target to preprocess a source file
 src/Util/Animation.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Animation.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Animation.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Animation.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Animation.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Animation.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Animation.cpp.i
 .PHONY : src/Util/Animation.cpp.i
 
 src/Util/Animation.s: src/Util/Animation.cpp.s
@@ -834,9 +834,9 @@ src/Util/Animation.s: src/Util/Animation.cpp.s
 
 # target to generate assembly for a file
 src/Util/Animation.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Animation.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Animation.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Animation.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Animation.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Animation.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Animation.cpp.s
 .PHONY : src/Util/Animation.cpp.s
 
 src/Util/BGM.o: src/Util/BGM.cpp.o
@@ -844,9 +844,9 @@ src/Util/BGM.o: src/Util/BGM.cpp.o
 
 # target to build an object file
 src/Util/BGM.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/BGM.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/BGM.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/BGM.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/BGM.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/BGM.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/BGM.cpp.o
 .PHONY : src/Util/BGM.cpp.o
 
 src/Util/BGM.i: src/Util/BGM.cpp.i
@@ -854,9 +854,9 @@ src/Util/BGM.i: src/Util/BGM.cpp.i
 
 # target to preprocess a source file
 src/Util/BGM.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/BGM.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/BGM.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/BGM.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/BGM.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/BGM.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/BGM.cpp.i
 .PHONY : src/Util/BGM.cpp.i
 
 src/Util/BGM.s: src/Util/BGM.cpp.s
@@ -864,9 +864,9 @@ src/Util/BGM.s: src/Util/BGM.cpp.s
 
 # target to generate assembly for a file
 src/Util/BGM.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/BGM.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/BGM.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/BGM.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/BGM.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/BGM.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/BGM.cpp.s
 .PHONY : src/Util/BGM.cpp.s
 
 src/Util/Color.o: src/Util/Color.cpp.o
@@ -874,9 +874,9 @@ src/Util/Color.o: src/Util/Color.cpp.o
 
 # target to build an object file
 src/Util/Color.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Color.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Color.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Color.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Color.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Color.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Color.cpp.o
 .PHONY : src/Util/Color.cpp.o
 
 src/Util/Color.i: src/Util/Color.cpp.i
@@ -884,9 +884,9 @@ src/Util/Color.i: src/Util/Color.cpp.i
 
 # target to preprocess a source file
 src/Util/Color.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Color.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Color.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Color.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Color.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Color.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Color.cpp.i
 .PHONY : src/Util/Color.cpp.i
 
 src/Util/Color.s: src/Util/Color.cpp.s
@@ -894,9 +894,9 @@ src/Util/Color.s: src/Util/Color.cpp.s
 
 # target to generate assembly for a file
 src/Util/Color.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Color.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Color.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Color.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Color.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Color.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Color.cpp.s
 .PHONY : src/Util/Color.cpp.s
 
 src/Util/GameObject.o: src/Util/GameObject.cpp.o
@@ -904,9 +904,9 @@ src/Util/GameObject.o: src/Util/GameObject.cpp.o
 
 # target to build an object file
 src/Util/GameObject.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/GameObject.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/GameObject.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/GameObject.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/GameObject.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/GameObject.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/GameObject.cpp.o
 .PHONY : src/Util/GameObject.cpp.o
 
 src/Util/GameObject.i: src/Util/GameObject.cpp.i
@@ -914,9 +914,9 @@ src/Util/GameObject.i: src/Util/GameObject.cpp.i
 
 # target to preprocess a source file
 src/Util/GameObject.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/GameObject.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/GameObject.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/GameObject.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/GameObject.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/GameObject.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/GameObject.cpp.i
 .PHONY : src/Util/GameObject.cpp.i
 
 src/Util/GameObject.s: src/Util/GameObject.cpp.s
@@ -924,9 +924,9 @@ src/Util/GameObject.s: src/Util/GameObject.cpp.s
 
 # target to generate assembly for a file
 src/Util/GameObject.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/GameObject.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/GameObject.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/GameObject.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/GameObject.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/GameObject.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/GameObject.cpp.s
 .PHONY : src/Util/GameObject.cpp.s
 
 src/Util/Image.o: src/Util/Image.cpp.o
@@ -934,9 +934,9 @@ src/Util/Image.o: src/Util/Image.cpp.o
 
 # target to build an object file
 src/Util/Image.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Image.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Image.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Image.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Image.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Image.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Image.cpp.o
 .PHONY : src/Util/Image.cpp.o
 
 src/Util/Image.i: src/Util/Image.cpp.i
@@ -944,9 +944,9 @@ src/Util/Image.i: src/Util/Image.cpp.i
 
 # target to preprocess a source file
 src/Util/Image.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Image.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Image.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Image.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Image.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Image.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Image.cpp.i
 .PHONY : src/Util/Image.cpp.i
 
 src/Util/Image.s: src/Util/Image.cpp.s
@@ -954,9 +954,9 @@ src/Util/Image.s: src/Util/Image.cpp.s
 
 # target to generate assembly for a file
 src/Util/Image.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Image.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Image.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Image.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Image.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Image.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Image.cpp.s
 .PHONY : src/Util/Image.cpp.s
 
 src/Util/Input.o: src/Util/Input.cpp.o
@@ -964,9 +964,9 @@ src/Util/Input.o: src/Util/Input.cpp.o
 
 # target to build an object file
 src/Util/Input.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Input.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Input.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Input.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Input.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Input.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Input.cpp.o
 .PHONY : src/Util/Input.cpp.o
 
 src/Util/Input.i: src/Util/Input.cpp.i
@@ -974,9 +974,9 @@ src/Util/Input.i: src/Util/Input.cpp.i
 
 # target to preprocess a source file
 src/Util/Input.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Input.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Input.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Input.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Input.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Input.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Input.cpp.i
 .PHONY : src/Util/Input.cpp.i
 
 src/Util/Input.s: src/Util/Input.cpp.s
@@ -984,9 +984,9 @@ src/Util/Input.s: src/Util/Input.cpp.s
 
 # target to generate assembly for a file
 src/Util/Input.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Input.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Input.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Input.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Input.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Input.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Input.cpp.s
 .PHONY : src/Util/Input.cpp.s
 
 src/Util/LoadTextFile.o: src/Util/LoadTextFile.cpp.o
@@ -994,9 +994,9 @@ src/Util/LoadTextFile.o: src/Util/LoadTextFile.cpp.o
 
 # target to build an object file
 src/Util/LoadTextFile.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/LoadTextFile.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/LoadTextFile.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/LoadTextFile.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/LoadTextFile.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/LoadTextFile.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/LoadTextFile.cpp.o
 .PHONY : src/Util/LoadTextFile.cpp.o
 
 src/Util/LoadTextFile.i: src/Util/LoadTextFile.cpp.i
@@ -1004,9 +1004,9 @@ src/Util/LoadTextFile.i: src/Util/LoadTextFile.cpp.i
 
 # target to preprocess a source file
 src/Util/LoadTextFile.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/LoadTextFile.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/LoadTextFile.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/LoadTextFile.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/LoadTextFile.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/LoadTextFile.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/LoadTextFile.cpp.i
 .PHONY : src/Util/LoadTextFile.cpp.i
 
 src/Util/LoadTextFile.s: src/Util/LoadTextFile.cpp.s
@@ -1014,9 +1014,9 @@ src/Util/LoadTextFile.s: src/Util/LoadTextFile.cpp.s
 
 # target to generate assembly for a file
 src/Util/LoadTextFile.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/LoadTextFile.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/LoadTextFile.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/LoadTextFile.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/LoadTextFile.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/LoadTextFile.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/LoadTextFile.cpp.s
 .PHONY : src/Util/LoadTextFile.cpp.s
 
 src/Util/Logger.o: src/Util/Logger.cpp.o
@@ -1024,9 +1024,9 @@ src/Util/Logger.o: src/Util/Logger.cpp.o
 
 # target to build an object file
 src/Util/Logger.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Logger.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Logger.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Logger.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Logger.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Logger.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Logger.cpp.o
 .PHONY : src/Util/Logger.cpp.o
 
 src/Util/Logger.i: src/Util/Logger.cpp.i
@@ -1034,9 +1034,9 @@ src/Util/Logger.i: src/Util/Logger.cpp.i
 
 # target to preprocess a source file
 src/Util/Logger.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Logger.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Logger.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Logger.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Logger.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Logger.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Logger.cpp.i
 .PHONY : src/Util/Logger.cpp.i
 
 src/Util/Logger.s: src/Util/Logger.cpp.s
@@ -1044,9 +1044,9 @@ src/Util/Logger.s: src/Util/Logger.cpp.s
 
 # target to generate assembly for a file
 src/Util/Logger.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Logger.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Logger.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Logger.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Logger.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Logger.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Logger.cpp.s
 .PHONY : src/Util/Logger.cpp.s
 
 src/Util/MissingTexture.o: src/Util/MissingTexture.cpp.o
@@ -1054,9 +1054,9 @@ src/Util/MissingTexture.o: src/Util/MissingTexture.cpp.o
 
 # target to build an object file
 src/Util/MissingTexture.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/MissingTexture.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/MissingTexture.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/MissingTexture.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/MissingTexture.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/MissingTexture.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/MissingTexture.cpp.o
 .PHONY : src/Util/MissingTexture.cpp.o
 
 src/Util/MissingTexture.i: src/Util/MissingTexture.cpp.i
@@ -1064,9 +1064,9 @@ src/Util/MissingTexture.i: src/Util/MissingTexture.cpp.i
 
 # target to preprocess a source file
 src/Util/MissingTexture.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/MissingTexture.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/MissingTexture.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/MissingTexture.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/MissingTexture.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/MissingTexture.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/MissingTexture.cpp.i
 .PHONY : src/Util/MissingTexture.cpp.i
 
 src/Util/MissingTexture.s: src/Util/MissingTexture.cpp.s
@@ -1074,9 +1074,9 @@ src/Util/MissingTexture.s: src/Util/MissingTexture.cpp.s
 
 # target to generate assembly for a file
 src/Util/MissingTexture.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/MissingTexture.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/MissingTexture.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/MissingTexture.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/MissingTexture.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/MissingTexture.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/MissingTexture.cpp.s
 .PHONY : src/Util/MissingTexture.cpp.s
 
 src/Util/Renderer.o: src/Util/Renderer.cpp.o
@@ -1084,9 +1084,9 @@ src/Util/Renderer.o: src/Util/Renderer.cpp.o
 
 # target to build an object file
 src/Util/Renderer.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Renderer.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Renderer.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Renderer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Renderer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Renderer.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Renderer.cpp.o
 .PHONY : src/Util/Renderer.cpp.o
 
 src/Util/Renderer.i: src/Util/Renderer.cpp.i
@@ -1094,9 +1094,9 @@ src/Util/Renderer.i: src/Util/Renderer.cpp.i
 
 # target to preprocess a source file
 src/Util/Renderer.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Renderer.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Renderer.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Renderer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Renderer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Renderer.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Renderer.cpp.i
 .PHONY : src/Util/Renderer.cpp.i
 
 src/Util/Renderer.s: src/Util/Renderer.cpp.s
@@ -1104,9 +1104,9 @@ src/Util/Renderer.s: src/Util/Renderer.cpp.s
 
 # target to generate assembly for a file
 src/Util/Renderer.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Renderer.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Renderer.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Renderer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Renderer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Renderer.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Renderer.cpp.s
 .PHONY : src/Util/Renderer.cpp.s
 
 src/Util/SFX.o: src/Util/SFX.cpp.o
@@ -1114,9 +1114,9 @@ src/Util/SFX.o: src/Util/SFX.cpp.o
 
 # target to build an object file
 src/Util/SFX.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/SFX.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/SFX.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/SFX.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/SFX.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/SFX.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/SFX.cpp.o
 .PHONY : src/Util/SFX.cpp.o
 
 src/Util/SFX.i: src/Util/SFX.cpp.i
@@ -1124,9 +1124,9 @@ src/Util/SFX.i: src/Util/SFX.cpp.i
 
 # target to preprocess a source file
 src/Util/SFX.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/SFX.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/SFX.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/SFX.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/SFX.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/SFX.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/SFX.cpp.i
 .PHONY : src/Util/SFX.cpp.i
 
 src/Util/SFX.s: src/Util/SFX.cpp.s
@@ -1134,9 +1134,9 @@ src/Util/SFX.s: src/Util/SFX.cpp.s
 
 # target to generate assembly for a file
 src/Util/SFX.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/SFX.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/SFX.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/SFX.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/SFX.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/SFX.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/SFX.cpp.s
 .PHONY : src/Util/SFX.cpp.s
 
 src/Util/Text.o: src/Util/Text.cpp.o
@@ -1144,9 +1144,9 @@ src/Util/Text.o: src/Util/Text.cpp.o
 
 # target to build an object file
 src/Util/Text.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Text.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Text.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Text.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Text.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Text.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Text.cpp.o
 .PHONY : src/Util/Text.cpp.o
 
 src/Util/Text.i: src/Util/Text.cpp.i
@@ -1154,9 +1154,9 @@ src/Util/Text.i: src/Util/Text.cpp.i
 
 # target to preprocess a source file
 src/Util/Text.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Text.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Text.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Text.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Text.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Text.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Text.cpp.i
 .PHONY : src/Util/Text.cpp.i
 
 src/Util/Text.s: src/Util/Text.cpp.s
@@ -1164,9 +1164,9 @@ src/Util/Text.s: src/Util/Text.cpp.s
 
 # target to generate assembly for a file
 src/Util/Text.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Text.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Text.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Text.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Text.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Text.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Text.cpp.s
 .PHONY : src/Util/Text.cpp.s
 
 src/Util/Time.o: src/Util/Time.cpp.o
@@ -1174,9 +1174,9 @@ src/Util/Time.o: src/Util/Time.cpp.o
 
 # target to build an object file
 src/Util/Time.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Time.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Time.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Time.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Time.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Time.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Time.cpp.o
 .PHONY : src/Util/Time.cpp.o
 
 src/Util/Time.i: src/Util/Time.cpp.i
@@ -1184,9 +1184,9 @@ src/Util/Time.i: src/Util/Time.cpp.i
 
 # target to preprocess a source file
 src/Util/Time.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Time.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Time.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Time.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Time.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Time.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Time.cpp.i
 .PHONY : src/Util/Time.cpp.i
 
 src/Util/Time.s: src/Util/Time.cpp.s
@@ -1194,9 +1194,9 @@ src/Util/Time.s: src/Util/Time.cpp.s
 
 # target to generate assembly for a file
 src/Util/Time.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Time.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Time.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Time.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/Time.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/Time.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/Time.cpp.s
 .PHONY : src/Util/Time.cpp.s
 
 src/Util/TransformUtils.o: src/Util/TransformUtils.cpp.o
@@ -1204,9 +1204,9 @@ src/Util/TransformUtils.o: src/Util/TransformUtils.cpp.o
 
 # target to build an object file
 src/Util/TransformUtils.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/TransformUtils.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/TransformUtils.cpp.o
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/TransformUtils.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/TransformUtils.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/TransformUtils.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/TransformUtils.cpp.o
 .PHONY : src/Util/TransformUtils.cpp.o
 
 src/Util/TransformUtils.i: src/Util/TransformUtils.cpp.i
@@ -1214,9 +1214,9 @@ src/Util/TransformUtils.i: src/Util/TransformUtils.cpp.i
 
 # target to preprocess a source file
 src/Util/TransformUtils.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/TransformUtils.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/TransformUtils.cpp.i
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/TransformUtils.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/TransformUtils.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/TransformUtils.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/TransformUtils.cpp.i
 .PHONY : src/Util/TransformUtils.cpp.i
 
 src/Util/TransformUtils.s: src/Util/TransformUtils.cpp.s
@@ -1224,9 +1224,9 @@ src/Util/TransformUtils.s: src/Util/TransformUtils.cpp.s
 
 # target to generate assembly for a file
 src/Util/TransformUtils.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/TransformUtils.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/TransformUtils.cpp.s
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/TransformUtils.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/PTSD.dir/build.make _deps/ptsd-build/CMakeFiles/PTSD.dir/src/Util/TransformUtils.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/src/Util/TransformUtils.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/src/Util/TransformUtils.cpp.s
 .PHONY : src/Util/TransformUtils.cpp.s
 
 test/Interactive/Audio.o: test/Interactive/Audio.cpp.o
@@ -1234,7 +1234,7 @@ test/Interactive/Audio.o: test/Interactive/Audio.cpp.o
 
 # target to build an object file
 test/Interactive/Audio.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/test/Interactive/Audio.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/test/Interactive/Audio.cpp.o
 .PHONY : test/Interactive/Audio.cpp.o
 
 test/Interactive/Audio.i: test/Interactive/Audio.cpp.i
@@ -1242,7 +1242,7 @@ test/Interactive/Audio.i: test/Interactive/Audio.cpp.i
 
 # target to preprocess a source file
 test/Interactive/Audio.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/test/Interactive/Audio.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/test/Interactive/Audio.cpp.i
 .PHONY : test/Interactive/Audio.cpp.i
 
 test/Interactive/Audio.s: test/Interactive/Audio.cpp.s
@@ -1250,7 +1250,7 @@ test/Interactive/Audio.s: test/Interactive/Audio.cpp.s
 
 # target to generate assembly for a file
 test/Interactive/Audio.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/test/Interactive/Audio.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/AudioTest.dir/build.make _deps/ptsd-build/CMakeFiles/AudioTest.dir/test/Interactive/Audio.cpp.s
 .PHONY : test/Interactive/Audio.cpp.s
 
 test/NotSimpleTest.o: test/NotSimpleTest.cpp.o
@@ -1258,7 +1258,7 @@ test/NotSimpleTest.o: test/NotSimpleTest.cpp.o
 
 # target to build an object file
 test/NotSimpleTest.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/NotSimpleTest.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/NotSimpleTest.cpp.o
 .PHONY : test/NotSimpleTest.cpp.o
 
 test/NotSimpleTest.i: test/NotSimpleTest.cpp.i
@@ -1266,7 +1266,7 @@ test/NotSimpleTest.i: test/NotSimpleTest.cpp.i
 
 # target to preprocess a source file
 test/NotSimpleTest.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/NotSimpleTest.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/NotSimpleTest.cpp.i
 .PHONY : test/NotSimpleTest.cpp.i
 
 test/NotSimpleTest.s: test/NotSimpleTest.cpp.s
@@ -1274,7 +1274,7 @@ test/NotSimpleTest.s: test/NotSimpleTest.cpp.s
 
 # target to generate assembly for a file
 test/NotSimpleTest.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/NotSimpleTest.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/NotSimpleTest.cpp.s
 .PHONY : test/NotSimpleTest.cpp.s
 
 test/SimpleTest.o: test/SimpleTest.cpp.o
@@ -1282,7 +1282,7 @@ test/SimpleTest.o: test/SimpleTest.cpp.o
 
 # target to build an object file
 test/SimpleTest.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/SimpleTest.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/SimpleTest.cpp.o
 .PHONY : test/SimpleTest.cpp.o
 
 test/SimpleTest.i: test/SimpleTest.cpp.i
@@ -1290,7 +1290,7 @@ test/SimpleTest.i: test/SimpleTest.cpp.i
 
 # target to preprocess a source file
 test/SimpleTest.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/SimpleTest.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/SimpleTest.cpp.i
 .PHONY : test/SimpleTest.cpp.i
 
 test/SimpleTest.s: test/SimpleTest.cpp.s
@@ -1298,7 +1298,7 @@ test/SimpleTest.s: test/SimpleTest.cpp.s
 
 # target to generate assembly for a file
 test/SimpleTest.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/SimpleTest.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/SimpleTest.cpp.s
 .PHONY : test/SimpleTest.cpp.s
 
 test/TransformTest.o: test/TransformTest.cpp.o
@@ -1306,7 +1306,7 @@ test/TransformTest.o: test/TransformTest.cpp.o
 
 # target to build an object file
 test/TransformTest.cpp.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/TransformTest.cpp.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/TransformTest.cpp.o
 .PHONY : test/TransformTest.cpp.o
 
 test/TransformTest.i: test/TransformTest.cpp.i
@@ -1314,7 +1314,7 @@ test/TransformTest.i: test/TransformTest.cpp.i
 
 # target to preprocess a source file
 test/TransformTest.cpp.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/TransformTest.cpp.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/TransformTest.cpp.i
 .PHONY : test/TransformTest.cpp.i
 
 test/TransformTest.s: test/TransformTest.cpp.s
@@ -1322,7 +1322,7 @@ test/TransformTest.s: test/TransformTest.cpp.s
 
 # target to generate assembly for a file
 test/TransformTest.cpp.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/TransformTest.cpp.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/ptsd-build/CMakeFiles/Tests.dir/build.make _deps/ptsd-build/CMakeFiles/Tests.dir/test/TransformTest.cpp.s
 .PHONY : test/TransformTest.cpp.s
 
 # Help Target
@@ -1472,6 +1472,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

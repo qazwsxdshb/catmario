@@ -12,7 +12,7 @@ public:
                                          append_string_views(s_PhaseTasks[0], s_Validation),
                                          Util::Color::FromName(Util::Colors::WHITE)),
             100) {
-        m_Transform.translation = {550.0F, 330.F};
+        m_Transform.translation = {0.0F, 330.F};
     }
 
     void NextPhase(const int phase) {

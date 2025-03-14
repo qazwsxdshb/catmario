@@ -4,7 +4,7 @@
 # compile C with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/easn/catmario/PTSD/lib/sdl2_mixer/include -I/Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include -I/Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug
+C_INCLUDES = -I/Users/easn/code/catmario/PTSD/lib/sdl2_mixer/include -I/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include -I/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug
 
 C_FLAGSarm64 = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fPIE -fcolor-diagnostics
 

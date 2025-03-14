@@ -1,15 +1,15 @@
 _deps/sdl2_ttf-build/external/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcache.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcbasic.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftobjs.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftrender.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftmodapi.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/freetype.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/ft2build.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/ftheader.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include/freetype/config/ftconfig.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include/freetype/config/ftoption.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/ftstdlib.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcache.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcbasic.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftobjs.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftrender.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftmodapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/freetype.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/ft2build.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/ftheader.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include/freetype/config/ftconfig.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include/freetype/config/ftoption.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/ftstdlib.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_header_macro.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \
@@ -122,46 +122,46 @@ _deps/sdl2_ttf-build/external/freetype/CMakeFiles/freetype.dir/src/cache/ftcache
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg_va_arg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg___va_copy.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg_va_copy.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/integer-types.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/public-macros.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/mac-support.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/integer-types.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/public-macros.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/config/mac-support.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/errno.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/errno.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/fttypes.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftsystem.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftimage.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/fttypes.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftsystem.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftimage.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_rsize_t.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/fterrors.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftmoderr.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/fterrdef.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftglyph.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftsizes.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftlcdfil.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftparams.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftmemory.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/compiler-macros.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftgloadr.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftdrv.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/autohint.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftserv.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftcalc.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftincrem.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftdebug.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftcache.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcglyph.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmanag.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmru.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccache.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcimage.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcsbits.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccback.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcerror.h \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccache.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccmap.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcglyph.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcimage.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmanag.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmru.c \
-  /Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcsbits.c
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/fterrors.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftmoderr.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/fterrdef.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftglyph.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftsizes.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftlcdfil.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftparams.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftmemory.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/compiler-macros.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftgloadr.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftdrv.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/autohint.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftserv.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftcalc.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftincrem.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/internal/ftdebug.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include/freetype/ftcache.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcglyph.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmanag.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmru.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccache.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcimage.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcsbits.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccback.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcerror.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccache.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftccmap.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcglyph.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcimage.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmanag.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcmru.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/src/cache/ftcsbits.c

@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/audio/coreaudio/SDL_coreaudio.m.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/SDL_coreaudio.m \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/SDL_coreaudio.m \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,20 +173,20 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/audio/coreaudio/SDL_coreaudio.m.
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_audio.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../SDL_audio_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../SDL_sysaudio.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../SDL_dataqueue.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/.././SDL_audio_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/SDL_coreaudio.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_audio.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../SDL_audio_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../SDL_sysaudio.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../SDL_dataqueue.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/.././SDL_audio_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/SDL_coreaudio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioBaseTypes.h \
@@ -832,14 +832,14 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/audio/coreaudio/SDL_coreaudio.m.
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AUAudioUnit.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AUAudioUnitImplementation.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AUParameters.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/SDL_systhread.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/SDL_thread_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/pthread/SDL_systhread_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/pthread/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/SDL_systhread.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/SDL_thread_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/pthread/SDL_systhread_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/pthread/../../SDL_internal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/pthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/pthread/sched.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/pthread/pthread_impl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/pthread/qos.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/../SDL_error_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/.././SDL_internal.h
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/../SDL_error_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/audio/coreaudio/../../thread/.././SDL_internal.h

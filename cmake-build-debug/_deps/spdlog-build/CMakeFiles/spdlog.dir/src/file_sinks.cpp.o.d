@@ -1,6 +1,6 @@
 _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: \
-  /Users/easn/catmario/PTSD/lib/spdlog/src/file_sinks.cpp \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/null_mutex.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/src/file_sinks.cpp \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/null_mutex.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/atomic \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \
@@ -391,10 +391,10 @@ _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__std_mbstate_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__mbstate_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_mbstate_t.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/file_helper-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/file_helper.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/common.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/tweakme.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/file_helper-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/file_helper.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/common.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/tweakme.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -949,10 +949,10 @@ _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/fmt/fmt.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/core.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/format.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/os.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/fmt.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/core.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/os.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/thread \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/formatter.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/jthread.h \
@@ -992,15 +992,15 @@ _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/this_thread.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/basic_file_sink-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/basic_file_sink.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/sink.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/formatter.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/synchronous_factory.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/details/registry.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/pattern_formatter.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h \
-  /Users/easn/catmario/PTSD/lib/spdlog/include/spdlog/sinks/rotating_file_sink.h
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/basic_file_sink-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/basic_file_sink.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/log_msg.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/sink.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/formatter.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/synchronous_factory.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/details/registry.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/base_sink-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/pattern_formatter.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/sinks/rotating_file_sink.h

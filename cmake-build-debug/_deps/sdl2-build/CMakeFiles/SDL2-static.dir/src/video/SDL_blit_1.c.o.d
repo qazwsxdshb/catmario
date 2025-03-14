@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_1.c.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/SDL_blit_1.c \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/SDL_blit_1.c \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,30 +173,30 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/video/SDL_blit_1.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/SDL_blit.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/SDL_blit.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_neon.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_bf16.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/SDL_sysvideo.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/SDL_vulkan_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vk_platform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan_core.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan_macos.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan_metal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/SDL_sysvideo.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/SDL_vulkan_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vk_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan_core.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan_macos.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/video/./khronos/vulkan/vulkan_metal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h

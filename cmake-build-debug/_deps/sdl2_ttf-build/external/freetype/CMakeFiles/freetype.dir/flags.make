@@ -4,7 +4,7 @@
 # compile C with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 C_DEFINES = -DFT2_BUILD_LIBRARY
 
-C_INCLUDES = -I/Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include -I/Users/easn/catmario/PTSD/lib/sdl2_ttf/external/freetype/include -I/Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include/freetype/config
+C_INCLUDES = -I/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include -I/Users/easn/code/catmario/PTSD/lib/sdl2_ttf/external/freetype/include -I/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build/external/freetype/include/freetype/config
 
 C_FLAGSarm64 = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics
 

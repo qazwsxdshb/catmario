@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /Users/easn/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/catmario/cmake-build-debug/CPackSourceConfig.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cpack --config ./CPackSourceConfig.cmake /Users/easn/code/catmario/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles /Users/easn/catmario/cmake-build-debug/_deps/sdl2_ttf-build//CMakeFiles/progress.marks
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/catmario/cmake-build-debug/CMakeFiles 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build//CMakeFiles/progress.marks
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/easn/code/catmario/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/clean
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/preinstall
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/rule
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ SDL2_ttf: _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/rule
 
 # fast build rule for target.
 SDL2_ttf/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build
 .PHONY : SDL2_ttf/fast
 
 # Convenience name for target.
 _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/rule
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/rule
 
 # Convenience name for target.
@@ -206,12 +206,12 @@ glfont: _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/rule
 
 # fast build rule for target.
 glfont/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build
 .PHONY : glfont/fast
 
 # Convenience name for target.
 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/rule:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/rule
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/rule
 .PHONY : _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ showfont: _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/rule
 
 # fast build rule for target.
 showfont/fast:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build
 .PHONY : showfont/fast
 
 SDL_ttf.o: SDL_ttf.c.o
@@ -228,7 +228,7 @@ SDL_ttf.o: SDL_ttf.c.o
 
 # target to build an object file
 SDL_ttf.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.o
 .PHONY : SDL_ttf.c.o
 
 SDL_ttf.i: SDL_ttf.c.i
@@ -236,7 +236,7 @@ SDL_ttf.i: SDL_ttf.c.i
 
 # target to preprocess a source file
 SDL_ttf.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.i
 .PHONY : SDL_ttf.c.i
 
 SDL_ttf.s: SDL_ttf.c.s
@@ -244,7 +244,7 @@ SDL_ttf.s: SDL_ttf.c.s
 
 # target to generate assembly for a file
 SDL_ttf.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.s
 .PHONY : SDL_ttf.c.s
 
 glfont.o: glfont.c.o
@@ -252,7 +252,7 @@ glfont.o: glfont.c.o
 
 # target to build an object file
 glfont.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/glfont.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/glfont.c.o
 .PHONY : glfont.c.o
 
 glfont.i: glfont.c.i
@@ -260,7 +260,7 @@ glfont.i: glfont.c.i
 
 # target to preprocess a source file
 glfont.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/glfont.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/glfont.c.i
 .PHONY : glfont.c.i
 
 glfont.s: glfont.c.s
@@ -268,7 +268,7 @@ glfont.s: glfont.c.s
 
 # target to generate assembly for a file
 glfont.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/glfont.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/glfont.dir/glfont.c.s
 .PHONY : glfont.c.s
 
 showfont.o: showfont.c.o
@@ -276,7 +276,7 @@ showfont.o: showfont.c.o
 
 # target to build an object file
 showfont.c.o:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.o
 .PHONY : showfont.c.o
 
 showfont.i: showfont.c.i
@@ -284,7 +284,7 @@ showfont.i: showfont.c.i
 
 # target to preprocess a source file
 showfont.c.i:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.i
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.i
 .PHONY : showfont.c.i
 
 showfont.s: showfont.c.s
@@ -292,7 +292,7 @@ showfont.s: showfont.c.s
 
 # target to generate assembly for a file
 showfont.c.s:
-	cd /Users/easn/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.s
+	cd /Users/easn/code/catmario/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/build.make _deps/sdl2_ttf-build/CMakeFiles/showfont.dir/showfont.c.s
 .PHONY : showfont.c.s
 
 # Help Target
@@ -332,6 +332,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

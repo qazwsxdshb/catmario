@@ -1,4 +1,4 @@
-# Install script for directory: /Users/easn/catmario/PTSD/lib/sdl2_mixer
+# Install script for directory: /Users/easn/code/catmario/PTSD/lib/sdl2_mixer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

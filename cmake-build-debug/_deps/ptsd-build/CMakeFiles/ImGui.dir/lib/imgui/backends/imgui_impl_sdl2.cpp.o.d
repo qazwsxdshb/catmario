@@ -1,7 +1,7 @@
 _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: \
-  /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp \
-  /Users/easn/catmario/PTSD/lib/imgui/imgui.h \
-  /Users/easn/catmario/PTSD/lib/imgui/imconfig.h \
+  /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.cpp \
+  /Users/easn/code/catmario/PTSD/lib/imgui/imgui.h \
+  /Users/easn/code/catmario/PTSD/lib/imgui/imconfig.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__config_site \
@@ -106,17 +106,17 @@ _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: 
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h \
-  /Users/easn/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_main.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_stdinc.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_config.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/imgui/backends/imgui_impl_sdl2.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_main.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_config.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/begin_code.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/close_code.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_config_macosx.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/begin_code.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/close_code.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_config_macosx.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_u_char.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_u_short.h \
@@ -332,50 +332,50 @@ _deps/ptsd-build/CMakeFiles/ImGui.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: 
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/rounding_functions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/trigonometric_functions.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_assert.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_atomic.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_audio.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_error.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_endian.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_mutex.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_thread.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_rwops.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_clipboard.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_cpuinfo.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_assert.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_atomic.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_audio.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_error.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_endian.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_mutex.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_thread.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_rwops.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_clipboard.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_cpuinfo.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_neon.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_bf16.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_events.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_video.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_pixels.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_rect.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_surface.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_blendmode.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_keyboard.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_keycode.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_scancode.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_mouse.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_joystick.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_guid.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_gamecontroller.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_sensor.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_quit.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_gesture.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_touch.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_filesystem.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_haptic.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_hidapi.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_hints.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_loadso.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_log.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_messagebox.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_metal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_power.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_render.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_shape.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_system.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_timer.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_version.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_locale.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_misc.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_syswm.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_vulkan.h
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_events.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_video.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_pixels.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_rect.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_surface.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_blendmode.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_keyboard.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_keycode.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_scancode.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_mouse.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_joystick.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_guid.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_gamecontroller.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_sensor.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_quit.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_gesture.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_touch.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_filesystem.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_haptic.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_hidapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_hints.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_loadso.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_log.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_messagebox.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_metal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_power.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_render.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_shape.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_system.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_timer.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_version.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_locale.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_misc.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_syswm.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_vulkan.h

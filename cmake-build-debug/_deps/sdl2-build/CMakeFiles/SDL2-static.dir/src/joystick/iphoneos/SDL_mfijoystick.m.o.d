@@ -1,20 +1,20 @@
 _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/joystick/iphoneos/SDL_mfijoystick.m.o: \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/SDL_mfijoystick.m \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../SDL_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../dynapi/SDL_dynapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/SDL_mfijoystick.m \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../SDL_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../dynapi/SDL_dynapi.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../dynapi/SDL_dynapi_overrides.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../dynapi/SDL_dynapi_overrides.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/appleapiopts.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -173,63 +173,63 @@ _deps/sdl2-build/CMakeFiles/SDL2-static.dir/src/joystick/iphoneos/SDL_mfijoystic
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/float.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../SDL_sysjoystick.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../SDL_joystick_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../hidapi/SDL_hidapijoystick_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../hidapi/../../SDL_internal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../hidapi/../usb_ids.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../usb_ids.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/SDL_mfijoystick_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_events_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../SDL_internal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/SDL_sysvideo.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/../SDL_internal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/SDL_vulkan_internal.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vk_platform.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan_core.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan_macos.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan_metal.h \
-  /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_clipboardevents_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_displayevents_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_dropevents_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_gesture_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_keyboard_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_mouse_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_touch_c.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../../include/SDL_touch.h \
-  /Users/easn/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_windowevents_c.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../SDL_sysjoystick.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../SDL_joystick_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../hidapi/SDL_hidapijoystick_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../hidapi/../../SDL_internal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../hidapi/../usb_ids.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../usb_ids.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/SDL_mfijoystick_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_events_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../SDL_internal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/SDL_sysvideo.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/../SDL_internal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/SDL_vulkan_internal.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vk_platform.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan_core.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan_macos.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../video/./khronos/vulkan/vulkan_metal.h \
+  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_clipboardevents_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_displayevents_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_dropevents_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_gesture_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_keyboard_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_mouse_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_touch_c.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/../../include/SDL_touch.h \
+  /Users/easn/code/catmario/PTSD/lib/sdl2/src/joystick/iphoneos/../../events/SDL_windowevents_c.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOTypes.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/mach/message.h \

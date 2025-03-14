@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include _deps/sdl2-build/CMakeFiles/uninstall.dir/compiler_depend.make
 include _deps/sdl2-build/CMakeFiles/uninstall.dir/progress.make
 
 _deps/sdl2-build/CMakeFiles/uninstall:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/cmake_uninstall.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/cmake_uninstall.cmake
 
 uninstall: _deps/sdl2-build/CMakeFiles/uninstall
 uninstall: _deps/sdl2-build/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ _deps/sdl2-build/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : _deps/sdl2-build/CMakeFiles/uninstall.dir/build
 
 _deps/sdl2-build/CMakeFiles/uninstall.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : _deps/sdl2-build/CMakeFiles/uninstall.dir/clean
 
 _deps/sdl2-build/CMakeFiles/uninstall.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD/lib/sdl2 /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD/lib/sdl2 /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/sdl2-build/CMakeFiles/uninstall.dir/depend
 

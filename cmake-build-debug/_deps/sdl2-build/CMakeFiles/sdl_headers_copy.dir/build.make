@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/easn/catmario
+CMAKE_SOURCE_DIR = /Users/easn/code/catmario
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/easn/catmario/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/easn/code/catmario/cmake-build-debug
 
 # Utility rule file for sdl_headers_copy.
 
@@ -144,313 +144,313 @@ _deps/sdl2-build/CMakeFiles/sdl_headers_copy: _deps/sdl2-build/include/SDL_vulka
 _deps/sdl2-build/CMakeFiles/sdl_headers_copy: _deps/sdl2-build/include/begin_code.h
 _deps/sdl2-build/CMakeFiles/sdl_headers_copy: _deps/sdl2-build/include/close_code.h
 
-_deps/sdl2-build/include/SDL.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/SDL.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL.h
-
-_deps/sdl2-build/include/SDL_assert.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_assert.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/SDL_assert.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_assert.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h
-
-_deps/sdl2-build/include/SDL_atomic.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_atomic.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/SDL_atomic.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_atomic.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h
-
-_deps/sdl2-build/include/SDL_audio.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_audio.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/SDL_audio.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_audio.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_audio.h
-
-_deps/sdl2-build/include/SDL_bits.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_bits.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/SDL_bits.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_bits.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_bits.h
-
-_deps/sdl2-build/include/SDL_blendmode.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_blendmode.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/SDL_blendmode.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_blendmode.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h
-
-_deps/sdl2-build/include/SDL_clipboard.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_clipboard.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/SDL_clipboard.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_clipboard.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_clipboard.h
-
-_deps/sdl2-build/include/SDL_copying.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_copying.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/SDL_copying.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_copying.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_copying.h
-
-_deps/sdl2-build/include/SDL_cpuinfo.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_cpuinfo.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/SDL_cpuinfo.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_cpuinfo.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h
-
-_deps/sdl2-build/include/SDL_egl.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_egl.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/SDL_egl.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_egl.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_egl.h
-
-_deps/sdl2-build/include/SDL_endian.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_endian.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/SDL_endian.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_endian.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h
-
-_deps/sdl2-build/include/SDL_error.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_error.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/SDL_error.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_error.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h
-
-_deps/sdl2-build/include/SDL_events.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_events.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/SDL_events.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_events.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h
-
-_deps/sdl2-build/include/SDL_filesystem.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_filesystem.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating include/SDL_filesystem.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_filesystem.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_filesystem.h
-
-_deps/sdl2-build/include/SDL_gamecontroller.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_gamecontroller.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating include/SDL_gamecontroller.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_gamecontroller.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h
-
-_deps/sdl2-build/include/SDL_gesture.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_gesture.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating include/SDL_gesture.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_gesture.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h
-
-_deps/sdl2-build/include/SDL_guid.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_guid.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating include/SDL_guid.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_guid.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h
-
-_deps/sdl2-build/include/SDL_haptic.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_haptic.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating include/SDL_haptic.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_haptic.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_haptic.h
-
-_deps/sdl2-build/include/SDL_hidapi.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_hidapi.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating include/SDL_hidapi.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_hidapi.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h
-
-_deps/sdl2-build/include/SDL_hints.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_hints.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating include/SDL_hints.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_hints.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h
-
-_deps/sdl2-build/include/SDL_joystick.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_joystick.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating include/SDL_joystick.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_joystick.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h
-
-_deps/sdl2-build/include/SDL_keyboard.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_keyboard.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating include/SDL_keyboard.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_keyboard.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h
-
-_deps/sdl2-build/include/SDL_keycode.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_keycode.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating include/SDL_keycode.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_keycode.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h
-
-_deps/sdl2-build/include/SDL_loadso.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_loadso.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating include/SDL_loadso.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_loadso.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_loadso.h
-
-_deps/sdl2-build/include/SDL_locale.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_locale.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating include/SDL_locale.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_locale.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_locale.h
-
-_deps/sdl2-build/include/SDL_log.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_log.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating include/SDL_log.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_log.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h
-
-_deps/sdl2-build/include/SDL_main.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_main.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating include/SDL_main.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_main.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_main.h
-
-_deps/sdl2-build/include/SDL_messagebox.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_messagebox.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating include/SDL_messagebox.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_messagebox.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h
-
-_deps/sdl2-build/include/SDL_metal.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_metal.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating include/SDL_metal.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_metal.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h
-
-_deps/sdl2-build/include/SDL_misc.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_misc.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating include/SDL_misc.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_misc.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_misc.h
-
-_deps/sdl2-build/include/SDL_mouse.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_mouse.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating include/SDL_mouse.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_mouse.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h
-
-_deps/sdl2-build/include/SDL_mutex.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_mutex.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating include/SDL_mutex.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_mutex.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h
-
-_deps/sdl2-build/include/SDL_name.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_name.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating include/SDL_name.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_name.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_name.h
-
-_deps/sdl2-build/include/SDL_opengl.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengl.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating include/SDL_opengl.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengl.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengl.h
-
-_deps/sdl2-build/include/SDL_opengl_glext.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengl_glext.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating include/SDL_opengl_glext.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengl_glext.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengl_glext.h
-
-_deps/sdl2-build/include/SDL_opengles.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating include/SDL_opengles.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles.h
-
-_deps/sdl2-build/include/SDL_opengles2.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating include/SDL_opengles2.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2.h
-
-_deps/sdl2-build/include/SDL_opengles2_gl2.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating include/SDL_opengles2_gl2.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_gl2.h
-
-_deps/sdl2-build/include/SDL_opengles2_gl2ext.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2ext.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating include/SDL_opengles2_gl2ext.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2ext.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_gl2ext.h
-
-_deps/sdl2-build/include/SDL_opengles2_gl2platform.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2platform.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating include/SDL_opengles2_gl2platform.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2platform.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_gl2platform.h
-
-_deps/sdl2-build/include/SDL_opengles2_khrplatform.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_khrplatform.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating include/SDL_opengles2_khrplatform.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_opengles2_khrplatform.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_khrplatform.h
-
-_deps/sdl2-build/include/SDL_pixels.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_pixels.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating include/SDL_pixels.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_pixels.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h
-
-_deps/sdl2-build/include/SDL_platform.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_platform.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating include/SDL_platform.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_platform.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h
-
-_deps/sdl2-build/include/SDL_power.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_power.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating include/SDL_power.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_power.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_power.h
-
-_deps/sdl2-build/include/SDL_quit.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_quit.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating include/SDL_quit.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_quit.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h
-
-_deps/sdl2-build/include/SDL_rect.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_rect.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Generating include/SDL_rect.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_rect.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h
-
-_deps/sdl2-build/include/SDL_render.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_render.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Generating include/SDL_render.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_render.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_render.h
-
-_deps/sdl2-build/include/SDL_rwops.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_rwops.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Generating include/SDL_rwops.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_rwops.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h
-
-_deps/sdl2-build/include/SDL_scancode.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_scancode.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Generating include/SDL_scancode.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_scancode.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h
-
-_deps/sdl2-build/include/SDL_sensor.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_sensor.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Generating include/SDL_sensor.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_sensor.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h
-
-_deps/sdl2-build/include/SDL_shape.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_shape.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Generating include/SDL_shape.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_shape.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h
-
-_deps/sdl2-build/include/SDL_stdinc.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_stdinc.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Generating include/SDL_stdinc.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_stdinc.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h
-
-_deps/sdl2-build/include/SDL_surface.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_surface.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Generating include/SDL_surface.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_surface.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h
-
-_deps/sdl2-build/include/SDL_system.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_system.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Generating include/SDL_system.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_system.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_system.h
-
-_deps/sdl2-build/include/SDL_syswm.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_syswm.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Generating include/SDL_syswm.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_syswm.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_syswm.h
-
-_deps/sdl2-build/include/SDL_test.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Generating include/SDL_test.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test.h
-
-_deps/sdl2-build/include/SDL_test_assert.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_assert.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Generating include/SDL_test_assert.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_assert.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_assert.h
-
-_deps/sdl2-build/include/SDL_test_common.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_common.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Generating include/SDL_test_common.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_common.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_common.h
-
-_deps/sdl2-build/include/SDL_test_compare.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_compare.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Generating include/SDL_test_compare.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_compare.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_compare.h
-
-_deps/sdl2-build/include/SDL_test_crc32.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_crc32.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Generating include/SDL_test_crc32.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_crc32.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_crc32.h
-
-_deps/sdl2-build/include/SDL_test_font.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_font.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Generating include/SDL_test_font.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_font.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_font.h
-
-_deps/sdl2-build/include/SDL_test_fuzzer.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_fuzzer.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Generating include/SDL_test_fuzzer.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_fuzzer.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_fuzzer.h
-
-_deps/sdl2-build/include/SDL_test_harness.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_harness.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Generating include/SDL_test_harness.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_harness.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_harness.h
-
-_deps/sdl2-build/include/SDL_test_images.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_images.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Generating include/SDL_test_images.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_images.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_images.h
-
-_deps/sdl2-build/include/SDL_test_log.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_log.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Generating include/SDL_test_log.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_log.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_log.h
-
-_deps/sdl2-build/include/SDL_test_md5.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_md5.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Generating include/SDL_test_md5.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_md5.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_md5.h
-
-_deps/sdl2-build/include/SDL_test_memory.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_memory.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Generating include/SDL_test_memory.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_memory.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_memory.h
-
-_deps/sdl2-build/include/SDL_test_random.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_random.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Generating include/SDL_test_random.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_test_random.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_random.h
-
-_deps/sdl2-build/include/SDL_thread.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_thread.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Generating include/SDL_thread.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_thread.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h
-
-_deps/sdl2-build/include/SDL_timer.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_timer.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Generating include/SDL_timer.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_timer.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h
-
-_deps/sdl2-build/include/SDL_touch.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_touch.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Generating include/SDL_touch.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_touch.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h
-
-_deps/sdl2-build/include/SDL_types.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_types.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Generating include/SDL_types.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_types.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_types.h
-
-_deps/sdl2-build/include/SDL_version.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_version.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Generating include/SDL_version.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_version.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_version.h
-
-_deps/sdl2-build/include/SDL_video.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_video.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Generating include/SDL_video.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_video.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
-
-_deps/sdl2-build/include/SDL_vulkan.h: /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_vulkan.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Generating include/SDL_vulkan.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/SDL_vulkan.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h
-
-_deps/sdl2-build/include/begin_code.h: /Users/easn/catmario/PTSD/lib/sdl2/include/begin_code.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Generating include/begin_code.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/begin_code.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
-
-_deps/sdl2-build/include/close_code.h: /Users/easn/catmario/PTSD/lib/sdl2/include/close_code.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Generating include/close_code.h"
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/catmario/PTSD/lib/sdl2/include/close_code.h /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
+_deps/sdl2-build/include/SDL.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/SDL.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL.h
+
+_deps/sdl2-build/include/SDL_assert.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_assert.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/SDL_assert.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_assert.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h
+
+_deps/sdl2-build/include/SDL_atomic.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_atomic.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/SDL_atomic.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_atomic.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_atomic.h
+
+_deps/sdl2-build/include/SDL_audio.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_audio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/SDL_audio.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_audio.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_audio.h
+
+_deps/sdl2-build/include/SDL_bits.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_bits.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/SDL_bits.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_bits.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_bits.h
+
+_deps/sdl2-build/include/SDL_blendmode.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_blendmode.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/SDL_blendmode.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_blendmode.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_blendmode.h
+
+_deps/sdl2-build/include/SDL_clipboard.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_clipboard.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/SDL_clipboard.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_clipboard.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_clipboard.h
+
+_deps/sdl2-build/include/SDL_copying.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_copying.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/SDL_copying.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_copying.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_copying.h
+
+_deps/sdl2-build/include/SDL_cpuinfo.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_cpuinfo.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/SDL_cpuinfo.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_cpuinfo.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_cpuinfo.h
+
+_deps/sdl2-build/include/SDL_egl.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_egl.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/SDL_egl.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_egl.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_egl.h
+
+_deps/sdl2-build/include/SDL_endian.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_endian.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/SDL_endian.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_endian.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_endian.h
+
+_deps/sdl2-build/include/SDL_error.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_error.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/SDL_error.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_error.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_error.h
+
+_deps/sdl2-build/include/SDL_events.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_events.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/SDL_events.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_events.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_events.h
+
+_deps/sdl2-build/include/SDL_filesystem.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_filesystem.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating include/SDL_filesystem.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_filesystem.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_filesystem.h
+
+_deps/sdl2-build/include/SDL_gamecontroller.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_gamecontroller.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating include/SDL_gamecontroller.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_gamecontroller.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gamecontroller.h
+
+_deps/sdl2-build/include/SDL_gesture.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_gesture.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating include/SDL_gesture.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_gesture.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_gesture.h
+
+_deps/sdl2-build/include/SDL_guid.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_guid.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating include/SDL_guid.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_guid.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_guid.h
+
+_deps/sdl2-build/include/SDL_haptic.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_haptic.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating include/SDL_haptic.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_haptic.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_haptic.h
+
+_deps/sdl2-build/include/SDL_hidapi.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_hidapi.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating include/SDL_hidapi.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_hidapi.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hidapi.h
+
+_deps/sdl2-build/include/SDL_hints.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_hints.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating include/SDL_hints.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_hints.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_hints.h
+
+_deps/sdl2-build/include/SDL_joystick.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_joystick.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating include/SDL_joystick.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_joystick.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_joystick.h
+
+_deps/sdl2-build/include/SDL_keyboard.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_keyboard.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating include/SDL_keyboard.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_keyboard.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keyboard.h
+
+_deps/sdl2-build/include/SDL_keycode.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_keycode.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating include/SDL_keycode.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_keycode.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_keycode.h
+
+_deps/sdl2-build/include/SDL_loadso.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_loadso.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating include/SDL_loadso.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_loadso.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_loadso.h
+
+_deps/sdl2-build/include/SDL_locale.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_locale.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating include/SDL_locale.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_locale.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_locale.h
+
+_deps/sdl2-build/include/SDL_log.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_log.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating include/SDL_log.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_log.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_log.h
+
+_deps/sdl2-build/include/SDL_main.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_main.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating include/SDL_main.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_main.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_main.h
+
+_deps/sdl2-build/include/SDL_messagebox.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_messagebox.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating include/SDL_messagebox.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_messagebox.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_messagebox.h
+
+_deps/sdl2-build/include/SDL_metal.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_metal.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating include/SDL_metal.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_metal.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_metal.h
+
+_deps/sdl2-build/include/SDL_misc.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_misc.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating include/SDL_misc.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_misc.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_misc.h
+
+_deps/sdl2-build/include/SDL_mouse.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_mouse.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating include/SDL_mouse.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_mouse.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mouse.h
+
+_deps/sdl2-build/include/SDL_mutex.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_mutex.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating include/SDL_mutex.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_mutex.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_mutex.h
+
+_deps/sdl2-build/include/SDL_name.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_name.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating include/SDL_name.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_name.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_name.h
+
+_deps/sdl2-build/include/SDL_opengl.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengl.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating include/SDL_opengl.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengl.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengl.h
+
+_deps/sdl2-build/include/SDL_opengl_glext.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengl_glext.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating include/SDL_opengl_glext.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengl_glext.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengl_glext.h
+
+_deps/sdl2-build/include/SDL_opengles.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating include/SDL_opengles.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles.h
+
+_deps/sdl2-build/include/SDL_opengles2.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating include/SDL_opengles2.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2.h
+
+_deps/sdl2-build/include/SDL_opengles2_gl2.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating include/SDL_opengles2_gl2.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_gl2.h
+
+_deps/sdl2-build/include/SDL_opengles2_gl2ext.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2ext.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating include/SDL_opengles2_gl2ext.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2ext.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_gl2ext.h
+
+_deps/sdl2-build/include/SDL_opengles2_gl2platform.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2platform.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating include/SDL_opengles2_gl2platform.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_gl2platform.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_gl2platform.h
+
+_deps/sdl2-build/include/SDL_opengles2_khrplatform.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_khrplatform.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating include/SDL_opengles2_khrplatform.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_opengles2_khrplatform.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_opengles2_khrplatform.h
+
+_deps/sdl2-build/include/SDL_pixels.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_pixels.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating include/SDL_pixels.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_pixels.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_pixels.h
+
+_deps/sdl2-build/include/SDL_platform.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_platform.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating include/SDL_platform.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_platform.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_platform.h
+
+_deps/sdl2-build/include/SDL_power.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_power.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating include/SDL_power.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_power.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_power.h
+
+_deps/sdl2-build/include/SDL_quit.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_quit.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating include/SDL_quit.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_quit.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_quit.h
+
+_deps/sdl2-build/include/SDL_rect.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_rect.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Generating include/SDL_rect.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_rect.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rect.h
+
+_deps/sdl2-build/include/SDL_render.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_render.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Generating include/SDL_render.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_render.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_render.h
+
+_deps/sdl2-build/include/SDL_rwops.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_rwops.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Generating include/SDL_rwops.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_rwops.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_rwops.h
+
+_deps/sdl2-build/include/SDL_scancode.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_scancode.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Generating include/SDL_scancode.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_scancode.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_scancode.h
+
+_deps/sdl2-build/include/SDL_sensor.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_sensor.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Generating include/SDL_sensor.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_sensor.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_sensor.h
+
+_deps/sdl2-build/include/SDL_shape.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_shape.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Generating include/SDL_shape.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_shape.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_shape.h
+
+_deps/sdl2-build/include/SDL_stdinc.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_stdinc.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Generating include/SDL_stdinc.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_stdinc.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_stdinc.h
+
+_deps/sdl2-build/include/SDL_surface.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_surface.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Generating include/SDL_surface.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_surface.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_surface.h
+
+_deps/sdl2-build/include/SDL_system.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_system.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Generating include/SDL_system.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_system.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_system.h
+
+_deps/sdl2-build/include/SDL_syswm.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_syswm.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Generating include/SDL_syswm.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_syswm.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_syswm.h
+
+_deps/sdl2-build/include/SDL_test.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Generating include/SDL_test.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test.h
+
+_deps/sdl2-build/include/SDL_test_assert.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_assert.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Generating include/SDL_test_assert.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_assert.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_assert.h
+
+_deps/sdl2-build/include/SDL_test_common.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_common.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Generating include/SDL_test_common.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_common.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_common.h
+
+_deps/sdl2-build/include/SDL_test_compare.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_compare.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Generating include/SDL_test_compare.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_compare.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_compare.h
+
+_deps/sdl2-build/include/SDL_test_crc32.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_crc32.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Generating include/SDL_test_crc32.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_crc32.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_crc32.h
+
+_deps/sdl2-build/include/SDL_test_font.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_font.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Generating include/SDL_test_font.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_font.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_font.h
+
+_deps/sdl2-build/include/SDL_test_fuzzer.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_fuzzer.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Generating include/SDL_test_fuzzer.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_fuzzer.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_fuzzer.h
+
+_deps/sdl2-build/include/SDL_test_harness.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_harness.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Generating include/SDL_test_harness.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_harness.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_harness.h
+
+_deps/sdl2-build/include/SDL_test_images.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_images.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Generating include/SDL_test_images.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_images.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_images.h
+
+_deps/sdl2-build/include/SDL_test_log.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_log.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Generating include/SDL_test_log.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_log.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_log.h
+
+_deps/sdl2-build/include/SDL_test_md5.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_md5.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Generating include/SDL_test_md5.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_md5.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_md5.h
+
+_deps/sdl2-build/include/SDL_test_memory.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_memory.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Generating include/SDL_test_memory.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_memory.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_memory.h
+
+_deps/sdl2-build/include/SDL_test_random.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_random.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Generating include/SDL_test_random.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_test_random.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_test_random.h
+
+_deps/sdl2-build/include/SDL_thread.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_thread.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Generating include/SDL_thread.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_thread.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_thread.h
+
+_deps/sdl2-build/include/SDL_timer.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_timer.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Generating include/SDL_timer.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_timer.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_timer.h
+
+_deps/sdl2-build/include/SDL_touch.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_touch.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Generating include/SDL_touch.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_touch.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_touch.h
+
+_deps/sdl2-build/include/SDL_types.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_types.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Generating include/SDL_types.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_types.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_types.h
+
+_deps/sdl2-build/include/SDL_version.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_version.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Generating include/SDL_version.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_version.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_version.h
+
+_deps/sdl2-build/include/SDL_video.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_video.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Generating include/SDL_video.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_video.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
+
+_deps/sdl2-build/include/SDL_vulkan.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_vulkan.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Generating include/SDL_vulkan.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/SDL_vulkan.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_vulkan.h
+
+_deps/sdl2-build/include/begin_code.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/begin_code.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Generating include/begin_code.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/begin_code.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
+
+_deps/sdl2-build/include/close_code.h: /Users/easn/code/catmario/PTSD/lib/sdl2/include/close_code.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Generating include/close_code.h"
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_if_different /Users/easn/code/catmario/PTSD/lib/sdl2/include/close_code.h /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
 
 sdl_headers_copy: _deps/sdl2-build/CMakeFiles/sdl_headers_copy
 sdl_headers_copy: _deps/sdl2-build/include/SDL.h
@@ -538,10 +538,10 @@ _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build: sdl_headers_copy
 .PHONY : _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/build
 
 _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/clean:
-	cd /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/sdl_headers_copy.dir/cmake_clean.cmake
+	cd /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build && $(CMAKE_COMMAND) -P CMakeFiles/sdl_headers_copy.dir/cmake_clean.cmake
 .PHONY : _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/clean
 
 _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/depend:
-	cd /Users/easn/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/catmario /Users/easn/catmario/PTSD/lib/sdl2 /Users/easn/catmario/cmake-build-debug /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/easn/code/catmario/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/easn/code/catmario /Users/easn/code/catmario/PTSD/lib/sdl2 /Users/easn/code/catmario/cmake-build-debug /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir/depend
 
