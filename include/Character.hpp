@@ -7,6 +7,7 @@
 
 class Character : public Util::GameObject {
 public:
+
     explicit Character(const std::string& ImagePath);
 
     Character(const Character&) = delete;
@@ -22,6 +23,7 @@ public:
     [[nodiscard]] const glm::vec2& GetPosition() const { return m_Transform.translation; }
 
     [[nodiscard]] bool GetVisibility() const { return m_Visible; }
+
 
     void SetImage(const std::string& ImagePath);
 

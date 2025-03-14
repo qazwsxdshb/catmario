@@ -1348,14 +1348,13 @@ CMakeFiles/catmario.dir/src/AppEnd.cpp.o: \
   /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/core.h \
   /Users/easn/code/catmario/PTSD/include/Util/Renderer.hpp \
   /Users/easn/code/catmario/include/Character.hpp \
+  /Users/easn/code/catmario/include/Obstacle.hpp \
   /Users/easn/code/catmario/include/PhaseResourceManger.hpp \
   /Users/easn/code/catmario/include/TaskText.hpp \
   /Users/easn/code/catmario/include/BackgroundImage.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/Image.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl \
-  /Users/easn/code/catmario/include/AnimatedCharacter.hpp \
-  /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/Logger.hpp \
   /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/spdlog.h \
   /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/common.h \

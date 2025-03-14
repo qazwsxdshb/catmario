@@ -15,7 +15,7 @@ public:
 
     Textt() : GameObject(
             std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
-                                         append_string_views(texte,""),
+                                         append_string_views("aaa",""),
                                          Util::Color::FromName(Util::Colors::WHITE)),
                                          100) {
             m_Transform.translation = {0, 0};

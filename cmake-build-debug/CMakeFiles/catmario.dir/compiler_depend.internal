@@ -2328,7 +2328,6 @@ CMakeFiles/catmario.dir/src/AppEnd.cpp.o
  /Users/easn/code/catmario/PTSD/include/Core/UniformBuffer.inl
  /Users/easn/code/catmario/PTSD/include/Core/VertexArray.hpp
  /Users/easn/code/catmario/PTSD/include/Core/VertexBuffer.hpp
- /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl
  /Users/easn/code/catmario/PTSD/include/Util/Color.hpp
@@ -2732,10 +2731,10 @@ CMakeFiles/catmario.dir/src/AppEnd.cpp.o
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
- /Users/easn/code/catmario/include/AnimatedCharacter.hpp
  /Users/easn/code/catmario/include/App.hpp
  /Users/easn/code/catmario/include/BackgroundImage.hpp
  /Users/easn/code/catmario/include/Character.hpp
+ /Users/easn/code/catmario/include/Obstacle.hpp
  /Users/easn/code/catmario/include/PhaseResourceManger.hpp
  /Users/easn/code/catmario/include/TaskText.hpp
  /Users/easn/code/catmario/include/Textt.hpp
@@ -3719,7 +3718,6 @@ CMakeFiles/catmario.dir/src/AppStart.cpp.o
  /Users/easn/code/catmario/PTSD/include/Core/UniformBuffer.inl
  /Users/easn/code/catmario/PTSD/include/Core/VertexArray.hpp
  /Users/easn/code/catmario/PTSD/include/Core/VertexBuffer.hpp
- /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl
  /Users/easn/code/catmario/PTSD/include/Util/Color.hpp
@@ -4125,10 +4123,10 @@ CMakeFiles/catmario.dir/src/AppStart.cpp.o
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
- /Users/easn/code/catmario/include/AnimatedCharacter.hpp
  /Users/easn/code/catmario/include/App.hpp
  /Users/easn/code/catmario/include/BackgroundImage.hpp
  /Users/easn/code/catmario/include/Character.hpp
+ /Users/easn/code/catmario/include/Obstacle.hpp
  /Users/easn/code/catmario/include/PhaseResourceManger.hpp
  /Users/easn/code/catmario/include/TaskText.hpp
  /Users/easn/code/catmario/include/Textt.hpp
@@ -5094,7 +5092,6 @@ CMakeFiles/catmario.dir/src/AppUpdate.cpp.o
  /Users/easn/code/catmario/PTSD/include/Core/UniformBuffer.inl
  /Users/easn/code/catmario/PTSD/include/Core/VertexArray.hpp
  /Users/easn/code/catmario/PTSD/include/Core/VertexBuffer.hpp
- /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl
  /Users/easn/code/catmario/PTSD/include/Util/Color.hpp
@@ -5486,10 +5483,10 @@ CMakeFiles/catmario.dir/src/AppUpdate.cpp.o
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
- /Users/easn/code/catmario/include/AnimatedCharacter.hpp
  /Users/easn/code/catmario/include/App.hpp
  /Users/easn/code/catmario/include/BackgroundImage.hpp
  /Users/easn/code/catmario/include/Character.hpp
+ /Users/easn/code/catmario/include/Obstacle.hpp
  /Users/easn/code/catmario/include/PhaseResourceManger.hpp
  /Users/easn/code/catmario/include/TaskText.hpp
  /Users/easn/code/catmario/include/Textt.hpp
@@ -6473,7 +6470,6 @@ CMakeFiles/catmario.dir/src/AppUtil.cpp.o
  /Users/easn/code/catmario/PTSD/include/Core/UniformBuffer.inl
  /Users/easn/code/catmario/PTSD/include/Core/VertexArray.hpp
  /Users/easn/code/catmario/PTSD/include/Core/VertexBuffer.hpp
- /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl
  /Users/easn/code/catmario/PTSD/include/Util/Color.hpp
@@ -6877,11 +6873,11 @@ CMakeFiles/catmario.dir/src/AppUtil.cpp.o
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
- /Users/easn/code/catmario/include/AnimatedCharacter.hpp
  /Users/easn/code/catmario/include/App.hpp
  /Users/easn/code/catmario/include/AppUtil.hpp
  /Users/easn/code/catmario/include/BackgroundImage.hpp
  /Users/easn/code/catmario/include/Character.hpp
+ /Users/easn/code/catmario/include/Obstacle.hpp
  /Users/easn/code/catmario/include/PhaseResourceManger.hpp
  /Users/easn/code/catmario/include/TaskText.hpp
  /Users/easn/code/catmario/include/Textt.hpp
@@ -7865,7 +7861,6 @@ CMakeFiles/catmario.dir/src/AppZero.cpp.o
  /Users/easn/code/catmario/PTSD/include/Core/UniformBuffer.inl
  /Users/easn/code/catmario/PTSD/include/Core/VertexArray.hpp
  /Users/easn/code/catmario/PTSD/include/Core/VertexBuffer.hpp
- /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl
  /Users/easn/code/catmario/PTSD/include/Util/Color.hpp
@@ -8271,10 +8266,10 @@ CMakeFiles/catmario.dir/src/AppZero.cpp.o
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
- /Users/easn/code/catmario/include/AnimatedCharacter.hpp
  /Users/easn/code/catmario/include/App.hpp
  /Users/easn/code/catmario/include/BackgroundImage.hpp
  /Users/easn/code/catmario/include/Character.hpp
+ /Users/easn/code/catmario/include/Obstacle.hpp
  /Users/easn/code/catmario/include/PhaseResourceManger.hpp
  /Users/easn/code/catmario/include/TaskText.hpp
  /Users/easn/code/catmario/include/Textt.hpp
@@ -11973,7 +11968,6 @@ CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o
  /Users/easn/code/catmario/PTSD/include/Core/UniformBuffer.inl
  /Users/easn/code/catmario/PTSD/include/Core/VertexArray.hpp
  /Users/easn/code/catmario/PTSD/include/Core/VertexBuffer.hpp
- /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl
  /Users/easn/code/catmario/PTSD/include/Util/Color.hpp
@@ -12365,10 +12359,10 @@ CMakeFiles/catmario.dir/src/ZeroUpdate.cpp.o
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
- /Users/easn/code/catmario/include/AnimatedCharacter.hpp
  /Users/easn/code/catmario/include/App.hpp
  /Users/easn/code/catmario/include/BackgroundImage.hpp
  /Users/easn/code/catmario/include/Character.hpp
+ /Users/easn/code/catmario/include/Obstacle.hpp
  /Users/easn/code/catmario/include/PhaseResourceManger.hpp
  /Users/easn/code/catmario/include/TaskText.hpp
  /Users/easn/code/catmario/include/Textt.hpp
@@ -13353,7 +13347,6 @@ CMakeFiles/catmario.dir/src/main.cpp.o
  /Users/easn/code/catmario/PTSD/include/Core/UniformBuffer.inl
  /Users/easn/code/catmario/PTSD/include/Core/VertexArray.hpp
  /Users/easn/code/catmario/PTSD/include/Core/VertexBuffer.hpp
- /Users/easn/code/catmario/PTSD/include/Util/Animation.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp
  /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl
  /Users/easn/code/catmario/PTSD/include/Util/Color.hpp
@@ -13759,10 +13752,10 @@ CMakeFiles/catmario.dir/src/main.cpp.o
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_video.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/begin_code.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/close_code.h
- /Users/easn/code/catmario/include/AnimatedCharacter.hpp
  /Users/easn/code/catmario/include/App.hpp
  /Users/easn/code/catmario/include/BackgroundImage.hpp
  /Users/easn/code/catmario/include/Character.hpp
+ /Users/easn/code/catmario/include/Obstacle.hpp
  /Users/easn/code/catmario/include/PhaseResourceManger.hpp
  /Users/easn/code/catmario/include/TaskText.hpp
  /Users/easn/code/catmario/include/Textt.hpp
