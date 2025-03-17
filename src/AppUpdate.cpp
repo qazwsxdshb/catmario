@@ -3,6 +3,20 @@
 #include "Util/Input.hpp"
 #include "Util/Keycode.hpp"
 
+bool Collision(int Ax,int Ay,int Awidth,int Aheight,int Bx,int By,int Bwidth,int Bheight) {
+    int Aleft   = Ax;
+    int Aright  = Ax + Awidth;
+    int Atop    = Ay;
+    int Abottom = Ay + Aheight;
+
+    int Bleft   = Bx;
+    int Bright  = Bx + Bwidth;
+    int Btop    = By;
+    int Bbottom = By + Bheight;
+
+    return !(Aright <= Bleft || Aleft >= Bright || Abottom <= Btop || Atop >= Bbottom);
+}
+
 void App::Update() {
 
     if (Util::Input::IsKeyPressed(Util::Keycode::ESCAPE) || Util::Input::IfExit()) {
@@ -51,43 +65,39 @@ void App::Update() {
         if(playerpos.y>-360) {death-=1;}
 
 
-        if (0<=xx-1 && xx+1<std::size(zerostart[0]) && 0<=yy-1 && yy+1<std::size(zerostart)) {
+        // if (0<=xx-1 && xx+1<std::size(zerostart[0]) && 0<=yy-1 && yy+1<std::size(zerostart)) {
             // glm::vec2 t1 = glm::vec2(xx*30,(yy+1)*30);
-            if (zerostart[yy+1][xx]==0 && sec==0){
-                Acceleration=(Acceleration+0.3)*0.98;
-                if (zerostart[yy+1][xx]!=0) {
-                    m_player->SetPosition({playerpos.x,yy*30});
-                    Acceleration=0;
-                }
-                else{
-                    m_player->SetPosition({playerpos.x,playerpos.y-Acceleration});
-                }
-            }
-            else if(sec!=0) {
-                sec-=1;
-                Acceleration=(Acceleration-1);
-                if (zerostart[yy+1][xx]!=0) {
-                    m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
-                    Acceleration=0;
-                    sec=0;
-                }
-                m_player->SetPosition({playerpos.x,playerpos.y+Acceleration});
+        if (zerostart[yy+1][xx]==0 && sec==0){
+            Acceleration=(Acceleration+0.3)*0.98;
+            if (zerostart[xx][int((345-(playerpos.y-Acceleration))/30)]==0){
+                m_player->SetPosition({playerpos.x,playerpos.y-Acceleration});
             }
             else {
-                if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) {
-                    sec=50;
-                    Acceleration=20;
-                    m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
-                    m_player->SetPosition({playerpos.x,playerpos.y+Acceleration});
-                }
+                Acceleration=0;
             }
-
+        }
+        else if(sec!=0) {
+            sec-=1;
+            Acceleration-=1;
+            if (zerostart[yy+1][xx]!=0) {
+                m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
+                Acceleration=0;
+                sec=0;
+            }
+            m_player->SetPosition({playerpos.x,playerpos.y+Acceleration});
+        }
+        else if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) {
+            sec=50;
+            Acceleration=20;
+            m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
+            m_player->SetPosition({playerpos.x,playerpos.y+Acceleration});
         }
     }
 
+    glm::vec2 ofsetzero={0,0};
+    if(m_player->GetPosition().x>=0) {
+        ofsetzero.x+=speed;
 
-    // if(m_player->GetPosition().x>=0) {
-    //     m_Root->m_Transform
-    // }
-    m_Root.Update();
+    }
+    m_Root.Update(ofsetzero);
 }

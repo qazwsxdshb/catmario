@@ -23,7 +23,7 @@ void Renderer::AddChildren(
     m_Children.insert(m_Children.end(), children.begin(), children.end());
 }
 
-void Renderer::Update() {
+void Renderer::Update(const glm::vec2 &offset) {
     struct StackInfo {
         std::shared_ptr<GameObject> m_GameObject;
         Transform m_ParentTransform;
@@ -58,7 +58,10 @@ void Renderer::Update() {
         auto curr = renderQueue.top();
         renderQueue.pop();
 
+        // curr.m_GameObject->m_Transform.translation+=offset;
         curr.m_GameObject->Draw();
+        curr.m_GameObject->m_Transform.translation-=offset;
+
     }
 }
 } // namespace Util
