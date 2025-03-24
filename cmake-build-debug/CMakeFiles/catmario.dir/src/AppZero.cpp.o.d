@@ -1355,6 +1355,7 @@ CMakeFiles/catmario.dir/src/AppZero.cpp.o: \
   /Users/easn/code/catmario/PTSD/include/Util/Image.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl \
+  /Users/easn/code/catmario/PTSD/include/Util/BGM.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/Input.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/Keycode.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/Logger.hpp \

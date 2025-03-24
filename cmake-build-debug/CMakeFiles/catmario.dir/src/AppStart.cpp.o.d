@@ -1355,6 +1355,7 @@ CMakeFiles/catmario.dir/src/AppStart.cpp.o: \
   /Users/easn/code/catmario/PTSD/include/Util/Image.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl \
+  /Users/easn/code/catmario/PTSD/include/Util/BGM.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/Logger.hpp \
   /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/spdlog.h \
   /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/common.h \

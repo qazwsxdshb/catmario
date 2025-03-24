@@ -8,6 +8,7 @@
 void App::Zero() {
     LOG_TRACE("Zero");
 
+
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
     m_player->SetPosition({-112.5f, -280.0f});
     m_player->SetZIndex(50);
@@ -32,31 +33,44 @@ void App::Zero() {
     m_Root.AddChild(tmp[2]);
 
 
+    text = std::make_shared<Textt>();
+    text->SetPosition({0, 0});
+    text->SetZIndex(70);
+    text->Settext(" ");
+    m_Root.AddChild(text);
+
+
     for (int y=std::size(zerostart); y>=0; y--) {
         for (int x=std::size(zerostart[0]); x>=0; x--) {
             if(zerostart[y][x] == 1) {
                 tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock10.png"));
-                tmp[tmp.size()-1]->SetPosition({(x*30)-345, ((23-y)*30)-345});
+                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                 tmp[tmp.size()-1]->SetZIndex(49);
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
             else if(zerostart[y][x] == 2) {
                 tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock13.png"));
-                tmp[tmp.size()-1]->SetPosition({(x*30)-345, ((23-y)*30)-345});
+                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                 tmp[tmp.size()-1]->SetZIndex(49);
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
         }
     }
 
+    // Util::Transform test;
+    // Core::Drawable::Draw(
+    //         std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
+    //                                      std::string_view 'test',
+    //                                      Util::Color::FromName(Util::Colors::BLACK)),
+    //                                      100,
+    //     test.translation = {100, 100}
+    // );
 
 
-    // std::shared_ptr<Textt> test=std::make_shared<Textt>();
-    // std::string var = "aaa";
-    // test->texte=&var;
-    // tmptext.push_back(std::make_shared<Textt>());
+
 
     m_PRM = std::make_shared<PhaseResourceManger>();
+    // m_PRM->Talk();
     m_Root.AddChildren(m_PRM->GetChildren());
 
     m_CurrentState = State::ZEROUPDATE;

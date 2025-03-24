@@ -14,11 +14,13 @@ public:
     enum class State {
         START,
         UPDATE,
+        DIE,
         END,
     };
 
     State GetCurrentState() const { return m_CurrentState; }
 
+    void Die();
     void Start();
     void Update();
     void End(); // NOLINT(readability-convert-member-functions-to-static)

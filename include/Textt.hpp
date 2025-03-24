@@ -1,9 +1,5 @@
-//
-// Created by 何益森 on 2025/3/14.
-//
-
-#ifndef TEXTT_H
-#define TEXTT_H
+#ifndef TEXTT_HPP
+#define TEXTT_HPP
 
 #include "Util/GameObject.hpp"
 #include "Util/Text.hpp"
@@ -11,19 +7,24 @@
 
 class Textt : public Util::GameObject {
 public:
-    inline static std::string texte = "qqqq";
+    inline static std::string texte="test";
 
-    Textt() : GameObject(
-            std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
-                                         texte,
-                                         Util::Color::FromName(Util::Colors::BLACK)),
-                                         100) {
-            m_Transform.translation = {100, 100};
+    Textt() : GameObject(std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
+    texte,Util::Color::FromName(Util::Colors::WHITE)),60) {}
+
+    void SetPosition(const glm::vec2& Position) { m_Transform.translation = Position; }
+
+    void Settext(std::string value) {
+        auto temp = std::dynamic_pointer_cast<Util::Text>(m_Drawable);
+        temp->SetText(append_string_views(value));
     }
-private:
-    // inline static std::string append_string_views(std::string_view sv1, std::string_view sv2) {
-    //     return std::string(sv1) + "\n" + std::string(sv2);
-    // }
+
+    inline static std::string append_string_views(std::string_view sv1) {
+        return std::string(sv1);
+    }
+
+
 };
 
-#endif //TEXTT_H
+
+#endif //TEXTT_HPP

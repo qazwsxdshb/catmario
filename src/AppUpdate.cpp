@@ -3,6 +3,8 @@
 
 #include "Util/Input.hpp"
 #include "Util/Keycode.hpp"
+#include <thread>
+#include <chrono>
 
 bool Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwidth, int Bheight) {
     int Aleft   = Ax - Awidth/2;
@@ -18,9 +20,21 @@ bool Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwid
     return (Aright > Bleft && Bright > Aleft && Btop > Abottom && Atop > Bbottom);
 }
 
+void App::Die() {
+    if (sec==0){
+        m_PRM->BgZindex(-10);
+        m_PRM->Select(1);
+        text->Settext(" ");
+        m_CurrentState=State::UPDATE;
+    }
+    else{sec-=1;}
+    m_Root.Update({0,0});
+}
+
 void App::Update() {
     if(sec>0) {sec-=1;}
     if(opsec>0) {opsec-=1;}
+    glm::vec2 ofsetzero={0,0};
 
     if (Util::Input::IsKeyPressed(Util::Keycode::ESCAPE) || Util::Input::IfExit()) {
         m_CurrentState = State::END;
@@ -98,7 +112,23 @@ void App::Update() {
             m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
             playerpos.y=playerpos.y+Acceleration;
         }
-
+        else if (yy<=0) {
+            playerpos.y-=Acceleration*1.5;
+            sec+=2;
+            if (sec==10) {
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+                ofsetzero.x-=zerox;
+                playerpos.x=-112.5f-zerox;
+                playerpos.y=-280.0f;
+                zerox=0;
+                sec=120;
+                life-=1;
+                m_PRM->BgZindex(60);
+                text->Settext("X"+std::to_string(life));
+                m_PRM->Select(0);
+                m_CurrentState=State::DIE;
+            }
+        }
         else if (sec==0){
             if ((zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
             || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
@@ -113,9 +143,7 @@ void App::Update() {
                 playerpos.y-=Acceleration;
             }
         }
-
         else if(sec!=0) {
-            // printf("%d\n\n",sec);
             if (Acceleration>0) {
                 Acceleration-=1;
             }
@@ -139,9 +167,12 @@ void App::Update() {
                 sec=0;
                 playerpos.y=(yy*boxsize)-345;
 
+                //碰撞
                 zerostart[23-yy-1][xx]=0;
                 printf("x y:%d",position[22-yy][xx]);
-                tmp[position[22-yy][xx]]->SetVisible(0 );
+                tmp[position[22-yy][xx]]->SetVisible(0);
+                // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+
             }
             playerpos.y+=Acceleration;
         }
@@ -150,10 +181,10 @@ void App::Update() {
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
     //視角控制
-    glm::vec2 ofsetzero={0,0};
     if(m_player->GetPosition().x>=0) {
         ofsetzero.x+=speed;
         zerox+=speed;
     }
+
     m_Root.Update(ofsetzero);
 }

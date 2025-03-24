@@ -8,6 +8,8 @@
 #include "Obstacle.hpp"
 #include "Util/Text.hpp"
 #include "PhaseResourceManger.hpp"
+#include "Util/BGM.hpp"
+
 
 class App {
 public:
@@ -17,6 +19,7 @@ public:
         ZERO,
         ZEROUPDATE,
         START,
+        DIE,
         UPDATE,
         END,
     };
@@ -30,6 +33,8 @@ public:
     void Start();
 
     void Update();
+
+    void Die();
 
     void End(); // NOLINT(readability-convert-member-functions-to-static)
 
@@ -52,16 +57,17 @@ private:
     int boxsize=30;
     int playerheight=34;
     int playerwidth=20;
-
+    int WINDOW_WIDTH=720;
+    int WINDOW_HEIGHT=720;
 
     State m_CurrentState = State::ZERO;
     Phase m_Phase = Phase::zero;
 
-
+    std::shared_ptr<Textt> text;
     Util::Renderer m_Root;
     std::shared_ptr<Character> m_player;
     std::vector<std::shared_ptr<Character>> tmp;
-    std::vector<std::shared_ptr<Textt>> tmptext;
+    const std::shared_ptr<Util::GameObject> tmptext;
 //    std::shared_ptr<AnimatedCharacter> m_Bee;
     std::shared_ptr<PhaseResourceManger> m_PRM;
 
@@ -87,7 +93,7 @@ private:
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},

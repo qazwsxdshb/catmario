@@ -1,4 +1,5 @@
 #include "PhaseResourceManger.hpp"
+#include "Textt.hpp"
 
 #include "Util/Logger.hpp"
 
@@ -13,4 +14,13 @@ void PhaseResourceManger::NextPhase() {
     LOG_DEBUG("Passed! Next phase: {}", m_Phase);
     m_Background->NextPhase(m_Phase);
     m_TaskText->NextPhase(m_Phase++);
+}
+
+void PhaseResourceManger::Select(int value) {
+    m_Background->NextPhase(value);
+    m_TaskText->NextPhase(value);
+}
+
+void PhaseResourceManger::BgZindex(int value) {
+    m_Background->SetZIndex(value);
 }

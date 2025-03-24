@@ -23,6 +23,10 @@ int main(int, char **) {
             app.Update();
             break;
 
+        case App::State::DIE:
+            app.Die();
+            break;
+
         case App::State::END:
             app.End();
             context->SetExit(true);
