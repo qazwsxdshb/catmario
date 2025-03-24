@@ -5433,6 +5433,7 @@ CMakeFiles/catmario.dir/src/AppUpdate.cpp.o
  /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/SDL_ttf.h
  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/core.h
  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/format.h
+ /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/xchar.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL_config.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL.h
  /Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/include/SDL_assert.h

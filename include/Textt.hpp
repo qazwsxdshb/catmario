@@ -11,19 +11,19 @@
 
 class Textt : public Util::GameObject {
 public:
-    std::string texte="aaaa";
+    inline static std::string texte = "qqqq";
 
     Textt() : GameObject(
             std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
-                                         append_string_views("aaa",""),
-                                         Util::Color::FromName(Util::Colors::WHITE)),
+                                         texte,
+                                         Util::Color::FromName(Util::Colors::BLACK)),
                                          100) {
-            m_Transform.translation = {0, 0};
+            m_Transform.translation = {100, 100};
     }
 private:
-    inline static std::string append_string_views(std::string_view sv1, std::string_view sv2) {
-        return std::string(sv1) + "\n" + std::string(sv2);
-    }
+    // inline static std::string append_string_views(std::string_view sv1, std::string_view sv2) {
+    //     return std::string(sv1) + "\n" + std::string(sv2);
+    // }
 };
 
 #endif //TEXTT_H

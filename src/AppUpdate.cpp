@@ -1,103 +1,159 @@
 #include "App.hpp"
+#include "spdlog/fmt/bundled/xchar.h"
 
 #include "Util/Input.hpp"
 #include "Util/Keycode.hpp"
 
-bool Collision(int Ax,int Ay,int Awidth,int Aheight,int Bx,int By,int Bwidth,int Bheight) {
-    int Aleft   = Ax;
-    int Aright  = Ax + Awidth;
-    int Atop    = Ay;
-    int Abottom = Ay + Aheight;
+bool Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwidth, int Bheight) {
+    int Aleft   = Ax - Awidth/2;
+    int Aright  = Ax + Awidth/2;
+    int Abottom = Ay - Aheight/2;
+    int Atop    = Ay + Aheight/2;
 
-    int Bleft   = Bx;
-    int Bright  = Bx + Bwidth;
-    int Btop    = By;
-    int Bbottom = By + Bheight;
+    int Bleft   = Bx - Bwidth/2;
+    int Bright  = Bx + Bwidth/2;
+    int Bbottom = By - Bheight/2;
+    int Btop    = By + Bheight/2;
 
-    return !(Aright <= Bleft || Aleft >= Bright || Abottom <= Btop || Atop >= Bbottom);
+    return (Aright > Bleft && Bright > Aleft && Btop > Abottom && Atop > Bbottom);
 }
 
 void App::Update() {
+    if(sec>0) {sec-=1;}
+    if(opsec>0) {opsec-=1;}
 
     if (Util::Input::IsKeyPressed(Util::Keycode::ESCAPE) || Util::Input::IfExit()) {
         m_CurrentState = State::END;
     }
-    if (Util::Input::IsKeyPressed(Util::Keycode::P) && sec==0) {
+    if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec==0) {
+        opsec=60;
+        Acceleration=0;
         bug=(bug+1)%2;
-        sec=60;
     }
 
-    int speed=3;
     auto playerpos=m_player->GetPosition();
+    playerpos.x+=zerox;
+    int yy=round((345+playerpos.y)/boxsize);
+    int xx=round((345+playerpos.x)/boxsize);
 
     if (bug==1) {
-        if (sec!=0) {
-            sec-=1;
-        }
-        if (Util::Input::IsKeyPressed(Util::Keycode::W)) {
-            m_player->SetPosition({playerpos.x,playerpos.y+speed});
-        }
-        if (Util::Input::IsKeyPressed(Util::Keycode::A)) {
-            m_player->SetPosition({playerpos.x-speed,playerpos.y});
+        if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) {
+            if ((zerostart[23-yy-1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+speed),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+speed),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+speed),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            ) {
+                // printf("Collision");
+            }
+            else{
+                playerpos.y+=speed;
+            }
         }
         if (Util::Input::IsKeyPressed(Util::Keycode::S)) {
-            m_player->SetPosition({playerpos.x,playerpos.y-speed});
-        }
-        if (Util::Input::IsKeyPressed(Util::Keycode::D) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) {
-            m_player->SetPosition({playerpos.x+speed,playerpos.y});
+            if (zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-speed),playerwidth,playerheight,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize)
+            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-speed),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-speed),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            ) {
+                // printf("Collision");
+            }
+            else{
+                playerpos.y-=speed;
+            }
         }
     }
-    else {
 
-        if (Util::Input::IsKeyPressed(Util::Keycode::A)) {
-            // printf("aaa");
-            m_player->SetPosition({playerpos.x-speed,playerpos.y});
+    if (Util::Input::IsKeyPressed(Util::Keycode::A)) {
+        m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
+        printf("play:%d %d\nboxx:%d %d\nboxx:%d %d\n\n",(int)playerpos.x-speed,(int)playerpos.y,((xx-1)*boxsize)-345,(yy*boxsize)-345,xx,yy);
+        if ((zerostart[23-yy][xx-1]!=0 && Collision((int)(playerpos.x-speed),(int)(playerpos.y),playerwidth,playerheight,((xx-1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy-1][xx-1]!=0 && Collision((int)(playerpos.x-speed),(int)(playerpos.y),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x-speed),(int)(playerpos.y),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+        || ((playerpos.x-zerox)-playerwidth<=-360)) {
+            // printf("Collision");
         }
-        if (Util::Input::IsKeyPressed(Util::Keycode::D)) {
-            m_player->SetPosition({playerpos.x+speed,playerpos.y});
+        else{
+            playerpos.x-=speed;
+        }
+    }
+    if (Util::Input::IsKeyPressed(Util::Keycode::D)) {
+        m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
+        printf("play:%d %d\nplay:%d %d\nboxx:%d %d\nboxx:%d %d %d\n\n",(int)playerpos.x-speed,(int)playerpos.y,xx,yy,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,xx,yy,Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize));
+        if ((zerostart[23-yy][xx+1]!=0 && Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy-1][xx+1]!=0 && Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+        || ((playerpos.x-zerox)+playerwidth>=360)) {
+            // printf("Collision");
+        }
+        else{
+            playerpos.x+=speed;
+        }
+    }
+
+    if (bug==0) {
+        if (((zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight+2,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight+2,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight+2,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize)))
+            && (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) ) {
+            sec=50;
+            Acceleration=16;
+            m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
+            playerpos.y=playerpos.y+Acceleration;
         }
 
-        auto playerpos=m_player->GetPosition();
-
-        int yy=int((345-playerpos.y)/30);
-        int xx=int((345-playerpos.x)/30);
-
-        if(playerpos.y>-360) {death-=1;}
-
-
-        // if (0<=xx-1 && xx+1<std::size(zerostart[0]) && 0<=yy-1 && yy+1<std::size(zerostart)) {
-            // glm::vec2 t1 = glm::vec2(xx*30,(yy+1)*30);
-        if (zerostart[yy+1][xx]==0 && sec==0){
-            Acceleration=(Acceleration+0.3)*0.98;
-            if (zerostart[xx][int((345-(playerpos.y-Acceleration))/30)]==0){
-                m_player->SetPosition({playerpos.x,playerpos.y-Acceleration});
+        else if (sec==0){
+            if ((zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            ){
+                m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
+                Acceleration=0;
+                playerpos.y=(yy*boxsize)-345+2;
             }
             else {
-                Acceleration=0;
+                Acceleration=(Acceleration+0.3)*0.98;
+                playerpos.y-=Acceleration;
             }
         }
+
         else if(sec!=0) {
-            sec-=1;
-            Acceleration-=1;
-            if (zerostart[yy+1][xx]!=0) {
+            // printf("%d\n\n",sec);
+            if (Acceleration>0) {
+                Acceleration-=1;
+            }
+            else if (Acceleration<=0) {sec=0;}
+            if ((zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+            ){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                 Acceleration=0;
                 sec=0;
+                playerpos.y=(yy*boxsize)-345+2;
             }
-            m_player->SetPosition({playerpos.x,playerpos.y+Acceleration});
-        }
-        else if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) {
-            sec=50;
-            Acceleration=20;
-            m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
-            m_player->SetPosition({playerpos.x,playerpos.y+Acceleration});
+
+            //向上碰撞
+            else if ((zerostart[23-yy-1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            ){
+                Acceleration=0;
+                sec=0;
+                playerpos.y=(yy*boxsize)-345;
+
+                zerostart[23-yy-1][xx]=0;
+                printf("x y:%d",position[22-yy][xx]);
+                tmp[position[22-yy][xx]]->SetVisible(0 );
+            }
+            playerpos.y+=Acceleration;
         }
     }
 
+    m_player->SetPosition({playerpos.x-zerox,playerpos.y});
+
+    //視角控制
     glm::vec2 ofsetzero={0,0};
     if(m_player->GetPosition().x>=0) {
         ofsetzero.x+=speed;
-
+        zerox+=speed;
     }
     m_Root.Update(ofsetzero);
 }

@@ -5429,6 +5429,7 @@ CMakeFiles/catmario.dir/src/AppUpdate.cpp.o: /Users/easn/code/catmario/src/AppUp
   /Users/easn/code/catmario/PTSD/lib/sdl2_ttf/SDL_ttf.h \
   /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/core.h \
   /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/xchar.h \
   _deps/sdl2-build/include-config-debug/SDL_config.h \
   _deps/sdl2-build/include/SDL.h \
   _deps/sdl2-build/include/SDL_assert.h \
@@ -14236,6 +14237,8 @@ _deps/sdl2-build/include/SDL_video.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+
+/Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/xchar.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 

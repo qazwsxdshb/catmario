@@ -1355,5 +1355,6 @@ CMakeFiles/catmario.dir/src/AppUpdate.cpp.o: \
   /Users/easn/code/catmario/PTSD/include/Util/Image.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/AssetStore.inl \
+  /Users/easn/code/catmario/PTSD/lib/spdlog/include/spdlog/fmt/bundled/xchar.h \
   /Users/easn/code/catmario/PTSD/include/Util/Input.hpp \
   /Users/easn/code/catmario/PTSD/include/Util/Keycode.hpp
