@@ -20,6 +20,53 @@ bool Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwid
     return (Aright > Bleft && Bright > Aleft && Btop > Abottom && Atop > Bbottom);
 }
 
+bool App::RLCollision(int xx,int yy,glm::vec2 playerpos,int rl){
+    //right xx+1 rl=1
+    //left  xx-1 rl=-1
+    if ((zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),playerwidth,playerheight,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy-1][xx]!=0 && tmp[position[23-yy-1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy+1][xx]!=0 && tmp[position[23-yy+1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),playerwidth,playerheight,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+    ){
+        return true;
+    }
+    return false;
+}
+
+bool App::UDCollision(int xx,int yy,glm::vec2 playerpos,int ud,int speedd,int height){
+    //up    yy+1 ud=1
+    //down  yy-1 ud=-1
+    if (
+        (zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),playerwidth,height,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy][xx+1]!=0 && tmp[position[23-yy][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),playerwidth,height,((xx+1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy][xx-1]!=0 && tmp[position[23-yy][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),playerwidth,height,((xx-1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+    ){
+        return true;
+    }
+    return false;
+}
+
+void App::Monsterdrop(glm::vec2 monsterpos,int value){
+    //monster
+    monsterpos.x+=zerox;
+    int xx=round((345+monsterpos.x)/boxsize);
+    int yy=round((345+monsterpos.y)/boxsize);
+
+    if (UDCollision(xx,yy-1,monsterpos,-1,monsterAcceleration[value][0],26)){
+        monsterAcceleration[value][0]=0;
+        monsterpos.y=(yy*boxsize)-345-3;
+
+
+        monsterpos.x+=monsterAcceleration[value][1];
+    }
+    else {
+        monsterAcceleration[value][0]=(monsterAcceleration[value][0]+0.3)*0.98;
+        monsterpos.y-=monsterAcceleration[value][0];
+    }
+
+    m_monster[value]->SetPosition({monsterpos.x-zerox,monsterpos.y});
+}
+
+
 void App::Die() {
     if (sec==0){
         m_PRM->BgZindex(-10);
@@ -51,25 +98,13 @@ void App::Update() {
     int xx=round((345+playerpos.x)/boxsize);
 
     if (bug==1) {
-        if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) {
-            if ((zerostart[23-yy-1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+speed),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+speed),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+speed),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            ) {
-                // printf("Collision");
-            }
-            else{
+        if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)){
+            if (!UDCollision(xx,yy+1,playerpos,1,speed,playerheight+2)){
                 playerpos.y+=speed;
             }
         }
         if (Util::Input::IsKeyPressed(Util::Keycode::S)) {
-            if (zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-speed),playerwidth,playerheight,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize)
-            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-speed),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-speed),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            ) {
-                // printf("Collision");
-            }
-            else{
+            if (!UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2)){
                 playerpos.y-=speed;
             }
         }
@@ -77,36 +112,20 @@ void App::Update() {
 
     if (Util::Input::IsKeyPressed(Util::Keycode::A)) {
         m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
-        printf("play:%d %d\nboxx:%d %d\nboxx:%d %d\n\n",(int)playerpos.x-speed,(int)playerpos.y,((xx-1)*boxsize)-345,(yy*boxsize)-345,xx,yy);
-        if ((zerostart[23-yy][xx-1]!=0 && Collision((int)(playerpos.x-speed),(int)(playerpos.y),playerwidth,playerheight,((xx-1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy-1][xx-1]!=0 && Collision((int)(playerpos.x-speed),(int)(playerpos.y),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x-speed),(int)(playerpos.y),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-        || ((playerpos.x-zerox)-playerwidth<=-360)) {
-            // printf("Collision");
-        }
-        else{
+        // printf("play:%d %d\nboxx:%d %d\nboxx:%d %d\n\n",(int)playerpos.x-speed,(int)playerpos.y,((xx-1)*boxsize)-345,(yy*boxsize)-345,xx,yy);
+        if (!(RLCollision(xx-1,yy,{playerpos.x,playerpos.y},-1) || ((playerpos.x-zerox)-playerwidth<=-360))){
             playerpos.x-=speed;
         }
     }
     if (Util::Input::IsKeyPressed(Util::Keycode::D)) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
-        printf("play:%d %d\nplay:%d %d\nboxx:%d %d\nboxx:%d %d %d\n\n",(int)playerpos.x-speed,(int)playerpos.y,xx,yy,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,xx,yy,Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize));
-        if ((zerostart[23-yy][xx+1]!=0 && Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy-1][xx+1]!=0 && Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x+speed),(int)(playerpos.y),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-        || ((playerpos.x-zerox)+playerwidth>=360)) {
-            // printf("Collision");
-        }
-        else{
+        if (!(RLCollision(xx+1,yy,{playerpos.x,playerpos.y},1) || ((playerpos.x-zerox)+playerwidth>=360))){
             playerpos.x+=speed;
         }
     }
 
     if (bug==0) {
-        if (((zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight+2,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight+2,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight+2,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize)))
-            && (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)) ) {
+        if (UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2) && (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE))) {
             sec=50;
             Acceleration=16;
             m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
@@ -122,18 +141,14 @@ void App::Update() {
                 playerpos.y=-280.0f;
                 zerox=0;
                 sec=120;
-                life-=1;
                 m_PRM->BgZindex(60);
-                text->Settext("X"+std::to_string(life));
+                text->Settext("X"+std::to_string(--life));
                 m_PRM->Select(0);
                 m_CurrentState=State::DIE;
             }
         }
         else if (sec==0){
-            if ((zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y-Acceleration),playerwidth,playerheight+2,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            ){
+            if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2)){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                 Acceleration=0;
                 playerpos.y=(yy*boxsize)-345+2;
@@ -148,10 +163,7 @@ void App::Update() {
                 Acceleration-=1;
             }
             else if (Acceleration<=0) {sec=0;}
-            if ((zerostart[23-yy+1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy+1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy+1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-            ){
+            if (UDCollision(xx,yy-1,playerpos,1,Acceleration,playerheight+2)){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                 Acceleration=0;
                 sec=0;
@@ -159,19 +171,27 @@ void App::Update() {
             }
 
             //向上碰撞
-            else if ((zerostart[23-yy-1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx+1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx-1]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            else if (
+            (zerostart[23-yy-1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx+1]!=0 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx-1]!=0 && tmp[position[23-yy-1][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
             ){
                 Acceleration=0;
                 sec=0;
                 playerpos.y=(yy*boxsize)-345;
 
                 //碰撞
-                zerostart[23-yy-1][xx]=0;
-                printf("x y:%d",position[22-yy][xx]);
-                tmp[position[22-yy][xx]]->SetVisible(0);
-                // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                if (zerostart[23-yy-1][xx]==3) {
+                    zerostart[23-yy-1][xx]=0;
+                    printf("x y:%d",position[22-yy][xx]);
+                    tmp[position[22-yy][xx]]->SetVisible(0);
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                }
+                else if (zerostart[23-yy-1][xx]==8) {
+                    printf("x y:%d",position[22-yy][xx]);
+                    tmp[position[22-yy][xx]]->SetVisible(1);
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                }
 
             }
             playerpos.y+=Acceleration;
@@ -179,6 +199,10 @@ void App::Update() {
     }
 
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
+
+
+    Monsterdrop(m_monster[0]->GetPosition(),0);
+
 
     //視角控制
     if(m_player->GetPosition().x>=0) {

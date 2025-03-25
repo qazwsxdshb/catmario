@@ -26,7 +26,6 @@ void App::ZeroUpdate() {
         m_CurrentState = State::END;
     }
 
-    glm::vec2 pos=Util::Input::GetCursorPosition();
     if(Util::Input::IsKeyPressed(Util::Keycode::SPACE)){
         for (int i=0;i<tmp.size();i++) {m_Root.RemoveChild(tmp[i]);}
         m_PRM->NextPhase();
@@ -38,7 +37,6 @@ void App::ZeroUpdate() {
     int xx=int((345-playerpos.x)/30);
 
     if (0<=xx-1 && xx+1<std::size(zerostart[0]) && 0<=yy-1 && yy+1<std::size(zerostart)) {
-        glm::vec2 t1 = glm::vec2(xx*30,(yy+1)*30);
         if (zerostart[yy+1][xx]==0){
             if(playerpos.y>-360){
             // if(playerpos.y>-360 && !RectCollision(m_player->GetPosition(),t1,30,30,30,30)){
