@@ -7,6 +7,17 @@
 
 class TaskText : public Util::GameObject {
 public:
+    static constexpr std::string_view s_PhaseTasks[7] = {
+        "",
+        "",
+        "Make the giraffe move into the red area using the keyboard!",
+        "Make the chest disappear when the giraffe touches it!",
+        "Write a program to give your bee friend an animation!",
+        "Write a program to open the door when your character touches it!",
+        "Design a program to countdown, stop animation after OK display"
+    };
+
+
     TaskText() : GameObject(
             std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
                                          append_string_views(s_PhaseTasks[0], s_Validation),
@@ -25,15 +36,6 @@ private:
         return std::string(sv1) + "\n" + std::string(sv2);
     }
 
-    static constexpr std::string_view s_PhaseTasks[7] = {
-            "",
-            "Levels 1-1",
-            "Make the giraffe move into the red area using the keyboard!",
-            "Make the chest disappear when the giraffe touches it!",
-            "Write a program to give your bee friend an animation!",
-            "Write a program to open the door when your character touches it!",
-            "Design a program to countdown, stop animation after OK display"
-    };
     static constexpr std::string_view s_Validation = "";
 };
 

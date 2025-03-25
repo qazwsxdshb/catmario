@@ -3,11 +3,6 @@
 
 #include "Util/Logger.hpp"
 
-/**
- * @brief The function to validate the tasks.
- * @warning Do not modify this function.
- * @note See README.md for the task details.
- */
 void App::ValidTask() {
     LOG_DEBUG("Validating the task {}", static_cast<int>(m_Phase));
     switch (m_Phase) {
@@ -15,7 +10,6 @@ void App::ValidTask() {
             if (Phase::zero == m_Phase) {
                 m_Phase=Phase::start;
                 m_player->SetPosition({-112.5f, -140.5f});
-                // m_PRM->NextPhase();
             } else {
                 LOG_DEBUG("The image is not correct");
             }
@@ -24,7 +18,6 @@ void App::ValidTask() {
         case Phase::start:
             if (Phase::start == m_Phase) {
                 m_Phase=Phase::grassland1;
-
                 m_player->SetPosition({-112.5f, -140.5f});
                 m_PRM->NextPhase();
             } else {

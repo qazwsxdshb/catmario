@@ -3,11 +3,14 @@
 
 #include "Util/GameObject.hpp"
 #include "TaskText.hpp"
+#include "Textt.hpp"
 #include "Character.hpp"
 #include "BackgroundImage.hpp"
 
 class PhaseResourceManger {
 public:
+    std::shared_ptr<TaskText> m_TaskText;
+
     PhaseResourceManger();
 
     [[nodiscard]] std::vector<std::shared_ptr<Util::GameObject>> GetChildren() const {
@@ -17,8 +20,10 @@ public:
 
     void NextPhase();
 
+    void Select(int value);
+    void BgZindex(int value);
+
 private:
-    std::shared_ptr<TaskText> m_TaskText;
     std::shared_ptr<BackgroundImage> m_Background;
 
     int m_Phase = 1;
