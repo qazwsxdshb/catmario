@@ -1,0 +1,687 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "_deps/ptsd-build",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						10,
+						13
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.ptsd-build-Debug-43524dfabb9d330ad73b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "PTSD",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						10
+					]
+				},
+				{
+					"build" : "_deps/sdl2-build",
+					"jsonFile" : "directory-_deps.sdl2-build-Debug-c960b9dbbb56ec0038aa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "PTSD/lib/sdl2",
+					"targetIndexes" : 
+					[
+						4,
+						7,
+						9,
+						23,
+						28
+					]
+				},
+				{
+					"build" : "_deps/sdl2_image-build",
+					"jsonFile" : "directory-_deps.sdl2_image-build-Debug-989f248031f1aa610a10.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "PTSD/lib/sdl2_image",
+					"targetIndexes" : 
+					[
+						5,
+						24,
+						26
+					]
+				},
+				{
+					"build" : "_deps/sdl2_ttf-build",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.sdl2_ttf-build-Debug-7905dea4a4d8f049e40e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "PTSD/lib/sdl2_ttf",
+					"targetIndexes" : 
+					[
+						8,
+						16,
+						25
+					]
+				},
+				{
+					"build" : "_deps/sdl2_ttf-build/external/freetype",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.sdl2_ttf-build.external.freetype-Debug-546bef4f1e271288603d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 5,
+					"source" : "PTSD/lib/sdl2_ttf/external/freetype",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "_deps/sdl2_mixer-build",
+					"jsonFile" : "directory-_deps.sdl2_mixer-build-Debug-f9015b4e029d6586f10e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 6,
+					"source" : "PTSD/lib/sdl2_mixer",
+					"targetIndexes" : 
+					[
+						6,
+						21,
+						22
+					]
+				},
+				{
+					"build" : "_deps/spdlog-build",
+					"jsonFile" : "directory-_deps.spdlog-build-Debug-cfa0085c414347082782.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 7,
+					"source" : "PTSD/lib/spdlog",
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"build" : "_deps/glm-build",
+					"childIndexes" : 
+					[
+						9
+					],
+					"jsonFile" : "directory-_deps.glm-build-Debug-b6d46e07fe0581ca1b29.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 8,
+					"source" : "PTSD/lib/glm"
+				},
+				{
+					"build" : "_deps/glm-build/glm",
+					"jsonFile" : "directory-_deps.glm-build.glm-Debug-c6774208d287f9e3452c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 8,
+					"source" : "PTSD/lib/glm/glm"
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-Debug-aa58f33126b08407d844.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 9,
+					"source" : "PTSD/lib/googletest"
+				},
+				{
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						12
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-d669eba8b659af9963df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 10,
+					"source" : "PTSD/lib/googletest/googlemock",
+					"targetIndexes" : 
+					[
+						17,
+						18
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-b88214ebcc3e69a2971f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 11,
+					"source" : "PTSD/lib/googletest/googletest",
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				},
+				{
+					"build" : "_deps/ptsd-build/lib/glew/build/cmake",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.ptsd-build.lib.glew.build.cmake-Debug-148ea4caab3d8948bf83.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 12,
+					"source" : "PTSD/lib/glew/build/cmake",
+					"targetIndexes" : 
+					[
+						13,
+						14,
+						15,
+						29
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "catmario",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						12
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "PracticalToolsForSimpleDesign",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "SDL2",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						4,
+						7,
+						9,
+						23,
+						28
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "SDL2_image",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						5,
+						24,
+						26
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						5
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "SDL2_ttf",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						8,
+						16,
+						25
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "freetype",
+					"parentIndex" : 4,
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "SDL2_mixer",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						6,
+						21,
+						22
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "spdlog",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8,
+						9
+					],
+					"name" : "glm",
+					"parentIndex" : 1
+				},
+				{
+					"childIndexes" : 
+					[
+						10
+					],
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 1
+				},
+				{
+					"childIndexes" : 
+					[
+						11
+					],
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "gmock",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						17,
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "gtest",
+					"parentIndex" : 10,
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "glew",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						13,
+						14,
+						15,
+						29
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "AudioTest::@ede49028efeb8cb978c7",
+					"jsonFile" : "target-AudioTest-Debug-e4ebf8d4f184dcfeac39.json",
+					"name" : "AudioTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Example::@ede49028efeb8cb978c7",
+					"jsonFile" : "target-Example-Debug-8259ec316b35a1e34b97.json",
+					"name" : "Example",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ImGui::@ede49028efeb8cb978c7",
+					"jsonFile" : "target-ImGui-Debug-67b6d0ecc24d7e8e943a.json",
+					"name" : "ImGui",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "PTSD::@ede49028efeb8cb978c7",
+					"jsonFile" : "target-PTSD-Debug-1e2a1741052aa6e7823b.json",
+					"name" : "PTSD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SDL2-static::@45bd952f1071c035638d",
+					"jsonFile" : "target-SDL2-static-Debug-9f54ab8471cd382418ec.json",
+					"name" : "SDL2-static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "SDL2_image::@de341d98faad78faee90",
+					"jsonFile" : "target-SDL2_image-Debug-84904e80fbd411581884.json",
+					"name" : "SDL2_image",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "SDL2_mixer::@82d5866ba632f3b21364",
+					"jsonFile" : "target-SDL2_mixer-Debug-bd4e936ef08500698798.json",
+					"name" : "SDL2_mixer",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SDL2_test::@45bd952f1071c035638d",
+					"jsonFile" : "target-SDL2_test-Debug-e517a5e10f85f42094ac.json",
+					"name" : "SDL2_test",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "SDL2_ttf::@bbdb2daa5afc341778ea",
+					"jsonFile" : "target-SDL2_ttf-Debug-579b76ee4baa54943d59.json",
+					"name" : "SDL2_ttf",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SDL2main::@45bd952f1071c035638d",
+					"jsonFile" : "target-SDL2main-Debug-0796d3cc789b8d0b67ad.json",
+					"name" : "SDL2main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Tests::@ede49028efeb8cb978c7",
+					"jsonFile" : "target-Tests-Debug-f08374eeb344add38b48.json",
+					"name" : "Tests",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "catmario::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-catmario-Debug-25e862cae74938b8881b.json",
+					"name" : "catmario",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "freetype::@1caf39cd73602fb8f135",
+					"jsonFile" : "target-freetype-Debug-81ad7e67e4d2a1dc377d.json",
+					"name" : "freetype",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "glew::@e595e54ff3ace6639692",
+					"jsonFile" : "target-glew-Debug-3921a0b34acd17af82c4.json",
+					"name" : "glew",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "glew_s::@e595e54ff3ace6639692",
+					"jsonFile" : "target-glew_s-Debug-352cccb67a929174941b.json",
+					"name" : "glew_s",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "glewinfo::@e595e54ff3ace6639692",
+					"jsonFile" : "target-glewinfo-Debug-cf9379905fac68ed8b21.json",
+					"name" : "glewinfo",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "glfont::@bbdb2daa5afc341778ea",
+					"jsonFile" : "target-glfont-Debug-65da93a8901696d00045.json",
+					"name" : "glfont",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-Debug-28853e4264938e784866.json",
+					"name" : "gmock",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-Debug-6726c7cfff57becb3a7e.json",
+					"name" : "gmock_main",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-Debug-9330e36e9ee344c82335.json",
+					"name" : "gtest",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-Debug-357ce8b4e6a30552f026.json",
+					"name" : "gtest_main",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "playmus::@82d5866ba632f3b21364",
+					"jsonFile" : "target-playmus-Debug-9a6ef701ee9ad60caf97.json",
+					"name" : "playmus",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "playwave::@82d5866ba632f3b21364",
+					"jsonFile" : "target-playwave-Debug-2273d991020b6119ced5.json",
+					"name" : "playwave",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sdl_headers_copy::@45bd952f1071c035638d",
+					"jsonFile" : "target-sdl_headers_copy-Debug-86ef53ecf5219e5c4b9c.json",
+					"name" : "sdl_headers_copy",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "showanim::@de341d98faad78faee90",
+					"jsonFile" : "target-showanim-Debug-2c69acf1ead844d68ef5.json",
+					"name" : "showanim",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "showfont::@bbdb2daa5afc341778ea",
+					"jsonFile" : "target-showfont-Debug-a0f4067f6bf4a61d28a3.json",
+					"name" : "showfont",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "showimage::@de341d98faad78faee90",
+					"jsonFile" : "target-showimage-Debug-a175c1d4672b5ff3d93b.json",
+					"name" : "showimage",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "spdlog::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-spdlog-Debug-7b39e87aaa1fda2958dd.json",
+					"name" : "spdlog",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@45bd952f1071c035638d",
+					"jsonFile" : "target-uninstall-Debug-f031b3a3ed083df244e7.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "visualinfo::@e595e54ff3ace6639692",
+					"jsonFile" : "target-visualinfo-Debug-37b11e18441f5ec6dfae.json",
+					"name" : "visualinfo",
+					"projectIndex" : 12
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/user/Desktop/catmario/cmake-build-debug",
+		"source" : "C:/Users/user/Desktop/catmario"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

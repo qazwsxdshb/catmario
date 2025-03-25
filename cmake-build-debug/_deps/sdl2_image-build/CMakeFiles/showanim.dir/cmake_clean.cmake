@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/showanim.dir/showanim.c.o"
-  "CMakeFiles/showanim.dir/showanim.c.o.d"
-  "showanim"
+  "CMakeFiles/showanim.dir/showanim.c.obj"
+  "CMakeFiles/showanim.dir/showanim.c.obj.d"
+  "libshowanim.dll.a"
+  "showanim.exe"
+  "showanim.exe.manifest"
   "showanim.pdb"
 )
 

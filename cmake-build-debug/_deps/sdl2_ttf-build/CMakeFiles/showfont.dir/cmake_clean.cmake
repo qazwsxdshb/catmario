@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/showfont.dir/showfont.c.o"
-  "CMakeFiles/showfont.dir/showfont.c.o.d"
-  "showfont"
+  "CMakeFiles/showfont.dir/showfont.c.obj"
+  "CMakeFiles/showfont.dir/showfont.c.obj.d"
+  "libshowfont.dll.a"
+  "showfont.exe"
+  "showfont.exe.manifest"
   "showfont.pdb"
 )
 

@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/glfont.dir/glfont.c.o"
-  "CMakeFiles/glfont.dir/glfont.c.o.d"
-  "glfont"
+  "CMakeFiles/glfont.dir/glfont.c.obj"
+  "CMakeFiles/glfont.dir/glfont.c.obj.d"
+  "glfont.exe"
+  "glfont.exe.manifest"
   "glfont.pdb"
+  "libglfont.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

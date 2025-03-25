@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/playwave.dir/playwave.c.o"
-  "CMakeFiles/playwave.dir/playwave.c.o.d"
-  "playwave"
+  "CMakeFiles/playwave.dir/playwave.c.obj"
+  "CMakeFiles/playwave.dir/playwave.c.obj.d"
+  "libplaywave.dll.a"
+  "playwave.exe"
+  "playwave.exe.manifest"
   "playwave.pdb"
 )
 

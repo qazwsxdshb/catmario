@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/showimage.dir/showimage.c.o"
-  "CMakeFiles/showimage.dir/showimage.c.o.d"
-  "showimage"
+  "CMakeFiles/showimage.dir/showimage.c.obj"
+  "CMakeFiles/showimage.dir/showimage.c.obj.d"
+  "libshowimage.dll.a"
+  "showimage.exe"
+  "showimage.exe.manifest"
   "showimage.pdb"
 )
 

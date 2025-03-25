@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/download-ptsd-populate.cmake;COMMAND;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/verify-ptsd-populate.cmake;COMMAND;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/extract-ptsd-populate.cmake
-source_dir=/Users/easn/code/catmario/PTSD
-work_dir=/Users/easn/code/catmario
+command=C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/download-ptsd-populate.cmake;COMMAND;C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/verify-ptsd-populate.cmake;COMMAND;C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/extract-ptsd-populate.cmake
+source_dir=C:/Users/user/Desktop/catmario/PTSD
+work_dir=C:/Users/user/Desktop/catmario
 url(s)=https://github.com/ntut-open-source-club/practical-tools-for-simple-design/archive/refs/tags/v0.2.zip
 hash=
       no_extract=

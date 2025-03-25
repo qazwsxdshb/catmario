@@ -1,8 +1,8 @@
-# Install script for directory: /Users/easn/code/catmario/PTSD
+# Install script for directory: C:/Users/user/Desktop/catmario/PTSD
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/catmario")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,46 +34,46 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "C:/mingw64/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2-build/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/sdl2-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_image-build/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/sdl2_image-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_ttf-build/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/sdl2_ttf-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/sdl2_mixer-build/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/sdl2_mixer-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/spdlog-build/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/spdlog-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/glm-build/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/glm-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/googletest-build/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake/cmake_install.cmake")
+  include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/ptsd-build/lib/glew/build/cmake/cmake_install.cmake")
 endif()
 

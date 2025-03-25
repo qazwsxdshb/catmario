@@ -1,10 +1,10 @@
 # CMake generated Testfile for 
-# Source directory: /Users/easn/code/catmario/PTSD
-# Build directory: /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build
+# Source directory: C:/Users/user/Desktop/catmario/PTSD
+# Build directory: C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/ptsd-build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-include("/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build/Tests[1]_include.cmake")
+include("C:/Users/user/Desktop/catmario/cmake-build-debug/_deps/ptsd-build/Tests[1]_include.cmake")
 subdirs("../sdl2-build")
 subdirs("../sdl2_image-build")
 subdirs("../sdl2_ttf-build")

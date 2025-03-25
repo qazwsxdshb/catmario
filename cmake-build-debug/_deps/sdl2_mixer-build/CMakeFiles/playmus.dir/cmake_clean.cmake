@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/playmus.dir/playmus.c.o"
-  "CMakeFiles/playmus.dir/playmus.c.o.d"
-  "playmus"
+  "CMakeFiles/playmus.dir/playmus.c.obj"
+  "CMakeFiles/playmus.dir/playmus.c.obj.d"
+  "libplaymus.dll.a"
+  "playmus.exe"
+  "playmus.exe.manifest"
   "playmus.pdb"
 )
 

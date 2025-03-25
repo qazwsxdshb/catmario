@@ -5,7 +5,7 @@
 PhaseResourceManger::PhaseResourceManger() {
     m_TaskText = std::make_shared<TaskText>();
     m_Background = std::make_shared<BackgroundImage>();
-    m_Background->m_Transform.scale = glm::vec2(5.0f, 7.0f);
+    m_Background->m_Transform.scale = glm::vec2(30.0f, 7.0f);
 }
 
 void PhaseResourceManger::NextPhase() {
