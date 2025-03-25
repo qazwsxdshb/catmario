@@ -17,6 +17,7 @@ void App::Start() {
                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                 tmp[tmp.size()-1]->SetZIndex(49);
                 m_Root.AddChild(tmp[tmp.size()-1]);
+                position[y][x]=tmp.size()-1;
             }
             else if(zerostart[y][x] == 2) {
                 tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock13.png"));
@@ -54,15 +55,7 @@ void App::Start() {
                 tmp[tmp.size()-1]->SetZIndex(48);
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
-            position[y][x]=tmp.size()-1;
         }
-
-
-        m_PRM = std::make_shared<PhaseResourceManger>();
-        m_Root.AddChildren(m_PRM->GetChildren());
-
-
-        m_CurrentState = State::UPDATE;
     }
 
 

@@ -93,11 +93,14 @@ ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-configure: ptsd-popul
 	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
 	cd /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-build && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-configure
 
-ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-download: ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-source_dirinfo.txt
+ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-download: ptsd-populate-prefix/src/ptsd-populate-stamp/download-ptsd-populate.cmake
+ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-download: ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-urlinfo.txt
 ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-download: ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ptsd-populate'"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo_append
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'ptsd-populate'"
+	cd /Users/easn/code/catmario && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/download-ptsd-populate.cmake
+	cd /Users/easn/code/catmario && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/verify-ptsd-populate.cmake
+	cd /Users/easn/code/catmario && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/extract-ptsd-populate.cmake
+	cd /Users/easn/code/catmario && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E touch /Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-download
 
 ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-install: ptsd-populate-prefix/src/ptsd-populate-stamp/ptsd-populate-build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/easn/code/catmario/cmake-build-debug/_deps/ptsd-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ptsd-populate'"
