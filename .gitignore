@@ -1,6 +1,6 @@
 # 檔案名稱 .gitignore
 
-./cmake-build-debug/
-./PTSD
+/cmake-build-debug
+/PTSD
 .DS_Store
 
