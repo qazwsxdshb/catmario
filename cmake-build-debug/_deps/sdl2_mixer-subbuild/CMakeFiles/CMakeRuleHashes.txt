@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+dac8db8303da46a8a9197c693dc5724a CMakeFiles/sdl2_mixer-populate
+48eeb35becc4c8cd05af37f3e26156f8 CMakeFiles/sdl2_mixer-populate-complete
+5435fb0d9afef6d5f1d500d3afbb82a1 sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-build
+8c1c1ad0318d2709142d725b6c1e0f2e sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-configure
+0739d67809d08713f8b968e6356a2f97 sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-download
+9aafd53e74a6b2cecc8b7d44312e33a9 sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-install
+7958037c0613f3613ec484aadd8b0301 sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-mkdir
+ddcc29773c52d1343bed1c3091d018c5 sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-patch
+000b476f9f57e89b68691f2358baa08c sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-test
+4e622b2476e6ed9f47fdd2a157a44097 sdl2_mixer-populate-prefix/src/sdl2_mixer-populate-stamp/sdl2_mixer-populate-update

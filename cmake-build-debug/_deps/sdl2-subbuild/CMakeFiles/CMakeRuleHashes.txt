@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+2df659a8b75a64f52e37016d993d02bd CMakeFiles/sdl2-populate
+e5846f3f727d13a81017b6c9d92b45e9 CMakeFiles/sdl2-populate-complete
+773430140d0a39da7849f9f869d647ff sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-build
+8a590c3633349692066232265cb7f9a5 sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-configure
+e742540845799e1daaa59ca68104f1cd sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-download
+116cf8955de60087cace98d765cdd58a sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-install
+daae51575aa4590c0b2555249a5f4683 sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-mkdir
+f0935ad91725ec82a3115249f86f0ed1 sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-patch
+7def22ba3e40d80166d2af2a90c0fbc0 sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-test
+7e9887dc6f69b7a22487e694c92664c8 sdl2-populate-prefix/src/sdl2-populate-stamp/sdl2-populate-update
