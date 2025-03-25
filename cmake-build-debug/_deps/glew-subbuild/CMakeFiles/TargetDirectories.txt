@@ -1,3 +1,0 @@
-/Users/easn/code/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/glew-populate.dir
-/Users/easn/code/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/edit_cache.dir
-/Users/easn/code/catmario/cmake-build-debug/_deps/glew-subbuild/CMakeFiles/rebuild_cache.dir
