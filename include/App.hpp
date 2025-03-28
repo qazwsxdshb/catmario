@@ -35,9 +35,11 @@ public:
 
     void Update();
 
-    void Monsterdrop(glm::vec2 monsterpos,int value);
+    void ResetAll();
 
-    bool RLCollision(int xx,int yy,glm::vec2 playerpos,int rl);
+    void Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vector<std::shared_ptr<Monster>> mon);
+
+    bool RLCollision(int xx,int yy,glm::vec2 playerpos,int rl,int height);
 
     bool UDCollision(int xx,int yy,glm::vec2 playerpos,int ud,int speedd,int height);
 
@@ -55,6 +57,7 @@ private:
         grassland1,
         grassland2,
     };
+
     int bug=0;
     int sec=0;
     int opsec=0;
@@ -67,19 +70,26 @@ private:
     int WINDOW_WIDTH=720;
     int WINDOW_HEIGHT=720;
 
+    glm::vec2 ofsetzero={0,0};
+
     State m_CurrentState = State::ZERO;
     Phase m_Phase = Phase::zero;
 
     std::shared_ptr<Textt> text;
     Util::Renderer m_Root;
     std::shared_ptr<Character> m_player;
+
     std::vector<std::shared_ptr<Character>> tmp;
+    std::vector<std::vector<int>> reset;
+
     const std::shared_ptr<Util::GameObject> tmptext;
 //    std::shared_ptr<AnimatedCharacter> m_Bee;
     std::shared_ptr<PhaseResourceManger> m_PRM;
 
     std::vector<std::shared_ptr<Monster>> m_monster;
+    // std::vector<std::shared_ptr<Monster>> tmp_monster;
     std::vector<std::vector<float>> monsterAcceleration;
+
 
 
     bool m_EnterDown = false;
