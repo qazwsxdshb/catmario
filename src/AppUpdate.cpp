@@ -213,9 +213,9 @@ void App::Update() {
                 sec=0;
                 playerpos.y=(yy*boxsize)-345+2;
             }
-            else if (zerostart[23-yy-1][xx]==10 && ((zerostart[23-yy-1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx+1]!=0 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx-1]!=0 && tmp[position[23-yy-1][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            else if (zerostart[23-yy-1][xx]==10 && ((zerostart[23-yy-1][xx]==10 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx+1]==10 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx-1]==10 && tmp[position[23-yy-1][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
             )) {
                 zerostart[21-yy][xx]=10;
                 zerostart[22-yy][xx]=0;
@@ -267,11 +267,11 @@ void App::Update() {
 
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
-    for(int i=0;i<m_monster.size();i++) {
-        if (m_monster[i]->GetVisibility()) {
-            Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
-        }
-    }
+    // for(int i=0;i<m_monster.size();i++) {
+    //     if (m_monster[i]->GetVisibility()) {
+    //         Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
+    //     }
+    // }
     // for(int i=0;i<tmp_monster.size();i++) {
     //     if (tmp_monster[i]->GetVisibility()) {
     //         Monsteract(tmp_monster[i]->GetPosition(),i,playerpos,tmp_monster);
