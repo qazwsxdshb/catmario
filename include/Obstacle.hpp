@@ -9,13 +9,13 @@ class Obstacle : public Util::GameObject {
 public:
     explicit Obstacle(const std::string& ImagePath);
 
-    // Obstacle(const Obstacle&) = delete;
-    //
-    // Obstacle(Obstacle&&) = delete;
+    Obstacle(const Obstacle&) = delete;
 
-    // Obstacle& operator=(const Obstacle&) = delete;
-    //
-    // Obstacle& operator=(Obstacle&&) = delete;
+    Obstacle(Obstacle&&) = delete;
+
+    Obstacle& operator=(const Obstacle&) = delete;
+
+    Obstacle& operator=(Obstacle&&) = delete;
 
     [[nodiscard]] const std::string& GetImagePath() const { return m_ImagePath; }
 
