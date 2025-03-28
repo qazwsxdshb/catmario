@@ -87,6 +87,12 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
 }
 
 void App::ResetAll() {
+    for (int i = 0; i < tmp_monster; ++i) {
+        m_monster[m_monster.size()-1]->SetVisible(0);
+        m_monster.erase(m_monster.end()-1);
+        monsterAcceleration.erase(monsterAcceleration.end()-1);
+    }
+    tmp_monster=0;
     for (int i = 0; i < m_monster.size(); ++i) {
         m_monster[i]->SetVisible(1);
         m_monster[i]->ResetPosition();
@@ -150,6 +156,24 @@ void App::Update() {
     int xx=round((345+playerpos.x)/boxsize);
     int yy=round((345+playerpos.y)/boxsize);
 
+    //die space
+    if (opsec>120) {
+        if (opsec>=240) {
+            playerpos.y-=1;
+        }
+        else {
+            playerpos.y+=10;
+            auto tttt=tmp[position[29][7]]->GetPosition();
+            tmp[position[29][23]]->SetPosition({tttt.x,tttt.y+10});
+        }
+        if (opsec==121) {
+            sec=120;
+            bug=0;
+            m_CurrentState=State::DIE;
+        }
+    }
+
+
     if (bug==1) {
         if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)){
             if (!UDCollision(xx,yy+1,playerpos,1,speed,playerheight+2)){
@@ -183,6 +207,8 @@ void App::Update() {
             m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
             playerpos.y=playerpos.y+Acceleration;
         }
+
+        //die die die drop die
         else if (yy<=0) {
             playerpos.y-=Acceleration*1.5;
             sec+=2;
@@ -192,6 +218,17 @@ void App::Update() {
                 m_CurrentState=State::DIE;
             }
         }
+        //pip die
+        else if (Util::Input::IsKeyPressed(Util::Keycode::S)) {
+            if ((xx==28 && yy==6) || (xx==29 && yy==6)){
+                opsec=360;
+                bug=2;
+            }
+        }
+
+
+
+
         else if (sec==0){
             if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2)){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
@@ -214,8 +251,8 @@ void App::Update() {
                 playerpos.y=(yy*boxsize)-345+2;
             }
             else if (zerostart[23-yy-1][xx]==10 && ((zerostart[23-yy-1][xx]!=0 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx+1]!=0 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-            || (zerostart[23-yy-1][xx-1]!=0 && tmp[position[23-yy-1][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx+1]==10 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+            || (zerostart[23-yy-1][xx-1]==10 && tmp[position[23-yy-1][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
             )) {
                 zerostart[21-yy][xx]=10;
                 zerostart[22-yy][xx]=0;
@@ -251,6 +288,7 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->SetZIndex(51);
                     monsterAcceleration.push_back({0,1});
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,4});
                 }
