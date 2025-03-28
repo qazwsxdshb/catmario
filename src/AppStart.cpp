@@ -53,13 +53,14 @@ void App::Start() {
             }
             else if(zerostart[y][x] == 6) {
                 tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/shorttube.png"));
-                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-                tmp[tmp.size()-1]->SetZIndex(49);
+                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) - 15, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                tmp[tmp.size()-1]->SetZIndex(-22);
+                tmp[tmp.size()-1]->m_Transform.scale = glm::vec2(0.8f, 1.0f);
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
             else if(zerostart[y][x] == 7) {
                 tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/longtube.png"));
-                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) - 15, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 2});
                 tmp[tmp.size()-1]->SetZIndex(48);
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
@@ -68,6 +69,12 @@ void App::Start() {
                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                 tmp[tmp.size()-1]->SetZIndex(48);
                 tmp[tmp.size()-1]->SetVisible(0);
+                m_Root.AddChild(tmp[tmp.size()-1]);
+            }
+            else if(zerostart[y][x] == 9) {
+                tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/longtube_rotate90.png"));
+                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) - 16, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 1});
+                tmp[tmp.size()-1]->SetZIndex(48);
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
             position[y][x]=tmp.size()-1;

@@ -201,7 +201,7 @@ void App::Update() {
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
 
-    Monsterdrop(m_monster[0]->GetPosition(),0);
+    //Monsterdrop(m_monster[0]->GetPosition(),0);
 
 
     //視角控制

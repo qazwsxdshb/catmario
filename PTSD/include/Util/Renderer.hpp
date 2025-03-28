@@ -50,7 +50,7 @@ public:
      *
      * @note The user is not recommended to modify this function.
      */
-    void Update(const glm::vec2 &offset={0.0f,0.0f});
+    void Update(const glm::vec2 &offset ={0,0});
 
 private:
     std::vector<std::shared_ptr<GameObject>> m_Children;
