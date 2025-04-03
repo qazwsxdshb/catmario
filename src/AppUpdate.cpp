@@ -97,9 +97,14 @@ void App::ResetAll() {
         if(reset[i][2]==8) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(0);
         }
-        if (reset[i][2]==10) {
-            tmp[position[reset[i][0]][reset[i][1]]]->posup=0;
-            tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({(reset[i][1]*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-reset[i][0])*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+        if (reset[i][2] == 10) {
+            tmp[position[reset[i][0]][reset[i][1]]]->posup = 0;
+
+            // 計算新的 Y 軸位置，往上飛 2 格
+            int newX = (reset[i][1] * boxsize) - ((WINDOW_WIDTH - boxsize) / 2);
+            int newY = ((23 - reset[i][0]) * boxsize) - ((WINDOW_HEIGHT - boxsize) / 2) - (2 * boxsize);
+
+            tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({newX, newY});
         }
         if (reset[i][2]==4) {
             tmp[position[reset[i][0]][reset[i][1]]]->posup=0;
@@ -245,13 +250,15 @@ void App::Update() {
                 }
                 else if (zerostart[23-yy-1][xx]==4 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
-
+                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
+                    tmp[tmp.size()-1]->SetZIndex(51);
+                    m_Root.AddChild(tmp[tmp.size()-1]);
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-                    m_monster[m_monster.size()-1]->SetZIndex(51);
+                    m_monster[m_monster.size()-1]->SetZIndex(52);
                     monsterAcceleration.push_back({0,1});
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,4});
                 }
                 else if (zerostart[23-yy-1][xx]==8) {
@@ -259,7 +266,49 @@ void App::Update() {
                     reset.push_back({22-yy,xx,8});
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                 }
-
+                else if (zerostart[23-yy-1][xx]==11 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
+                    tmp[tmp.size()-1]->SetZIndex(50);
+                    m_Root.AddChild(tmp[tmp.size()-1]);
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/glassstar.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) + 2});
+                    m_monster[m_monster.size()-1]->SetZIndex(51);
+                    monsterAcceleration.push_back({0,1});
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,4});
+                }
+                else if (zerostart[23-yy-1][xx]==12 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
+                    tmp[tmp.size()-1]->SetZIndex(50);
+                    m_Root.AddChild(tmp[tmp.size()-1]);
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/coin.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->SetZIndex(51);
+                    monsterAcceleration.push_back({0,1});
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,4});
+                }
+                else if (zerostart[23-yy-1][xx]==17 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[23-yy-1][xx]]->SetVisible(1);
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
+                    tmp[tmp.size()-1]->SetZIndex(50);
+                    m_Root.AddChild(tmp[tmp.size()-1]);
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/purplemushroom.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->SetZIndex(51);
+                    monsterAcceleration.push_back({0,1});
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,4});
+                }
             }
             playerpos.y+=Acceleration;
         }
@@ -267,16 +316,11 @@ void App::Update() {
 
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
-    // for(int i=0;i<m_monster.size();i++) {
-    //     if (m_monster[i]->GetVisibility()) {
-    //         Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
-    //     }
-    // }
-    // for(int i=0;i<tmp_monster.size();i++) {
-    //     if (tmp_monster[i]->GetVisibility()) {
-    //         Monsteract(tmp_monster[i]->GetPosition(),i,playerpos,tmp_monster);
-    //     }
-    // }
+    for(int i=0;i<m_monster.size();i++) {
+        if (m_monster[i]->GetVisibility()) {
+            Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
+        }
+    }
 
 
     //視角控制
