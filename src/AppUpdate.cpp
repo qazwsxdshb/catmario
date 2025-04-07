@@ -313,7 +313,7 @@ void App::Update() {
                 }
                 else if (zerostart[23-yy-1][xx]==4 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
-                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
                     tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
                     tmp[tmp.size()-1]->SetZIndex(51);
                     m_Root.AddChild(tmp[tmp.size()-1]);
@@ -349,7 +349,7 @@ void App::Update() {
                 }
                 else if (zerostart[23-yy-1][xx]==11 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
-                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
                     tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
                     tmp[tmp.size()-1]->SetZIndex(50);
                     m_Root.AddChild(tmp[tmp.size()-1]);
@@ -363,7 +363,7 @@ void App::Update() {
                 }
                 else if (zerostart[23-yy-1][xx]==12 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
-                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
                     tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
                     tmp[tmp.size()-1]->SetZIndex(50);
                     m_Root.AddChild(tmp[tmp.size()-1]);
@@ -378,7 +378,7 @@ void App::Update() {
                 else if (zerostart[23-yy-1][xx]==17 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[23-yy-1][xx]]->SetVisible(1);
                     tmp[position[22-yy][xx]]->posup=1;
-                    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock4.png"));
+                    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
                     tmp[tmp.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 30});
                     tmp[tmp.size()-1]->SetZIndex(50);
                     m_Root.AddChild(tmp[tmp.size()-1]);

@@ -7,6 +7,8 @@
 
 class Obstacle : public Util::GameObject {
 public:
+    int posup=0;
+
     explicit Obstacle(const std::string& ImagePath);
 
     Obstacle(const Obstacle&) = delete;
@@ -23,9 +25,12 @@ public:
 
     [[nodiscard]] bool GetVisibility() const { return m_Visible; }
 
+
     void SetImage(const std::string& ImagePath);
 
     void SetPosition(const glm::vec2& Position) { m_Transform.translation = Position; }
+
+    void ResetPosition() { m_Transform.translation = {0, 0}; }
 
 private:
 
@@ -33,4 +38,4 @@ private:
 };
 
 
-#endif
+#endif //OBSTACLE_HPP

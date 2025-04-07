@@ -79,7 +79,7 @@ private:
     Util::Renderer m_Root;
     std::shared_ptr<Character> m_player;
 
-    std::vector<std::shared_ptr<Character>> tmp;
+    std::vector<std::shared_ptr<Obstacle>> tmp;
     std::vector<std::vector<int>> reset;
     std::vector<int> tube;
 

@@ -37,16 +37,10 @@ void App::ZeroUpdate() {
     int xx=int((345-playerpos.x)/30);
 
     if (0<=xx-1 && xx+1<std::size(zerostart[0]) && 0<=yy-1 && yy+1<std::size(zerostart)) {
-        if (zerostart[yy+1][xx]==0){
-            if(playerpos.y>-360){
-            // if(playerpos.y>-360 && !RectCollision(m_player->GetPosition(),t1,30,30,30,30)){
-                auto test=m_player->GetPosition();
-                Acceleration=(Acceleration+0.2)*0.98;
-                m_player->SetPosition({test.x,test.y-Acceleration});
-            }
-            else {
-                Acceleration=0;
-            }
+        if (zerostart[yy+1][xx]==0 && playerpos.y>-360){
+            auto test=m_player->GetPosition();
+            Acceleration=(Acceleration+0.2)*0.98;
+            m_player->SetPosition({test.x,test.y-Acceleration});
         }
         else {
             Acceleration=0;

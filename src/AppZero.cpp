@@ -16,17 +16,17 @@ void App::Zero() {
     m_Root.AddChild(m_player);
 
 
-    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/logo.png"));
+    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/logo.png"));
     tmp[0]->SetPosition({0, 300});
     tmp[0]->SetZIndex(49);
     m_Root.AddChild(tmp[0]);
 
-    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/grass.png"));
+    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/grass.png"));
     tmp[1]->SetPosition({0, -285});
     tmp[1]->SetZIndex(49);
     m_Root.AddChild(tmp[1]);
 
-    tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/mountain.png"));
+    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/mountain.png"));
     tmp[2]->SetPosition({300, -255});
     tmp[2]->SetZIndex(49);
     tmp[2]->m_Transform.scale = glm::vec2(1.0f, 1.0f);
@@ -43,13 +43,13 @@ void App::Zero() {
     for (int y=std::size(zerostart); y>=0; y--) {
         for (int x=std::size(zerostart[0]); x>=0; x--) {
             if(zerostart[y][x] == 1) {
-                tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock10.png"));
+                tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock10.png"));
                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                 tmp[tmp.size()-1]->SetZIndex(49);
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
             else if(zerostart[y][x] == 2) {
-                tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock13.png"));
+                tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock13.png"));
                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                 tmp[tmp.size()-1]->SetZIndex(49);
                 m_Root.AddChild(tmp[tmp.size()-1]);

@@ -7,7 +7,6 @@
 
 class Character : public Util::GameObject {
 public:
-    int posup=0;
 
     explicit Character(const std::string& ImagePath);
 
