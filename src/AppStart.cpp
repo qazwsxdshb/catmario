@@ -19,8 +19,8 @@ void App::Start() {
 
     monsterAcceleration.push_back({0,1});
 
-    for (int y=std::size(zerostart); y>=0; y--) {
-        for (int x=std::size(zerostart[0]); x>=0; x--) {
+    for (int x=std::size(zerostart[0]); x>=0; x--) {
+        for (int y=std::size(zerostart); y>=0; y--) {
             if(zerostart[y][x] == 1) {
                 tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/brock10.png"));
                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
@@ -62,6 +62,7 @@ void App::Start() {
                 tmp.push_back(std::make_shared<Character>(GA_RESOURCE_DIR"/res/longtube.png"));
                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) - 15, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 2});
                 tmp[tmp.size()-1]->SetZIndex(48);
+                tube.push_back((tmp.size()-1));
                 m_Root.AddChild(tmp[tmp.size()-1]);
             }
             else if(zerostart[y][x] == 8) {

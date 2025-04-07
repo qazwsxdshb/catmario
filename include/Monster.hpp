@@ -7,7 +7,8 @@
 
 class Monster : public Util::GameObject {
 public:
-
+    std::string name="bun";
+    int time=0;
     explicit Monster(const std::string& ImagePath);
 
     Monster(const Monster&) = delete;
@@ -23,6 +24,10 @@ public:
     [[nodiscard]] const glm::vec2& GetPosition() const { return m_Transform.translation; }
 
     [[nodiscard]] bool GetVisibility() const { return m_Visible; }
+
+    // void SetName(std::string name){ name = name; }
+
+    std::string GetName() const { return name; }
 
 
     void SetImage(const std::string& ImagePath);

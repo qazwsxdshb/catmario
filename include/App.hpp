@@ -81,6 +81,7 @@ private:
 
     std::vector<std::shared_ptr<Character>> tmp;
     std::vector<std::vector<int>> reset;
+    std::vector<int> tube;
 
     const std::shared_ptr<Util::GameObject> tmptext;
 //    std::shared_ptr<AnimatedCharacter> m_Bee;
