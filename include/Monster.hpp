@@ -9,6 +9,7 @@ class Monster : public Util::GameObject {
 public:
     std::string name="bun";
     int time=0;
+    int talk=0;
     explicit Monster(const std::string& ImagePath);
 
     Monster(const Monster&) = delete;

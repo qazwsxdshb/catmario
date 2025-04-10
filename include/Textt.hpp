@@ -8,11 +8,17 @@
 class Textt : public Util::GameObject {
 public:
     inline static std::string texte="test";
+    inline static Util::Color color = Util::Color::FromName(Util::Colors::WHITE);
 
     Textt() : GameObject(std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
-    texte,Util::Color::FromName(Util::Colors::WHITE)),60) {}
+    texte,color),60) {}
 
     void SetPosition(const glm::vec2& Position) { m_Transform.translation = Position; }
+
+    void SetColor(Util::Color tmp) {
+        auto temp = std::dynamic_pointer_cast<Util::Text>(m_Drawable);
+        temp->SetColor(tmp);
+    }
 
     void Settext(std::string value) {
         auto temp = std::dynamic_pointer_cast<Util::Text>(m_Drawable);

@@ -8,30 +8,23 @@
 void App::Zero() {
     LOG_TRACE("Zero");
 
+    auto createObstacle = [&](const std::string& path, float x, float y, int zIndex, glm::vec2 scale = {1.0f, 1.0f}) {
+        auto obs = std::make_shared<Obstacle>(path);
+        obs->SetPosition({x, y});
+        obs->SetZIndex(zIndex);
+        obs->m_Transform.scale = scale;
+        m_Root.AddChild(obs);
+        tmp.push_back(obs);
+    };
 
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
     m_player->SetPosition({-112.5f, -280.0f});
-    m_player->SetZIndex(50);
-    // m_player->m_Transform.rotation = 3;
+    m_player->SetZIndex(48);
     m_Root.AddChild(m_player);
 
-
-    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/logo.png"));
-    tmp[0]->SetPosition({0, 300});
-    tmp[0]->SetZIndex(49);
-    m_Root.AddChild(tmp[0]);
-
-    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/grass.png"));
-    tmp[1]->SetPosition({0, -285});
-    tmp[1]->SetZIndex(49);
-    m_Root.AddChild(tmp[1]);
-
-    tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/mountain.png"));
-    tmp[2]->SetPosition({300, -255});
-    tmp[2]->SetZIndex(49);
-    tmp[2]->m_Transform.scale = glm::vec2(1.0f, 1.0f);
-    m_Root.AddChild(tmp[2]);
-
+    createObstacle(GA_RESOURCE_DIR"/res/logo.png", 0, 300, 49);
+    createObstacle(GA_RESOURCE_DIR"/res/grass.png", 0, -285, 49);
+    createObstacle(GA_RESOURCE_DIR"/res/mountain.png", 300, -255, 49);
 
     text = std::make_shared<Textt>();
     text->SetPosition({0, 0});
@@ -39,39 +32,30 @@ void App::Zero() {
     text->Settext(" ");
     m_Root.AddChild(text);
 
-
-    for (int y=std::size(zerostart); y>=0; y--) {
-        for (int x=std::size(zerostart[0]); x>=0; x--) {
-            if(zerostart[y][x] == 1) {
-                tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock10.png"));
-                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-                tmp[tmp.size()-1]->SetZIndex(49);
-                m_Root.AddChild(tmp[tmp.size()-1]);
-            }
-            else if(zerostart[y][x] == 2) {
-                tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock13.png"));
-                tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-                tmp[tmp.size()-1]->SetZIndex(49);
-                m_Root.AddChild(tmp[tmp.size()-1]);
+    for (int y = std::size(zerostart) - 1; y >= 0; --y) {
+        for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {
+            int tile = zerostart[y][x];
+            if (tile == 1) {
+                createObstacle(
+                    GA_RESOURCE_DIR"/res/brock10.png",
+                    (x * boxsize) - ((WINDOW_WIDTH - boxsize) / 2),
+                    ((23 - y) * boxsize) - ((WINDOW_HEIGHT - boxsize) / 2),
+                    49
+                );
+            } else if (tile == 2) {
+                createObstacle(
+                    GA_RESOURCE_DIR"/res/brock13.png",
+                    (x * boxsize) - ((WINDOW_WIDTH - boxsize) / 2),
+                    ((23 - y) * boxsize) - ((WINDOW_HEIGHT - boxsize) / 2),
+                    49
+                );
             }
         }
     }
 
-    // Util::Transform test;
-    // Core::Drawable::Draw(
-    //         std::make_unique<Util::Text>(GA_RESOURCE_DIR"/Font/Inkfree.ttf", 40,
-    //                                      std::string_view 'test',
-    //                                      Util::Color::FromName(Util::Colors::BLACK)),
-    //                                      100,
-    //     test.translation = {100, 100}
-    // );
-
-
-
-
     m_PRM = std::make_shared<PhaseResourceManger>();
-    // m_PRM->Talk();
     m_Root.AddChildren(m_PRM->GetChildren());
 
     m_CurrentState = State::ZEROUPDATE;
 }
+
