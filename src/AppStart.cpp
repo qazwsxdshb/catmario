@@ -28,6 +28,26 @@ void App::Start() {
     m_monster.push_back(monster);
     monsterAcceleration.push_back({0, 1});
 
+    //fish
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
+    monster->name="fish";
+    monster->SetPosition({-112.5f, 0.0f});
+    monster->SetZIndex(51);
+    monster->SetOrigin({100, -280});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({10, 0});
+
+    //fish
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
+    monster->name="fish";
+    monster->SetPosition({-112.5f+1611, 0.0f});
+    monster->SetZIndex(51);
+    monster->SetOrigin({100+1611, -280});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({10, 0});
+
     // 障礙物類型映射
     std::unordered_map<int, ObstacleInfo> obstacleMap = {
         {1,  {"res/brock10.png", 49}},

@@ -8,6 +8,7 @@
 class Obstacle : public Util::GameObject {
 public:
     int posup=0;
+    int Offsety=0;
 
     explicit Obstacle(const std::string& ImagePath);
 

@@ -76,6 +76,7 @@ private:
     int opsec=0;
     int life=2;
     int zerox=0;
+    int checkpoint=0;
     int speed=3;
     int boxsize=30;
     int playerheight=34;

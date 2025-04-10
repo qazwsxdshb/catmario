@@ -10,6 +10,7 @@ public:
     std::string name="bun";
     int time=0;
     int talk=0;
+    int act=0;
     explicit Monster(const std::string& ImagePath);
 
     Monster(const Monster&) = delete;
@@ -37,8 +38,8 @@ public:
 
     void SetOrigin(const glm::vec2& Position) { pos=Position;}
 
-    void ResetPosition() {
-        m_Transform.translation = pos;
+    void ResetPosition(int zerox) {
+        m_Transform.translation = {pos.x-zerox,pos.y};
     }
 
 private:

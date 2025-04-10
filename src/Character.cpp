@@ -4,7 +4,6 @@
 
 Character::Character(const std::string& ImagePath) {
     SetImage(ImagePath);
-    ResetPosition();
 }
 
 void Character::SetImage(const std::string& ImagePath) {

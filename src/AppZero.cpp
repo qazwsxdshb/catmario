@@ -19,6 +19,7 @@ void App::Zero() {
 
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
     m_player->SetPosition({-112.5f, -280.0f});
+    m_player->position={-112.5f, -280.0f};
     m_player->SetZIndex(48);
     m_Root.AddChild(m_player);
 

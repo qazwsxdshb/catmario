@@ -4,7 +4,6 @@
 
 Monster::Monster(const std::string& ImagePath) {
     SetImage(ImagePath);
-    ResetPosition();
 }
 
 void Monster::SetImage(const std::string& ImagePath) {
