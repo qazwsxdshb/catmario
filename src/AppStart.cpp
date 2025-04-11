@@ -23,7 +23,7 @@ void App::Start() {
     auto monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
     monster->SetPosition({-112.5f, 0.0f});
     monster->SetZIndex(51);
-    monster->SetOrigin({100, -280});
+    monster->SetOrigin({-112.5f, 0.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
     monsterAcceleration.push_back({0, 1});
@@ -31,9 +31,9 @@ void App::Start() {
     //fish
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
     monster->name="fish";
-    monster->SetPosition({-112.5f, 0.0f});
-    monster->SetZIndex(51);
-    monster->SetOrigin({100, -280});
+    monster->SetPosition({269.0f, -280.0f});
+    monster->SetZIndex(48);
+    monster->SetOrigin({269.0f, -280.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
     monsterAcceleration.push_back({10, 0});
@@ -42,21 +42,29 @@ void App::Start() {
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
     monster->name="fish";
     monster->m_Transform.scale = glm::vec2(1.0f, -1.0f);
-    monster->SetPosition({-112.5f+1611, 0.0f});
+    monster->SetPosition({1335.0f, 400.0f});
     monster->SetZIndex(51);
-    monster->SetOrigin({100+1611, -280});
+    monster->SetOrigin({1335.0f, 400.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
     monsterAcceleration.push_back({-10, 0});
 
-    // fish
+    //monster
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
-    monster->SetPosition({-112.5f+1611, 0.0f});
+    monster->SetPosition({-112.5f+1600, -280.0f});
     monster->SetZIndex(51);
-    monster->SetOrigin({100+1611, -280});
+    monster->SetOrigin({-112.5f+1600, -280.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, 1});
+    monsterAcceleration.push_back({0, -1});
+
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
+    monster->SetPosition({-112.5f+1800, -280.0f});
+    monster->SetZIndex(51);
+    monster->SetOrigin({-112.5f+1800, -280.0f});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({0, -1});
 
     // fish
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/yellowbat.png");

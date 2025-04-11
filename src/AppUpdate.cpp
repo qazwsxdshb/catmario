@@ -405,7 +405,7 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
                     monsterAcceleration.push_back({0,1});
-                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,4});
