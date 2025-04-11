@@ -28,6 +28,35 @@ void App::Start() {
     m_monster.push_back(monster);
     monsterAcceleration.push_back({0, 1});
 
+    // box
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
+    monster->name="box";
+    monster->SetPosition({1700-574.5,-75});
+    monster->SetZIndex(51);
+    monster->SetOrigin({1700-574.5,-75});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({-10, 0});
+
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
+    monster->name="box";
+    monster->SetPosition({1700-574.5+30,-75});
+    monster->SetZIndex(51);
+    monster->SetOrigin({1700-574.5+30,-75});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({-10, 0});
+
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
+    monster->name="box";
+    monster->SetPosition({1700-574.5+60,-75});
+    monster->SetZIndex(51);
+    monster->SetOrigin({1700-574.5+60,-75});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({-10, 0});
+
+
     //fish
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
     monster->name="fish";

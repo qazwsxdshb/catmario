@@ -58,13 +58,13 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     int xx=round((345+monsterpos.x)/boxsize);
     int yy=round((345+monsterpos.y)/boxsize);
 
-    if (mon[value]->talk==1) {
+    if (mon[value]->talk==1 && mon[value]->name!="box") {
         text->SetColor(Util::Color::FromName(Util::Colors::BLACK));
         text->SetPosition({monsterpos.x+70-zerox,monsterpos.y+20});
         text->Settext("loser");
     }
 
-    if (mon[value]->name!="fish"){
+    if (mon[value]->name!="fish" && mon[value]->name!="box"){
         if (mon[value]->time>0) {
             monsterAcceleration[value][0]-=1;
             mon[value]->time-=1;
@@ -110,13 +110,28 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
             monsterpos.y+=monsterAcceleration[value][0];
         }
     }
-
+    else if (mon[value]->name=="box") {
+        if (mon[value]->act!=1 && playerpos.y<monsterpos.y && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,1024)) {
+            for (int ii=0;ii<3;ii++) {
+                mon[value+ii]->act=1;
+                int xxx=round((345+m_monster[value+ii]->GetPosition().x+zerox)/boxsize);
+                int yyy=round((345+m_monster[value+ii]->GetPosition().y)/boxsize);
+                printf("%d %d \n\n",xxx,yyy);
+                zerostart[23-yyy][xxx]=0;
+                tmp[position[23-yyy][xxx]]->SetVisible(0);
+                reset.push_back({23-yyy,xxx,3});
+            }
+        }
+        if (mon[value]->act==1) {
+            monsterpos.y+=monsterAcceleration[value][0];
+        }
+    }
 
     // die mon
     if (yy<0) {
         mon[value]->SetVisible(0);
     }
-    if (bug!=3 && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,24) && playerpos.y>(monsterpos.y+6)) {
+    else if (bug!=3 && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,24) && playerpos.y>(monsterpos.y+6)) {
         mon[value]->SetVisible(0);
         Acceleration=10;
         sec=25;
@@ -252,7 +267,9 @@ void App::Update() {
         }
     }
     /////////////////////////////////
-
+    if (bug!=3 && Util::Input::IsKeyPressed(Util::Keycode::O)) {
+        printf("%f %f\n\n",playerpos.x+zerox-112.5f,playerpos.y);
+    }
 
     if (bug!=3 && Util::Input::IsKeyPressed(Util::Keycode::A)) {
         m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
