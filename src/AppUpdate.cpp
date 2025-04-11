@@ -146,6 +146,7 @@ void App::ResetAll() {
     for (int i = 0; i < m_monster.size(); ++i) {
         m_monster[i]->act=0;
         m_monster[i]->talk=0;
+        m_monster[i]->move=0;
         m_monster[i]->SetVisible(1);
         m_monster[i]->ResetPosition(zerox);
     }
@@ -181,7 +182,6 @@ void App::Die() {
         m_PRM->Select(0);
     }
     else if (sec==1){
-        printf("%d\n\n",checkpoint);
         m_PRM->BgZindex(-10);
         m_PRM->Select(1);
         text->Settext(" ");
@@ -459,10 +459,14 @@ void App::Update() {
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
     for(int i=0;i<m_monster.size();i++) {
-        if (m_monster[i]->GetVisibility()) {
+        if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+WINDOW_WIDTH/2) {
+            m_monster[i]->move=1;
+        }
+        if (m_monster[i]->GetVisibility() && m_monster[i]->move==1) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
     }
+
     for(int i=0;i<m_coin.size();i++) {
         if (m_coin[i]->GetVisibility()) {
             m_coin[i]->SetPosition({m_coin[i]->GetPosition().x,m_coin[i]->GetPosition().y+5});
