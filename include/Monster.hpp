@@ -12,6 +12,8 @@ public:
     int talk=0;
     int act=0;
     int move=0;
+    int connect=0;
+    int type=1;
     explicit Monster(const std::string& ImagePath);
 
     Monster(const Monster&) = delete;

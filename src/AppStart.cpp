@@ -21,12 +21,12 @@ void App::Start() {
 
     // 初始化怪物
     auto monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
-    monster->SetPosition({-112.5f, 0.0f});
+    monster->SetPosition({100.0f, -290.0f});
     monster->SetZIndex(51);
     monster->SetOrigin({-112.5f, 0.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, 1});
+    monsterAcceleration.push_back({0, -1});
 
     // box
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
