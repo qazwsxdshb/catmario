@@ -36,7 +36,7 @@ void App::Start() {
     monster->SetOrigin({1700-574.5,-75});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
-    monsterAcceleration.push_back({-10, 0});
+    monsterAcceleration.push_back({10, 0});
 
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
     monster->name="box";
@@ -76,7 +76,7 @@ void App::Start() {
     monster->SetOrigin({1335.0f, 400.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
-    monsterAcceleration.push_back({-10, 0});
+    monsterAcceleration.push_back({-10,0});
 
     //monster
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
@@ -85,7 +85,7 @@ void App::Start() {
     monster->SetOrigin({-112.5f+1600, -280.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, -1});
+    monsterAcceleration.push_back({0, 0});
 
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
     monster->SetPosition({-112.5f+1800, -280.0f});
@@ -93,16 +93,25 @@ void App::Start() {
     monster->SetOrigin({-112.5f+1800, -280.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, -1});
+    monsterAcceleration.push_back({0, 0});
 
     // fish
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/yellowbat.png");
-    monster->SetPosition({-112.5f+1611, 0.0f});
+    monster->SetPosition({4000, 100.0f});
     monster->SetZIndex(51);
     monster->SetOrigin({100+1611, -280});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, -1});
+    monsterAcceleration.push_back({0, 0});
+
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/claude.png");
+    monster->name="star";
+    monster->SetPosition({1335.0f, 400.0f});
+    monster->SetZIndex(51);
+    monster->SetOrigin({1335.0f, 400.0f});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({0,0});
 
 
     // 障礙物類型映射
@@ -125,6 +134,7 @@ void App::Start() {
         {17, {"res/brock4.png", 48, false}},
         {18, {"res/brock10.png", 49}},
         {19, {"res/brock13.png", 49}},
+        {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}}
     };
 
     // 建立地圖障礙物
