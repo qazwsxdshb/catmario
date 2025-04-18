@@ -72,7 +72,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         if (mon[value]->time!=0) {
             monsterpos.y+=monsterAcceleration[value][0];
         }
-        else if(yy>0 && UDCollision(xx,yy-1,monsterpos,-1,monsterAcceleration[value][0],26)){
+        else if(yy>0 && UDCollision(xx,yy-1,monsterpos,-1,monsterAcceleration[value][0],mon[value]->mon_hei)){
             if(mon[value]->GetName()=="star"){
                 monsterAcceleration[value][0]=15;
                 mon[value]->time=15;
@@ -90,20 +90,20 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
 
         if (monsterAcceleration[value][1]<0) {
             mon[value]->m_Transform.scale = glm::vec2(1.0f, 1.0f);
-            if (RLCollision(xx-1,yy,{monsterpos.x,monsterpos.y},-1,24)){
+            if (RLCollision(xx-1,yy,{monsterpos.x,monsterpos.y},-1,mon[value]->mon_wei)){
                 monsterAcceleration[value][1]*=-1;
             }
         }
         else if (monsterAcceleration[value][1]>0){
             mon[value]->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
-            if (RLCollision(xx+1,yy,{monsterpos.x,monsterpos.y},1,24)){
+            if (RLCollision(xx+1,yy,{monsterpos.x,monsterpos.y},1,mon[value]->mon_wei)){
                 monsterAcceleration[value][1]*=-1;
             }
         }
         monsterpos.x+=monsterAcceleration[value][1];
     }
     else if (mon[value]->name=="fish") {
-        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,1024)) {
+        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,mon[value]->mon_traget)) {
             mon[value]->act=1;
         }
         if (mon[value]->act==1) {
@@ -111,16 +111,15 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         }
     }
     else if (mon[value]->name=="box") {
-        if (mon[value]->act!=1 && ((mon[value]->type==1 && playerpos.y<monsterpos.y) || (mon[value]->type==2 && playerpos.y>monsterpos.y)) && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,1024)) {
-            for (int ii=0;ii<m_monster[value]->connect;ii++) {
-                mon[value+ii]->act=1;
-                int xxx=round((345+m_monster[value+ii]->GetPosition().x+zerox)/boxsize);
-                int yyy=round((345+m_monster[value+ii]->GetPosition().y)/boxsize);
-                printf("%d %d \n\n",xxx,yyy);
+        if (mon[value]->act!=1 && ((mon[value]->type==1 && playerpos.y<monsterpos.y) || (mon[value]->type==2 && playerpos.y>monsterpos.y)) && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
+            for (int ii=0;ii<(int)(mon[value]->mon_wei/boxsize);ii++) {
+                int xxx=round((345+m_monster[value]->GetPosition().x+zerox)/boxsize+ii-(int)(mon[value]->mon_wei/boxsize)/2);
+                int yyy=round((345+m_monster[value]->GetPosition().y)/boxsize);
                 zerostart[23-yyy][xxx]=0;
                 tmp[position[23-yyy][xxx]]->SetVisible(0);
                 reset.push_back({23-yyy,xxx,3});
             }
+            mon[value]->act=1;
         }
         if (mon[value]->act==1) {
             monsterpos.y+=monsterAcceleration[value][0];
@@ -131,7 +130,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     if (yy<0) {
         mon[value]->SetVisible(0);
     }
-    else if (bug!=3 && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,24) && playerpos.y>(monsterpos.y+6)) {
+    else if (bug!=3 && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
         mon[value]->SetVisible(0);
         Acceleration=10;
         sec=25;
@@ -139,7 +138,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     // die
 
     //die plyaer
-    else if (bug!=3 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,24)) {
+    else if (bug!=3 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
         Acceleration=12;
         mon[value]->talk=1;
         m_player->SetImage(GA_RESOURCE_DIR"/res/player4.png");
@@ -172,7 +171,7 @@ void App::ResetAll() {
         if (reset[i][2]==4 || reset[i][2]==12) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetImage(GA_RESOURCE_DIR"/res/box.png");
         }
-        if(reset[i][2]==8 && reset[i][2]==15) {
+        if(reset[i][2]==8 || reset[i][2]==15) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(0);
         }
          if (reset[i][2]==10) {
@@ -346,6 +345,12 @@ void App::Update() {
                 Acceleration=0;
                 playerpos.y=(yy*boxsize)-345+2;
             }
+            else if (zerostart[24-yy][xx-1]==16) {
+                playerpos.y-=speed;
+                tmp[position[23-yy][xx-1]]->SetVisible(0);
+                checkpoint=zerox;
+                m_player->position={((xx-1)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)};
+            }
             else {
                 Acceleration=(Acceleration+0.4)*0.98;
                 playerpos.y-=Acceleration;
@@ -490,7 +495,10 @@ void App::Update() {
         if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+WINDOW_WIDTH/2) {
             m_monster[i]->move=1;
         }
-        if (m_monster[i]->GetVisibility() && m_monster[i]->move==1) {
+        if (WINDOW_HEIGHT/2+10<=m_monster[i]->GetPosition().y || -(WINDOW_HEIGHT/2)-10>=m_monster[i]->GetPosition().y) {
+            m_monster[i]->SetVisible(0);
+        }
+        if (m_monster[i]->GetVisibility() && m_monster[i]->move==1 && WINDOW_HEIGHT/2+10>m_monster[i]->GetPosition().y && -(WINDOW_HEIGHT/2)-10<m_monster[i]->GetPosition().y) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
     }

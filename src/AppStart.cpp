@@ -29,43 +29,44 @@ void App::Start() {
     monsterAcceleration.push_back({0, 1});
 
     // box
-    for (int i=0;i<3;i++) {
-        monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
-        monster->name="box";
-        monster->SetPosition({1700-574.5+i*30,-75});
-        monster->SetZIndex(51);
-        monster->connect=3;
-        monster->SetOrigin({1700-574.5+i*30,-75});
-        m_Root.AddChild(monster);
-        m_monster.push_back(monster);
-        monsterAcceleration.push_back({-10, 0});
-    }
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
+    monster->name="box";
+    monster->SetPosition({1700-574.5+30,-75});
+    monster->m_Transform.scale = glm::vec2(3, 1);
+    monster->SetZIndex(48);
+    monster->mon_wei=90;
+    monster->mon_traget=1024;
+    monster->mon_tragetrl=90;
+    monster->SetOrigin({1700-574.5+30,-75});
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({-10, 0});
 
-    for (int i=0;i<5;i++) {
-        monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock10.png");
-        monster->name="box";
-        monster->connect=5;
-        monster->type=2;
-        monster->SetPosition({2390-574.5+30*i,-315});
-        monster->SetOrigin({2390-574.5+30*i,-315});
-        monster->SetZIndex(90);
-        m_Root.AddChild(monster);
-        m_monster.push_back(monster);
-        monsterAcceleration.push_back({-10, 0});
-    }
-    for (int i=0;i<5;i++) {
-        monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock13.png");
-        monster->name="box";
-        monster->connect=5;
-        monster->type=2;
-        monster->SetPosition({2390-574.5+30*i,-345});
-        monster->SetOrigin({2390-574.5+30*i,-345});
-        monster->SetZIndex(90);
-        m_Root.AddChild(monster);
-        m_monster.push_back(monster);
-        monsterAcceleration.push_back({-10, 0});
-    }
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock10.png");
+    monster->name="box";
+    monster->type=2;
+    monster->mon_traget=60;
+    monster->mon_tragetrl=150;
+    monster->mon_wei=150;
+    monster->SetPosition({2390-574.5+60,-315});
+    monster->SetOrigin({2390-574.5+60,-315});
+    monster->SetZIndex(90);
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({-10, 0});
 
+    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock13.png");
+    monster->name="box";
+    monster->type=2;
+    monster->mon_traget=120;
+    monster->mon_tragetrl=150;
+    monster->mon_wei=150;
+    monster->SetPosition({2390-574.5+60,-345});
+    monster->SetOrigin({2390-574.5+60,-345});
+    monster->SetZIndex(90);
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monsterAcceleration.push_back({-10, 0});
 
     ///////////////
 
@@ -73,7 +74,7 @@ void App::Start() {
     monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
     monster->name="fish";
     monster->SetPosition({269.0f, -280.0f});
-    monster->SetZIndex(48);
+    monster->SetZIndex(0);
     monster->SetOrigin({269.0f, -280.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
@@ -84,7 +85,7 @@ void App::Start() {
     monster->name="fish";
     monster->m_Transform.scale = glm::vec2(1.0f, -1.0f);
     monster->SetPosition({1335.0f, 400.0f});
-    monster->SetZIndex(51);
+    monster->SetZIndex(0);
     monster->SetOrigin({1335.0f, 400.0f});
     m_Root.AddChild(monster);
     m_monster.push_back(monster);

@@ -14,6 +14,10 @@ public:
     int move=0;
     int connect=0;
     int type=1;
+    int mon_hei=26;
+    int mon_tragetrl=30;
+    int mon_traget=1024;
+    int mon_wei=24;
     explicit Monster(const std::string& ImagePath);
 
     Monster(const Monster&) = delete;
