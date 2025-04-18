@@ -495,10 +495,7 @@ void App::Update() {
         if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+WINDOW_WIDTH/2) {
             m_monster[i]->move=1;
         }
-        if (WINDOW_HEIGHT/2+10<=m_monster[i]->GetPosition().y || -(WINDOW_HEIGHT/2)-10>=m_monster[i]->GetPosition().y) {
-            m_monster[i]->SetVisible(0);
-        }
-        if (m_monster[i]->GetVisibility() && m_monster[i]->move==1 && WINDOW_HEIGHT/2+10>m_monster[i]->GetPosition().y && -(WINDOW_HEIGHT/2)-10<m_monster[i]->GetPosition().y) {
+        if (m_monster[i]->GetVisibility() && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
     }
