@@ -22,7 +22,7 @@ bool Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwid
 }
 
 // 判斷玩家往左（rl=-1）或往右（rl=1）時，是否會與障礙物發生碰撞
-bool App::RLCollision(int xx,int yy,glm::vec2 playerpos,int rl,int height){
+bool App::RLCollision(int xx,int yy,glm::vec2 playerpos,int rl,int height,int weight){
     // right xx+1 rl=1
     // left  xx-1 rl=-1
     // 右移 = xx+1；左移 = xx-1（rl 決定方向）
@@ -30,24 +30,24 @@ bool App::RLCollision(int xx,int yy,glm::vec2 playerpos,int rl,int height){
     // 1. 玩家正前方格子（同一 row）
     // 2. 玩家上方一格（上半身）
     // 3. 玩家下方一格（下半身）
-    if ((zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),playerwidth,height,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy-1][xx]!=0 && tmp[position[23-yy-1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),playerwidth,height,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy+1][xx]!=0 && tmp[position[23-yy+1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),playerwidth,height,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
+    if ((zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),weight,height,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy-1][xx]!=0 && tmp[position[23-yy-1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),weight,height,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy+1][xx]!=0 && tmp[position[23-yy+1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),weight,height,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
     ){return true;}
     return false;
 }
 
 // 判斷玩家往上（ud=1）或往下（ud=-1）跳動或掉落時，是否會與障礙物發生碰撞
-bool App::UDCollision(int xx,int yy,glm::vec2 playerpos,int ud,int speedd,int height){
+bool App::UDCollision(int xx,int yy,glm::vec2 playerpos,int ud,int speedd,int height,int weight){
     // up    yy+1 ud=1
     // down  yy-1 ud=-1
     // 上移 = yy+1；下移 = yy-1（ud 決定方向）
     // 1. 檢查玩家正上（或正下）方格子是否碰撞
     // 2. 再加上玩家左右兩邊也可能會碰撞（寬度判定）
     if (
-        (zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),playerwidth,height,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy][xx+1]!=0 && tmp[position[23-yy][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),playerwidth,height,((xx+1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy][xx-1]!=0 && tmp[position[23-yy][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),playerwidth,height,((xx-1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        (zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),weight,height,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy][xx+1]!=0 && tmp[position[23-yy][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),weight,height,((xx+1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
+        || (zerostart[23-yy][xx-1]!=0 && tmp[position[23-yy][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),weight,height,((xx-1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
     ){return true;}
     return false;
 }
@@ -63,51 +63,68 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         text->SetPosition({monsterpos.x+70-zerox,monsterpos.y+20});
         text->Settext("loser");
     }
-
-    if (mon[value]->name!="fish" && mon[value]->name!="box"){
+    if (mon[value]->act==3) {
+        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
+            mon[value]->act=1;
+        }
+    }
+    if (mon[value]->act!=3 && mon[value]->name!="fish" && mon[value]->name!="yellowbat" && mon[value]->name!="box"){
         if (mon[value]->time>0) {
-            monsterAcceleration[value][0]-=1;
+            mon[value]->acceleration[0]-=1;
             mon[value]->time-=1;
         }
         if (mon[value]->time!=0) {
-            monsterpos.y+=monsterAcceleration[value][0];
+            monsterpos.y+=mon[value]->acceleration[0];
         }
-        else if(yy>0 && UDCollision(xx,yy-1,monsterpos,-1,monsterAcceleration[value][0],mon[value]->mon_hei)){
+        else if(yy>0 && UDCollision(xx,yy-1,monsterpos,-1,mon[value]->acceleration[0],mon[value]->mon_hei+2,mon[value]->mon_wei)){
             if(mon[value]->GetName()=="star"){
-                monsterAcceleration[value][0]=15;
+                mon[value]->acceleration[0]=15;
                 mon[value]->time=15;
-                monsterAcceleration[value][1]=3;
+                mon[value]->acceleration[1]=3;
             }
             else {
-                monsterAcceleration[value][0]=0;
-                monsterpos.y=(yy*boxsize)-345-3;
+                if (mon[value]->name=="motopro" && mon[value]->act==1) {
+                    mon[value]->acceleration[1]=-1;
+                    mon[value]->act=2;
+                }
+                mon[value]->acceleration[0]=0;
+                monsterpos.y=(yy*boxsize)-345-2;
             }
         }
         else {
-            monsterAcceleration[value][0]=(monsterAcceleration[value][0]+0.3)*0.98;
-            monsterpos.y-=monsterAcceleration[value][0];
+            mon[value]->acceleration[0]=(mon[value]->acceleration[0]+0.3)*0.98;
+            monsterpos.y-=mon[value]->acceleration[0];
         }
 
-        if (monsterAcceleration[value][1]<0) {
+        if (mon[value]->acceleration[1]<0) {
             mon[value]->m_Transform.scale = glm::vec2(1.0f, 1.0f);
-            if (RLCollision(xx-1,yy,{monsterpos.x,monsterpos.y},-1,mon[value]->mon_wei)){
-                monsterAcceleration[value][1]*=-1;
+            if (RLCollision(xx-1,yy,{monsterpos.x,monsterpos.y},-1,mon[value]->mon_hei,mon[value]->mon_wei)){
+                mon[value]->acceleration[1]*=-1;
             }
         }
-        else if (monsterAcceleration[value][1]>0){
+        else if (mon[value]->acceleration[1]>0){
             mon[value]->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
-            if (RLCollision(xx+1,yy,{monsterpos.x,monsterpos.y},1,mon[value]->mon_wei)){
-                monsterAcceleration[value][1]*=-1;
+            if (RLCollision(xx+1,yy,{monsterpos.x,monsterpos.y},1,mon[value]->mon_hei,mon[value]->mon_wei)){
+                mon[value]->acceleration[1]*=-1;
             }
         }
-        monsterpos.x+=monsterAcceleration[value][1];
+        monsterpos.x+=mon[value]->acceleration[1];
     }
     else if (mon[value]->name=="fish") {
         if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,mon[value]->mon_traget)) {
             mon[value]->act=1;
         }
         if (mon[value]->act==1) {
-            monsterpos.y+=monsterAcceleration[value][0];
+            monsterpos.y+=mon[value]->acceleration[0];
+        }
+    }
+    else if (mon[value]->name=="yellowbat") {
+        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
+            mon[value]->act=1;
+            mon[value]->SetVisible(1);
+        }
+        if (mon[value]->act==1) {
+            monsterpos.x+=mon[value]->acceleration[1];
         }
     }
     else if (mon[value]->name=="box") {
@@ -122,7 +139,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
             mon[value]->act=1;
         }
         if (mon[value]->act==1) {
-            monsterpos.y+=monsterAcceleration[value][0];
+            monsterpos.y+=mon[value]->acceleration[0];
         }
     }
 
@@ -130,39 +147,51 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     if (yy<0) {
         mon[value]->SetVisible(0);
     }
-    else if (bug!=3 && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
-        mon[value]->SetVisible(0);
+
+    else if (mon[value]->name=="tatle" && mon[value]->act==1 && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
+        if (playerpos.x>monsterpos.x) {
+            mon[value]->acceleration[1]=-5;
+        }
+        else {
+            mon[value]->acceleration[1]=5;
+        }
+    }
+
+    else if (playerstate!=PlayerState::Die && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
+        if (mon[value]->name=="tatle" && mon[value]->act==0) {
+            mon[value]->acceleration[1]=0;
+            mon[value]->act=1;
+            mon[value]->SetImage(GA_RESOURCE_DIR"/res/monster5.png");
+        }
+        else if (mon[value]->name!="tatle"){
+            mon[value]->SetVisible(0);
+        }
         Acceleration=10;
         sec=25;
     }
-    // die
 
     //die plyaer
-    else if (bug!=3 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
+    else if ( (mon[value]->name!="tatle" || (mon[value]->name=="tatle" && mon[value]->act!=1)) && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
         Acceleration=12;
         mon[value]->talk=1;
         m_player->SetImage(GA_RESOURCE_DIR"/res/player4.png");
         sec=30;
-        bug=3;
+        playerstate=PlayerState::Die;
     }
     // die
-
-    mon[value]->SetPosition({monsterpos.x-zerox,monsterpos.y});
+    if (mon[value]->name!="claude") {
+        mon[value]->SetPosition({monsterpos.x-zerox,monsterpos.y});
+    }
 }
 
 void App::ResetAll() {
     for (int i = 0; i < tmp_monster; ++i) {
         m_monster[m_monster.size()-1]->SetVisible(0);
         m_monster.erase(m_monster.end()-1);
-        monsterAcceleration.erase(monsterAcceleration.end()-1);
     }
     tmp_monster=0;
     for (int i = 0; i < m_monster.size(); ++i) {
-        m_monster[i]->act=0;
-        m_monster[i]->talk=0;
-        m_monster[i]->move=0;
-        m_monster[i]->SetVisible(1);
-        m_monster[i]->ResetPosition(zerox);
+        m_monster[i]->Reset(zerox);
     }
     for (int i = 0; i < reset.size(); ++i) {
         tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(1);
@@ -181,7 +210,6 @@ void App::ResetAll() {
     m_player->ResetPosition();
     reset.clear();
 }
-
 
 void App::Die() {
     ofsetzero={0,0};
@@ -207,27 +235,63 @@ void App::Die() {
     m_Root.Update(ofsetzero);
 }
 
-void App::Update() {
-    if(sec>0) {sec-=1;}
-    if(opsec>0) {opsec-=1;}
-    ofsetzero={0,0};
+void App::UpdateTimers() {
+    if (sec > 0) sec--;
+    if (opsec > 0) opsec--;
+    ofsetzero = {0, 0};
+}
 
+void App::HandleGlobalInput(){
     if (Util::Input::IsKeyPressed(Util::Keycode::ESCAPE) || Util::Input::IfExit()) {
         m_CurrentState = State::END;
     }
 
-    if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec==0) {
-        opsec=60;
-        Acceleration=0;
-        bug=(bug+1)%2;
+    if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec == 0) {
+        opsec = 60;
+        Acceleration = 0;
+        if (playerstate==PlayerState::OP) {
+            playerstate=PlayerState::Normal;
+        }
+        else {
+            playerstate=PlayerState::OP;
+        }
     }
+}
+
+void App::Update() {
+    UpdateTimers();
+    HandleGlobalInput();
 
     auto playerpos=m_player->GetPosition();
     playerpos.x+=zerox;
-
     int xx=round((345+playerpos.x)/boxsize);
     int yy=round((345+playerpos.y)/boxsize);
 
+    //final
+    if (xx==123) {
+        m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
+        playerstate=PlayerState::Falling;
+        if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
+            m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
+            Acceleration=0;
+            playerpos.y=(yy*boxsize)-345+2;
+            playerstate=PlayerState::FinalForm;
+        }
+        else {
+            playerpos.y-=1;
+        }
+    }
+    if (playerstate==PlayerState::FinalForm) {
+        if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
+            Acceleration=0;
+            playerpos.y=(yy*boxsize)-345+2;
+            playerpos.x+=1;
+        }
+        else {
+            Acceleration=(Acceleration+0.4)*0.98;
+            playerpos.y-=Acceleration;
+        }
+    }
     ///
     //die space
     ///
@@ -243,13 +307,13 @@ void App::Update() {
         }
         if (opsec==121) {
             sec=120;
-            bug=0;
+            playerstate=PlayerState::Normal;
             m_player->SetZIndex(50);
             m_CurrentState=State::DIE;
         }
     }
 
-    if (bug==3) {
+    if (playerstate==PlayerState::Die) {
         if (sec<=0) {
             Acceleration=(Acceleration+0.4)*0.98;
             playerpos.y-=Acceleration;
@@ -259,20 +323,20 @@ void App::Update() {
             playerpos.y+=Acceleration;
         }
         if ((sec--)<=-100) {
-            bug=0;
+            playerstate=PlayerState::Normal;
             sec=120;
             Acceleration=0;
             m_CurrentState=State::DIE;
         }
     }
     /////////////////////////////////
-    if (bug!=3 && Util::Input::IsKeyPressed(Util::Keycode::O)) {
+    if (playerstate!=PlayerState::Die && Util::Input::IsKeyPressed(Util::Keycode::O)) {
         printf("%f %f\n\n",playerpos.x+zerox-112.5f,playerpos.y);
     }
 
-    if (bug!=3 && Util::Input::IsKeyPressed(Util::Keycode::A)) {
+    if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::A)) {
         m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
-        if (!(RLCollision(xx-1,yy,{playerpos.x,playerpos.y},-1,playerheight) || ((playerpos.x-zerox)-playerwidth<=-360))){
+        if (!(RLCollision(xx-1,yy,{playerpos.x,playerpos.y},-1,playerheight,playerwidth) || ((playerpos.x-zerox)-playerwidth<=-360))){
             playerpos.x-=speed;
         }
         else if (zerostart[23-yy][xx-1]==16) {
@@ -282,9 +346,9 @@ void App::Update() {
             m_player->position={((xx-1)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)};
         }
     }
-    else if (bug!=3 && Util::Input::IsKeyPressed(Util::Keycode::D)) {
+    else if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::D)) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
-        if (!(RLCollision(xx+1,yy,{playerpos.x,playerpos.y},1,playerheight) || ((playerpos.x-zerox)+playerwidth>=360))){
+        if (!(RLCollision(xx+1,yy,{playerpos.x,playerpos.y},1,playerheight,playerwidth) || ((playerpos.x-zerox)+playerwidth>=360))){
             playerpos.x+=speed;
         }
         else if (zerostart[23-yy][xx+1]==16) {
@@ -295,20 +359,20 @@ void App::Update() {
         }
     }
 
-    if (bug==1) {
+    if (playerstate==PlayerState::OP) {
         if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)){
-            if (!UDCollision(xx,yy+1,playerpos,1,speed,playerheight+2)){
+            if (!UDCollision(xx,yy+1,playerpos,1,speed,playerheight+2,playerwidth)){
                 playerpos.y+=speed;
             }
         }
         else if (Util::Input::IsKeyPressed(Util::Keycode::S)) {
-            if (!UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2)){
+            if (!UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2,playerwidth)){
                 playerpos.y-=speed;
             }
         }
     }
-    else if (bug==0) {
-        if (yy>0 && UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2) && (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE))) {
+    else if (playerstate==PlayerState::Normal) {
+        if (yy>0 && UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2,playerwidth) && (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE))) {
             sec=50;
             Acceleration=16;
             m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
@@ -329,18 +393,13 @@ void App::Update() {
         else if (Util::Input::IsKeyPressed(Util::Keycode::S)) {
             if ((xx==30 && yy==6) || (xx==31 && yy==6)){
                 opsec=300;
-                bug=2;
+                playerstate=PlayerState::Die;
             }
         }
-
-        // if ((xx==30 && yy==6) || (xx==31 && yy==6)){
-        //     opsec=300;
-        //     bug=2;
-        // }
         //////////////////////////////////
 
         else if (sec==0){
-            if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2)){
+            if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                 Acceleration=0;
                 playerpos.y=(yy*boxsize)-345+2;
@@ -361,7 +420,7 @@ void App::Update() {
             if (Acceleration>0) {Acceleration-=1;}
             else if (Acceleration<=0) {sec=0;}
 
-            if (UDCollision(xx,yy-1,playerpos,1,Acceleration,playerheight+2)){
+            if (UDCollision(xx,yy-1,playerpos,1,Acceleration,playerheight+2,playerwidth)){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                 Acceleration=0;
                 sec=0;
@@ -426,8 +485,8 @@ void App::Update() {
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
-                    monsterAcceleration.push_back({0,1});
-                     m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    m_monster[m_monster.size()-1]->acceleration={0,1};
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,4});
@@ -439,7 +498,7 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->name="star";
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(51);
-                    monsterAcceleration.push_back({0,1});
+                    m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
@@ -479,7 +538,7 @@ void App::Update() {
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/purplemushroom.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(51);
-                    monsterAcceleration.push_back({0,1});
+                    m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,4});
@@ -498,6 +557,20 @@ void App::Update() {
         if (m_monster[i]->GetVisibility() && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
+        else if (m_monster[i]->name=="yellowbat" && 100<m_monster[i]->GetPosition().x) {
+            Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
+        }
+        if (m_monster[i]->GetVisibility() && m_monster[i]->name=="tatle" && m_monster[i]->act==1 && m_monster[i]->acceleration[1]!=0) {
+            for (int u=0;u<m_monster.size();u++) {
+                if (u!=i) {
+                    if (Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
+                        m_monster[u]->SetVisible(0);
+                    }
+                }
+            }
+
+
+        }
     }
 
     for(int i=0;i<m_coin.size();i++) {
@@ -513,8 +586,14 @@ void App::Update() {
 
     //視角控制
     if(m_player->GetPosition().x>=0 && m_player->GetPosition().x<=145) {
-        ofsetzero.x+=speed;
-        zerox+=speed;
+        if (playerstate==PlayerState::FinalForm) {
+            ofsetzero.x+=1;
+            zerox+=1;
+        }
+        else {
+            ofsetzero.x+=speed;
+            zerox+=speed;
+        }
     }
 
     m_Root.Update(ofsetzero);

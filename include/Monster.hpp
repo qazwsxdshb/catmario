@@ -8,11 +8,12 @@
 class Monster : public Util::GameObject {
 public:
     std::string name="bun";
-    int time=0;
+    glm::vec2 acceleration={0,0};
+    glm::vec2 oriacceleration={0,0};
     int talk=0;
+    int time=0;
     int act=0;
     int move=0;
-    int connect=0;
     int type=1;
     int mon_hei=26;
     int mon_tragetrl=30;
@@ -43,11 +44,10 @@ public:
 
     void SetPosition(const glm::vec2& Position) { m_Transform.translation = Position; }
 
-    void SetOrigin(const glm::vec2& Position) { pos=Position;}
+    void SetOrigin(const glm::vec2& Position) {pos=Position;}
 
-    void ResetPosition(int zerox) {
-        m_Transform.translation = {pos.x-zerox,pos.y};
-    }
+    void Reset(int zerox);
+
 
 private:
     glm::vec2 pos={0,0};
