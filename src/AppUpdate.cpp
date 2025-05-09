@@ -1,6 +1,7 @@
 #include "App.hpp"
 #include "spdlog/fmt/bundled/xchar.h"
 
+#include "CollisionUtil.hpp"
 #include "Util/Input.hpp"
 #include "Util/Keycode.hpp"
 #include <thread>
@@ -110,6 +111,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         }
         monsterpos.x+=mon[value]->acceleration[1];
     }
+
     else if (mon[value]->name=="fish") {
         if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,mon[value]->mon_traget)) {
             mon[value]->act=1;
@@ -118,6 +120,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
             monsterpos.y+=mon[value]->acceleration[0];
         }
     }
+
     else if (mon[value]->name=="yellowbat") {
         if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
             mon[value]->act=1;

@@ -76,7 +76,6 @@ public:
 private:
     void ValidTask();
 
-private:
     enum class Phase {
         zero,
         start,
@@ -93,6 +92,7 @@ private:
         FinalForm = 5,
     };
 
+public:
     PlayerState playerstate= PlayerState::Normal;
     int sec=0;
     int opsec=0;

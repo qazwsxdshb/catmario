@@ -2,10 +2,10 @@
 #define MONSTER_HPP
 
 #include <string>
-
+#include <App.hpp>
 #include "Util/GameObject.hpp"
 
-class Monster : public Util::GameObject {
+class Monster : public Util::GameObject , public App{
 public:
     std::string name="bun";
     glm::vec2 acceleration={0,0};
@@ -47,7 +47,7 @@ public:
     void SetOrigin(const glm::vec2& Position) {pos=Position;}
 
     void Reset(int zerox);
-
+    void Update(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vector<std::shared_ptr<Monster>> mon);
 
 private:
     glm::vec2 pos={0,0};
