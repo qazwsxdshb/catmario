@@ -126,6 +126,8 @@ void App::Sec() {
         {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}}
     };
 
+    m_Root.Clear();
+
     // 建立地圖障礙物
     for (int x = std::size(onestart[0]) - 1; x >= 0; --x) {
         for (int y = std::size(onestart) - 1; y >= 0; --y) {
@@ -149,5 +151,5 @@ void App::Sec() {
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());
 
-    // m_CurrentState = State::UPDATE;
+    m_CurrentState = State::UPDATE;
 }

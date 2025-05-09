@@ -17,6 +17,10 @@ void Renderer::RemoveChild(std::shared_ptr<GameObject> child) {
                      m_Children.end());
 }
 
+void Renderer::Clear() {
+    m_Children.clear();
+}
+
 void Renderer::AddChildren(
     const std::vector<std::shared_ptr<GameObject>> &children) {
     m_Children.reserve(m_Children.size() + children.size());
