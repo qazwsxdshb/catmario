@@ -17,7 +17,7 @@ public:
     }
 
 private:
-    std::string imageid[2]={"/res/DieBackground","/res/Background1"};
+    std::string imageid[3]={"/res/DieBackground","/res/Background1","/res/DieBackground"};
     inline std::string ImagePath(const int phase) {
         return GA_RESOURCE_DIR + imageid[phase] + ".png";
     }
