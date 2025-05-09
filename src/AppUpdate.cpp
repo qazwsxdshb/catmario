@@ -268,7 +268,7 @@ void App::Update() {
     int yy=round((345+playerpos.y)/boxsize);
 
     //final
-    if (xx==123) {
+    if (xx==123 && yy<10) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
@@ -585,12 +585,12 @@ void App::Update() {
 
 
     //視角控制
-    if(m_player->GetPosition().x>=0 && m_player->GetPosition().x<=145) {
+    if(0<=m_player->GetPosition().x && m_player->GetPosition().x<=145) {
         if (playerstate==PlayerState::FinalForm) {
             ofsetzero.x+=1;
             zerox+=1;
         }
-        else {
+        else if (playerpos.x+zerox-112.5f<7500) {
             ofsetzero.x+=speed;
             zerox+=speed;
         }
