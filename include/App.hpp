@@ -11,6 +11,10 @@
 #include "Util/Text.hpp"
 #include "PhaseResourceManger.hpp"
 #include "Util/BGM.hpp"
+#include <fstream>
+#include <sstream>
+#include <iostream>
+#include <vector>
 
 
 class App {
