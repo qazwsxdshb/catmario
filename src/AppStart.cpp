@@ -104,8 +104,6 @@ void App::Start() {
         -1, -1, -1, 1900
     });
 
-
-
     // 障礙物類型映射
     std::unordered_map<int, ObstacleInfo> obstacleMap = {
         {1,  {"res/brock10.png", 49}},
@@ -134,6 +132,7 @@ void App::Start() {
         {24, {"res/brock8.png", 49}},
         {25, {"res/brock5.png", 48}}
     };
+
 
     // 建立地圖障礙物
     for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {

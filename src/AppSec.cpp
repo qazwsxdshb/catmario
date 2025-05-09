@@ -3,43 +3,15 @@
 #include "Util/Input.hpp"
 #include "Util/BGM.hpp"
 
-// test
-//void App::AddObstacle(const ObstacleInfo& info, glm::vec2 basePos) {
-//    auto obstacle = std::make_shared<Obstacle>(GA_RESOURCE_DIR "/" + info.path);
-//    obstacle->SetPosition(basePos + info.offset);
-//    obstacle->SetZIndex(info.zIndex);
-//    obstacle->SetVisible(info.visible);
-//    obstacle->m_Transform.scale = info.scale;
-//    m_Root.AddChild(obstacle);
-//    tmp.push_back(obstacle);
-//}
-
-//void App::AddMonster(const MonsterInfo& info) {
-//    auto monster = std::make_shared<Monster>(GA_RESOURCE_DIR "/" + info.path);
-//    monster->SetPosition(info.pos);
-//    monster->SetOrigin(info.pos);
-//    monster->SetZIndex(info.zIndex);
-//    monster->m_Transform.scale = info.scale;
-//    monster->SetVisible(info.visible);
-//    if (!info.name.empty()) monster->name = info.name;
-//    if (info.type != -1) monster->type = info.type;
-//    if (info.act != -1) monster->act = info.act;
-//    if (info.mon_wei != -1) monster->mon_wei = info.mon_wei;
-//    if (info.mon_traget != -1) monster->mon_traget = info.mon_traget;
-//    if (info.mon_tragetrl != -1) monster->mon_tragetrl = info.mon_tragetrl;
-//    if (info.mon_hei != -1) monster->mon_hei = info.mon_hei;
-//
-//    m_Root.AddChild(monster);
-//    m_monster.push_back(monster);
-//    monster->acceleration=info.acceleration;
-//    monster->oriacceleration=info.acceleration;
-//}
-
-
 
 
 void App::Sec() {
+    playerstate= PlayerState::Normal;
     zerox=0;
+    checkpoint=0;
+    tmp_monster=0;
+    m_monster.clear();
+    m_Root.Clear();
 //    // 怪物
 //    AddMonster({"res/monster3.png", {100.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
 //
@@ -100,8 +72,11 @@ void App::Sec() {
 //        "res/monster6.png", {3590-120, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-20, 0},
 //        -1, -1, -1, 1900
 //    });
+    m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
     m_player->SetPosition({-112.5f, -280.0f});
     m_player->position={-112.5f, -280.0f};
+    m_player->SetZIndex(48);
+    m_Root.AddChild(m_player);
 
 
     // 障礙物類型映射
@@ -118,6 +93,7 @@ void App::Sec() {
         {10, {"res/box.png", 48}},
         {11, {"res/brock1.png", 49}},
         {12, {"res/box.png", 49}},
+        {13, {"res/castle.png", 30}},
         {14, {"res/brock7.png", 49}},
         {15, {"res/brock4.png", 48, false}},
         {16, {"res/flag.png", 49, true, {7.0f, 12.0f}}},
@@ -132,18 +108,12 @@ void App::Sec() {
         {25, {"res/brock5.png", 48}}
     };
 
-    m_Root.Clear();
-    // playerstate=PlayerState::OP;
-    // position={};
-
-
     //copy
     for (int x = std::size(zerostart[0]) - 1; x >= 2; --x) {
         for (int y = std::size(zerostart) - 1; y >= 2; --y) {
             zerostart[y][x]=onestart[y][x];
         }
     }
-
 
     // 建立地圖障礙物
     for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {
