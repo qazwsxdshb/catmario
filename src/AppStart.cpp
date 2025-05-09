@@ -147,6 +147,7 @@ void App::Start() {
         {18, {"res/brock10.png", 49}},
         {19, {"res/brock13.png", 49}},
         {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}}
+        {21, {"res/brock2.png", 49}},
     };
 
     // 建立地圖障礙物
