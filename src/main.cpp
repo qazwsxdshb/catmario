@@ -25,6 +25,7 @@ int main(int, char**) {
                 break;
 
             case App::State::UPDATE2:
+
                 app.Sec();
             break;
 

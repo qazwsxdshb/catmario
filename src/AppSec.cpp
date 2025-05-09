@@ -39,7 +39,7 @@
 
 
 void App::Sec() {
-
+    zerox=0;
 //    // 怪物
 //    AddMonster({"res/monster3.png", {100.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
 //
@@ -100,7 +100,8 @@ void App::Sec() {
 //        "res/monster6.png", {3590-120, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-20, 0},
 //        -1, -1, -1, 1900
 //    });
-
+    m_player->SetPosition({-112.5f, -280.0f});
+    m_player->position={-112.5f, -280.0f};
 
 
     // 障礙物類型映射
@@ -127,11 +128,22 @@ void App::Sec() {
     };
 
     m_Root.Clear();
+    // playerstate=PlayerState::OP;
+    // position={};
+
+
+    //copy
+    for (int x = std::size(zerostart[0]) - 1; x >= 2; --x) {
+        for (int y = std::size(zerostart) - 1; y >= 2; --y) {
+            zerostart[y][x]=onestart[y][x];
+        }
+    }
+
 
     // 建立地圖障礙物
-    for (int x = std::size(onestart[0]) - 1; x >= 0; --x) {
-        for (int y = std::size(onestart) - 1; y >= 0; --y) {
-            int type = onestart[y][x];
+    for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {
+        for (int y = std::size(zerostart) - 1; y >= 0; --y) {
+            int type = zerostart[y][x];
             auto it = obstacleMap.find(type);
             if (it != obstacleMap.end()) {
                 glm::vec2 basePos = {

@@ -120,6 +120,7 @@ void App::Start() {
         {10, {"res/box.png", 48}},
         {11, {"res/brock1.png", 49}},
         {12, {"res/box.png", 49}},
+        {13, {"res/castle.png", 30}},
         {14, {"res/brock7.png", 49}},
         {15, {"res/brock4.png", 48, false}},
         {16, {"res/flag.png", 49, true, {7.0f, 12.0f}}},
