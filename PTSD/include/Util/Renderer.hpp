@@ -45,6 +45,7 @@ public:
      */
     void RemoveChild(std::shared_ptr<GameObject> child);
 
+    void Clear();
     /**
      * @brief Draw children according to their z-index.
      *

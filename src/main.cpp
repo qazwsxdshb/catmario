@@ -24,6 +24,10 @@ int main(int, char**) {
                 app.Update();
                 break;
 
+            case App::State::UPDATE2:
+                app.Sec();
+            break;
+
             case App::State::DIE:
                 app.Die();
                 break;

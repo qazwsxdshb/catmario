@@ -14,116 +14,96 @@ void App::AddObstacle(const ObstacleInfo& info, glm::vec2 basePos) {
     tmp.push_back(obstacle);
 }
 
+void App::AddMonster(const MonsterInfo& info) {
+    auto monster = std::make_shared<Monster>(GA_RESOURCE_DIR "/" + info.path);
+    monster->SetPosition(info.pos);
+    monster->SetOrigin(info.pos);
+    monster->SetZIndex(info.zIndex);
+    monster->m_Transform.scale = info.scale;
+    monster->SetVisible(info.visible);
+    if (!info.name.empty()) monster->name = info.name;
+    if (info.type != -1) monster->type = info.type;
+    if (info.act != -1) monster->act = info.act;
+    if (info.mon_wei != -1) monster->mon_wei = info.mon_wei;
+    if (info.mon_traget != -1) monster->mon_traget = info.mon_traget;
+    if (info.mon_tragetrl != -1) monster->mon_tragetrl = info.mon_tragetrl;
+    if (info.mon_hei != -1) monster->mon_hei = info.mon_hei;
+
+    m_Root.AddChild(monster);
+    m_monster.push_back(monster);
+    monster->acceleration=info.acceleration;
+    monster->oriacceleration=info.acceleration;
+}
+
+
+
+
 void App::Start() {
     // Util::BGM bgm(GA_RESOURCE_DIR"/sound/field.mp3");
     // bgm.Play(-1);
     // LOG_TRACE("Start");
 
-    // 初始化怪物
-    auto monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
-    monster->SetPosition({100.0f, -290.0f});
-    monster->SetZIndex(51);
-    monster->SetOrigin({-112.5f, 0.0f});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, -1});
+    // 怪物
+    AddMonster({"res/monster3.png", {100.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
 
-    // box
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock1.png");
-    monster->name="box";
-    monster->SetPosition({1700-574.5+30,-75});
-    monster->m_Transform.scale = glm::vec2(3, 1);
-    monster->SetZIndex(48);
-    monster->mon_wei=90;
-    monster->mon_traget=1024;
-    monster->mon_tragetrl=90;
-    monster->SetOrigin({1700-574.5+30,-75});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({-10, 0});
+    //
+    AddMonster({
+        "res/brock1.png", {1700 - 574.5f + 30, -75}, 48, {3.0f, 1.0f}, "box", {-10, 0},
+        -1, -1, 90, 1024, 90
+    });
+    //
 
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock10.png");
-    monster->name="box";
-    monster->type=2;
-    monster->mon_traget=60;
-    monster->mon_tragetrl=150;
-    monster->mon_wei=150;
-    monster->SetPosition({2390-574.5+60,-315});
-    monster->SetOrigin({2390-574.5+60,-315});
-    monster->SetZIndex(90);
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({-10, 0});
+    AddMonster({
+        "res/brock10.png", {2390 - 574.5f + 60, -315}, 48, {5.0f, 1.0f}, "box", {-10, 0},
+        2, -1, 150, 60, 150
+    });
 
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/brock13.png");
-    monster->name="box";
-    monster->type=2;
-    monster->mon_traget=120;
-    monster->mon_tragetrl=150;
-    monster->mon_wei=150;
-    monster->SetPosition({2390-574.5+60,-345});
-    monster->SetOrigin({2390-574.5+60,-345});
-    monster->SetZIndex(90);
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({-10, 0});
+    AddMonster({
+        "res/brock13.png", {2390 - 574.5f + 60, -345}, 48, {5.0f, 1.0f}, "box", {-10, 0},
+        2, -1, 150, 120, 150
+    });
 
+    AddMonster({
+        "res/monster6.png", {269.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
+    });
 
-    //fish
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
-    monster->name="fish";
-    monster->SetPosition({269.0f, -280.0f});
-    monster->SetZIndex(0);
-    monster->SetOrigin({269.0f, -280.0f});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({10, 0});
+    AddMonster({
+        "res/monster6.png", {1335.0f, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-15, 0}
+    });
 
-    //fish
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster6.png");
-    monster->name="fish";
-    monster->m_Transform.scale = glm::vec2(1.0f, -1.0f);
-    monster->SetPosition({1335.0f, 400.0f});
-    monster->SetZIndex(0);
-    monster->SetOrigin({1335.0f, 400.0f});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({-10,0});
+    AddMonster({
+        "res/monster4.png", {-112.5f + 1700, -280.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
+    });
 
-    //monster
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
-    monster->SetPosition({-112.5f+1600, -280.0f});
-    monster->SetZIndex(51);
-    monster->SetOrigin({-112.5f+1600, -280.0f});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, -1});
+    AddMonster({
+        "res/monster3.png", {-112.5f + 1600, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
+    });
 
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png");
-    monster->SetPosition({-112.5f+1800, -280.0f});
-    monster->SetZIndex(51);
-    monster->SetOrigin({-112.5f+1800, -280.0f});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({0,-1});
+    AddMonster({
+        "res/monster3.png", {-112.5f + 1800, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
+    });
 
-    // fish
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/yellowbat.png");
-    monster->SetPosition({4000, 100.0f});
-    monster->SetZIndex(51);
-    monster->SetOrigin({100+1611, -280});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({0, 0});
+    AddMonster({
+        "res/claude.png", {2780.0f, -60.0f}, 51, {1.0f, 1.0f}, "claude", {0, 0}, -1, -1, 86
+    });
 
-    monster = std::make_shared<Monster>(GA_RESOURCE_DIR"/res/claude.png");
-    monster->name="star";
-    monster->SetPosition({1335.0f, 400.0f});
-    monster->SetZIndex(51);
-    monster->SetOrigin({1335.0f, 400.0f});
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monsterAcceleration.push_back({0,0});
+    for (int i = 0; i < 4; ++i) {
+        AddMonster({
+            "res/monster3.png", {3013 + i * 30, 280.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
+            -1, 3, 31, 1024, i * 2 * 30
+        });
+    }
+
+    AddMonster({
+        "res/yellowbat.png", {2780 + 720, 60.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -15},
+        -1, -1, 35, 80, 650, 20, false
+    });
+
+    AddMonster({
+        "res/monster6.png", {3590-120, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-20, 0},
+        -1, -1, -1, 1900
+    });
+
 
 
     // 障礙物類型映射
@@ -146,8 +126,12 @@ void App::Start() {
         {17, {"res/brock4.png", 48, false}},
         {18, {"res/brock10.png", 49}},
         {19, {"res/brock13.png", 49}},
-        {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}}
+        {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}},
         {21, {"res/brock2.png", 49}},
+        {22, {"res/brock11.png", 49}},
+        {23, {"res/brock14.png", 49}},
+        {24, {"res/brock8.png", 49}},
+        {25, {"res/brock5.png", 48}}
     };
 
     // 建立地圖障礙物
@@ -175,150 +159,3 @@ void App::Start() {
 
     m_CurrentState = State::UPDATE;
 }
-
-// test
-
-//
-//
-// void App::Start() {
-//
-//     // Util::BGM bgm(GA_RESOURCE_DIR"/sound/field.mp3");
-//     // bgm.Play(-1);
-//     // LOG_TRACE("Start");
-//
-//     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png"));
-//     m_monster[m_monster.size()-1]->SetPosition({-112.5f, 0.0f});
-//     m_monster[m_monster.size()-1]->SetZIndex(51);
-//     m_monster[m_monster.size()-1]->SetOrigin({100,-280});
-//     m_Root.AddChild(m_monster[m_monster.size()-1]);
-//
-//     monsterAcceleration.push_back({0,1});
-//
-//     for (int x=std::size(zerostart[0]); x>=0; x--) {
-//         for (int y=std::size(zerostart); y>=0; y--) {
-//             if(zerostart[y][x] == 1) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock10.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 2) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock13.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 3) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock1.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 4) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/box.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(50);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }//饅頭
-//             else if(zerostart[y][x] == 5) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 6) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/shorttube.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) - 15, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(-22);
-//                 tmp[tmp.size()-1]->m_Transform.scale = glm::vec2(0.8f, 1.0f);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 7) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/longtube.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) - 15, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 2});
-//                 tmp[tmp.size()-1]->SetZIndex(48);
-//                 tube.push_back((tmp.size()-1));
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 8) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(48);
-//                 tmp[tmp.size()-1]->SetVisible(0);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 9) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/longtube_rotate90.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) - 16, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) - 1});
-//                 tmp[tmp.size()-1]->SetZIndex(48);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 10) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/box.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(48);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }//會移動
-//             else if(zerostart[y][x] == 11) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock1.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }//星星
-//             else if(zerostart[y][x] == 12) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/box.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }//金幣
-//             else if(zerostart[y][x] == 14) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock7.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 15) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(48);
-//                 tmp[tmp.size()-1]->SetVisible(0);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }//ㄅㄥ金幣
-//             else if(zerostart[y][x] == 16) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/flag.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2) + 7, ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2) + 12});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 17) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock4.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(48);
-//                 tmp[tmp.size()-1]->SetVisible(0);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 18) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock10.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//             else if(zerostart[y][x] == 19) {
-//                 tmp.push_back(std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/brock13.png"));
-//                 tmp[tmp.size()-1]->SetPosition({(x*boxsize)-((WINDOW_WIDTH-boxsize)/2), ((23-y)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-//                 tmp[tmp.size()-1]->SetZIndex(49);
-//                 m_Root.AddChild(tmp[tmp.size()-1]);
-//             }
-//
-//
-//
-//             position[y][x]=tmp.size()-1;
-//
-//         }
-//     }
-//
-//     m_PRM = std::make_shared<PhaseResourceManger>();
-//     m_Root.AddChildren(m_PRM->GetChildren());
-//
-//     m_CurrentState = State::UPDATE;
-// }
