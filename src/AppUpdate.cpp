@@ -262,6 +262,10 @@ void App::Update() {
     UpdateTimers();
     HandleGlobalInput();
 
+    if (Util::Input::IsKeyPressed(Util::Keycode::N)) {
+        m_CurrentState=State::UPDATE2;
+    }
+
     auto playerpos=m_player->GetPosition();
     playerpos.x+=zerox;
     int xx=round((345+playerpos.x)/boxsize);
@@ -282,6 +286,9 @@ void App::Update() {
         }
     }
     if (playerstate==PlayerState::FinalForm) {
+        if (zerostart[24-yy][xx]==100 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize)) {
+            m_CurrentState=State::UPDATE2;
+        }
         if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
             Acceleration=0;
             playerpos.y=(yy*boxsize)-345+2;
