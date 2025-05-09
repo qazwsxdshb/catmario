@@ -149,5 +149,5 @@ void App::Sec() {
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());
 
-    m_CurrentState = State::UPDATE;
+    // m_CurrentState = State::UPDATE;
 }
