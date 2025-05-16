@@ -286,7 +286,7 @@ void App::Update() {
         }
     }
     if (playerstate==PlayerState::FinalForm) {
-        if (zerostart[24-yy][xx]==100 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize)) {
+        if (zerostart[22-yy][xx]==13) {
             m_CurrentState=State::UPDATE2;
         }
         if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
@@ -602,6 +602,5 @@ void App::Update() {
             zerox+=speed;
         }
     }
-
     m_Root.Update(ofsetzero);
 }

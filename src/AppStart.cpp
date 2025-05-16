@@ -89,7 +89,7 @@ void App::Start() {
 
     for (int i = 0; i < 4; ++i) {
         AddMonster({
-            "res/monster3.png", {3013 + i * 30, 280.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
+            "res/monster3.png", {3013 + i * 30, 375.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
             -1, 3, 31, 1024, i * 2 * 30
         });
     }
@@ -103,8 +103,6 @@ void App::Start() {
         "res/monster6.png", {3590-120, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-20, 0},
         -1, -1, -1, 1900
     });
-
-
 
     // 障礙物類型映射
     std::unordered_map<int, ObstacleInfo> obstacleMap = {
@@ -120,6 +118,7 @@ void App::Start() {
         {10, {"res/box.png", 48}},
         {11, {"res/brock1.png", 49}},
         {12, {"res/box.png", 49}},
+        {13, {"res/castle.png", 30}},
         {14, {"res/brock7.png", 49}},
         {15, {"res/brock4.png", 48, false}},
         {16, {"res/flag.png", 49, true, {7.0f, 12.0f}}},
@@ -134,8 +133,14 @@ void App::Start() {
         {25, {"res/brock5.png", 48}},
         {26, {"res/box.png", 49}},
         {27, {"res/flagpole.png", 49}},
-        {28, {"res/castle.png", 48}}
+        {28, {"res/button.png", 49}},
+        {29, {"res/Tube.png", 49, true, {-14.0f, 14.0f}}},
+        {30, {"res/claude3.png", 49, true, {0.0f, -15.0f}}},
+        {31, {"res/flag_back.png", 49, true, {7.0f, 12.0f}}},
+        {32, {"res/box.png", 49}},
+        {33, {"res/longlongtube.png", 48, true, {-15.0f, -15.0f}}}
     };
+
 
     // 建立地圖障礙物
     for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {
@@ -159,6 +164,6 @@ void App::Start() {
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());
-
+    m_Root.Update(ofsetzero);
     m_CurrentState = State::UPDATE;
 }
