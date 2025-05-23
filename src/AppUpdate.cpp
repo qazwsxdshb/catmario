@@ -1,57 +1,8 @@
 #include "App.hpp"
-#include "spdlog/fmt/bundled/xchar.h"
-
-#include "CollisionUtil.hpp"
 #include "Util/Input.hpp"
 #include "Util/Keycode.hpp"
 #include <thread>
 #include <chrono>
-
-// 判斷兩個矩形 A 與 B 是否發生碰撞（矩形中心點為基準）
-bool App::Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwidth, int Bheight) {
-    int Aleft   = Ax - Awidth/2;
-    int Aright  = Ax + Awidth/2;
-    int Abottom = Ay - Aheight/2;
-    int Atop    = Ay + Aheight/2;
-
-    int Bleft   = Bx - Bwidth/2;
-    int Bright  = Bx + Bwidth/2;
-    int Bbottom = By - Bheight/2;
-    int Btop    = By + Bheight/2;
-
-    return (Aright > Bleft && Bright > Aleft && Btop > Abottom && Atop > Bbottom);
-}
-
-// 判斷玩家往左（rl=-1）或往右（rl=1）時，是否會與障礙物發生碰撞
-bool App::RLCollision(int xx,int yy,glm::vec2 playerpos,int rl,int height,int weight){
-    // right xx+1 rl=1
-    // left  xx-1 rl=-1
-    // 右移 = xx+1；左移 = xx-1（rl 決定方向）
-    // 檢查以下三個格子是否有障礙物並與玩家碰撞：
-    // 1. 玩家正前方格子（同一 row）
-    // 2. 玩家上方一格（上半身）
-    // 3. 玩家下方一格（下半身）
-    if ((zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),weight,height,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy-1][xx]!=0 && tmp[position[23-yy-1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),weight,height,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy+1][xx]!=0 && tmp[position[23-yy+1][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x+speed*rl),(int)(playerpos.y),weight,height,(xx*boxsize)-345,((yy-1)*boxsize)-345,boxsize,boxsize))
-    ){return true;}
-    return false;
-}
-
-// 判斷玩家往上（ud=1）或往下（ud=-1）跳動或掉落時，是否會與障礙物發生碰撞
-bool App::UDCollision(int xx,int yy,glm::vec2 playerpos,int ud,int speedd,int height,int weight){
-    // up    yy+1 ud=1
-    // down  yy-1 ud=-1
-    // 上移 = yy+1；下移 = yy-1（ud 決定方向）
-    // 1. 檢查玩家正上（或正下）方格子是否碰撞
-    // 2. 再加上玩家左右兩邊也可能會碰撞（寬度判定）
-    if (
-        (zerostart[23-yy][xx]!=0 && tmp[position[23-yy][xx]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),weight,height,(xx*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy][xx+1]!=0 && tmp[position[23-yy][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),weight,height,((xx+1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-        || (zerostart[23-yy][xx-1]!=0 && tmp[position[23-yy][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+(speedd*ud)),weight,height,((xx-1)*boxsize)-345,(yy*boxsize)-345,boxsize,boxsize))
-    ){return true;}
-    return false;
-}
 
 void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vector<std::shared_ptr<Monster>> mon) {
     //monster
@@ -341,12 +292,16 @@ void App::Update() {
     }
     /////////////////////////////////
     if (playerstate!=PlayerState::Die && Util::Input::IsKeyPressed(Util::Keycode::O)) {
-        printf("%f %f\n\n",playerpos.x+zerox-112.5f,playerpos.y);
+        printf("%f %f\n\n",playerpos.x+zerox,playerpos.y);
     }
+    /////////////////////////////////
 
     if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::A)) {
         m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
         if (!(RLCollision(xx-1,yy,{playerpos.x,playerpos.y},-1,playerheight,playerwidth) || ((playerpos.x-zerox)-playerwidth<=-360))){
+            playerpos.x-=speed;
+        }
+        else if (zerostart[23-yy][xx-1]==13 || zerostart[22-yy][xx-1]==13 || zerostart[24-yy][xx-1]==13) {
             playerpos.x-=speed;
         }
         else if (zerostart[23-yy][xx-1]==16) {
@@ -359,6 +314,9 @@ void App::Update() {
     else if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::D)) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         if (!(RLCollision(xx+1,yy,{playerpos.x,playerpos.y},1,playerheight,playerwidth) || ((playerpos.x-zerox)+playerwidth>=360))){
+            playerpos.x+=speed;
+        }
+        else if (zerostart[23-yy][xx+1]==13 || zerostart[22-yy][xx+1]==13 || zerostart[24-yy][xx+1]==13) {
             playerpos.x+=speed;
         }
         else if (zerostart[23-yy][xx+1]==16) {
@@ -409,18 +367,17 @@ void App::Update() {
         //////////////////////////////////
 
         else if (sec==0){
-            if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
+            if ((zerostart[24-yy][xx]!=13 && zerostart[24-yy][xx]!=16) && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                 Acceleration=0;
                 playerpos.y=(yy*boxsize)-345+2;
             }
-            else if (zerostart[24-yy][xx-1]==16) {
-                playerpos.y-=speed;
-                tmp[position[23-yy][xx-1]]->SetVisible(0);
-                checkpoint=zerox;
-                m_player->position={((xx-1)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)};
-            }
             else {
+                if (zerostart[24-yy][xx]==16) {
+                    tmp[position[23-yy][xx]]->SetVisible(0);
+                    checkpoint=zerox;
+                    m_player->position={((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)};
+                }
                 Acceleration=(Acceleration+0.4)*0.98;
                 playerpos.y-=Acceleration;
             }
@@ -600,7 +557,7 @@ void App::Update() {
             ofsetzero.x+=1;
             zerox+=1;
         }
-        else if (playerpos.x+zerox-112.5f<7500) {
+        else if (playerpos.x+zerox-112.5f<windows) {
             ofsetzero.x+=speed;
             zerox+=speed;
         }

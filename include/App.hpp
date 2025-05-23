@@ -107,6 +107,7 @@ public:
     int playerheight=34;
     int WINDOW_WIDTH=720;
     int WINDOW_HEIGHT=720;
+    int windows=0;
 
     glm::vec2 ofsetzero={0,0};
 

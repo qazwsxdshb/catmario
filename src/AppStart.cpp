@@ -161,6 +161,8 @@ void App::Start() {
         }
     }
 
+    windows=7500;
+
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());
