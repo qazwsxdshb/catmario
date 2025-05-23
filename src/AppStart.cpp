@@ -154,7 +154,7 @@ void App::Start() {
                 };
                 AddObstacle(it->second, basePos);
                 if (type == 7) {
-                    tube.push_back(tmp.size() - 1);
+                    tube.push_back(tmp.size()-1);
                 }
             }
             position[y][x] = tmp.size() - 1;

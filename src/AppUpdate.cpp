@@ -139,6 +139,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
 }
 
 void App::ResetAll() {
+    opsec=0;
     for (int i = 0; i < tmp_monster; ++i) {
         m_monster[m_monster.size()-1]->SetVisible(0);
         m_monster.erase(m_monster.end()-1);
@@ -147,6 +148,7 @@ void App::ResetAll() {
     for (int i = 0; i < m_monster.size(); ++i) {
         m_monster[i]->Reset(zerox);
     }
+    tmp[tube[2]]->SetPosition({tmp[tube[2]]->GetPosition().x,-225});
     for (int i = 0; i < reset.size(); ++i) {
         tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(1);
         zerostart[reset[i][0]][reset[i][1]]=reset[i][2];
@@ -263,8 +265,8 @@ void App::Update() {
         }
         else {
             playerpos.y+=10;
-            auto tttt=tmp[tube[3]]->GetPosition();
-            tmp[tube[3]]->SetPosition({tttt.x,tttt.y+10});
+            auto tttt=tmp[tube[2]]->GetPosition();
+            tmp[tube[2]]->SetPosition({tttt.x,tttt.y+10});
         }
         if (opsec==121) {
             sec=120;
