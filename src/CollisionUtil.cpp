@@ -1,6 +1,5 @@
 #include "CollisionUtil.hpp"
 #include "App.hpp"
-
 // 判斷兩個矩形 A 與 B 是否發生碰撞（矩形中心點為基準）
 bool CollisionUtil::Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwidth, int Bheight){
     int Aleft   = Ax - Awidth/2;
@@ -17,7 +16,7 @@ bool CollisionUtil::Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, i
 }
 
 // 判斷玩家往左（rl=-1）或往右（rl=1）時，是否會與障礙物發生碰撞
-bool CollisionUtil::RLCollision(int xx, int yy, glm::vec2 playerpos, int rl, int speed, int height, int width){
+bool CollisionUtil::RLCollision(int xx, int yy, glm::vec2 playerpos, int rl, int speed, int height, int width,std::vector<std::shared_ptr<Obstacle>> tmp,int zerostart[][],int position[][],int boxsize=30){
     // right xx+1 rl=1
     // left  xx-1 rl=-1
     // 右移 = xx+1；左移 = xx-1（rl 決定方向）
@@ -33,7 +32,7 @@ bool CollisionUtil::RLCollision(int xx, int yy, glm::vec2 playerpos, int rl, int
 }
 
 // 判斷玩家往上（ud=1）或往下（ud=-1）跳動或掉落時，是否會與障礙物發生碰撞
-bool CollisionUtil::UDCollision(int xx, int yy, glm::vec2 playerpos, int ud, int speedd, int height, int width){
+bool CollisionUtil::UDCollision(int xx, int yy, glm::vec2 playerpos, int ud, int speedd, int height, int width,std::vector<std::shared_ptr<Obstacle>> tmp,int zerostart[][],int position[][],int boxsize=30){
     // up    yy+1 ud=1
     // down  yy-1 ud=-1
     // 上移 = yy+1；下移 = yy-1（ud 決定方向）

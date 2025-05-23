@@ -8,7 +8,7 @@
 #include <chrono>
 
 // 判斷兩個矩形 A 與 B 是否發生碰撞（矩形中心點為基準）
-bool Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwidth, int Bheight) {
+bool App::Collision(int Ax, int Ay, int Awidth, int Aheight, int Bx, int By, int Bwidth, int Bheight) {
     int Aleft   = Ax - Awidth/2;
     int Aright  = Ax + Awidth/2;
     int Abottom = Ay - Aheight/2;

@@ -3,9 +3,10 @@
 
 #include <string>
 #include <App.hpp>
+#include <CollisionUtil.hpp>
 #include "Util/GameObject.hpp"
 
-class Monster : public Util::GameObject , public App{
+class Monster : public Util::GameObject , public App ,public CollisionUtil{
 public:
     std::string name="bun";
     glm::vec2 acceleration={0,0};
