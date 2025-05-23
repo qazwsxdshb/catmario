@@ -105,12 +105,20 @@ void App::Sec() {
         {22, {"res/brock11.png", 49}},
         {23, {"res/brock14.png", 49}},
         {24, {"res/brock8.png", 49}},
-        {25, {"res/brock5.png", 48}}
+        {25, {"res/brock5.png", 48}},
+        {26, {"res/box.png", 49}},
+        {27, {"res/flagpole.png", 48}},
+        {28, {"res/button.png", 49}},
+        {29, {"res/Tube.png", 49, true, {-14.0f, 14.0f}}},
+        {30, {"res/claude3.png", 49, true, {0.0f, -15.0f}}},
+        {31, {"res/flag_back.png", 49, true, {7.0f, 12.0f}}},
+        {32, {"res/box.png", 49}},
+        {33, {"res/longlongtube.png", 48, true, {-15.0f, -15.0f}}}
     };
 
     //copy
-    for (int x = std::size(zerostart[0]) - 1; x >= 2; --x) {
-        for (int y = std::size(zerostart) - 1; y >= 2; --y) {
+    for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {
+        for (int y = std::size(zerostart) - 1; y >= 0; --y) {
             zerostart[y][x]=onestart[y][x];
         }
     }

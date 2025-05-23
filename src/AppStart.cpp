@@ -89,7 +89,7 @@ void App::Start() {
 
     for (int i = 0; i < 4; ++i) {
         AddMonster({
-            "res/monster3.png", {3013 + i * 30, 280.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
+            "res/monster3.png", {3013 + i * 30, 375.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
             -1, 3, 31, 1024, i * 2 * 30
         });
     }
@@ -130,7 +130,15 @@ void App::Start() {
         {22, {"res/brock11.png", 49}},
         {23, {"res/brock14.png", 49}},
         {24, {"res/brock8.png", 49}},
-        {25, {"res/brock5.png", 48}}
+        {25, {"res/brock5.png", 48}},
+        {26, {"res/box.png", 49}},
+        {27, {"res/flagpole.png", 49}},
+        {28, {"res/button.png", 49}},
+        {29, {"res/Tube.png", 49, true, {-14.0f, 14.0f}}},
+        {30, {"res/claude3.png", 49, true, {0.0f, -15.0f}}},
+        {31, {"res/flag_back.png", 49, true, {7.0f, 12.0f}}},
+        {32, {"res/box.png", 49}},
+        {33, {"res/longlongtube.png", 48, true, {-15.0f, -15.0f}}}
     };
 
 
@@ -156,6 +164,6 @@ void App::Start() {
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());
-
+    m_Root.Update(ofsetzero);
     m_CurrentState = State::UPDATE;
 }

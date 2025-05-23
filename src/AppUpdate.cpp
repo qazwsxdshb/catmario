@@ -605,6 +605,5 @@ void App::Update() {
             zerox+=speed;
         }
     }
-
     m_Root.Update(ofsetzero);
 }
