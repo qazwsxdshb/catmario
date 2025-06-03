@@ -7,7 +7,7 @@
 
 void App::Sec() {
     playerstate= PlayerState::Normal;
-    zerox=0;
+    zerox=-110;
     checkpoint=0;
     tmp_monster=0;
     m_monster.clear();
@@ -23,6 +23,10 @@ void App::Sec() {
     AddMonster({
         "res/brock14.png", {-285, -345}, 48, {1.0f, 1.0f}, "box", {-10, 0},
         2, -1, 29, 60, 30
+    });
+    AddMonster({
+        "res/brock8.png", {195, -225}, 48, {1.0f, 1.0f}, "boxSpiked", {0, 0},
+        2, -1, 30, 30, 30
     });
     //447.500000 -223.000000
     //751.500000 -307.000000
@@ -44,13 +48,13 @@ void App::Sec() {
         {5,  {"res/brock4.png", 49}},
         {6,  {"res/shorttube.png", -22, true, {-15.0f, 0.0f}, {0.8f, 1.0f}}},
         {7,  {"res/longtube.png", 48, true, {-15.0f, -2.0f}}},
-        {8,  {"res/brock4.png", 48, false}},
+        {8,  {"res/brock5.png", 48, false}},
         {9,  {"res/longtube_rotate90.png", 48, true, {-16.0f, -1.0f}}},
         {10, {"res/box.png", 48}},
         {11, {"res/brock1.png", 49}},
         {12, {"res/box.png", 49}},
         {13, {"res/castle.png", 30}},
-        {14, {"res/brock7.png", 49}},
+        {14, {"res/brock8.png", 49}},
         {15, {"res/brock4.png", 48, false}},
         {16, {"res/flag.png", 49, true, {7.0f, 12.0f}}},
         {17, {"res/brock4.png", 48, false}},
@@ -61,7 +65,7 @@ void App::Sec() {
         // {21, {"res/brock2.png", 49}},
         // {22, {"res/brock11.png", 49}},
         // {23, {"res/brock14.png", 49}},
-        {24, {"res/brock8.png", 49}},
+        // {24, {"res/brock8.png", 49}},
         {25, {"res/brock5.png", 48,false}},
         {26, {"res/box.png", 49}},
         {27, {"res/flagpole.png", 48}},
@@ -87,6 +91,7 @@ void App::Sec() {
             auto it = obstacleMap.find(type);
             if (it != obstacleMap.end()) {
                 glm::vec2 basePos = {
+                    // (x * boxsize) - ((WINDOW_WIDTH - boxsize) / 2),
                     (x * boxsize) - ((WINDOW_WIDTH - boxsize) / 2),
                     ((23 - y) * boxsize) - ((WINDOW_HEIGHT - boxsize) / 2)
                 };
@@ -103,6 +108,6 @@ void App::Sec() {
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());
-
+    m_Root.Update({zerox,0});
     m_CurrentState = State::UPDATE;
 }

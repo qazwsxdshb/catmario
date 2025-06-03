@@ -19,6 +19,9 @@ void Monster::Reset(int zerox) {
     move=0;
     acceleration=oriacceleration;
     SetVisible(1);
+    if (name=="boxSpiked") {
+        SetImage(GA_RESOURCE_DIR"/res/brock8.png");
+    }
     if (name=="yellowbat") {
         SetVisible(0);
     }
@@ -139,7 +142,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         }
     }
 
-    else if (playerstate!=PlayerState::Die && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
+    else if (playerstate!=PlayerState::Die && mon[value]->name!="boxSpiked" && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
         if (mon[value]->name=="tatle" && mon[value]->act==0) {
             mon[value]->acceleration[1]=0;
             mon[value]->act=1;
@@ -153,7 +156,10 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     }
 
     //die plyaer
-    else if ( (mon[value]->name!="tatle" || (mon[value]->name=="tatle" && mon[value]->act!=1)) && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
+    else if ((mon[value]->name!="tatle" || (mon[value]->name=="tatle" && mon[value]->act!=1)) && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
+        if (mon[value]->name=="boxSpiked") {
+            mon[value]->SetImage(GA_RESOURCE_DIR"/res/rock.png");
+        }
         Acceleration=12;
         mon[value]->talk=1;
         m_player->SetImage(GA_RESOURCE_DIR"/res/player4.png");
