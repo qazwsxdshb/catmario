@@ -101,7 +101,7 @@ void App::Update() {
     int yy=round((345+playerpos.y)/boxsize);
 
     //final
-    if (xx==123 && yy<10) {
+    if (xx==122 && yy<10) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
