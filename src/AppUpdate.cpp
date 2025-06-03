@@ -4,140 +4,6 @@
 #include <thread>
 #include <chrono>
 
-void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vector<std::shared_ptr<Monster>> mon) {
-    //monster
-    monsterpos.x+=zerox;
-    int xx=round((345+monsterpos.x)/boxsize);
-    int yy=round((345+monsterpos.y)/boxsize);
-
-    if (mon[value]->talk==1 && mon[value]->name!="box") {
-        text->SetColor(Util::Color::FromName(Util::Colors::BLACK));
-        text->SetPosition({monsterpos.x+70-zerox,monsterpos.y+20});
-        text->Settext("loser");
-    }
-    if (mon[value]->act==3) {
-        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
-            mon[value]->act=1;
-        }
-    }
-    if (mon[value]->act!=3 && mon[value]->name!="fish" && mon[value]->name!="yellowbat" && mon[value]->name!="box"){
-        if (mon[value]->time>0) {
-            mon[value]->acceleration[0]-=1;
-            mon[value]->time-=1;
-        }
-        if (mon[value]->time!=0) {
-            monsterpos.y+=mon[value]->acceleration[0];
-        }
-        else if(yy>0 && UDCollision(xx,yy-1,monsterpos,-1,mon[value]->acceleration[0],mon[value]->mon_hei+2,mon[value]->mon_wei)){
-            if(mon[value]->GetName()=="star"){
-                mon[value]->acceleration[0]=15;
-                mon[value]->time=15;
-                mon[value]->acceleration[1]=3;
-            }
-            else {
-                if (mon[value]->name=="motopro" && mon[value]->act==1) {
-                    mon[value]->acceleration[1]=-1;
-                    mon[value]->act=2;
-                }
-                mon[value]->acceleration[0]=0;
-                monsterpos.y=(yy*boxsize)-345-2;
-            }
-        }
-        else {
-            mon[value]->acceleration[0]=(mon[value]->acceleration[0]+0.3)*0.98;
-            monsterpos.y-=mon[value]->acceleration[0];
-        }
-
-        if (mon[value]->acceleration[1]<0) {
-            mon[value]->m_Transform.scale = glm::vec2(1.0f, 1.0f);
-            if (RLCollision(xx-1,yy,{monsterpos.x,monsterpos.y},-1,mon[value]->mon_hei,mon[value]->mon_wei)){
-                mon[value]->acceleration[1]*=-1;
-            }
-        }
-        else if (mon[value]->acceleration[1]>0){
-            mon[value]->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
-            if (RLCollision(xx+1,yy,{monsterpos.x,monsterpos.y},1,mon[value]->mon_hei,mon[value]->mon_wei)){
-                mon[value]->acceleration[1]*=-1;
-            }
-        }
-        monsterpos.x+=mon[value]->acceleration[1];
-    }
-
-    else if (mon[value]->name=="fish") {
-        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),boxsize,mon[value]->mon_traget)) {
-            mon[value]->act=1;
-        }
-        if (mon[value]->act==1) {
-            monsterpos.y+=mon[value]->acceleration[0];
-        }
-    }
-
-    else if (mon[value]->name=="yellowbat") {
-        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
-            mon[value]->act=1;
-            mon[value]->SetVisible(1);
-        }
-        if (mon[value]->act==1) {
-            monsterpos.x+=mon[value]->acceleration[1];
-        }
-    }
-    else if (mon[value]->name=="box") {
-        if (mon[value]->act!=1 && ((mon[value]->type==1 && playerpos.y<monsterpos.y) || (mon[value]->type==2 && playerpos.y>monsterpos.y)) && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
-            for (int ii=0;ii<(int)(mon[value]->mon_wei/boxsize);ii++) {
-                int xxx=round((345+m_monster[value]->GetPosition().x+zerox)/boxsize+ii-(int)(mon[value]->mon_wei/boxsize)/2);
-                int yyy=round((345+m_monster[value]->GetPosition().y)/boxsize);
-                zerostart[23-yyy][xxx]=0;
-                tmp[position[23-yyy][xxx]]->SetVisible(0);
-                reset.push_back({23-yyy,xxx,3});
-            }
-            mon[value]->act=1;
-        }
-        if (mon[value]->act==1) {
-            monsterpos.y+=mon[value]->acceleration[0];
-        }
-    }
-
-    // die mon
-    if (yy<0) {
-        mon[value]->SetVisible(0);
-    }
-
-    else if (mon[value]->name=="tatle" && mon[value]->act==1 && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
-        if (playerpos.x>monsterpos.x) {
-            mon[value]->acceleration[1]=-5;
-        }
-        else {
-            mon[value]->acceleration[1]=5;
-        }
-    }
-
-    else if (playerstate!=PlayerState::Die && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
-        if (mon[value]->name=="tatle" && mon[value]->act==0) {
-            mon[value]->acceleration[1]=0;
-            mon[value]->act=1;
-            mon[value]->SetImage(GA_RESOURCE_DIR"/res/monster5.png");
-        }
-        else if (mon[value]->name!="tatle"){
-            mon[value]->SetVisible(0);
-        }
-        Acceleration=10;
-        sec=25;
-    }
-
-    //die plyaer
-    else if ( (mon[value]->name!="tatle" || (mon[value]->name=="tatle" && mon[value]->act!=1)) && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
-        Acceleration=12;
-        mon[value]->talk=1;
-        m_player->SetImage(GA_RESOURCE_DIR"/res/player4.png");
-        sec=30;
-        playerstate=PlayerState::Die;
-    }
-    // die
-    if (mon[value]->name!="claude") {
-        mon[value]->SetPosition({monsterpos.x-zerox,monsterpos.y});
-    }
-}
-
 void App::ResetAll() {
     opsec=0;
     for (int i = 0; i < tmp_monster; ++i) {
@@ -202,6 +68,13 @@ void App::HandleGlobalInput(){
         m_CurrentState = State::END;
     }
 
+    /////////////////////////////////
+    if (playerstate!=PlayerState::Die && Util::Input::IsKeyPressed(Util::Keycode::O)) {
+        auto playerpos=m_player->GetPosition();
+        printf("%f %f\n\n",playerpos.x+zerox,playerpos.y);
+    }
+    /////////////////////////////////
+
     if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec == 0) {
         opsec = 60;
         Acceleration = 0;
@@ -231,7 +104,7 @@ void App::Update() {
     if (xx==123 && yy<10) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
-        if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
+        if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
             m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
             Acceleration=0;
             playerpos.y=(yy*boxsize)-345+2;
@@ -245,7 +118,7 @@ void App::Update() {
         if (zerostart[22-yy][xx]==13) {
             m_CurrentState=State::UPDATE2;
         }
-        if (UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
+        if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
             Acceleration=0;
             playerpos.y=(yy*boxsize)-345+2;
             playerpos.x+=1;
@@ -292,11 +165,6 @@ void App::Update() {
             m_CurrentState=State::DIE;
         }
     }
-    /////////////////////////////////
-    if (playerstate!=PlayerState::Die && Util::Input::IsKeyPressed(Util::Keycode::O)) {
-        printf("%f %f\n\n",playerpos.x+zerox,playerpos.y);
-    }
-    /////////////////////////////////
 
     if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::A)) {
         m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
@@ -512,6 +380,20 @@ void App::Update() {
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,4});
                 }
+                else if (zerostart[23-yy-1][xx]==26 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
+
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/redmushroom.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->SetZIndex(52);
+                    m_monster[m_monster.size()-1]->name="redmushroom";
+                    m_monster[m_monster.size()-1]->acceleration={0,1};
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    tmp_monster+=1;
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,4});
+                }
             }
             playerpos.y+=Acceleration;
         }
@@ -537,8 +419,16 @@ void App::Update() {
                     }
                 }
             }
-
-
+        }
+        if (m_monster[i]->GetVisibility() && m_monster[i]->name=="redmushroom") {
+            for (int u=0;u<m_monster.size();u++) {
+                if (u!=i) {
+                    if (Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
+                        m_monster[u]->m_Transform.scale = glm::vec2(3.0f,3.0f);
+                        m_monster[i]->SetVisible(0);
+                    }
+                }
+            }
         }
     }
 

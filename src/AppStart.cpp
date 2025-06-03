@@ -68,7 +68,8 @@ void App::Start() {
     });
 
     AddMonster({
-        "res/monster6.png", {1335.0f, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-15, 0}
+        "res/monster6.png", {1335.0f, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-15, 0},
+        -1, -1, -1, 1900
     });
 
     AddMonster({

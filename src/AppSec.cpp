@@ -12,66 +12,22 @@ void App::Sec() {
     tmp_monster=0;
     m_monster.clear();
     m_Root.Clear();
-//    // 怪物
-//    AddMonster({"res/monster3.png", {100.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
-//
-//    //
-//    AddMonster({
-//        "res/brock1.png", {1700 - 574.5f + 30, -75}, 48, {3.0f, 1.0f}, "box", {-10, 0},
-//        -1, -1, 90, 1024, 90
-//    });
-//    //
-//
-//    AddMonster({
-//        "res/brock10.png", {2390 - 574.5f + 60, -315}, 48, {5.0f, 1.0f}, "box", {-10, 0},
-//        2, -1, 150, 60, 150
-//    });
-//
-//    AddMonster({
-//        "res/brock13.png", {2390 - 574.5f + 60, -345}, 48, {5.0f, 1.0f}, "box", {-10, 0},
-//        2, -1, 150, 120, 150
-//    });
-//
-//    AddMonster({
-//        "res/monster6.png", {269.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
-//    });
-//
-//    AddMonster({
-//        "res/monster6.png", {1335.0f, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-15, 0}
-//    });
-//
-//    AddMonster({
-//        "res/monster4.png", {-112.5f + 1700, -280.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
-//    });
-//
-//    AddMonster({
-//        "res/monster3.png", {-112.5f + 1600, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
-//    });
-//
-//    AddMonster({
-//        "res/monster3.png", {-112.5f + 1800, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
-//    });
-//
-//    AddMonster({
-//        "res/claude.png", {2780.0f, -60.0f}, 51, {1.0f, 1.0f}, "claude", {0, 0}, -1, -1, 86
-//    });
-//
-//    for (int i = 0; i < 4; ++i) {
-//        AddMonster({
-//            "res/monster3.png", {3013 + i * 30, 280.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
-//            -1, 3, 31, 1024, i * 2 * 30
-//        });
-//    }
-//
-//    AddMonster({
-//        "res/yellowbat.png", {2780 + 720, 60.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -15},
-//        -1, -1, 35, 80, 650, 20, false
-//    });
-//
-//    AddMonster({
-//        "res/monster6.png", {3590-120, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-20, 0},
-//        -1, -1, -1, 1900
-//    });
+
+    // 怪物
+    // AddMonster({"res/monster3.png", {0.0f, -290.0f}, 51, {3.0f, 3.0f}, "", {0, -1}});
+
+    AddMonster({
+        "res/brock11.png", {-285, -315}, 48, {1.0f, 1.0f}, "box", {-10, 0},
+        2, -1, 29, 30, 30
+    });
+    AddMonster({
+        "res/brock14.png", {-285, -345}, 48, {1.0f, 1.0f}, "box", {-10, 0},
+        2, -1, 29, 60, 30
+    });
+    //447.500000 -223.000000
+    //751.500000 -307.000000
+    //751.500000 -339.000000
+    //
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
     m_player->SetPosition({-112.5f, -280.0f});
     m_player->position={-112.5f, -280.0f};
@@ -81,9 +37,9 @@ void App::Sec() {
 
     // 障礙物類型映射
     std::unordered_map<int, ObstacleInfo> obstacleMap = {
-        {1,  {"res/brock10.png", 49}},
-        {2,  {"res/brock13.png", 49}},
-        {3,  {"res/brock1.png", 49}},
+        {1,  {"res/brock11.png", 49}},
+        {2,  {"res/brock14.png", 49}},
+        {3,  {"res/brock2.png", 49}},
         {4,  {"res/box.png", 50}},
         {5,  {"res/brock4.png", 49}},
         {6,  {"res/shorttube.png", -22, true, {-15.0f, 0.0f}, {0.8f, 1.0f}}},
@@ -101,11 +57,12 @@ void App::Sec() {
         {18, {"res/brock10.png", 49}},
         {19, {"res/brock13.png", 49}},
         {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}},
-        {21, {"res/brock2.png", 49}},
-        {22, {"res/brock11.png", 49}},
-        {23, {"res/brock14.png", 49}},
+
+        // {21, {"res/brock2.png", 49}},
+        // {22, {"res/brock11.png", 49}},
+        // {23, {"res/brock14.png", 49}},
         {24, {"res/brock8.png", 49}},
-        {25, {"res/brock5.png", 48}},
+        {25, {"res/brock5.png", 48,false}},
         {26, {"res/box.png", 49}},
         {27, {"res/flagpole.png", 48}},
         {28, {"res/button.png", 49}},
