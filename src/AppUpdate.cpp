@@ -168,7 +168,7 @@ void App::Update() {
 
     if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::A)) {
         m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
-        if (!(RLCollision(xx-1,yy,{playerpos.x,playerpos.y},-1,playerheight,playerwidth) || ((playerpos.x-zerox)-playerwidth<=-360))){
+        if (!(RLCollision(xx-1,yy,{playerpos.x,playerpos.y},-1,playerheight,playerwidth) || ((playerpos.x-zerox)-playerwidth<=-(int)(500/2)))){
             playerpos.x-=speed;
         }
         else if (zerostart[23-yy][xx-1]==13 || zerostart[22-yy][xx-1]==13 || zerostart[24-yy][xx-1]==13) {
@@ -183,7 +183,7 @@ void App::Update() {
     }
     else if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::D)) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
-        if (!(RLCollision(xx+1,yy,{playerpos.x,playerpos.y},1,playerheight,playerwidth) || ((playerpos.x-zerox)+playerwidth>=360))){
+        if (!(RLCollision(xx+1,yy,{playerpos.x,playerpos.y},1,playerheight,playerwidth) || ((playerpos.x-zerox)+playerwidth>=(int)(500/2)))){
             playerpos.x+=speed;
         }
         else if (zerostart[23-yy][xx+1]==13 || zerostart[22-yy][xx+1]==13 || zerostart[24-yy][xx+1]==13) {
