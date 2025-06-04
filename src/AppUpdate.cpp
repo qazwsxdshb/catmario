@@ -19,7 +19,7 @@ void App::ResetAll() {
         tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(1);
         zerostart[reset[i][0]][reset[i][1]]=reset[i][2];
         tmp[position[reset[i][0]][reset[i][1]]]->posup=0;
-        if (reset[i][2]==4 || reset[i][2]==12) {
+        if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetImage(GA_RESOURCE_DIR"/res/box.png");
         }
         if(reset[i][2]==8 || reset[i][2]==15) {
@@ -148,6 +148,27 @@ void App::Update() {
             m_CurrentState=State::DIE;
         }
     }
+
+
+    if (m_player->gaint==1) {
+        printf("%d %d\n",xx,yy);
+
+        if (Util::Input::IsKeyPressed(Util::Keycode::A)) {
+            m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
+            playerpos.x-=speed;
+        }
+        else if (Util::Input::IsKeyPressed(Util::Keycode::D)) {
+            m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
+            playerpos.x+=speed;
+        }
+        tmp[position[23-yy][xx+1]]->SetVisible(0);
+        tmp[position[23-yy][xx]]->SetVisible(0);
+        tmp[position[23-yy][xx-1]]->SetVisible(0);
+        reset.push_back({23-yy,xx+1,zerostart[23-yy][xx+1]});
+        reset.push_back({23-yy,xx,zerostart[23-yy][xx]});
+        reset.push_back({23-yy,xx-1,zerostart[23-yy][xx-1]});
+    }
+
 
     if (playerstate==PlayerState::Die) {
         if (sec<=0) {
@@ -378,7 +399,7 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
-                    reset.push_back({22-yy,xx,4});
+                    reset.push_back({22-yy,xx,17});
                 }
                 else if (zerostart[23-yy-1][xx]==26 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
@@ -392,7 +413,7 @@ void App::Update() {
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
-                    reset.push_back({22-yy,xx,4});
+                    reset.push_back({22-yy,xx,26});
                 }
             }
             playerpos.y+=Acceleration;
@@ -411,7 +432,7 @@ void App::Update() {
         else if (m_monster[i]->name=="yellowbat" && 100<m_monster[i]->GetPosition().x) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
-        if (m_monster[i]->GetVisibility() && m_monster[i]->name=="tatle" && m_monster[i]->act==1 && m_monster[i]->acceleration[1]!=0) {
+        if (m_monster[i]->GetVisibility() && m_monster[i]->name=="tatle" && m_monster[i]->act>=1 && m_monster[i]->acceleration[1]!=0) {
             for (int u=0;u<m_monster.size();u++) {
                 if (u!=i) {
                     if (Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
@@ -424,7 +445,7 @@ void App::Update() {
             for (int u=0;u<m_monster.size();u++) {
                 if (u!=i) {
                     if (Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
-                        m_monster[u]->m_Transform.scale = glm::vec2(3.0f,3.0f);
+                        m_monster[u]->mon_wei*=3;
                         m_monster[i]->SetVisible(0);
                     }
                 }

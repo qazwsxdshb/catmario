@@ -7,6 +7,7 @@
 
 class Character : public Util::GameObject {
 public:
+    int gaint=0;
     glm::vec2 position={0,0};
 
     explicit Character(const std::string& ImagePath);
@@ -30,7 +31,10 @@ public:
 
     void SetPosition(const glm::vec2& Position) { m_Transform.translation = Position; }
 
-    void ResetPosition() { m_Transform.translation = position; }
+    void ResetPosition() {
+        gaint=0;
+        m_Transform.translation = position;
+    }
 
 private:
 

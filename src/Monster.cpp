@@ -134,12 +134,21 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     }
 
     else if (mon[value]->name=="tatle" && mon[value]->act==1 && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
+        printf("aaa");
         if (playerpos.x>monsterpos.x) {
             mon[value]->acceleration[1]=-5;
         }
         else {
             mon[value]->acceleration[1]=5;
         }
+        mon[value]->act=2;
+    }
+
+    else if (mon[value]->name=="redmushroom" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
+        m_player->SetImage(GA_RESOURCE_DIR"/res/giant.png");
+        m_player->gaint=1;
+        mon[value]->SetVisible(0);
+        playerstate=PlayerState::Die;
     }
 
     else if (playerstate!=PlayerState::Die && mon[value]->name!="boxSpiked" && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {

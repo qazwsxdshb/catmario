@@ -10,6 +10,9 @@ void App::Sec() {
     zerox=-110;
     checkpoint=0;
     tmp_monster=0;
+    tmp.clear();
+    tube.clear();
+    reset.clear();
     m_monster.clear();
     m_Root.Clear();
 
