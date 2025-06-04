@@ -21,11 +21,11 @@ void App::Sec() {
 
     AddMonster({
         "res/brock11.png", {-285, -315}, 48, {1.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 29, 30, 30
+        2, -1, 30, 60, 30
     });
     AddMonster({
         "res/brock14.png", {-285, -345}, 48, {1.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 29, 60, 30
+        2, -1, 30, 90, 30
     });
     AddMonster({
         "res/brock8.png", {195, -225}, 48, {1.0f, 1.0f}, "boxSpiked", {0, 0},

@@ -432,7 +432,7 @@ void App::Update() {
         else if (m_monster[i]->name=="yellowbat" && 100<m_monster[i]->GetPosition().x) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
-        if (m_monster[i]->GetVisibility() && m_monster[i]->name=="tatle" && m_monster[i]->act>=1 && m_monster[i]->acceleration[1]!=0) {
+            if (m_monster[i]->GetVisibility() && m_monster[i]->name=="tatle" && m_monster[i]->act>=1 && m_monster[i]->acceleration[1]!=0) {
             for (int u=0;u<m_monster.size();u++) {
                 if (u!=i) {
                     if (Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
@@ -445,7 +445,9 @@ void App::Update() {
             for (int u=0;u<m_monster.size();u++) {
                 if (u!=i) {
                     if (Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
-                        m_monster[u]->mon_wei*=3;
+                        // m_monster[u]->mon_wei*=2;
+                        m_monster[u]->gaint=1;
+                        m_monster[u]->SetImage(GA_RESOURCE_DIR"/res/bigmonster3.png");
                         m_monster[i]->SetVisible(0);
                     }
                 }
