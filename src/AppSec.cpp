@@ -70,7 +70,13 @@ void App::Sec() {
         {30, {"res/claude3.png", 49, true, {0.0f, -15.0f}}},
         {31, {"res/flag_back.png", 49, true, {7.0f, 12.0f}}},
         {32, {"res/box.png", 49}},
-        {33, {"res/longlongtube.png", 48, true, {-15.0f, -15.0f}}}
+        {33, {"res/longlongtube.png", 48, true, {-15.0f, -15.0f}}},
+        {34, {"res/box.png", 50}},
+        {35, {"res/note2.png", 48, false}},
+        {36, {"res/yellowbat.png", 49, true, {0.0f, 12.0f}}},
+        {37, {"res/greenbat.png", 49, true, {0.0f, 12.0f}}},
+        {38, {"res/box.png", 50}},
+        {39, {"res/box.png", 49}},
     };
 
     //copy
