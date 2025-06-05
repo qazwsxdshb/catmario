@@ -153,11 +153,11 @@ void App::Update() {
     if (m_player->gaint==1) {
         printf("%d %d\n",xx,yy);
 
-        if (Util::Input::IsKeyPressed(Util::Keycode::A)) {
+        if (Util::Input::IsKeyPressed(Util::Keycode::A) && yy>0) {
             m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
             playerpos.x-=speed;
         }
-        else if (Util::Input::IsKeyPressed(Util::Keycode::D)) {
+        else if (Util::Input::IsKeyPressed(Util::Keycode::D) && yy>0) {
             m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
             playerpos.x+=speed;
         }

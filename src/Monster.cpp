@@ -153,7 +153,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
             mon[value]->act=1;
         }
         if (mon[value]->act==1) {
-            if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei+4) && playerpos.y>(monsterpos.y)) {
+            if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei+8) && playerpos.y>(monsterpos.y)) {
                 if ((Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE))) {
                     sec=50;
                     Acceleration=16;
@@ -162,7 +162,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
                     Acceleration=0;
                 }
             }
-            monsterpos.y+=(mon[value]->acceleration[0]/5);
+            monsterpos.y+=(mon[value]->acceleration[0]/4);
         }
     }
 
