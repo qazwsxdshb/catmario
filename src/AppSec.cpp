@@ -8,7 +8,7 @@
 void App::Sec() {
     playerstate= PlayerState::Normal;
     zerox=-110;
-    checkpoint=0;
+    checkpoint=-110;
     tmp_monster=0;
     tmp.clear();
     tube.clear();
@@ -17,27 +17,65 @@ void App::Sec() {
     m_Root.Clear();
 
     // 怪物
-    // AddMonster({"res/monster3.png", {0.0f, -290.0f}, 51, {3.0f, 3.0f}, "", {0, -1}});
 
     AddMonster({
-        "res/brock11.png", {-285, -315}, 48, {1.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 30, 60, 30
+        "res/brock11.png", {-285, -315}, 48, {1.0f, 1.0f}, "box", {-9, 0},
+        2, -1, 30, 32, 25
     });
     AddMonster({
-        "res/brock14.png", {-285, -345}, 48, {1.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 30, 90, 30
+        "res/brock14.png", {-285, -345}, 48, {1.0f, 1.0f}, "box", {-9, 0},
+        2, -1, 30, 62, 25
     });
+    AddMonster({"res/monster3.png", {-45.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
+    AddMonster({"res/monster3.png", { 15.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
+
     AddMonster({
         "res/brock8.png", {195, -225}, 48, {1.0f, 1.0f}, "boxSpiked", {0, 0},
         2, -1, 30, 30, 30
     });
-    //447.500000 -223.000000
-    //751.500000 -307.000000
-    //751.500000 -339.000000
-    //
+
+    AddMonster({"res/monster3.png", { 375.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
+
+    AddMonster({
+        "res/brock11.png", {375, -315}, 48, {1.0f, 1.0f}, "box", {-9, 0},
+        2, -1, 30, 32, 25
+    });
+    AddMonster({
+        "res/brock14.png", {370, -345}, 48, {1.0f, 1.0f}, "box", {-9, 0},
+        2, -1, 30, 62, 25
+    });
+
+    AddMonster({
+        "res/monster4.png", {515.0, -223.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
+    });
+    AddMonster({"res/monster3.png", { 735.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
+    AddMonster({"res/monster3.png", { 765.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
+    AddMonster({"res/monster3.png", { 795.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
+
+
+    AddMonster({
+        "res/monster7.png", { 975.0f, -330.0f}, 51, {1.0f, 1.0f}, "king", {15, -2},
+        -1, 3, 31, 1024,90
+    });
+
+    AddMonster({
+        "res/claude2.png", {1215.0f, 15.0f}, 51, {1.0f, 1.0f}, "claude", {0, 0}, -1, -1, 86
+    });
+
+    AddMonster({
+        "res/catfront.png", { 1290.0f, -210.0f}, 51, {1.0f, 1.0f}, "king", {15, 0},
+        -1, 3, 31, 1024,210,26,2,2
+    });
+
+    AddMonster({
+        "res/brock11.png", {1635.0f ,15.0f}, 48, {1.0f, 1.0f}, "box", {-9, 0},
+        2, -1, 30, 32, 25
+    });
+
+
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
-    m_player->SetPosition({-112.5f, -280.0f});
-    m_player->position={-112.5f, -280.0f};
+    m_player->SetPosition({-285.0f, 60.0f});
+    m_player->position={-175.0f, 60.0f};
     m_player->SetZIndex(48);
     m_Root.AddChild(m_player);
 
@@ -64,12 +102,8 @@ void App::Sec() {
         {18, {"res/brock10.png", 49}},
         {19, {"res/brock13.png", 49}},
         {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}},
+        {21,  {"res/brock5.png", 48, false}},
 
-        // {21, {"res/brock2.png", 49}},
-        // {22, {"res/brock11.png", 49}},
-        // {23, {"res/brock14.png", 49}},
-        // {24, {"res/brock8.png", 49}},
-        {25, {"res/brock5.png", 48,false}},
         {26, {"res/box.png", 49}},
         {27, {"res/flagpole.png", 48}},
         {28, {"res/button.png", 49}},

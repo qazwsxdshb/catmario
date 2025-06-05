@@ -28,6 +28,8 @@ void App::AddMonster(const MonsterInfo& info) {
     if (info.mon_traget != -1) monster->mon_traget = info.mon_traget;
     if (info.mon_tragetrl != -1) monster->mon_tragetrl = info.mon_tragetrl;
     if (info.mon_hei != -1) monster->mon_hei = info.mon_hei;
+    if (info.mon_mul != -1) monster->mon_mul = info.mon_mul;
+    if (info.life != -1) monster->life = info.life;
 
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
