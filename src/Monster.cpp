@@ -226,6 +226,10 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         mon[value]->SetVisible(0);
     }
 
+    else if (mon[value]->name=="greenball" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul)){
+        fireball=1;
+        mon[value]->SetVisible(0);
+    }
     else if (mon[value]->name=="tatle" && mon[value]->act==1 && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei)) {
         if (playerpos.x>monsterpos.x) {
             mon[value]->acceleration[1]=-5;

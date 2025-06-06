@@ -15,7 +15,7 @@ void App::Sec() {
     reset.clear();
     m_monster.clear();
     m_Root.Clear();
-    level++;
+    level=2;
     // 怪物
 
     AddMonster({
@@ -76,6 +76,8 @@ void App::Sec() {
         "res/monster7.png", { 2175.0f, -165.0f}, 51, {1.0f, 1.0f}, "king2", {0, -1}
     });
 
+    AddMonster({"res/greenball.png", {2535.0f, -225.0f}, 51, {1.0f, 1.0f}, "greenball", {0, 0}});
+
     AddMonster({
         "res/fireball.png", { 2725.0f, -163.0f}, 51, {1.0f, 1.0f}, "fireball", {20, -1},
         -1, 3, 31, 1024,210,26,1,2
@@ -106,6 +108,12 @@ void App::Sec() {
     m_player->position={-175.0f, 60.0f};
     m_player->SetZIndex(48);
     m_Root.AddChild(m_player);
+
+    text = std::make_shared<Textt>();
+    text->SetPosition({0, 0});
+    text->SetZIndex(70);
+    text->Settext(" ");
+    m_Root.AddChild(text);
 
 
     // 障礙物類型映射
@@ -143,8 +151,8 @@ void App::Sec() {
     };
 
     //copy
-    for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {
-        for (int y = std::size(zerostart) - 1; y >= 0; --y) {
+    for (int x = std::size(onestart[0]) - 1; x >= 0; --x) {
+        for (int y = std::size(onestart) - 1; y >= 0; --y) {
             zerostart[y][x]=onestart[y][x];
         }
     }
@@ -169,7 +177,7 @@ void App::Sec() {
         }
     }
 
-    windows=8000;
+    windows=8130;
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());

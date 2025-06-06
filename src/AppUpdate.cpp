@@ -6,8 +6,9 @@
 
 void App::ResetAll() {
     opsec=0;
+    fireball=-1;
     for (int i = 0; i < tmp_monster; ++i) {
-        m_monster[m_monster.size()-1]->SetVisible(0);
+        m_monster[m_monster.size()-1]->SetVisible(false);
         m_monster.erase(m_monster.end()-1);
     }
     tmp_monster=0;
@@ -60,6 +61,7 @@ void App::Die() {
 void App::UpdateTimers() {
     if (sec > 0) sec--;
     if (opsec > 0) opsec--;
+    if (fireball > 0) fireball--;
     ofsetzero = {0, 0};
 }
 
@@ -439,6 +441,14 @@ void App::Update() {
 
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
+    if (fireball==0){
+        fireball=10;
+        AddMonster({
+            "res/fireball.png", { 2725.0f-zerox, -163.0f}, 51, {1.0f, 1.0f}, "fireball", {20, (((double)rand())/RAND_MAX)*8-4},
+            -1, 3, 31, 1024,600,26,1,2
+        });
+        tmp_monster+=1;
+    }
     for(int i=0;i<m_monster.size();i++) {
         if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+WINDOW_WIDTH/2) {
             m_monster[i]->move=1;
