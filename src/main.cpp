@@ -14,7 +14,7 @@ int main(int, char**) {
 
             case App::State::ZEROUPDATE:
                 app.ZeroUpdate();
-            break;
+                break;
 
             case App::State::START:
                 app.Start();
@@ -25,9 +25,8 @@ int main(int, char**) {
                 break;
 
             case App::State::UPDATE2:
-
                 app.Sec();
-            break;
+                break;
 
             case App::State::DIE:
                 app.Die();

@@ -108,6 +108,7 @@ public:
     int WINDOW_WIDTH=720;
     int WINDOW_HEIGHT=720;
     int windows=0;
+    int level=1;
 
     glm::vec2 ofsetzero={0,0};
 

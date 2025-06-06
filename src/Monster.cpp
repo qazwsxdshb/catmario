@@ -20,6 +20,9 @@ void Monster::Reset(int zerox) {
     if (gaint==1) {
         mon_wei/=2;
         SetImage(GA_RESOURCE_DIR"/res/monster3.png");
+        if (name=="king2") {
+            SetImage(GA_RESOURCE_DIR"/res/monster7.png");
+        }
     }
     gaint=0;
     move=0;
@@ -34,10 +37,13 @@ void Monster::Reset(int zerox) {
     else if (name=="tatle") {
         SetImage(GA_RESOURCE_DIR"/res/monster4.png");
     }
-    else if (name=="motopro" || name=="king") {
+    else if (name=="motopro" || name=="king" || name=="fireball") {
         acceleration[1]=0;
         if (name=="king") {
             acceleration[1]=-2;
+        }
+        if (name=="fireball") {
+            acceleration[1]=(((double)rand())/RAND_MAX)*2-1;
         }
         if (mon_mul==2) {
             acceleration[1]=0;
@@ -67,9 +73,34 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
             if (mon[value]->name=="king") {
                 mon[value]->time=15;
             }
+            else if (mon[value]->name=="fireball") {
+                mon[value]->time=20;
+            }
         }
     }
-    if (mon[value]->act!=3 && mon[value]->name!="fish" && mon[value]->name!="yellowbat" && mon[value]->name!="box" && mon[value]->name!="dropbox"){
+
+    if (mon[value]->name=="state") {
+        if (mon[value]->acceleration[0]<0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
+            mon[value]->acceleration[0]=-3;
+        }
+        else if(mon[value]->acceleration[0]<0){
+            mon[value]->acceleration[0]=-1;
+        }
+        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei+4) && playerpos.y>(monsterpos.y)) {
+            if ((Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE))) {
+                sec=50;
+                Acceleration=16;
+            }
+            else{
+                Acceleration=-0.7;
+                if (mon[value]->acceleration[0]>0) {
+                    Acceleration-=mon[value]->acceleration[0];
+                }
+            }
+        }
+        monsterpos.y+=mon[value]->acceleration[0];
+    }
+    else if (mon[value]->act!=3 && mon[value]->name!="fish" && mon[value]->name!="yellowbat" && mon[value]->name!="box" && mon[value]->name!="dropbox"){
         if (mon[value]->time>0) {
             mon[value]->acceleration[0]-=1;
             mon[value]->time-=1;
@@ -89,14 +120,14 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         if (mon[value]->time!=0) {
             monsterpos.y+=mon[value]->acceleration[0];
         }
-        else if(yy>0 && UDCollision(xx,yy-1,monsterpos,-1,mon[value]->acceleration[0],mon[value]->mon_hei+2,mon[value]->mon_wei)){
+        else if(mon[value]->name!="fireball" && yy>0 && UDCollision(xx,yy-1,monsterpos,-1,mon[value]->acceleration[0],mon[value]->mon_hei+2,mon[value]->mon_wei)){
             if(mon[value]->GetName()=="star"){
                 mon[value]->acceleration[0]=15;
                 mon[value]->time=15;
                 mon[value]->acceleration[1]=3;
             }
             else {
-                if ((mon[value]->name=="motopro" || mon[value]->name=="king") && mon[value]->act==1) {
+                if ((mon[value]->name=="motopro" || mon[value]->name=="king" || mon[value]->name=="fireball") && mon[value]->act==1) {
                     mon[value]->acceleration[1]=-1;
                     mon[value]->act=2;
                 }
@@ -212,7 +243,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         playerstate=PlayerState::Die;
     }
 
-    else if (mon[value]->name!="king" && mon[value]->name!="box" &&  playerstate!=PlayerState::Die && mon[value]->name!="boxSpiked" && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
+    else if (mon[value]->name!="state" && mon[value]->name!="king2" && mon[value]->name!="king" && mon[value]->name!="fireball" && mon[value]->name!="box" &&  playerstate!=PlayerState::Die && mon[value]->name!="boxSpiked" && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
         if (mon[value]->name=="tatle" && mon[value]->act==0) {
             mon[value]->acceleration[1]=0;
             mon[value]->act=1;
@@ -226,7 +257,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     }
 
     //die plyaer
-    else if ((mon[value]->name!="tatle" || (mon[value]->name=="tatle" && mon[value]->act!=1)) && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul)) {
+    else if (mon[value]->name!="state" && (mon[value]->name!="tatle" || (mon[value]->name=="tatle" && mon[value]->act!=1)) && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul)) {
         if (mon[value]->name=="boxSpiked") {
             mon[value]->SetImage(GA_RESOURCE_DIR"/res/rock.png");
         }

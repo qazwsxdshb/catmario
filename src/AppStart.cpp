@@ -99,7 +99,7 @@ void App::Start() {
 
     AddMonster({
         "res/yellowbat.png", {2780 + 720, 60.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -15},
-        -1, -1, 35, 80, 650, 20, false
+        -1, -1, 35, 80, 650, 20, -1,-1,false
     });
 
     AddMonster({

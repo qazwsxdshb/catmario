@@ -15,7 +15,7 @@ void App::Sec() {
     reset.clear();
     m_monster.clear();
     m_Root.Clear();
-
+    level++;
     // 怪物
 
     AddMonster({
@@ -64,7 +64,7 @@ void App::Sec() {
 
     AddMonster({
         "res/catfront.png", { 1290.0f, -210.0f}, 51, {1.0f, 1.0f}, "king", {15, 0},
-        -1, 3, 31, 1024,210,26,2,2
+        -1, 3, 31, 1024,210,26,2,1
     });
 
     AddMonster({
@@ -72,6 +72,34 @@ void App::Sec() {
         2, -1, 30, 32, 25
     });
 
+    AddMonster({
+        "res/monster7.png", { 2175.0f, -165.0f}, 51, {1.0f, 1.0f}, "king2", {0, -1}
+    });
+
+    AddMonster({
+        "res/fireball.png", { 2725.0f, -163.0f}, 51, {1.0f, 1.0f}, "fireball", {20, -1},
+        -1, 3, 31, 1024,210,26,1,2
+    });
+
+    AddMonster({
+        "res/yellowbat2.png", {3025, 0.0f}, 51, {1.0f, 1.0f}, "state", {1, 0},
+        -1, -1, 90, -1, -1, 20,1,2
+    });
+
+    AddMonster({
+        "res/yellowbat2.png", {3025, -225.0f}, 51, {1.0f, 1.0f}, "state", {1, 0},
+        -1, -1, 90, -1, -1, 20,1,2
+    });
+
+    AddMonster({
+        "res/yellowbat2.png", {3175, 0.0f}, 51, {1.0f, 1.0f}, "state", {-1, 0},
+        -1, -1, 90, 1024, 120, 20,1,2
+    });
+
+    AddMonster({
+        "res/yellowbat2.png", {3175, -225.0f}, 51, {1.0f, 1.0f}, "state", {-1, 0},
+        -1, -1, 90, 1024, 120, 20,1,2
+    });
 
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
     m_player->SetPosition({-285.0f, 60.0f});

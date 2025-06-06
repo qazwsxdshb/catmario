@@ -101,7 +101,7 @@ void App::Update() {
     int yy=round((345+playerpos.y)/boxsize);
 
     //final
-    if (xx==122 && yy<10) {
+    if (xx==122 && yy<10 && level==1) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
@@ -118,6 +118,9 @@ void App::Update() {
         if (zerostart[22-yy][xx]==13) {
             m_CurrentState=State::UPDATE2;
         }
+        // if (zerostart[22-yy][xx]==33) {
+        //     m_CurrentState=State::UPDATE3;
+        // }
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
             Acceleration=0;
             playerpos.y=(yy*boxsize)-345+2;
@@ -358,6 +361,11 @@ void App::Update() {
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,4});
                 }
+                else if (zerostart[23-yy-1][xx]==8) {
+                    tmp[position[23-yy-1][xx]]->SetVisible(1);
+                    reset.push_back({22-yy,xx,8});
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                }
                 else if (zerostart[23-yy-1][xx]==11 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetVisible(0);
@@ -370,11 +378,6 @@ void App::Update() {
                     tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,11});
-                }
-                else if (zerostart[23-yy-1][xx]==8) {
-                    tmp[position[23-yy-1][xx]]->SetVisible(1);
-                    reset.push_back({22-yy,xx,8});
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                 }
                 else if (zerostart[23-yy-1][xx]==15 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
@@ -440,14 +443,22 @@ void App::Update() {
         if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+WINDOW_WIDTH/2) {
             m_monster[i]->move=1;
         }
-        if ((m_monster[i]->GetVisibility() || m_monster[i]->name=="king" || m_monster[i]->name=="motopro") && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
+        if ((m_monster[i]->GetVisibility() || m_monster[i]->name=="king" || m_monster[i]->name=="fireball" || m_monster[i]->name=="motopro") && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
         else if (m_monster[i]->name=="yellowbat" && 100<m_monster[i]->GetPosition().x) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
-        if (m_monster[i]->life>0 && m_monster[i]->GetPosition().y<-400) {
+        if (m_monster[i]->life>0 && (m_monster[i]->GetPosition().y<-350 || m_monster[i]->GetPosition().y>100)) {
             m_monster[i]->Reset(zerox);
+            if (m_monster[i]->name=="state") {
+                if (m_monster[i]->acceleration[0]>0) {
+                    m_monster[i]->SetPosition({m_monster[i]->GetPosition().x,-350});
+                }
+                else if (m_monster[i]->acceleration[0]<0) {
+                    m_monster[i]->SetPosition({m_monster[i]->GetPosition().x,100});
+                }
+            }
         }
         if (m_monster[i]->GetVisibility() && m_monster[i]->name=="tatle" && m_monster[i]->act>=1 && m_monster[i]->acceleration[1]!=0) {
             for (int u=0;u<m_monster.size();u++) {
