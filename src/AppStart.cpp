@@ -28,6 +28,8 @@ void App::AddMonster(const MonsterInfo& info) {
     if (info.mon_traget != -1) monster->mon_traget = info.mon_traget;
     if (info.mon_tragetrl != -1) monster->mon_tragetrl = info.mon_tragetrl;
     if (info.mon_hei != -1) monster->mon_hei = info.mon_hei;
+    if (info.mon_mul != -1) monster->mon_mul = info.mon_mul;
+    if (info.life != -1) monster->life = info.life;
 
     m_Root.AddChild(monster);
     m_monster.push_back(monster);
@@ -48,19 +50,19 @@ void App::Start() {
 
     //
     AddMonster({
-        "res/brock1.png", {1700 - 574.5f + 30, -75}, 48, {3.0f, 1.0f}, "box", {-10, 0},
+        "res/brock1.png", {1700 - 574.5f + 30, -75}, 48, {3.0f, 1.0f}, "dropbox", {-10, 0},
         -1, -1, 90, 1024, 90
     });
     //
 
     AddMonster({
         "res/brock10.png", {2390 - 574.5f + 60, -315}, 48, {5.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 150, 60, 150
+        2, -1, 150, 90, 120
     });
 
     AddMonster({
         "res/brock13.png", {2390 - 574.5f + 60, -345}, 48, {5.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 150, 120, 150
+        2, -1, 150, 150, 120
     });
 
     AddMonster({

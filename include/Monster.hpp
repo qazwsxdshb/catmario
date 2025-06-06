@@ -13,8 +13,11 @@ public:
     int time=0;
     int act=0;
     int move=0;
+    int life=0;
+    int gaint=0;
     int type=1;
     int mon_hei=26;
+    int mon_mul=1;
     int mon_tragetrl=30;
     int mon_traget=1024;
     int mon_wei=24;

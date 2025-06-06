@@ -142,6 +142,8 @@ public:
         int mon_traget = -1;
         int mon_tragetrl = -1;
         int mon_hei = -1;
+        int mon_mul = -1;
+        int life=0;
         bool visible = true;
     };
     void AddMonster(const MonsterInfo& info);
