@@ -6,18 +6,8 @@
 
 
 void App::Sec() {
-    playerstate= PlayerState::Normal;
-    zerox=-110;
-    checkpoint=-110;
-    tmp_monster=0;
-    tmp.clear();
-    tube.clear();
-    reset.clear();
-    m_monster.clear();
-    m_Root.Clear();
-    level=2;
-    // 怪物
 
+    // 怪物
     AddMonster({
         "res/brock11.png", {-285, -315}, 48, {1.0f, 1.0f}, "box", {-9, 0},
         2, -1, 30, 32, 25
@@ -111,19 +101,6 @@ void App::Sec() {
         });
     }
 
-    m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
-    m_player->SetPosition({-285.0f, 60.0f});
-    m_player->position={-175.0f, 60.0f};
-    m_player->SetZIndex(48);
-    m_Root.AddChild(m_player);
-
-    text = std::make_shared<Textt>();
-    text->SetPosition({0, 0});
-    text->SetZIndex(70);
-    text->Settext(" ");
-    m_Root.AddChild(text);
-
-
     // 障礙物類型映射
     std::unordered_map<int, ObstacleInfo> obstacleMap = {
         {1,  {"res/brock11.png", 49}},
@@ -164,12 +141,6 @@ void App::Sec() {
         {39, {"res/box.png", 49}},
     };
 
-    //copy
-    for (int x = std::size(onestart[0]) - 1; x >= 0; --x) {
-        for (int y = std::size(onestart) - 1; y >= 0; --y) {
-            zerostart[y][x]=onestart[y][x];
-        }
-    }
 
     // 建立地圖障礙物
     for (int x = std::size(zerostart[0]) - 1; x >= 0; --x) {
@@ -178,7 +149,6 @@ void App::Sec() {
             auto it = obstacleMap.find(type);
             if (it != obstacleMap.end()) {
                 glm::vec2 basePos = {
-                    // (x * boxsize) - ((WINDOW_WIDTH - boxsize) / 2),
                     (x * boxsize) - ((WINDOW_WIDTH - boxsize) / 2),
                     ((23 - y) * boxsize) - ((WINDOW_HEIGHT - boxsize) / 2)
                 };
@@ -191,7 +161,6 @@ void App::Sec() {
         }
     }
 
-    windows=8130;
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());

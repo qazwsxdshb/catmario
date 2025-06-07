@@ -24,12 +24,22 @@ int main(int, char**) {
                 app.Update();
                 break;
 
-            case App::State::UPDATE2:
-                app.Sec();
-                break;
-
             case App::State::DIE:
                 app.Die();
+                break;
+
+            case App::State::UPDATE2:
+                app.ResetLevel();
+                app.level++;
+                if (app.level==2) {
+                    app.ChangeMap(app.onestart);
+                    printf("cccc %d",app.level);
+                    app.Start();
+                }
+                else {
+                    app.ChangeMap(app.twostart);
+                    app.Sec();
+                }
                 break;
 
             case App::State::END:
