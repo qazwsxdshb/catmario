@@ -103,6 +103,14 @@ void App::Sec() {
         -1, -1, 90, 1024, 120, 20,1,2
     });
 
+
+    for (int ii=0;ii<6;ii++) {
+        AddMonster({
+            "res/brock2.png", {3435.0f, -195-(30*ii)}, 48, {5.0f, 1.0f}, "box", {-10, 0},
+            2, -1, 150, 150+(60*ii), 150
+        });
+    }
+
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
     m_player->SetPosition({-285.0f, 60.0f});
     m_player->position={-175.0f, 60.0f};

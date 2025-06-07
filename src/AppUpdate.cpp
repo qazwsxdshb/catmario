@@ -39,6 +39,7 @@ void App::Die() {
     text->SetColor(Util::Color::FromName(Util::Colors::WHITE));
     text->SetPosition({0+zerox-checkpoint,0});
     if (sec==120) {
+        printf("aaa");
         ofsetzero.x=ofsetzero.x-zerox+checkpoint;
         m_player->SetPosition({-112.5f-zerox+checkpoint,-280.0f});
         zerox=checkpoint;
@@ -103,7 +104,7 @@ void App::Update() {
     int yy=round((345+playerpos.y)/boxsize);
 
     //final
-    if (xx==122 && yy<10 && level==1) {
+    if ((xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29)) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
@@ -120,9 +121,9 @@ void App::Update() {
         if (zerostart[22-yy][xx]==13) {
             m_CurrentState=State::UPDATE2;
         }
-        // if (zerostart[22-yy][xx]==33) {
-        //     m_CurrentState=State::UPDATE3;
-        // }
+        if (zerostart[23-yy][xx]==29) {
+            m_CurrentState=State::UPDATE2;
+        }
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
             Acceleration=0;
             playerpos.y=(yy*boxsize)-345+2;
@@ -142,9 +143,17 @@ void App::Update() {
             playerpos.y-=1;
         }
         else {
-            playerpos.y+=10;
-            auto tttt=tmp[tube[2]]->GetPosition();
-            tmp[tube[2]]->SetPosition({tttt.x,tttt.y+10});
+            if (level==1) {
+                playerpos.y+=10;
+                auto tttt=tmp[tube[2]]->GetPosition();
+                tmp[tube[2]]->SetPosition({tttt.x,tttt.y+10});
+            }
+            else if (level==2){
+                Acceleration=20;
+                m_player->SetImage(GA_RESOURCE_DIR"/res/player4.png");
+                sec=40;
+                opsec=0;
+            }
         }
         if (opsec==121) {
             sec=120;
@@ -184,7 +193,7 @@ void App::Update() {
             if (Acceleration>0){Acceleration--;}
             playerpos.y+=Acceleration;
         }
-        if ((sec--)<=-100) {
+        if ((sec--)<=-80) {
             playerstate=PlayerState::Normal;
             sec=120;
             Acceleration=0;
@@ -254,10 +263,18 @@ void App::Update() {
             }
         }
         //pipe die
-        else if (Util::Input::IsKeyPressed(Util::Keycode::S)) {
+        else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==1) {
             if ((xx==30 && yy==6) || (xx==31 && yy==6)){
                 opsec=300;
                 playerstate=PlayerState::Die;
+            }
+        }
+        else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==2) {
+            for (int ii=0;ii<tube.size();ii++) {
+                if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
+                    opsec=260;
+                    playerstate=PlayerState::Die;
+                }
             }
         }
         //////////////////////////////////
