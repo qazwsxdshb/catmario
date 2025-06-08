@@ -23,7 +23,7 @@ void App::ResetAll() {
         if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetImage(GA_RESOURCE_DIR"/res/box.png");
         }
-        if(reset[i][2]==8 || reset[i][2]==15 || reset[i][2]==21) {
+        if(reset[i][2]==8 || reset[i][2]==15 || reset[i][2]==17 || reset[i][2]==21) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(0);
         }
          if (reset[i][2]==10) {
@@ -39,7 +39,6 @@ void App::Die() {
     text->SetColor(Util::Color::FromName(Util::Colors::WHITE));
     text->SetPosition({0+zerox-checkpoint,0});
     if (sec==120) {
-        printf("aaa");
         ofsetzero.x=ofsetzero.x-zerox+checkpoint;
         m_player->SetPosition({-112.5f-zerox+checkpoint,-280.0f});
         zerox=checkpoint;
@@ -54,6 +53,7 @@ void App::Die() {
         ResetAll();
         m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
         m_CurrentState=State::UPDATE;
+        playerstate=PlayerState::Normal;
     }
     sec-=1;
     m_Root.Update(ofsetzero);
@@ -94,7 +94,7 @@ void App::Update() {
     UpdateTimers();
     HandleGlobalInput();
 
-    if (Util::Input::IsKeyPressed(Util::Keycode::N)) {
+    if (Util::Input::IsKeyPressed(Util::Keycode::N) && level==1) {
         m_CurrentState=State::UPDATE2;
     }
 
@@ -121,8 +121,12 @@ void App::Update() {
         if (zerostart[22-yy][xx]==13) {
             m_CurrentState=State::UPDATE2;
         }
-        if (zerostart[23-yy][xx]==29) {
+        if (zerostart[23-yy][xx]==29 && level==3) {
             m_CurrentState=State::UPDATE2;
+        }
+        else if (zerostart[23-yy][xx]==29 && level==2) {
+            m_CurrentState=State::DIE;
+            sec=120;
         }
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
             Acceleration=0;
@@ -132,6 +136,14 @@ void App::Update() {
         else {
             Acceleration=(Acceleration+0.4)*0.98;
             playerpos.y-=Acceleration;
+        }
+    }
+    else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==2) {
+        for (int ii=0;ii<tube.size();ii++) {
+            if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
+                opsec=260;
+                playerstate=PlayerState::Die;
+            }
         }
     }
     ///
@@ -148,7 +160,11 @@ void App::Update() {
                 auto tttt=tmp[tube[2]]->GetPosition();
                 tmp[tube[2]]->SetPosition({tttt.x,tttt.y+10});
             }
-            else if (level==2){
+            else if (level==2) {
+                opsec=0;
+                m_CurrentState=State::UPDATE2;
+            }
+            else if (level==3){
                 Acceleration=20;
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player4.png");
                 sec=40;
@@ -194,10 +210,10 @@ void App::Update() {
             playerpos.y+=Acceleration;
         }
         if ((sec--)<=-80) {
-            playerstate=PlayerState::Normal;
             sec=120;
             Acceleration=0;
             m_CurrentState=State::DIE;
+            return;
         }
     }
 
@@ -253,14 +269,11 @@ void App::Update() {
         }
 
         //die die die drop die
-        else if (yy<=0) {
-            playerpos.y-=Acceleration*1.5;
-            sec+=2;
-            if (sec==10) {
-                std::this_thread::sleep_for(std::chrono::seconds(2));
-                sec=120;
-                m_CurrentState=State::DIE;
-            }
+        else if (yy<0) {
+            // std::this_thread::sleep_for(std::chrono::seconds(2));
+            sec=120;
+            m_CurrentState=State::DIE;
+            return;
         }
         //pipe die
         else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==1) {
@@ -269,7 +282,7 @@ void App::Update() {
                 playerstate=PlayerState::Die;
             }
         }
-        else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==2) {
+        else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==3) {
             for (int ii=0;ii<tube.size();ii++) {
                 if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
                     opsec=260;
@@ -279,9 +292,9 @@ void App::Update() {
         }
         //////////////////////////////////
 
-        else if (sec==0){
-            if (((zerostart[24-yy][xx-1]!=13 || zerostart[24-yy][xx]!=13 || zerostart[24-yy][xx+1]!=13)
-                && (zerostart[24-yy][xx-1]!=16 || zerostart[24-yy][xx]!=16 || zerostart[24-yy][xx+1]!=16))
+         if (sec==0){
+            if (((zerostart[24-yy][xx-1]!=13 && zerostart[24-yy][xx]!=13 && zerostart[24-yy][xx+1]!=13)
+                && (zerostart[24-yy][xx-1]!=16 && zerostart[24-yy][xx]!=16 && zerostart[24-yy][xx+1]!=16))
                 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
                 if (zerostart[24-yy][xx]==21) {
                     tmp[position[24-yy][xx]]->SetVisible(0);
@@ -300,7 +313,11 @@ void App::Update() {
                     checkpoint=zerox;
                     m_player->position={((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)};
                 }
+                printf("aaaaa:%d %d\n",sec,yy);
                 Acceleration=(Acceleration+0.4)*0.98;
+                // if (m_player->GetPosition().y<-325) {
+                //     Acceleration=15;
+                // }
                 playerpos.y-=Acceleration;
             }
         }
@@ -315,7 +332,7 @@ void App::Update() {
                 sec=0;
                 playerpos.y=(yy*boxsize)-345+2;
             }
-
+            else if (zerostart[23-yy-1][xx]==14 && tmp[position[23-yy-1][xx]]->GetVisibility()==0){NULL;}
             //?方塊向上
             else if ((zerostart[23-yy-1][xx]==10 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
             || (zerostart[23-yy-1][xx+1]==10 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
@@ -422,13 +439,15 @@ void App::Update() {
                 }
                 else if (zerostart[23-yy-1][xx]==17 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[23-yy-1][xx]]->SetVisible(1);
+                    tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
-
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/purplemushroom.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->name="Poisonous";
                     m_monster[m_monster.size()-1]->SetZIndex(51);
                     m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,17});
                 }
@@ -527,7 +546,7 @@ void App::Update() {
             ofsetzero.x+=1;
             zerox+=1;
         }
-        else if (playerpos.x+zerox-112.5f<windows) {
+        else if (playerpos.x+zerox-112.5f<windows[level] && windows[level]>0) {
             ofsetzero.x+=speed;
             zerox+=speed;
         }

@@ -3,109 +3,80 @@
 #include "Util/Input.hpp"
 #include "Util/BGM.hpp"
 
-// test
-void App::AddObstacle(const ObstacleInfo& info, glm::vec2 basePos) {
-    auto obstacle = std::make_shared<Obstacle>(GA_RESOURCE_DIR "/" + info.path);
-    obstacle->SetPosition(basePos + info.offset);
-    obstacle->SetZIndex(info.zIndex);
-    obstacle->SetVisible(info.visible);
-    obstacle->m_Transform.scale = info.scale;
-    m_Root.AddChild(obstacle);
-    tmp.push_back(obstacle);
-}
-
-void App::AddMonster(const MonsterInfo& info) {
-    auto monster = std::make_shared<Monster>(GA_RESOURCE_DIR "/" + info.path);
-    monster->SetPosition(info.pos);
-    monster->SetOrigin(info.pos);
-    monster->SetZIndex(info.zIndex);
-    monster->m_Transform.scale = info.scale;
-    monster->SetVisible(info.visible);
-    if (!info.name.empty()) monster->name = info.name;
-    if (info.type != -1) monster->type = info.type;
-    if (info.act != -1) monster->act = info.act;
-    if (info.mon_wei != -1) monster->mon_wei = info.mon_wei;
-    if (info.mon_traget != -1) monster->mon_traget = info.mon_traget;
-    if (info.mon_tragetrl != -1) monster->mon_tragetrl = info.mon_tragetrl;
-    if (info.mon_hei != -1) monster->mon_hei = info.mon_hei;
-    if (info.mon_mul != -1) monster->mon_mul = info.mon_mul;
-    if (info.life != -1) monster->life = info.life;
-
-    m_Root.AddChild(monster);
-    m_monster.push_back(monster);
-    monster->acceleration=info.acceleration;
-    monster->oriacceleration=info.acceleration;
-}
-
-
-
-
 void App::Start() {
     // Util::BGM bgm(GA_RESOURCE_DIR"/sound/field.mp3");
     // bgm.Play(-1);
     // LOG_TRACE("Start");
 
-    // 怪物
-    AddMonster({"res/monster3.png", {100.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
 
-    //
-    AddMonster({
-        "res/brock1.png", {1700 - 574.5f + 30, -75}, 48, {3.0f, 1.0f}, "dropbox", {-10, 0},
-        -1, -1, 90, 1024, 90
-    });
-    //
+    if (level==1) {
+        // 怪物
+        AddMonster({"res/monster3.png", {100.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
 
-    AddMonster({
-        "res/brock10.png", {2390 - 574.5f + 60, -315}, 48, {5.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 150, 90, 120
-    });
-
-    AddMonster({
-        "res/brock13.png", {2390 - 574.5f + 60, -345}, 48, {5.0f, 1.0f}, "box", {-10, 0},
-        2, -1, 150, 150, 120
-    });
-
-    AddMonster({
-        "res/monster6.png", {269.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
-    });
-
-    AddMonster({
-        "res/monster6.png", {1335.0f, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-15, 0},
-        -1, -1, -1, 1900
-    });
-
-    AddMonster({
-        "res/monster4.png", {-112.5f + 1700, -280.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
-    });
-
-    AddMonster({
-        "res/monster3.png", {-112.5f + 1600, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
-    });
-
-    AddMonster({
-        "res/monster3.png", {-112.5f + 1800, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
-    });
-
-    AddMonster({
-        "res/claude.png", {2780.0f, -60.0f}, 51, {1.0f, 1.0f}, "claude", {0, 0}, -1, -1, 86
-    });
-
-    for (int i = 0; i < 4; ++i) {
+        //
         AddMonster({
-            "res/monster3.png", {3013 + i * 30, 375.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
-            -1, 3, 31, 1024, i * 2 * 30
+            "res/brock1.png", {1700 - 574.5f + 30, -75}, 48, {3.0f, 1.0f}, "dropbox", {-10, 0},
+            -1, -1, 90, 1024, 90
+        });
+        //
+
+        AddMonster({
+            "res/brock10.png", {2390 - 574.5f + 60, -315}, 48, {5.0f, 1.0f}, "box", {-10, 0},
+            2, -1, 150, 90, 120
+        });
+
+        AddMonster({
+            "res/brock13.png", {2390 - 574.5f + 60, -345}, 48, {5.0f, 1.0f}, "box", {-10, 0},
+            2, -1, 150, 150, 120
+        });
+
+        AddMonster({
+            "res/monster6.png", {269.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
+        });
+
+        AddMonster({
+            "res/monster6.png", {1335.0f, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-15, 0},
+            -1, -1, -1, 1900
+        });
+
+        AddMonster({
+            "res/monster4.png", {-112.5f + 1700, -280.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
+        });
+
+        AddMonster({
+            "res/monster3.png", {-112.5f + 1600, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
+        });
+
+        AddMonster({
+            "res/monster3.png", {-112.5f + 1800, -280.0f}, 51, {1.0f, 1.0f}, "", {0, 1}
+        });
+
+        AddMonster({
+            "res/claude.png", {2780.0f, -60.0f}, 51, {1.0f, 1.0f}, "claude", {0, 0}, -1, -1, 86
+        });
+
+        for (int i = 0; i < 4; ++i) {
+            AddMonster({
+                "res/monster3.png", {3013 + i * 30, 375.0f}, 51, {1.0f, 1.0f}, "motopro", {0, 0},
+                -1, 3, 31, 1024, i * 2 * 30
+            });
+        }
+
+        AddMonster({
+            "res/yellowbat.png", {2780 + 720, 60.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -15},
+            -1, -1, 35, 80, 650, 20, -1,-1,false
+        });
+
+        AddMonster({
+            "res/monster6.png", {3590-120, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-20, 0},
+            -1, -1, -1, 1900
         });
     }
-
-    AddMonster({
-        "res/yellowbat.png", {2780 + 720, 60.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -15},
-        -1, -1, 35, 80, 650, 20, -1,-1,false
-    });
-
-    AddMonster({
-        "res/monster6.png", {3590-120, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-20, 0},
-        -1, -1, -1, 1900
-    });
+    else if (level==2) {
+        AddMonster({
+            "res/monster6.png", {90.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
+        });
+    }
 
     // 障礙物類型映射
     std::unordered_map<int, ObstacleInfo> obstacleMap = {
@@ -130,7 +101,7 @@ void App::Start() {
         {19, {"res/brock13.png", 49}},
         {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}},
         {21, {"res/brock2.png", 49}},
-        {22, {"res/brock11.png", 49}},
+        {22, {"res/brock11.png", 49,false}},
         {23, {"res/brock14.png", 49}},
         {24, {"res/brock8.png", 49}},
         {25, {"res/brock5.png", 48}},
@@ -170,11 +141,10 @@ void App::Start() {
         }
     }
 
-    windows=7500;
 
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
     m_Root.AddChildren(m_PRM->GetChildren());
-    m_Root.Update(ofsetzero);
+    m_Root.Update({zerox,0});
     m_CurrentState = State::UPDATE;
 }
