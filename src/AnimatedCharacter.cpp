@@ -7,5 +7,8 @@ AnimatedCharacter::AnimatedCharacter(const std::vector<std::string>& AnimationPa
 
 bool AnimatedCharacter::IfAnimationEnds() const {
     auto animation = std::dynamic_pointer_cast<Util::Animation>(m_Drawable);
-        return animation->GetCurrentFrameIndex() == animation->GetFrameCount() - 1;
+    if (!animation) {
+        return false; // 或拋出異常
+    }
+    return animation->GetCurrentFrameIndex() == animation->GetFrameCount() - 1;
 }
