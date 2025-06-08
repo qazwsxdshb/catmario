@@ -6,6 +6,7 @@
 
 void App::ResetAll() {
     opsec=0;
+    rlsec=0;
     fireball=-1;
     for (int i = 0; i < tmp_monster; ++i) {
         m_monster[m_monster.size()-1]->SetVisible(false);
@@ -20,10 +21,10 @@ void App::ResetAll() {
         tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(1);
         zerostart[reset[i][0]][reset[i][1]]=reset[i][2];
         tmp[position[reset[i][0]][reset[i][1]]]->posup=0;
-        if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26) {
+        if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26 || reset[i][2]==34 || reset[i][2]==39) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetImage(GA_RESOURCE_DIR"/res/box.png");
         }
-        if(reset[i][2]==8 || reset[i][2]==15 || reset[i][2]==17 || reset[i][2]==21) {
+        if(reset[i][2]==8 || reset[i][2]==15 || reset[i][2]==17 || (reset[i][2]==21 && level==3) || reset[i][2]==35) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(0);
         }
          if (reset[i][2]==10) {
@@ -72,7 +73,7 @@ void App::HandleGlobalInput(){
     }
 
     /////////////////////////////////
-    if (playerstate!=PlayerState::Die && Util::Input::IsKeyPressed(Util::Keycode::O)) {
+    if (Util::Input::IsKeyPressed(Util::Keycode::O)) {
         auto playerpos=m_player->GetPosition();
         printf("%f %f\n\n",playerpos.x+zerox,playerpos.y);
     }
@@ -94,8 +95,9 @@ void App::Update() {
     UpdateTimers();
     HandleGlobalInput();
 
-    if (Util::Input::IsKeyPressed(Util::Keycode::N) && level==1) {
+    if (Util::Input::IsKeyPressed(Util::Keycode::N) && (level==1 || level==2 || level==3)) {
         m_CurrentState=State::UPDATE2;
+        // || level==2 || level==3
     }
 
     auto playerpos=m_player->GetPosition();
@@ -103,8 +105,15 @@ void App::Update() {
     int xx=round((345+playerpos.x)/boxsize);
     int yy=round((345+playerpos.y)/boxsize);
 
+    if (yy>24) {
+        sec=120;
+        Acceleration=0;
+        m_CurrentState=State::DIE;
+        return;
+    }
+
     //final
-    if ((xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29)) {
+    if (playerstate!=PlayerState::Die && (xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29) || (xx==137 && yy<10 && level==4)) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
@@ -120,13 +129,18 @@ void App::Update() {
     if (playerstate==PlayerState::FinalForm) {
         if (zerostart[22-yy][xx]==13) {
             m_CurrentState=State::UPDATE2;
+            if (level==4){
+                m_CurrentState=State::END;
+            }
         }
         if (zerostart[23-yy][xx]==29 && level==3) {
             m_CurrentState=State::UPDATE2;
         }
         else if (zerostart[23-yy][xx]==29 && level==2) {
-            m_CurrentState=State::DIE;
-            sec=120;
+            playerstate=PlayerState::Die;
+            rlsec=120;
+            sec=90;
+            Acceleration=10;
         }
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)) {
             Acceleration=0;
@@ -201,6 +215,10 @@ void App::Update() {
 
 
     if (playerstate==PlayerState::Die) {
+        if ((rlsec--)>0) {
+            // playerpos.x-=11-zerox;
+            playerpos.x-=12;
+        }
         if (sec<=0) {
             Acceleration=(Acceleration+0.4)*0.98;
             playerpos.y-=Acceleration;
@@ -301,6 +319,31 @@ void App::Update() {
                     zerostart[24-yy][xx]=0;
                     reset.push_back({24-yy,xx,21});
                 }
+                else if (zerostart[24-yy][xx+1]==21) {
+                    tmp[position[24-yy][xx+1]]->SetVisible(0);
+                    zerostart[24-yy][xx+1]=0;
+                    reset.push_back({24-yy,xx+1,21});
+                }
+                // else if (zerostart[24-yy][xx-1]==21) {
+                //     tmp[position[24-yy][xx-1]]->SetVisible(0);
+                //     zerostart[24-yy][xx-1]=0;
+                //     reset.push_back({24-yy,xx-1,21});
+                // }
+                else if (zerostart[24-yy][xx]==36) {
+                    tmp[position[24-yy][xx]]->SetVisible(0);
+                    zerostart[24-yy][xx]=0;
+                    reset.push_back({24-yy,xx,36});
+                }
+                else if (zerostart[24-yy][xx+1]==36) {
+                    tmp[position[24-yy][xx+1]]->SetVisible(0);
+                    zerostart[24-yy][xx+1]=0;
+                    reset.push_back({24-yy,xx+1,36});
+                }
+                else if (zerostart[24-yy][xx-1]==36) {
+                    tmp[position[24-yy][xx-1]]->SetVisible(0);
+                    zerostart[24-yy][xx-1]=0;
+                    reset.push_back({24-yy,xx-1,36});
+                }
                 else {
                     m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                     Acceleration=0;
@@ -313,11 +356,14 @@ void App::Update() {
                     checkpoint=zerox;
                     m_player->position={((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)};
                 }
-                printf("aaaaa:%d %d\n",sec,yy);
+                else if (zerostart[24-yy][xx]==35) {
+                    Acceleration=-40;
+                    tmp[position[24-yy][xx]]->SetVisible(1);
+                    reset.push_back({24-yy,xx,35});
+                }
+
+                // printf("aaaaa:%d %d\n",sec,yy);
                 Acceleration=(Acceleration+0.4)*0.98;
-                // if (m_player->GetPosition().y<-325) {
-                //     Acceleration=15;
-                // }
                 playerpos.y-=Acceleration;
             }
         }
@@ -344,8 +390,10 @@ void App::Update() {
                     if (tmp[position[22-yy][xx]]->posup++==0) {
                         reset.push_back({22-yy,xx,10});
                     }
+                    else {
+                        reset.push_back({21-yy,xx,0});
+                    }
                     tmp[position[22-yy][xx]]->SetPosition({tmp[position[22-yy][xx]]->GetPosition().x, tmp[position[22-yy][xx]]->GetPosition().y+boxsize});
-                    reset.push_back({21-yy,xx,0});
                 }
                 else if (zerostart[23-yy-1][xx+1]==10) {
                     zerostart[21-yy][xx+1]=10;
@@ -353,8 +401,10 @@ void App::Update() {
                     if (tmp[position[22-yy][xx+1]]->posup++==0) {
                         reset.push_back({22-yy,xx+1,10});
                     }
+                    else {
+                        reset.push_back({21-yy,xx+1,0});
+                    }
                     tmp[position[22-yy][xx+1]]->SetPosition({tmp[position[22-yy][xx+1]]->GetPosition().x, tmp[position[22-yy][xx+1]]->GetPosition().y+boxsize});
-                    reset.push_back({21-yy,xx+1,0});
                 }
                 else if (zerostart[23-yy-1][xx-1]==10) {
                     zerostart[21-yy][xx-1]=10;
@@ -362,8 +412,10 @@ void App::Update() {
                     if (tmp[position[22-yy][xx-1]]->posup++==0) {
                         reset.push_back({22-yy,xx-1,10});
                     }
+                    else {
+                        reset.push_back({21-yy,xx-1,0});
+                    }
                     tmp[position[22-yy][xx-1]]->SetPosition({tmp[position[22-yy][xx-1]]->GetPosition().x, tmp[position[22-yy][xx-1]]->GetPosition().y+boxsize});
-                    reset.push_back({21-yy,xx-1,0});
                 }
             }
 
@@ -470,6 +522,34 @@ void App::Update() {
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,26});
                 }
+                else if (zerostart[23-yy-1][xx]==34 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
+
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/flower.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->SetZIndex(52);
+                    m_monster[m_monster.size()-1]->name="Poisonous";
+                    m_monster[m_monster.size()-1]->acceleration={0,0};
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    tmp_monster+=1;
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,34});
+                }
+                else if (zerostart[23-yy-1][xx]==39 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
+
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster7.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->SetZIndex(52);
+                    m_monster[m_monster.size()-1]->name="king2";
+                    m_monster[m_monster.size()-1]->acceleration={0,1};
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    tmp_monster+=1;
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,39});
+                }
             }
             playerpos.y+=Acceleration;
         }
@@ -478,12 +558,20 @@ void App::Update() {
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
     if (fireball==0){
+        if (level==4) {
+            AddMonster({
+                "res/glassstar.png", { -45.0f, -285.0f}, 51, {1.0f, 1.0f}, "star", {0, (((double)rand())/RAND_MAX)*8-4}
+            });
+            tmp_monster+=1;
+        }
+        else {
+            AddMonster({
+                "res/fireball.png", { 2725.0f-zerox, -163.0f}, 51, {1.0f, 1.0f}, "fireball", {20, (((double)rand())/RAND_MAX)*8-4},
+                -1, 3, 31, 1024,600,26,1,2
+            });
+            tmp_monster+=1;
+        }
         fireball=10;
-        AddMonster({
-            "res/fireball.png", { 2725.0f-zerox, -163.0f}, 51, {1.0f, 1.0f}, "fireball", {20, (((double)rand())/RAND_MAX)*8-4},
-            -1, 3, 31, 1024,600,26,1,2
-        });
-        tmp_monster+=1;
     }
     for(int i=0;i<m_monster.size();i++) {
         if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+WINDOW_WIDTH/2) {
