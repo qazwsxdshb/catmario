@@ -36,9 +36,13 @@ int main(int, char**) {
                     printf("cccc %d",app.level);
                     app.Start();
                 }
-                else {
+                else if(app.level==3){
                     app.ChangeMap(app.twostart);
                     app.Sec();
+                }
+                else if(app.level==4) {
+                    app.ChangeMap(app.threestart);
+                    app.Tre();
                 }
                 break;
 
