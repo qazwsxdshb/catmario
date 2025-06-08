@@ -83,7 +83,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     }
 
     if (mon[value]->name=="state" || mon[value]->name=="state2") {
-        if (mon[value]->acceleration[0]<0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
+        if (mon[value]->name=="state" && mon[value]->acceleration[0]<0 && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
             mon[value]->acceleration[0]=-3;
         }
         else if(mon[value]->acceleration[0]<0){
@@ -97,7 +97,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
             }
         }
         if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei+1) && playerpos.y>(monsterpos.y)) {
-            Acceleration=-mon[value]->acceleration[0];
+            Acceleration=-(mon[value]->acceleration[0]*0.5);
             // if (mon[value]->acceleration[0]>0) {
             //     Acceleration-=mon[value]->acceleration[0];
             // }
