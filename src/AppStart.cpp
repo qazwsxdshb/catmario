@@ -77,6 +77,12 @@ void App::Start() {
             "res/monster6.png", {90.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
         });
     }
+    else if (level==4) {
+        AddMonster({
+            "res/fakeflagpole.png", { 255.0f, -255.0f}, 0, {1.0f, 1.0f}, "flag", {0, -2},
+            -1, -1, 45, 60,300,-1,14
+        });
+    }
 
     // 障礙物類型映射
     std::unordered_map<int, ObstacleInfo> obstacleMap = {

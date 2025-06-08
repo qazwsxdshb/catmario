@@ -41,6 +41,10 @@ int main(int, char**) {
                     app.Sec();
                 }
                 else if(app.level==4) {
+                    app.ChangeMap(app.twoend);
+                    app.Start();
+                }
+                else if(app.level==5) {
                     app.ChangeMap(app.threestart);
                     app.Tre();
                 }

@@ -264,14 +264,21 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     }
 
 
+    else if (mon[value]->name=="flag" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul) && (playerpos.y>(monsterpos.y+(13 * mon[value]->mon_mul)+6))){
+        printf("%f %f",playerpos.y,monsterpos.y+(13 * mon[value]->mon_mul)+6);
+        printf("aaa\n");
+        mon[value]->SetVisible(1);
+        Acceleration=10;
+        sec=25;
+    }
     //die monster
-    else if (mon[value]->name!="Poisonous" && mon[value]->name!="state" && mon[value]->name!="state2" && mon[value]->name!="king2" && mon[value]->name!="king" && mon[value]->name!="fireball" && mon[value]->name!="box" &&  playerstate!=PlayerState::Die && mon[value]->name!="boxSpiked" && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei) && playerpos.y>(monsterpos.y+6)) {
+    else if (mon[value]->name!="Poisonous" && mon[value]->name!="state" && mon[value]->name!="state2" && mon[value]->name!="king2" && mon[value]->name!="fireball" && mon[value]->name!="box" &&  playerstate!=PlayerState::Die && mon[value]->name!="boxSpiked" && mon[value]->name!="claude" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul) && (playerpos.y>(monsterpos.y+(13 * mon[value]->mon_mul)+6))) {
         if (mon[value]->name=="tatle" && mon[value]->act==0) {
             mon[value]->acceleration[1]=0;
             mon[value]->act=1;
             mon[value]->SetImage(GA_RESOURCE_DIR"/res/monster5.png");
         }
-        else if (mon[value]->name!="tatle" && mon[value]->name!="greenbat"){
+        else if (mon[value]->name!="tatle" && mon[value]->name!="greenbat" && mon[value]->name!="king"){
             mon[value]->SetVisible(0);
         }
         Acceleration=10;
@@ -289,6 +296,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         if (mon[value]->name=="boxSpiked") {
             mon[value]->SetImage(GA_RESOURCE_DIR"/res/rock.png");
         }
+        printf("aaa");
         Acceleration=12;
         mon[value]->talk=1;
         m_player->SetImage(GA_RESOURCE_DIR"/res/player4.png");

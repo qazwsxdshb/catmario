@@ -7,6 +7,7 @@
 void App::ResetAll() {
     opsec=0;
     rlsec=0;
+    sec=0;
     fireball=-1;
     for (int i = 0; i < tmp_monster; ++i) {
         m_monster[m_monster.size()-1]->SetVisible(false);
@@ -79,7 +80,7 @@ void App::HandleGlobalInput(){
     }
     /////////////////////////////////
 
-    if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec == 0) {
+    if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec == 0 && playerstate!=PlayerState::Die) {
         opsec = 60;
         Acceleration = 0;
         if (playerstate==PlayerState::OP) {
@@ -97,7 +98,6 @@ void App::Update() {
 
     if (Util::Input::IsKeyPressed(Util::Keycode::N) && (level==1 || level==2 || level==3)) {
         m_CurrentState=State::UPDATE2;
-        // || level==2 || level==3
     }
 
     auto playerpos=m_player->GetPosition();
@@ -112,8 +112,18 @@ void App::Update() {
         return;
     }
 
+    //spacial
+    if (level==4 && xx==5 && tmp_monster==0) {
+        AddMonster({
+            "res/catfront.png", { -150.0f, -240.0f}, 51, {1.0f, 1.0f}, "king", {15, 1},
+            -1, 3, 31, 1024,210,26,2,1
+        });
+        // m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+        tmp_monster+=1;
+    }
+
     //final
-    if (playerstate!=PlayerState::Die && (xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29) || (xx==137 && yy<10 && level==4)) {
+    if (playerstate!=PlayerState::Die && ((xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29) || (xx==26 && yy<10 && level==4) || (xx==137 && yy<10 && level==5))) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
@@ -129,7 +139,7 @@ void App::Update() {
     if (playerstate==PlayerState::FinalForm) {
         if (zerostart[22-yy][xx]==13) {
             m_CurrentState=State::UPDATE2;
-            if (level==4){
+            if (level==5){
                 m_CurrentState=State::END;
             }
         }
@@ -227,7 +237,7 @@ void App::Update() {
             if (Acceleration>0){Acceleration--;}
             playerpos.y+=Acceleration;
         }
-        if ((sec--)<=-80) {
+        if ((sec--)<=-70) {
             sec=120;
             Acceleration=0;
             m_CurrentState=State::DIE;
@@ -384,7 +394,7 @@ void App::Update() {
             || (zerostart[23-yy-1][xx+1]==10 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
             || (zerostart[23-yy-1][xx-1]==10 && tmp[position[23-yy-1][xx-1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx-1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
             ) {
-                if (zerostart[23-yy-1][xx]==10) {
+                if (zerostart[22-yy][xx]==10) {
                     zerostart[21-yy][xx]=10;
                     zerostart[22-yy][xx]=0;
                     if (tmp[position[22-yy][xx]]->posup++==0) {
@@ -395,7 +405,7 @@ void App::Update() {
                     }
                     tmp[position[22-yy][xx]]->SetPosition({tmp[position[22-yy][xx]]->GetPosition().x, tmp[position[22-yy][xx]]->GetPosition().y+boxsize});
                 }
-                else if (zerostart[23-yy-1][xx+1]==10) {
+                else if (zerostart[22-yy][xx+1]==10) {
                     zerostart[21-yy][xx+1]=10;
                     zerostart[22-yy][xx+1]=0;
                     if (tmp[position[22-yy][xx+1]]->posup++==0) {
@@ -406,7 +416,7 @@ void App::Update() {
                     }
                     tmp[position[22-yy][xx+1]]->SetPosition({tmp[position[22-yy][xx+1]]->GetPosition().x, tmp[position[22-yy][xx+1]]->GetPosition().y+boxsize});
                 }
-                else if (zerostart[23-yy-1][xx-1]==10) {
+                else if (zerostart[22-yy][xx-1]==10) {
                     zerostart[21-yy][xx-1]=10;
                     zerostart[22-yy][xx-1]=0;
                     if (tmp[position[22-yy][xx-1]]->posup++==0) {
@@ -558,7 +568,7 @@ void App::Update() {
     m_player->SetPosition({playerpos.x-zerox,playerpos.y});
 
     if (fireball==0){
-        if (level==4) {
+        if (level==5) {
             AddMonster({
                 "res/glassstar.png", { -45.0f, -285.0f}, 51, {1.0f, 1.0f}, "star", {0, (((double)rand())/RAND_MAX)*8-4}
             });
