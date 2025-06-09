@@ -22,7 +22,7 @@ void App::ResetAll() {
         tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(1);
         zerostart[reset[i][0]][reset[i][1]]=reset[i][2];
         tmp[position[reset[i][0]][reset[i][1]]]->posup=0;
-        if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26 || reset[i][2]==34 || reset[i][2]==39) {
+        if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26 || reset[i][2]==34 || reset[i][2]==38 || reset[i][2]==39) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetImage(GA_RESOURCE_DIR"/res/box.png");
         }
         if(reset[i][2]==8 || reset[i][2]==15 || reset[i][2]==17 || (reset[i][2]==21 && level==3) || reset[i][2]==35) {
@@ -32,9 +32,15 @@ void App::ResetAll() {
             tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({(reset[i][1]*boxsize-checkpoint)-((WINDOW_WIDTH-boxsize)/2), ((23-reset[i][0])*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
         }
         if (reset[i][2]==10) {
-         tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({(reset[i][1]*boxsize-checkpoint)-((WINDOW_WIDTH-boxsize)/2), ((23-reset[i][0])*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+            tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({(reset[i][1]*boxsize-checkpoint)-((WINDOW_WIDTH-boxsize)/2), ((23-reset[i][0])*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
         }
     }
+
+    for(int i=0;i<m_coin.size();i++) {
+        m_Root.RemoveChild(m_coin[i]);
+    }
+    m_coin.clear();
+
     m_player->ResetPosition();
     reset.clear();
 }
@@ -101,7 +107,7 @@ void App::Update() {
     UpdateTimers();
     HandleGlobalInput();
 
-    if (Util::Input::IsKeyPressed(Util::Keycode::N) && (level==1 || level==2 || level==3)) {
+    if (Util::Input::IsKeyPressed(Util::Keycode::N) && (level==1 || level==2 || level==3 || level==4)) {
         m_CurrentState=State::UPDATE2;
     }
 
@@ -495,12 +501,12 @@ void App::Update() {
                     tmp[position[22-yy][xx]]->posup=1;
 
                     tmp[position[23-yy-1][xx]]->SetVisible(1);
-                    reset.push_back({22-yy,xx,8});
                     m_coin.push_back(std::make_shared<Coin>(GA_RESOURCE_DIR"/res/coin.png"));
                     m_coin[m_coin.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)-10});
                     m_coin[m_coin.size()-1]->SetZIndex(51);
                     m_Root.AddChild(m_coin[m_coin.size()-1]);
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,15});
                 }
                 else if (zerostart[23-yy-1][xx]==12 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
@@ -559,6 +565,20 @@ void App::Update() {
                     tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,34});
+                }
+                else if (zerostart[23-yy-1][xx]==38 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
+
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/P.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->SetZIndex(52);
+                    m_monster[m_monster.size()-1]->name="blueP";
+                    m_monster[m_monster.size()-1]->acceleration={0,0};
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    tmp_monster+=1;
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,38});
                 }
                 else if (zerostart[23-yy-1][xx]==39 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
@@ -642,10 +662,15 @@ void App::Update() {
     }
 
     for(int i=0;i<m_coin.size();i++) {
-        if (m_coin[i]->GetVisibility()) {
+        if (m_coin[i]->GetVisibility() && m_coin[i]->time<10) {
+            m_coin[i]->time++;
             m_coin[i]->SetPosition({m_coin[i]->GetPosition().x,m_coin[i]->GetPosition().y+5});
         }
-        if (m_coin[i]->time++==10) {
+        if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(m_coin[i]->GetPosition().x+zerox),(int)(m_coin[i]->GetPosition().y),30,30)) {
+            m_Root.RemoveChild(m_coin[i]);
+            m_coin.erase(m_coin.begin()+i);
+        }
+        if (m_coin[i]->time==10) {
             m_Root.RemoveChild(m_coin[i]);
             m_coin.erase(m_coin.begin()+i);
         }

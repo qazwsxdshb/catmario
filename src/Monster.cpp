@@ -273,7 +273,22 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     if (yy<0) {
         mon[value]->SetVisible(0);
     }
-
+    else if (mon[value]->name=="blueP" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul)){
+        mon[value]->SetVisible(0);
+        for (int x = 70; x >= 49; --x) {
+            for (int y = std::size(zerostart) - 1; y >= 14; --y) {
+                if(zerostart[y][x]==1 || zerostart[y][x]==2 || zerostart[y][x]==3 || zerostart[y][x]==12 || zerostart[y][x]==21 || zerostart[y][x]==38 || zerostart[y][x]==39) {
+                    m_coin.push_back(std::make_shared<Coin>(GA_RESOURCE_DIR"/res/coin.png"));
+                    m_coin[m_coin.size()-1]->SetPosition(tmp[position[y][x]]->GetPosition());
+                    m_coin[m_coin.size()-1]->time=11;
+                    m_coin[m_coin.size()-1]->SetZIndex(51);
+                    m_Root.AddChild(m_coin[m_coin.size()-1]);
+                    tmp[position[y][x]]->SetVisible(0);
+                    reset.push_back({y,x,zerostart[y][x]});
+                }
+            }
+        }
+    }
     else if (mon[value]->name=="greenball" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul)){
         fireball=1;
         mon[value]->SetVisible(0);
