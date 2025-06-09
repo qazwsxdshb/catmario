@@ -19,9 +19,24 @@ void App::Start() {
 
 
     if (level==1) {
+        // 背景
+        createObstacle(GA_RESOURCE_DIR"/res/mountain.png", -248, -260, 10); // 背景：山
+        createObstacle(GA_RESOURCE_DIR"/res/claude.png", -144.5, -43, 10);// 背景：雲
+        createObstacle(GA_RESOURCE_DIR"/res/grass.png", 242, -285, 10);// 背景：草
+        createObstacle(GA_RESOURCE_DIR"/res/claude.png", 343.5, 61, 10);// 背景：雲
+        createObstacle(GA_RESOURCE_DIR"/res/grass.png", 455, -285, 10);// 背景：草
+        createObstacle(GA_RESOURCE_DIR"/res/mountain.png", 730, -260, 10); // 背景：山
+        createObstacle(GA_RESOURCE_DIR"/res/grass.png", 1052, -285, 10);// 背景：草
+        createObstacle(GA_RESOURCE_DIR"/res/claude.png", 1583.5, 15, 10);// 背景：雲
+        createObstacle(GA_RESOURCE_DIR"/res/grass.png", 2011.5, -285, 10);// 背景：草
+        createObstacle(GA_RESOURCE_DIR"/res/grass.png", 3360.5, -285, 10);// 背景：草
         // 怪物
         AddMonster({"res/monster3.png", {100.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
-
+        AddMonster({"res/monster3.png", {350.0f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}}); // 新增水管中間怪物
+        AddMonster({"res/monster3.png", {1063.5f, -165.0f}, 51, {1.0f, 1.0f}, "", {0, -1}}); // 新增第一層平台怪物
+        AddMonster({"res/monster3.png", {1155.5f, -44.0f}, 51, {1.0f, 1.0f}, "", {0, -1}}); // 新增第二層平台怪物
+        AddMonster({"res/monster3.png", {2623.5f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}}); // 新增水管中間怪物
+        AddMonster({"res/monster3.png", {2691.5f, -290.0f}, 51, {1.0f, 1.0f}, "", {0, -1}}); // 新增水管中間怪物
         //
         AddMonster({
             "res/brock1.png", {1700 - 574.5f + 30, -75}, 48, {3.0f, 1.0f}, "dropbox", {-10, 0},
@@ -72,7 +87,7 @@ void App::Start() {
         }
 
         AddMonster({
-            "res/yellowbat.png", {2780 + 720, 60.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -15},
+            "res/yellowbat.png", {2780 + 720, 40.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -15},
             -1, -1, 35, 80, 650, 20, -1,-1,false
         });
 
