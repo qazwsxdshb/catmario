@@ -50,6 +50,7 @@ void Monster::Reset(int zerox) {
         SetVisible(0);
     }
     else if (name=="tatle") {
+        type=-1;
         SetImage(GA_RESOURCE_DIR"/res/monster4.png");
     }
     else if (name=="motopro" || name=="king" || name=="fireball") {
@@ -105,6 +106,9 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     if (mon[value]->name=="claude2" && mon[value]->act==1) {
         mon[value]->act=2;
         mon[value]->SetVisible(0);
+    }
+    if (mon[value]->name=="tatle" && mon[value]->type>-1) {
+        mon[value]->type-=1;
     }
 
     if (mon[value]->name=="state" || mon[value]->name=="state2") {
