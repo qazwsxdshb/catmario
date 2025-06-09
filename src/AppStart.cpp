@@ -128,7 +128,8 @@ void App::Start() {
         {36, {"res/yellowbat.png", 49, true, {0.0f, 12.0f}}},
         {37, {"res/greenbat.png", 49, true, {0.0f, 12.0f}}},
         {38, {"res/box.png", 50}},
-        {39, {"res/box.png", 49}}
+        {39, {"res/box.png", 49}},
+        {40, {"res/platform.png", 49}}
     };
 
 
