@@ -7,6 +7,15 @@
 
 void App::Sec() {
 
+    auto createObstacle = [&](const std::string& path, float x, float y, int zIndex, glm::vec2 scale = {1.0f, 1.0f}) {
+        auto obs = std::make_shared<Obstacle>(path);
+        obs->SetPosition({x, y});
+        obs->SetZIndex(zIndex);
+        obs->m_Transform.scale = scale;
+        m_Root.AddChild(obs);
+        tmp.push_back(obs);
+    };
+
     // 怪物
     AddMonster({
         "res/brock11.png", {-285, -315}, 48, {1.0f, 1.0f}, "box", {-9, 0},
@@ -49,7 +58,7 @@ void App::Sec() {
     });
 
     AddMonster({
-        "res/claude2.png", {1215.0f, 15.0f}, 51, {1.0f, 1.0f}, "claude", {0, 0}, -1, -1, 86
+        "res/claude2.png", {1215.0f, 15.0f}, 51, {1.0f, 1.0f}, "claude2", {0, 0}, -1, 1, 86
     });
 
     AddMonster({
@@ -164,6 +173,7 @@ void App::Sec() {
 
     // 初始化資源管理器
     m_PRM = std::make_shared<PhaseResourceManger>();
+    m_PRM->Select(2);
     m_Root.AddChildren(m_PRM->GetChildren());
     m_Root.Update({zerox,0});
     m_CurrentState = State::UPDATE;

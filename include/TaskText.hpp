@@ -10,7 +10,7 @@ public:
     static constexpr std::string_view s_PhaseTasks[7] = {
         "",
         "",
-        "Make the giraffe move into the red area using the keyboard!",
+        "",
         "Make the chest disappear when the giraffe touches it!",
         "Write a program to give your bee friend an animation!",
         "Write a program to open the door when your character touches it!",

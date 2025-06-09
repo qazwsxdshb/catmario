@@ -53,7 +53,9 @@ void App::Die() {
     }
     else if (sec==1){
         m_PRM->BgZindex(-10);
-        m_PRM->Select(1);
+        if (level!=3) {
+            m_PRM->Select(1);
+        }
         text->Settext(" ");
         ResetAll();
         m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
@@ -599,7 +601,7 @@ void App::Update() {
         if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+WINDOW_WIDTH/2) {
             m_monster[i]->move=1;
         }
-        if ((m_monster[i]->GetVisibility() || m_monster[i]->name=="king" || m_monster[i]->name=="fireball" || m_monster[i]->name=="motopro") && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
+        if ((m_monster[i]->GetVisibility() || m_monster[i]->name=="claude2" || m_monster[i]->name=="king" || m_monster[i]->name=="fireball" || m_monster[i]->name=="motopro") && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
         else if (m_monster[i]->name=="yellowbat" && 100<m_monster[i]->GetPosition().x) {

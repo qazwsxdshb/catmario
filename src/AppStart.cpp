@@ -8,6 +8,15 @@ void App::Start() {
     // bgm.Play(-1);
     // LOG_TRACE("Start");
 
+    auto createObstacle = [&](const std::string& path, float x, float y, int zIndex, glm::vec2 scale = {1.0f, 1.0f}) {
+        auto obs = std::make_shared<Obstacle>(path);
+        obs->SetPosition({x, y});
+        obs->SetZIndex(zIndex);
+        obs->m_Transform.scale = scale;
+        m_Root.AddChild(obs);
+        tmp.push_back(obs);
+    };
+
 
     if (level==1) {
         // 怪物
@@ -73,12 +82,16 @@ void App::Start() {
         });
     }
     else if (level==2) {
+
         m_player->SetPosition({-285.0f, -260.0f});
         m_player->position={-175.0f, -260.0f};
         AddMonster({
             "res/monster6.png", {90.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
         });
+
     }
+
+    //
     else if (level==4) {
         m_player->SetPosition({-285.0f, -230.0f});
         m_player->position={-175.0f, -230.0f};
