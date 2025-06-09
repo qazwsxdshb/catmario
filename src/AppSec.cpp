@@ -126,7 +126,7 @@ void App::Sec() {
         {21,  {"res/brock5.png", 48, false}},
 
         {26, {"res/box.png", 49}},
-        {27, {"res/flagpole.png", 48}},
+        {27, {"res/flagpole.png", 30}},
         {28, {"res/button.png", 49}},
         {29, {"res/Tube.png", 49, true, {-14.0f, 14.0f}}},
         {30, {"res/claude3.png", 49, true, {0.0f, -15.0f}}},

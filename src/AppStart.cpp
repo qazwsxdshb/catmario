@@ -73,14 +73,18 @@ void App::Start() {
         });
     }
     else if (level==2) {
+        m_player->SetPosition({-285.0f, -260.0f});
+        m_player->position={-175.0f, -260.0f};
         AddMonster({
             "res/monster6.png", {90.0f, -280.0f}, 0, {1.0f, 1.0f}, "fish", {10, 0}
         });
     }
     else if (level==4) {
+        m_player->SetPosition({-285.0f, -230.0f});
+        m_player->position={-175.0f, -230.0f};
         AddMonster({
             "res/fakeflagpole.png", { 255.0f, -255.0f}, 0, {1.0f, 1.0f}, "flag", {0, -2},
-            -1, -1, 45, 60,300,-1,14
+            -1, 3, 48, 60,300,-1,14
         });
     }
 
@@ -112,7 +116,7 @@ void App::Start() {
         {24, {"res/brock8.png", 49}},
         {25, {"res/brock5.png", 48}},
         {26, {"res/box.png", 49}},
-        {27, {"res/flagpole.png", 49}},
+        {27, {"res/flagpole.png", 30}},
         {28, {"res/button.png", 49}},
         {29, {"res/Tube.png", 49, true, {-14.0f, 14.0f}}},
         {30, {"res/claude3.png", 49, true, {0.0f, -15.0f}}},

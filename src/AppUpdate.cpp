@@ -225,9 +225,15 @@ void App::Update() {
 
 
     if (playerstate==PlayerState::Die) {
-        if ((rlsec--)>0) {
+        if (rlsec>0) {
+            rlsec--;
+        }
+        if (rlsec>0) {
             // playerpos.x-=11-zerox;
             playerpos.x-=12;
+        }
+        else if (rlsec<0){
+            playerpos.x+=8;
         }
         if (sec<=0) {
             Acceleration=(Acceleration+0.4)*0.98;
@@ -382,7 +388,10 @@ void App::Update() {
             if (Acceleration>0) {Acceleration-=1;}
             else if (Acceleration<=0) {sec=0;}
 
-            if (UDCollision(xx,yy-1,playerpos,1,Acceleration,playerheight+2,playerwidth)){
+            if ((zerostart[22-yy][xx-1]==40 || zerostart[22-yy][xx]==40 || zerostart[22-yy][xx+1]==40)) {
+                NULL;
+            }
+            else if (UDCollision(xx,yy-1,playerpos,1,Acceleration,playerheight+2,playerwidth)){
                 m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
                 Acceleration=0;
                 sec=0;
