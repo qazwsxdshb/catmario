@@ -32,6 +32,8 @@ void Monster::Reset(int zerox) {
         SetImage(GA_RESOURCE_DIR"/res/brock8.png");
     }
     if (name=="robot") {
+        type=-1;
+        act=-1;
         SetImage(GA_RESOURCE_DIR"/res/robot2.png");
     }
     if (name=="flag"){act=3;}
@@ -310,10 +312,23 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         mon[value]->acceleration[1]=0;
         rlsec=-1;
     }
-    else if (mon[value]->name=="robot" && zerostart[22-yy][xx-1]==27) {
-        // tmp[position[22-yy][xx-1]]->SetVisible(0);
-        tmp[position[22-yy][xx-1]]->SetPosition({monsterpos.x-zerox,monsterpos.y+30});
-        reset.push_back({22-yy,xx-1,zerostart[22-yy][xx-1]});
+    else if (mon[value]->name=="robot" && (zerostart[22-yy][xx-1]==27 || mon[value]->act==1)) {
+        if (mon[value]->act!=1) {
+            playerstate=PlayerState::Normal;
+            mon[value]->SetImage(GA_RESOURCE_DIR"/res/robot3.png");
+            mon[value]->act=1;
+            mon[value]->type=position[22-yy][xx-1];
+            zerostart[22-yy][xx-1]=0;
+            tmp[mon[value]->type]->SetPosition({monsterpos.x-zerox,monsterpos.y+180});
+            printf("xx %d yy %d\n\n",xx-1,22-yy);
+            reset.push_back({22-yy,xx-1,27});
+        }
+        else {
+            tmp[mon[value]->type]->SetPosition({monsterpos.x-zerox,monsterpos.y+180});
+            if (yy==1) {
+                tmp[mon[value]->type]->SetVisible(0);
+            }
+        }
     }
 
     else if (mon[value]->name!="greenbat" && mon[value]->name!="state" && mon[value]->name!="state2" && (mon[value]->name!="tatle" || (mon[value]->name=="tatle" && mon[value]->act!=1)) && playerstate!=PlayerState::Die && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul)) {

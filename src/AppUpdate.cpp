@@ -28,9 +28,12 @@ void App::ResetAll() {
         if(reset[i][2]==8 || reset[i][2]==15 || reset[i][2]==17 || (reset[i][2]==21 && level==3) || reset[i][2]==35) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(0);
         }
-         if (reset[i][2]==10) {
-             tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({(reset[i][1]*boxsize-checkpoint)-((WINDOW_WIDTH-boxsize)/2), ((23-reset[i][0])*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
-         }
+        if (reset[i][2]==27) {
+            tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({(reset[i][1]*boxsize-checkpoint)-((WINDOW_WIDTH-boxsize)/2), ((23-reset[i][0])*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+        }
+        if (reset[i][2]==10) {
+         tmp[position[reset[i][0]][reset[i][1]]]->SetPosition({(reset[i][1]*boxsize-checkpoint)-((WINDOW_WIDTH-boxsize)/2), ((23-reset[i][0])*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+        }
     }
     m_player->ResetPosition();
     reset.clear();
@@ -123,7 +126,7 @@ void App::Update() {
     }
 
     //final
-    if (playerstate!=PlayerState::Die && ((xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29) || (xx==26 && yy<10 && level==4) || (xx==137 && yy<10 && level==5))) {
+    if (playerstate!=PlayerState::Die && ((xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29) || (xx==26 && yy<10 && level==4) || (zerostart[20][137]==27 && xx==137 && yy<10 && level==5))) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
