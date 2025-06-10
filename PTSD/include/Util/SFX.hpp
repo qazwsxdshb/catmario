@@ -16,25 +16,25 @@ namespace Util {
  */
 class SFX {
 public:
-    SFX() = delete;
+    // SFX() = delete;
 
     /**
      * @brief Constructor that initializes the SFX object and loads the sound
      *            effect from the specified file path.
      * @param path The file path of the sound effect to be loaded.
      */
-    explicit SFX(const std::string &path);
+    // explicit SFX(const std::string &path);
 
     /**
      * @brief Deleted copy constructor to prevent copying of SFX objects.
      */
-    SFX(const SFX &) = delete;
+    // SFX(const SFX &) = delete;
 
     /**
      * @brief Deleted copy assignment operator to prevent copying of SFX
      *            objects.
      */
-    SFX &operator=(const SFX &) = delete;
+    // SFX &operator=(const SFX &) = delete;
 
     /**
      * @brief Retrieves the current volume of the sound effect.

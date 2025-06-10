@@ -15,8 +15,8 @@ std::shared_ptr<Mix_Music> LoadMusic(const std::string &filepath) {
 
 namespace Util {
 
-BGM::BGM(const std::string &path)
-    : m_BGM(s_Store.Get(path)) {}
+// BGM::BGM(const std::string &path)
+//     : m_BGM(s_Store.Get(path)) {}
 
 int BGM::GetVolume() const {
     return Mix_VolumeMusic(-1);

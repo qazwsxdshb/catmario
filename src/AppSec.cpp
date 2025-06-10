@@ -6,6 +6,8 @@
 
 
 void App::Sec() {
+    bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+    bgm.Play(-1);
 
     auto createObstacle = [&](const std::string& path, float x, float y, int zIndex, glm::vec2 scale = {1.0f, 1.0f}) {
         auto obs = std::make_shared<Obstacle>(path);
@@ -71,8 +73,12 @@ void App::Sec() {
     });
 
     AddMonster({
-        "res/brock11.png", {1635.0f ,15.0f}, 48, {1.0f, 1.0f}, "box", {-9, 0},
-        2, -1, 30, 32, 25
+        "res/brock2.png", {1665.0f ,45.0f}, 48, {3.0f, 1.0f}, "dropbox", {-9, 0},
+        -1, -1, 90, 1024, 90
+    });
+    AddMonster({
+        "res/brock1.png", {1785.0f ,45.0f}, 48, {5.0f, 1.0f}, "dropbox", {-9, 0},
+        -1, -1, 150, 1024, 110
     });
 
     AddMonster({

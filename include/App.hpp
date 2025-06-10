@@ -11,6 +11,7 @@
 #include "Util/Text.hpp"
 #include "PhaseResourceManger.hpp"
 #include "Util/BGM.hpp"
+#include "Util/SFX.hpp"
 #include <fstream>
 #include <sstream>
 #include <iostream>
@@ -115,7 +116,11 @@ public:
     int windows[6]={0,7300,0,8130,1200,8130};
     int level=1;
     int fireball=-1;
+    int dropdrop=-1;
+    int dietime=0;
 
+    Util::BGM bgm;
+    Util::SFX SFX;
     glm::vec2 ofsetzero={0,0};
 
     State m_CurrentState = State::ZERO;
