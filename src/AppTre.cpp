@@ -68,8 +68,39 @@ void App::Tre() {
     });
 
     AddMonster({
+        "res/monster7.png", { 2635.0f, -105.0f}, 51, {1.0f, 1.0f}, "king3", {0, -1}
+    });
+
+    AddMonster({
+        "res/superman1.png", {3300, -240.0f}, 51, {1.0f, 1.0f}, "fly", {1, 0}
+    });
+    //-107
+    AddMonster({
         "res/monster4.png", {3465.0, -45.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
     });
+
+    // 5 yellow bat
+    AddMonster({
+        "res/yellowbat.png", {3845, 45.0f}, 51, {1.0f, 1.0f}, "yellowbat", {2, -8},
+        -1, -1, 35, 160, 650, 20, -1,-1,false
+    });
+    AddMonster({
+        "res/yellowbat.png", {3845, 45.0f}, 51, {1.0f, 1.0f}, "yellowbat", {1, -9},
+        -1, -1, 35, 160, 650, 20, -1,-1,false
+    });
+    AddMonster({
+        "res/yellowbat.png", {3845, 45.0f}, 51, {1.0f, 1.0f}, "yellowbat", {0, -10},
+        -1, -1, 35, 160, 650, 20, -1,-1,false
+    });
+    AddMonster({
+        "res/yellowbat.png", {3845, 45.0f}, 51, {1.0f, 1.0f}, "yellowbat", {-1, -9},
+        -1, -1, 35, 160, 650, 20, -1,-1,false
+    });
+    AddMonster({
+        "res/yellowbat.png", {3845, 45.0f}, 51, {1.0f, 1.0f}, "yellowbat", {-2, -8},
+        -1, -1, 35, 160, 650, 20, -1,-1,false
+    });
+    //
 
     AddMonster({"res/robot2.png", {4005.0f, -285.0f}, 51, {1.0f, 1.0f}, "robot", {0, -1}});
 
