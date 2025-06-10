@@ -17,6 +17,21 @@ void App::Tre() {
 
     m_player->SetPosition({-285.0f, -260.0f});
     m_player->position={-175.0f, -260.0f};
+    // 背景
+    createObstacle(GA_RESOURCE_DIR"/res/claude.png", -300, -23, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/grass.png", -175, -285, 10);// 背景：草
+    createObstacle(GA_RESOURCE_DIR"/res/claude.png", -65, 33, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/grass.png", 122, -285, 10);// 背景：草
+    createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 723, -227, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 1083, 33, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/grass.png", 1170, -285, 10);// 背景：草
+    createObstacle(GA_RESOURCE_DIR"/res/grass.png", 1530, -285, 10);// 背景：草
+    createObstacle(GA_RESOURCE_DIR"/res/claude.png", 1655, 33, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/tri-tree.png", 1665, -285, 10);// 背景：樹
+    createObstacle(GA_RESOURCE_DIR"/res/tri-tree.png", 1695, -285, 10);// 背景：樹
+    createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 2183, 33, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 2395, -187, 10);// 背景：雲
+
     // 怪物
     AddMonster({"res/greenball.png", {-45.0f, -285.0f}, 51, {1.0f, 1.0f}, "greenball", {0, 0}});
 

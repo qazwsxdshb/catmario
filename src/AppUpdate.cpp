@@ -393,7 +393,7 @@ void App::Update() {
                     reset.push_back({24-yy,xx,41});
                 }
                 // printf("aaaaa:%d %d\n",sec,yy);
-                Acceleration=(Acceleration+0.2)*0.98;
+                Acceleration=(Acceleration+0.3)*0.98;
                 playerpos.y-=Acceleration;
             }
         }

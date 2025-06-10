@@ -18,14 +18,14 @@ void App::Zero() {
     };
 
     m_player = std::make_shared<Character>(GA_RESOURCE_DIR"/res/player1.png");
-    m_player->SetPosition({-112.5f, -280.0f});
-    m_player->position={-112.5f, -280.0f};
+    m_player->SetPosition({-180.5f, -280.0f});
+    m_player->position={-180.5f, -280.0f};
     m_player->SetZIndex(48);
     m_Root.AddChild(m_player);
 
     createObstacle(GA_RESOURCE_DIR"/res/logo.png", 0, 300, 49);
-    createObstacle(GA_RESOURCE_DIR"/res/grass.png", 0, -285, 49);
-    createObstacle(GA_RESOURCE_DIR"/res/mountain.png", 300, -255, 49);
+    createObstacle(GA_RESOURCE_DIR"/res/grass.png", -50, -285, 49);
+    createObstacle(GA_RESOURCE_DIR"/res/mountain.png", 200, -255, 49);
 
     text = std::make_shared<Textt>();
     text->SetPosition({0, 0});

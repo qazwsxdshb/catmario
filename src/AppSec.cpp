@@ -21,10 +21,12 @@ void App::Sec() {
         "res/brock11.png", {-285, -315}, 48, {1.0f, 1.0f}, "box", {-9, 0},
         2, -1, 30, 32, 25
     });
+
     AddMonster({
         "res/brock14.png", {-285, -345}, 48, {1.0f, 1.0f}, "box", {-9, 0},
         2, -1, 30, 62, 25
     });
+
     AddMonster({"res/monster3.png", {-45.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
     AddMonster({"res/monster3.png", { 15.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
 
@@ -39,6 +41,7 @@ void App::Sec() {
         "res/brock11.png", {375, -315}, 48, {1.0f, 1.0f}, "box", {-9, 0},
         2, -1, 30, 32, 25
     });
+
     AddMonster({
         "res/brock14.png", {370, -345}, 48, {1.0f, 1.0f}, "box", {-9, 0},
         2, -1, 30, 62, 25
@@ -47,6 +50,7 @@ void App::Sec() {
     AddMonster({
         "res/monster4.png", {515.0, -223.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
     });
+
     AddMonster({"res/monster3.png", { 735.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
     AddMonster({"res/monster3.png", { 765.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
     AddMonster({"res/monster3.png", { 795.0f, -285.0f}, 51, {1.0f, 1.0f}, "", {0, -1}});
@@ -133,7 +137,6 @@ void App::Sec() {
         {19, {"res/brock13.png", 49}},
         {20, {"res/claude.png",49,true,{0.0f, 0.0f},{1.1f, 1.0f}}},
         {21,  {"res/brock5.png", 48, false}},
-
         {26, {"res/box.png", 49}},
         {27, {"res/flagpole.png", 30}},
         {28, {"res/button.png", 49}},
