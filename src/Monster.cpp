@@ -257,6 +257,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
                 reset.push_back({23-yyy,xxx,3});
             }
             mon[value]->act=1;
+            dropdrop++;
         }
         if (mon[value]->act==1) {
             monsterpos.y+=(mon[value]->acceleration[0]);

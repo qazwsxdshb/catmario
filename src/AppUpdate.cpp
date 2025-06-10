@@ -9,6 +9,7 @@ void App::ResetAll() {
     rlsec=0;
     sec=0;
     fireball=-1;
+    dropdrop=-1;
     for (int i = 0; i < tmp_monster; ++i) {
         m_monster[m_monster.size()-1]->SetVisible(false);
         m_monster.erase(m_monster.end()-1);
@@ -554,6 +555,20 @@ void App::Update() {
                     tmp_monster+=1;
                     // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
                     reset.push_back({22-yy,xx,26});
+                }
+                else if (zerostart[23-yy-1][xx]==32 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
+
+                    m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/glassstar.png"));
+                    m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
+                    m_monster[m_monster.size()-1]->SetZIndex(52);
+                    m_monster[m_monster.size()-1]->name="fireball";
+                    m_monster[m_monster.size()-1]->acceleration={-10,0};
+                    m_Root.AddChild(m_monster[m_monster.size()-1]);
+                    tmp_monster+=1;
+                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    reset.push_back({22-yy,xx,32});
                 }
                 else if (zerostart[23-yy-1][xx]==34 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;

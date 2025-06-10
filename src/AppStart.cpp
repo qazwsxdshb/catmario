@@ -4,9 +4,8 @@
 #include "Util/BGM.hpp"
 
 void App::Start() {
-    // Util::BGM bgm(GA_RESOURCE_DIR"/sound/field.mp3");
-    // bgm.Play(-1);
-    // LOG_TRACE("Start");
+    Util::BGM bgm(GA_RESOURCE_DIR"/sound/field.mp3");
+    bgm.Play(-1);
 
     auto createObstacle = [&](const std::string& path, float x, float y, int zIndex, glm::vec2 scale = {1.0f, 1.0f}) {
         auto obs = std::make_shared<Obstacle>(path);

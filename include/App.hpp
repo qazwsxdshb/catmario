@@ -115,6 +115,7 @@ public:
     int windows[6]={0,7300,0,8130,1200,8130};
     int level=1;
     int fireball=-1;
+    int dropdrop=-1;
 
     glm::vec2 ofsetzero={0,0};
 
