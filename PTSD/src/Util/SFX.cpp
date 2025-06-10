@@ -15,8 +15,8 @@ std::shared_ptr<Mix_Chunk> LoadChunk(const std::string &filepath) {
 
 namespace Util {
 
-SFX::SFX(const std::string &path)
-    : m_Chunk(s_Store.Get(path)) {}
+// SFX::SFX(const std::string &path)
+//     : m_Chunk(s_Store.Get(path)) {}
 
 int SFX::GetVolume() const {
     return Mix_VolumeChunk(m_Chunk.get(), -1);

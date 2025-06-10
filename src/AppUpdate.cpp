@@ -10,6 +10,7 @@ void App::ResetAll() {
     sec=0;
     fireball=-1;
     dropdrop=-1;
+    dietime=0;
     for (int i = 0; i < tmp_monster; ++i) {
         m_monster[m_monster.size()-1]->SetVisible(false);
         m_monster.erase(m_monster.end()-1);
@@ -65,6 +66,8 @@ void App::Die() {
         }
         text->Settext(" ");
         ResetAll();
+        bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+        bgm.Play(-1);
         m_player->SetImage(GA_RESOURCE_DIR"/res/player1.png");
         m_CurrentState=State::UPDATE;
         playerstate=PlayerState::Normal;
@@ -92,7 +95,7 @@ void App::HandleGlobalInput(){
     }
     /////////////////////////////////
 
-    if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec == 0 && playerstate!=PlayerState::Die) {
+    if (Util::Input::IsKeyPressed(Util::Keycode::P) && opsec == 0) {
         opsec = 60;
         Acceleration = 0;
         if (playerstate==PlayerState::OP) {
@@ -136,6 +139,8 @@ void App::Update() {
 
     //final
     if (playerstate!=PlayerState::Die && ((xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29) || (xx==26 && yy<10 && level==4) || (zerostart[20][137]==27 && xx==137 && yy<10 && level==5))) {
+        bgm.LoadMedia(GA_RESOURCE_DIR"/sound/goal.mp3");
+        bgm.Play(-1);
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         playerstate=PlayerState::Falling;
         if (zerostart[24-yy][xx]!=27 && UDCollision(xx,yy-1,playerpos,-1,Acceleration,playerheight+2,playerwidth)){
@@ -175,6 +180,8 @@ void App::Update() {
         }
     }
     else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==2) {
+        bgm.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
+        bgm.Play(-1);
         for (int ii=0;ii<tube.size();ii++) {
             if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
                 opsec=260;
@@ -237,6 +244,11 @@ void App::Update() {
 
 
     if (playerstate==PlayerState::Die) {
+        if (dietime==0) {
+            dietime=1;
+            bgm.LoadMedia(GA_RESOURCE_DIR"/sound/death.mp3");
+            bgm.Play(-1);
+        }
         if (rlsec>0) {
             rlsec--;
         }
@@ -323,12 +335,16 @@ void App::Update() {
         }
         //pipe die
         else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==1) {
+            bgm.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
+            bgm.Play(-1);
             if ((xx==30 && yy==6) || (xx==31 && yy==6)){
                 opsec=300;
                 playerstate=PlayerState::Die;
             }
         }
         else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==3) {
+            bgm.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
+            bgm.Play(-1);
             for (int ii=0;ii<tube.size();ii++) {
                 if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
                     opsec=260;
@@ -467,27 +483,32 @@ void App::Update() {
                 if (zerostart[23-yy-1][xx]==3) {
                     zerostart[23-yy-1][xx]=0;
                     tmp[position[22-yy][xx]]->SetVisible(0);
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/brockbreak.mp3");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,3});
                 }
+
                 else if (zerostart[23-yy-1][xx]==4 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
-
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster3.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
                     m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,4});
                 }
+
                 else if (zerostart[23-yy-1][xx]==8) {
                     tmp[position[23-yy-1][xx]]->SetVisible(1);
                     reset.push_back({22-yy,xx,8});
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/humi.mp3");
+                    SFX.Play(0);
                 }
+
                 else if (zerostart[23-yy-1][xx]==11 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetVisible(0);
@@ -498,31 +519,35 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,11});
                 }
+
+                else if (zerostart[23-yy-1][xx]==12 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
+                    m_coin.push_back(std::make_shared<Coin>(GA_RESOURCE_DIR"/res/coin.png"));
+                    m_coin[m_coin.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)-10});
+                    m_coin[m_coin.size()-1]->SetZIndex(51);
+                    m_Root.AddChild(m_coin[m_coin.size()-1]);
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/brockcoin.mp3");
+                    SFX.Play(0);
+                    reset.push_back({22-yy,xx,12});
+                }
+
                 else if (zerostart[23-yy-1][xx]==15 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
-
                     tmp[position[23-yy-1][xx]]->SetVisible(1);
                     m_coin.push_back(std::make_shared<Coin>(GA_RESOURCE_DIR"/res/coin.png"));
                     m_coin[m_coin.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)-10});
                     m_coin[m_coin.size()-1]->SetZIndex(51);
                     m_Root.AddChild(m_coin[m_coin.size()-1]);
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/brockcoin.mp3");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,15});
                 }
-                else if (zerostart[23-yy-1][xx]==12 && tmp[position[22-yy][xx]]->posup==0) {
-                    tmp[position[22-yy][xx]]->posup=1;
-                    tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
 
-                    m_coin.push_back(std::make_shared<Coin>(GA_RESOURCE_DIR"/res/coin.png"));
-                    m_coin[m_coin.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)-10});
-                    m_coin[m_coin.size()-1]->SetZIndex(51);
-                    m_Root.AddChild(m_coin[m_coin.size()-1]);
-
-                    reset.push_back({22-yy,xx,12});
-                }
                 else if (zerostart[23-yy-1][xx]==17 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[23-yy-1][xx]]->SetVisible(1);
                     tmp[position[22-yy][xx]]->posup=1;
@@ -534,18 +559,21 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,17});
                 }
+
                 else if (zerostart[23-yy-1][xx]==21) {
                     tmp[position[23-yy-1][xx]]->SetVisible(1);
                     reset.push_back({22-yy,xx,21});
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/humi.mp3");
+                    SFX.Play(0);
                 }
+
                 else if (zerostart[23-yy-1][xx]==26 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
-
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/redmushroom.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
@@ -553,13 +581,14 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,26});
                 }
+
                 else if (zerostart[23-yy-1][xx]==32 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
-
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/glassstar.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
@@ -567,13 +596,14 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={-10,0};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,32});
                 }
+
                 else if (zerostart[23-yy-1][xx]==34 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
-
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/flower.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
@@ -581,13 +611,14 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={0,0};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,34});
                 }
+
                 else if (zerostart[23-yy-1][xx]==38 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
-
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/P.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
@@ -595,13 +626,14 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={0,0};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/hintBlock.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,38});
                 }
+
                 else if (zerostart[23-yy-1][xx]==39 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");
-
                     m_monster.push_back(std::make_shared<Monster>(GA_RESOURCE_DIR"/res/monster7.png"));
                     m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
                     m_monster[m_monster.size()-1]->SetZIndex(52);
@@ -609,7 +641,8 @@ void App::Update() {
                     m_monster[m_monster.size()-1]->acceleration={0,1};
                     m_Root.AddChild(m_monster[m_monster.size()-1]);
                     tmp_monster+=1;
-                    // bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    SFX.Play(0);
                     reset.push_back({22-yy,xx,39});
                 }
             }
@@ -661,6 +694,8 @@ void App::Update() {
                 if (u!=i) {
                     if (Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
                         m_monster[u]->SetVisible(0);
+                        SFX.LoadMedia(GA_RESOURCE_DIR"/sound/koura.mp3");
+                        SFX.Play(0);
                     }
                 }
             }
@@ -671,6 +706,8 @@ void App::Update() {
                     if (m_monster[u]->name!="box" && Collision((int)(m_monster[i]->GetPosition().x),(int)(m_monster[i]->GetPosition().y),playerwidth,playerheight,(int)(m_monster[u]->GetPosition().x),(int)(m_monster[u]->GetPosition().y),m_monster[u]->mon_wei,m_monster[u]->mon_hei)) {
                         m_monster[u]->mon_wei*=2;
                         m_monster[u]->gaint=1;
+                        SFX.LoadMedia(GA_RESOURCE_DIR"/sound/powerup.mp3");
+                        SFX.Play(0);
                         m_monster[u]->SetImage(GA_RESOURCE_DIR"/res/bigmonster3.png");
                         m_monster[i]->SetVisible(0);
                     }

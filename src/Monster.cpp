@@ -338,6 +338,8 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
     }
     //die monster
     else if (playerstate!=PlayerState::Die && mon[value]->name!="Poisonous" && mon[value]->name!="robot" && mon[value]->name!="state" && mon[value]->name!="state2" && mon[value]->name!="king2" && mon[value]->name!="king3" && mon[value]->name!="fireball" && mon[value]->name!="box" &&  playerstate!=PlayerState::Die && mon[value]->name!="boxSpiked" && mon[value]->name!="claude" && mon[value]->name!="claude2" && mon[value]->name!="yellowbat" && mon[value]->GetName()!="star" && mon[value]->GetName()!="fish" && Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_wei,mon[value]->mon_hei * mon[value]->mon_mul) &&  (playerpos.y>(monsterpos.y+(13 * (mon[value]->mon_mul-1))+6))) {
+        SFX.LoadMedia(GA_RESOURCE_DIR"/sound/jump.mp3");
+        SFX.Play(0);
         if (mon[value]->name=="tatle" && mon[value]->act==0) {
             mon[value]->acceleration[1]=0;
             mon[value]->act=1;
@@ -407,7 +409,8 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         sec=30;
         playerstate=PlayerState::Die;
     }
-    // die
+    //
+
     if (mon[value]->name!="claude" && mon[value]->name!="claude2" && mon[value]->name!="boxSpiked" && mon[value]->name!="state2" && mon[value]->name!="greenbat") {
         mon[value]->SetPosition({monsterpos.x-zerox,monsterpos.y});
     }

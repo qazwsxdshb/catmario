@@ -16,25 +16,25 @@ namespace Util {
  */
 class BGM {
 public:
-    BGM() = delete;
+    // BGM() = delete;
 
     /**
      * @brief Constructor that initializes the BGM object and loads the music
      *            from the specified file path.
      * @param path The file path of the background music to be loaded.
      */
-    explicit BGM(const std::string &path);
+    // explicit BGM(const std::string &path);
 
     /**
      * @brief Deleted copy constructor to prevent copying of BGM objects.
      */
-    BGM(const BGM &) = delete;
+    // BGM(const BGM &) = delete;
 
     /**
      * @brief Deleted copy assignment operator to prevent copying of BGM
      *            objects.
      */
-    BGM &operator=(const BGM &) = delete;
+    // BGM &operator=(const BGM &) = delete;
 
     /**
      * @brief Retrieves the current volume of the background music.
