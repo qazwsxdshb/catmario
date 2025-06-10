@@ -621,7 +621,7 @@ void App::Update() {
         fireball=10;
     }
     for(int i=0;i<m_monster.size();i++) {
-        if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+600/2) {
+        if (m_player->GetPosition().x-WINDOW_WIDTH/2<m_monster[i]->GetPosition().x && m_monster[i]->GetPosition().x<m_player->GetPosition().x+660/2) {
             m_monster[i]->move=1;
         }
         if ((m_monster[i]->GetVisibility() || m_monster[i]->name=="claude2" || m_monster[i]->name=="king" || m_monster[i]->name=="fireball" || m_monster[i]->name=="motopro") && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
