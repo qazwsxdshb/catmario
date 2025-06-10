@@ -46,7 +46,7 @@ void Monster::Reset(int zerox) {
     else if (name=="state2") {
         act=-1;
     }
-    else if (name=="yellowbat") {
+    else if (name=="yellowbat" || name=="flymoto") {
         SetVisible(0);
     }
     else if (name=="tatle") {
@@ -136,7 +136,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         }
         monsterpos.y+=mon[value]->acceleration[0];
     }
-    else if (mon[value]->act!=3 && mon[value]->name!="fish" && mon[value]->name!="yellowbat" && mon[value]->name!="box" && mon[value]->name!="dropbox"){
+    else if (mon[value]->act!=3 && mon[value]->name!="fish" && mon[value]->name!="yellowbat" && mon[value]->name!="flymoto" && mon[value]->name!="box" && mon[value]->name!="dropbox"){
         if (mon[value]->time>0) {
             mon[value]->acceleration[0]-=1;
             mon[value]->time-=1;
@@ -220,7 +220,7 @@ void App::Monsteract(glm::vec2 monsterpos,int value,glm::vec2 playerpos,std::vec
         }
     }
 
-    else if (mon[value]->name=="yellowbat") {
+    else if (mon[value]->name=="yellowbat" || mon[value]->name=="flymoto") {
         if (Collision((int)(playerpos.x),(int)(playerpos.y),playerwidth,playerheight,(int)(monsterpos.x),(int)(monsterpos.y),mon[value]->mon_tragetrl,mon[value]->mon_traget)) {
             mon[value]->act=1;
             mon[value]->SetVisible(1);

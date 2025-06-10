@@ -44,6 +44,15 @@ void App::Tre() {
     AddMonster({"res/robot2.png", {2145.0f, -195.0f}, 51, {1.0f, 1.0f}, "robot", {0, -1}});
 
     AddMonster({
+        "res/monster8.png", {2625, -75.0f}, 51, {1.0f, 1.0f}, "flymoto", {0, -5},
+        -1, -1, 35, 1024, 650, 30, -1,-1,false
+    });
+    AddMonster({
+        "res/monster8.png", {2625, 45.0f}, 51, {1.0f, 1.0f}, "flymoto", {0, -5},
+        -1, -1, 35, 1024, 650, 30, -1,-1,false
+    });
+
+    AddMonster({
         "res/monster4.png", {3465.0, -45.0f}, 51, {1.0f, 1.0f}, "tatle", {0, 1}
     });
 
@@ -91,7 +100,8 @@ void App::Tre() {
         {37, {"res/greenbat.png", 49, true, {0.0f, 12.0f}}},
         {38, {"res/box.png", 50}},
         {39, {"res/box.png", 49}},
-        {40, {"res/platform.png", 49}}
+        {40, {"res/platform.png", 49}},
+        {41, {"res/jump.png", 49}}
     };
 
 

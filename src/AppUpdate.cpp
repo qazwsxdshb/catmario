@@ -388,9 +388,12 @@ void App::Update() {
                     tmp[position[24-yy][xx]]->SetVisible(1);
                     reset.push_back({24-yy,xx,35});
                 }
-
+                else if (zerostart[24-yy][xx]==41) {
+                    Acceleration=-40;
+                    reset.push_back({24-yy,xx,41});
+                }
                 // printf("aaaaa:%d %d\n",sec,yy);
-                Acceleration=(Acceleration+0.4)*0.98;
+                Acceleration=(Acceleration+0.2)*0.98;
                 playerpos.y-=Acceleration;
             }
         }
@@ -624,7 +627,7 @@ void App::Update() {
         if ((m_monster[i]->GetVisibility() || m_monster[i]->name=="claude2" || m_monster[i]->name=="king" || m_monster[i]->name=="fireball" || m_monster[i]->name=="motopro") && m_monster[i]->move==1 && 400>m_monster[i]->GetPosition().y && m_monster[i]->GetPosition().y>-400) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
-        else if (m_monster[i]->name=="yellowbat" && 100<m_monster[i]->GetPosition().x) {
+        else if ((m_monster[i]->name=="yellowbat" || m_monster[i]->name=="flymoto") && 100<m_monster[i]->GetPosition().x) {
             Monsteract(m_monster[i]->GetPosition(),i,playerpos,m_monster);
         }
         if (m_monster[i]->life>0 && (m_monster[i]->GetPosition().y<-350 || m_monster[i]->GetPosition().y>100)) {
