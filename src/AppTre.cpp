@@ -27,10 +27,24 @@ void App::Tre() {
     createObstacle(GA_RESOURCE_DIR"/res/grass.png", 1170, -285, 10);// 背景：草
     createObstacle(GA_RESOURCE_DIR"/res/grass.png", 1530, -285, 10);// 背景：草
     createObstacle(GA_RESOURCE_DIR"/res/claude.png", 1655, 33, 10);// 背景：雲
-    createObstacle(GA_RESOURCE_DIR"/res/tri-tree.png", 1665, -285, 10);// 背景：樹
-    createObstacle(GA_RESOURCE_DIR"/res/tri-tree.png", 1695, -285, 10);// 背景：樹
+    createObstacle(GA_RESOURCE_DIR"/res/tri-tree.png", 1665, -270, 10);// 背景：樹
+    createObstacle(GA_RESOURCE_DIR"/res/tri-tree.png", 1695, -270, 10);// 背景：樹
     createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 2183, 33, 10);// 背景：雲
     createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 2395, -187, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 2505, -255, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 2565, -255, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 2595, -255, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 2745, -310, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 3245, 43, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 3390, -215, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 3390, -265, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 3450, -215, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 3450, -265, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 3480, -215, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/root.png", 3480, -265, 10);// 背景：樹根
+    createObstacle(GA_RESOURCE_DIR"/res/claude4.png", 3600, 3, 10);// 背景：雲
+    createObstacle(GA_RESOURCE_DIR"/res/grass.png", 3692, -285, 10);// 背景：草
+    createObstacle(GA_RESOURCE_DIR"/res/claude.png", 4000, -50, 10);// 背景：雲
 
     // 怪物
     AddMonster({"res/greenball.png", {-45.0f, -285.0f}, 51, {1.0f, 1.0f}, "greenball", {0, 0}});
