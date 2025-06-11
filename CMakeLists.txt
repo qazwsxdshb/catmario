@@ -30,7 +30,8 @@ add_executable(${PROJECT_NAME} ${SRC_FILES} ${HEADER_FILES}
         src/AppStart.cpp
         src/ZeroUpdate.cpp
         src/AppZero.cpp
-        src/AppZero.cpp)
+        src/AppZero.cpp
+        src/App.cpp)
 
 if(MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /W4)

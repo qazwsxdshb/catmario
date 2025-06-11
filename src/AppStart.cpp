@@ -6,6 +6,9 @@
 void App::Start() {
     bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
     bgm.Play(-1);
+    text->Settext(" ");
+
+    LoadAllMaps();
 
     auto createObstacle = [&](const std::string& path, float x, float y, int zIndex, glm::vec2 scale = {1.0f, 1.0f}) {
         auto obs = std::make_shared<Obstacle>(path);
@@ -18,6 +21,8 @@ void App::Start() {
 
 
     if (level==1) {
+
+        ChangeMap(zerostart);
         // 背景
         createObstacle(GA_RESOURCE_DIR"/res/mountain.png", -248, -260, 10); // 背景：山
         createObstacle(GA_RESOURCE_DIR"/res/claude.png", -144.5, -43, 10);// 背景：雲
@@ -94,7 +99,7 @@ void App::Start() {
         });
     }
     else if (level==2) {
-
+        ChangeMap(onestart);
         m_player->SetPosition({-285.0f, -260.0f});
         m_player->position={-175.0f, -260.0f};
         AddMonster({
@@ -105,6 +110,7 @@ void App::Start() {
 
     //
     else if (level==4) {
+        ChangeMap(twoend);
         m_player->SetPosition({-285.0f, -230.0f});
         m_player->position={-175.0f, -230.0f};
         createObstacle(GA_RESOURCE_DIR"/res/claude.png", -301, 37, 10);// 背景：雲
