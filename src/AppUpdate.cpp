@@ -180,8 +180,8 @@ void App::Update() {
         }
     }
     else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==2) {
-        bgm.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
-        bgm.Play(-1);
+        SFX.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
+        SFX.Play(0);
         for (int ii=0;ii<tube.size();ii++) {
             if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
                 opsec=260;
@@ -335,18 +335,18 @@ void App::Update() {
         }
         //pipe die
         else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==1) {
-            bgm.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
-            bgm.Play(-1);
             if ((xx==30 && yy==6) || (xx==31 && yy==6)){
+                SFX.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
+                SFX.Play(0);
                 opsec=300;
                 playerstate=PlayerState::Die;
             }
         }
         else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==3) {
-            bgm.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
-            bgm.Play(-1);
             for (int ii=0;ii<tube.size();ii++) {
                 if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
+                    SFX.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
+                    SFX.Play(0);
                     opsec=260;
                     playerstate=PlayerState::Die;
                 }
