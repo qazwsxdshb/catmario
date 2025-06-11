@@ -21,7 +21,9 @@ void App::ResetAll() {
     for (int i = 0; i < m_monster.size(); ++i) {
         m_monster[i]->Reset(zerox);
     }
-    tmp[tube[2]]->SetPosition({tmp[tube[2]]->GetPosition().x,-225});
+    if (level==1) {
+        tmp[tube[2]]->SetPosition({tmp[tube[2]]->GetPosition().x,-225});
+    }
     for (int i = 0; i < reset.size(); ++i) {
         tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(1);
         zerostart[reset[i][0]][reset[i][1]]=reset[i][2];
