@@ -28,7 +28,7 @@ void App::ResetAll() {
         tmp[position[reset[i][0]][reset[i][1]]]->SetVisible(1);
         zerostart[reset[i][0]][reset[i][1]]=reset[i][2];
         tmp[position[reset[i][0]][reset[i][1]]]->posup=0;
-        if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26 || reset[i][2]==34 || reset[i][2]==38 || reset[i][2]==39) {
+        if (reset[i][2]==4 || reset[i][2]==12 || reset[i][2]==26 || reset[i][2]==32 || reset[i][2]==34 || reset[i][2]==38 || reset[i][2]==39) {
             tmp[position[reset[i][0]][reset[i][1]]]->SetImage(GA_RESOURCE_DIR"/res/box.png");
         }
         if(reset[i][2]==8 || reset[i][2]==15 || reset[i][2]==17 || (reset[i][2]==21 && level==3) || reset[i][2]==35) {
@@ -139,7 +139,6 @@ void App::Update() {
             "res/catfront.png", { -150.0f, -240.0f}, 51, {1.0f, 1.0f}, "king", {15, 1},
             -1, 3, 31, 1024,210,26,2,1
         });
-        // m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
         tmp_monster+=1;
     }
 
@@ -439,7 +438,11 @@ void App::Update() {
                 sec=0;
                 playerpos.y=(yy*boxsize)-345+2;
             }
-            else if (zerostart[23-yy-1][xx]==14 && tmp[position[23-yy-1][xx]]->GetVisibility()==0){NULL;}
+            else if (zerostart[22-yy][xx]==3 && tmp[position[22-yy][xx]]->GetVisibility()==0){NULL;}
+            else if (zerostart[22-yy][xx]==12 && tmp[position[22-yy][xx]]->GetVisibility()==0){NULL;}
+            else if (zerostart[22-yy][xx]==14 && tmp[position[22-yy][xx]]->GetVisibility()==0){NULL;}
+            else if (zerostart[22-yy][xx]==32 && tmp[position[22-yy][xx]]->GetVisibility()==0){NULL;}
+
             //?方塊向上
             else if ((zerostart[23-yy-1][xx]==10 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,(xx*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))
             || (zerostart[23-yy-1][xx+1]==10 && tmp[position[23-yy-1][xx+1]]->GetVisibility()==1 && Collision((int)(playerpos.x),(int)(playerpos.y+Acceleration),playerwidth,playerheight,((xx+1)*boxsize)-345,((yy+1)*boxsize)-345,boxsize,boxsize))

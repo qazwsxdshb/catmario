@@ -85,6 +85,10 @@ void App::Tre() {
     });
 
     AddMonster({
+        "res/monster6.png", {2443.0f, 380.0f}, 0, {1.0f, -1.0f}, "fish", {-15, 0},
+        -1, -1, -1, 1900
+    });
+    AddMonster({
         "res/monster7.png", { 2635.0f, -105.0f}, 51, {1.0f, 1.0f}, "king3", {0, -1}
     });
 

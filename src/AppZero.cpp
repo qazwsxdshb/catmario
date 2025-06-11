@@ -33,7 +33,7 @@ void App::Zero() {
     text = std::make_shared<Textt>();
     text->SetPosition({0, 0});
     text->SetZIndex(70);
-    text->Settext(" ");
+    text->Settext("space start");
     m_Root.AddChild(text);
 
     for (int y = std::size(zerostart) - 1; y >= 0; --y) {
