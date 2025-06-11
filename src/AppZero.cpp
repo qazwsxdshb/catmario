@@ -8,6 +8,8 @@
 void App::Zero() {
     LOG_TRACE("Zero");
 
+    LoadAllMaps();
+
     bgm.LoadMedia(GA_RESOURCE_DIR"/sound/field.mp3");
     bgm.Play(-1);
 
