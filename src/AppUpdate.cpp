@@ -2,6 +2,7 @@
 #include "Util/Input.hpp"
 #include "Util/Keycode.hpp"
 #include <thread>
+#include <unistd.h>
 #include <chrono>
 
 void App::ResetAll() {
@@ -11,6 +12,7 @@ void App::ResetAll() {
     fireball=-1;
     dropdrop=-1;
     dietime=0;
+    texttime=-1;
     for (int i = 0; i < tmp_monster; ++i) {
         m_monster[m_monster.size()-1]->SetVisible(false);
         m_monster.erase(m_monster.end()-1);
@@ -80,6 +82,7 @@ void App::UpdateTimers() {
     if (sec > 0) sec--;
     if (opsec > 0) opsec--;
     if (fireball > 0) fireball--;
+    if (texttime > 0) texttime--;
     ofsetzero = {0, 0};
 }
 
@@ -112,6 +115,7 @@ void App::Update() {
     HandleGlobalInput();
 
     if (Util::Input::IsKeyPressed(Util::Keycode::N) && (level==1 || level==2 || level==3 || level==4)) {
+        //|| level==2 || level==3 || level==4
         m_CurrentState=State::UPDATE2;
     }
 
@@ -136,6 +140,11 @@ void App::Update() {
         // m_monster[m_monster.size()-1]->SetPosition({((xx)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)});
         tmp_monster+=1;
     }
+
+    if (texttime==0) {
+        texttime=-1;
+        m_Root.RemoveChild(tmp[texttttt-1]);
+    };
 
     //final
     if (playerstate!=PlayerState::Die && ((xx==122 && yy<10 && level==1) || (zerostart[23-yy][xx+2]==29) || (xx==26 && yy<10 && level==4) || (zerostart[20][137]==27 && xx==137 && yy<10 && level==5))) {
@@ -585,7 +594,23 @@ void App::Update() {
                     SFX.Play(0);
                     reset.push_back({22-yy,xx,26});
                 }
-
+                else if (zerostart[22-yy][xx]==28 && tmp[position[22-yy][xx]]->posup==0) {
+                    tmp[position[22-yy][xx]]->posup=1;
+                    if (level==2) {
+                        auto obs = std::make_shared<Obstacle>(GA_RESOURCE_DIR"/res/blackboard1.png");
+                        obs->SetPosition({0, 0});
+                        obs->SetZIndex(10);
+                        obs->m_Transform.scale = {0.7,0.7};
+                        m_Root.AddChild(obs);
+                        tmp.push_back(obs);
+                        texttttt=tmp.size();
+                        m_Root.Update(ofsetzero);
+                        texttime=120;
+                    }
+                    reset.push_back({22-yy,xx,28});
+                    // SFX.LoadMedia(GA_RESOURCE_DIR"/sound/block_spawn.wav");
+                    // SFX.Play(0);
+                }
                 else if (zerostart[23-yy-1][xx]==32 && tmp[position[22-yy][xx]]->posup==0) {
                     tmp[position[22-yy][xx]]->posup=1;
                     tmp[position[22-yy][xx]]->SetImage(GA_RESOURCE_DIR"/res/brock4.png");

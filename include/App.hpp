@@ -118,6 +118,8 @@ public:
     int fireball=-1;
     int dropdrop=-1;
     int dietime=0;
+    int texttime=-1;
+    int texttttt=0;
 
     Util::BGM bgm;
     Util::SFX SFX;
