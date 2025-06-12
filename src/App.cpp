@@ -6,7 +6,7 @@
 
 bool App::LoadMapFromCSV(const std::string& filename, int map[24][200]) {
     // 使用相對路徑指向 Resources/Map 目錄
-    std::string fullPath = "Resources/Map/" + filename;
+    std::string fullPath = GA_RESOURCE_DIR"/Map/" + filename;
     std::ifstream file(fullPath);
     if (!file.is_open()) {
         std::cerr << "Error: Failed to open CSV file: " << fullPath << std::endl;
