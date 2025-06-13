@@ -8,13 +8,9 @@
 #include "Monster.hpp"
 #include "Coin.hpp"
 #include "Obstacle.hpp"
-#include "Util/Text.hpp"
 #include "PhaseResourceManger.hpp"
 #include "Util/BGM.hpp"
 #include "Util/SFX.hpp"
-#include <fstream>
-#include <sstream>
-#include <iostream>
 #include <vector>
 
 class App {

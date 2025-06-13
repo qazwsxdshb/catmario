@@ -189,7 +189,7 @@ void App::Update() {
             playerpos.y-=Acceleration;
         }
     }
-    else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==2) {
+    else if ((Util::Input::IsKeyPressed(Util::Keycode::S) || Util::Input::IsKeyPressed(Util::Keycode::DOWN)) && level==2){
         SFX.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
         SFX.Play(0);
         for (int ii=0;ii<tube.size();ii++) {
@@ -236,11 +236,11 @@ void App::Update() {
     if (m_player->gaint==1) {
         printf("%d %d\n",xx,yy);
 
-        if (Util::Input::IsKeyPressed(Util::Keycode::A) && yy>0) {
+        if ((Util::Input::IsKeyPressed(Util::Keycode::A) || Util::Input::IsKeyPressed(Util::Keycode::LEFT)) && yy>0) {
             m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
             playerpos.x-=speed;
         }
-        else if (Util::Input::IsKeyPressed(Util::Keycode::D) && yy>0) {
+        else if ((Util::Input::IsKeyPressed(Util::Keycode::D) || Util::Input::IsKeyPressed(Util::Keycode::RIGHT)) && yy>0) {
             m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
             playerpos.x+=speed;
         }
@@ -285,7 +285,7 @@ void App::Update() {
         }
     }
 
-    if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::A)) {
+    if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && (Util::Input::IsKeyPressed(Util::Keycode::A) || Util::Input::IsKeyPressed(Util::Keycode::LEFT))) {
         m_player->m_Transform.scale = glm::vec2(-1.0f, 1.0f);
         if (!(RLCollision(xx-1,yy,{playerpos.x,playerpos.y},-1,playerheight,playerwidth) || ((playerpos.x-zerox)-playerwidth<=-(int)(500/2)))){
             playerpos.x-=speed;
@@ -300,7 +300,7 @@ void App::Update() {
             m_player->position={((xx-1)*boxsize)-((WINDOW_WIDTH-boxsize)/2)-zerox, ((yy+2)*boxsize)-((WINDOW_HEIGHT-boxsize)/2)};
         }
     }
-    else if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && Util::Input::IsKeyPressed(Util::Keycode::D)) {
+    else if ((playerstate==PlayerState::Normal || playerstate==PlayerState::OP) && (Util::Input::IsKeyPressed(Util::Keycode::D) || Util::Input::IsKeyPressed(Util::Keycode::RIGHT))) {
         m_player->m_Transform.scale = glm::vec2(1.0f, 1.0f);
         if (!(RLCollision(xx+1,yy,{playerpos.x,playerpos.y},1,playerheight,playerwidth) || ((playerpos.x-zerox)+playerwidth>=(int)(500/2)))){
             playerpos.x+=speed;
@@ -317,19 +317,19 @@ void App::Update() {
     }
 
     if (playerstate==PlayerState::OP) {
-        if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)){
+        if (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::UP) || Util::Input::IsKeyPressed(Util::Keycode::SPACE)){
             if (!UDCollision(xx,yy+1,playerpos,1,speed,playerheight+2,playerwidth)){
                 playerpos.y+=speed;
             }
         }
-        else if (Util::Input::IsKeyPressed(Util::Keycode::S)) {
+        else if (Util::Input::IsKeyPressed(Util::Keycode::S) || Util::Input::IsKeyPressed(Util::Keycode::DOWN)) {
             if (!UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2,playerwidth)){
                 playerpos.y-=speed;
             }
         }
     }
     else if (playerstate==PlayerState::Normal) {
-        if (zerostart[24-yy][xx]!=21 && yy>0 && UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2,playerwidth) && (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::SPACE))) {
+        if (zerostart[24-yy][xx]!=21 && yy>0 && UDCollision(xx,yy-1,playerpos,-1,0,playerheight+2,playerwidth) && (Util::Input::IsKeyPressed(Util::Keycode::W) || Util::Input::IsKeyPressed(Util::Keycode::UP) || Util::Input::IsKeyPressed(Util::Keycode::SPACE))) {
             sec=50;
             Acceleration=16;
             m_player->SetImage(GA_RESOURCE_DIR"/res/player3.png");
@@ -344,7 +344,7 @@ void App::Update() {
             return;
         }
         //pipe die
-        else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==1) {
+        else if ((Util::Input::IsKeyPressed(Util::Keycode::S) || Util::Input::IsKeyPressed(Util::Keycode::DOWN)) && level==1) {
             if ((xx==30 && yy==6) || (xx==31 && yy==6)){
                 SFX.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
                 SFX.Play(0);
@@ -352,7 +352,7 @@ void App::Update() {
                 playerstate=PlayerState::Die;
             }
         }
-        else if (Util::Input::IsKeyPressed(Util::Keycode::S) && level==3) {
+        else if ((Util::Input::IsKeyPressed(Util::Keycode::S) || Util::Input::IsKeyPressed(Util::Keycode::DOWN)) && level==3) {
             for (int ii=0;ii<tube.size();ii++) {
                 if (tmp[tube[ii]]->GetPosition().y<m_player->GetPosition().y && m_player->GetPosition().y<tmp[tube[ii]]->GetPosition().y+75 && tmp[tube[ii]]->GetPosition().x-45<=m_player->GetPosition().x && m_player->GetPosition().x<=tmp[tube[ii]]->GetPosition().x+15) {
                     SFX.LoadMedia(GA_RESOURCE_DIR"/sound/dokan.mp3");
